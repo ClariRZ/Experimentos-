@@ -27,5 +27,7 @@
     "october_used": false
   },
   "archive_sha256": "54d0c10ba49205ae5fdd19015b9b3abb2420e85b3e7c9f995e006b61aad48805",
-  "recovered": true
+  "recovered": true,
+  "vm_status": "TERMINATED",
+  "controller_finished_epoch": 1794610526.0772634
 }
