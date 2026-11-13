@@ -1,0 +1,19 @@
+{
+  "run": "octubre_v6_01",
+  "training_fits": 0,
+  "commit": "b367e4b870584a84e7479160744b789c19d83afb",
+  "verified_scheduling": {
+    "automaticRestart": true,
+    "instanceTerminationAction": "STOP",
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "2700"
+    },
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false,
+    "provisioningModel": "STANDARD"
+  },
+  "bundle_sha256": "a64f539998d20b2f82722c8a4dba1441c3df016c6cfa0537e75490ddb2660593",
+  "pid": "1394",
+  "launched": true
+}
