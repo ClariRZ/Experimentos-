@@ -17,5 +17,6 @@
   "scripts/ejecutar_etapa1.py": "0d36c1c708cbe87a53a9479ccb5c186d17d8eff710ab19b43d58f58dcbf1874f",
   "scripts/fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
   "scripts/supervisar.py": "41cec6ab82447fc7e886cfb4eaf9148da4c741e2e5cfff9535d16f4c51096383",
-  "scripts/worker_vm.py": "2daafebba4c2634a4221ee0b886e0953045d3b82bd0c16383d576c2c312ac247"
+  "scripts/worker_vm.py": "2daafebba4c2634a4221ee0b886e0953045d3b82bd0c16383d576c2c312ac247",
+  "scripts/recuperar_hito.py": "1dfae51ef8bfc9f633db2022858c2754ecaf3831d88c4667de9210883939b7ca"
 }
