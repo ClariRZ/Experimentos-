@@ -17,5 +17,7 @@
   "pid": "1394",
   "launched": true,
   "archive_sha256": "69eb58e6793b995ab32c2b8299c3c0af23ef0e3f0de24d327b4e204bd9b6075b",
-  "recovered": true
+  "recovered": true,
+  "vm_status": "TERMINATED",
+  "finished": 1794613054.5580194
 }
