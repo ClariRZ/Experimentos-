@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "fits_before_gate": 0,
+  "arms": {
+    "B0_J": {
+      "columns": 634,
+      "sha256": "66c5c07f83b5271d51163aa09d5a035b8b486d10537d124770fc8ed95a3e1fc1",
+      "status": "IDENTIFICABLE"
+    },
+    "L4": {
+      "columns": 760,
+      "sha256": "90081c28ef2932120297b81e58732fe04e7aea295a0f83e42b2902abb9733a21",
+      "status": "IDENTIFICABLE"
+    },
+    "L6": {
+      "columns": 1012,
+      "sha256": "aa5ed4c8825e621b142078c2abddb373fcc09416294fd94b44693a824de28325",
+      "status": "IDENTIFICABLE"
+    },
+    "S3": {
+      "columns": 1102,
+      "sha256": "84fc4bd159daaf14a5618d6b54af78f4401928de82378b214acff1c659e2edf1",
+      "status": "IDENTIFICABLE"
+    },
+    "S4": {
+      "columns": 1102,
+      "sha256": "aad3d6648c73ed4f84c1d5ad337363891efa134964d765b3400386680ddc3961",
+      "status": "IDENTIFICABLE"
+    },
+    "S6": {
+      "columns": 1102,
+      "sha256": "d5292dc8eb88d59e4efb819a1f6eea90db9a6b5ec2594b24269b5b557b8ddd82",
+      "status": "IDENTIFICABLE"
+    },
+    "T4": {
+      "columns": 751,
+      "sha256": "e2acf73ee88388cd39f88cb440391bce36d887d32c8c71942ac6a677d406ef91",
+      "status": "IDENTIFICABLE"
+    },
+    "T6": {
+      "columns": 751,
+      "sha256": "a8b370316c9851bbab1f5a18cc40687dc425e83f9287e6a7d61e136044f355bb",
+      "status": "IDENTIFICABLE"
+    },
+    "R3": {
+      "columns": 985,
+      "sha256": "d96514ecaf2e9f1659159106c6bd5849b13409fe4bf9046d582090b8797b0762",
+      "status": "IDENTIFICABLE"
+    },
+    "R4": {
+      "columns": 985,
+      "sha256": "7400c4baf3556024f8d3db29d4d253e6ea93c58fc586684acde51610ce2fe326",
+      "status": "IDENTIFICABLE"
+    },
+    "R6": {
+      "columns": 985,
+      "sha256": "baf1f5ff9e610fe14ececfeb706b9d06397aa05b236d047a37bbf438c046ddda",
+      "status": "IDENTIFICABLE"
+    }
+  },
+  "train_months": [
+    201906
+  ],
+  "october_used": false
+}

@@ -1,0 +1,5183 @@
+{
+  "mobile_cast": [
+    "cmobile_app_trx"
+  ],
+  "by_month": {
+    "201901": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 2148,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 124031,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 69778,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 15251,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 4178,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201902": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 1328,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 268,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 125124,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 71025,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16381,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 15722,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 4377,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201903": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 1912,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 344,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 125732,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 72046,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16442,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 16111,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 4569,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201904": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126246
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126246
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 2468,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 412,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 126246,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 72477,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16562,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 16262,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 4662,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201905": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 2355,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 365,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 126876
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 126876,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 73190,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16548,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 16447,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 4774,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201906": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 3343,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 494,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 128474,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 75371,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16866,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 17180,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 5175,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201907": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 4878,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 663,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 76240,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16638,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 16827,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 4948,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    },
+    "201908": {
+      "mrentabilidad": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mrentabilidad_annual": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mactivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpasivos_margen": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cproductos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_corriente": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_adicional": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcaja_ahorro_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuentas_saldo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_debito_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mautoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_consumo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_prendarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mprestamos_hipotecarios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cplazo_fijo": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mplazo_fijo_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion1": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_pesos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion1_dolares": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cinversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "minversion2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vida": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_auto": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_vivienda": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cseguro_accidentes_personales": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpayroll2": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpayroll2_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcuenta_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_visa_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mttarjeta_master_debitos_automaticos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagodeservicios": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mpagomiscuentas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcajeros_propios_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_visa_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_visa_descuentos": {
+        "original_null": 3417,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctarjeta_master_descuentos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtarjeta_master_descuentos": {
+        "original_null": 624,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_mantenimiento": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcomisiones_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_buy": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mforex_sell": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_recibidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mtransferencias_emitidas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mextraccion_autoservicio": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_depositados_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "mcheques_emitidos_rechazados": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccallcenter_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "chomebanking_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_transacciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_consultas": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_depositos": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_extracciones": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ccajas_otras": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "catm_trx_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "matm_other": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "ctrx_quarter": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "cmobile_app_trx": {
+        "original_null": 0,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mfinanciacion_limite": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldototal": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldopesos": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_msaldodolares": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumospesos": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumosdolares": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mlimitecompra": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantopesos": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_madelantodolares": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagado": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagospesos": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagosdolares": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mconsumototal": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cconsumos": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_cadelantosefectivo": {
+        "original_null": 78162,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Master_mpagominimo": {
+        "original_null": 16745,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mfinanciacion_limite": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldototal": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldopesos": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_msaldodolares": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumospesos": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumosdolares": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mlimitecompra": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantopesos": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_madelantodolares": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagado": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagospesos": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagosdolares": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mconsumototal": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cconsumos": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_cadelantosefectivo": {
+        "original_null": 17393,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      },
+      "Visa_mpagominimo": {
+        "original_null": 5039,
+        "nonfinite": 0,
+        "broken_mask_rows": 0
+      }
+    }
+  }
+}

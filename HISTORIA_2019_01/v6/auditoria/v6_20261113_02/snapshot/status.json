@@ -1,0 +1,9 @@
+{
+  "status": "OPTUNA",
+  "fits_started": 3,
+  "updated": 1794605620.717226,
+  "october_used": false,
+  "arm": "B0_J",
+  "trial": 3,
+  "auc": 0.9021347005987812
+}

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-1014-gcp-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.3.5",
+    "polars": "2.1.0",
+    "lightgbm": "4.7.0",
+    "optuna": "5.0.0",
+    "scikit-learn": "1.8.0"
+  }
+}

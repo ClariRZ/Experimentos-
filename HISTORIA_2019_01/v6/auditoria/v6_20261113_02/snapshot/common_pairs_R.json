@@ -1,0 +1,972 @@
+{
+  "retained_pairs": [
+    "Master_cadelantosefectivo__f3_rel_first",
+    "Master_cadelantosefectivo__f3_rel_mean",
+    "Master_cadelantosefectivo__f3_rel_prev",
+    "Master_cconsumos__f3_rel_first",
+    "Master_cconsumos__f3_rel_mean",
+    "Master_cconsumos__f3_rel_prev",
+    "Master_madelantodolares__f3_rel_first",
+    "Master_madelantodolares__f3_rel_mean",
+    "Master_madelantodolares__f3_rel_prev",
+    "Master_madelantopesos__f3_rel_first",
+    "Master_madelantopesos__f3_rel_mean",
+    "Master_madelantopesos__f3_rel_prev",
+    "Master_mconsumosdolares__f3_rel_first",
+    "Master_mconsumosdolares__f3_rel_mean",
+    "Master_mconsumosdolares__f3_rel_prev",
+    "Master_mconsumospesos__f3_rel_first",
+    "Master_mconsumospesos__f3_rel_mean",
+    "Master_mconsumospesos__f3_rel_prev",
+    "Master_mfinanciacion_limite__f3_rel_first",
+    "Master_mfinanciacion_limite__f3_rel_mean",
+    "Master_mfinanciacion_limite__f3_rel_prev",
+    "Master_mlimitecompra__f3_rel_first",
+    "Master_mlimitecompra__f3_rel_mean",
+    "Master_mlimitecompra__f3_rel_prev",
+    "Master_mpagado__f3_rel_first",
+    "Master_mpagado__f3_rel_mean",
+    "Master_mpagado__f3_rel_prev",
+    "Master_mpagominimo__f3_rel_first",
+    "Master_mpagominimo__f3_rel_mean",
+    "Master_mpagominimo__f3_rel_prev",
+    "Master_mpagosdolares__f3_rel_first",
+    "Master_mpagosdolares__f3_rel_mean",
+    "Master_mpagosdolares__f3_rel_prev",
+    "Master_mpagospesos__f3_rel_first",
+    "Master_mpagospesos__f3_rel_mean",
+    "Master_mpagospesos__f3_rel_prev",
+    "Master_msaldodolares__f3_rel_first",
+    "Master_msaldodolares__f3_rel_mean",
+    "Master_msaldodolares__f3_rel_prev",
+    "Master_msaldopesos__f3_rel_first",
+    "Master_msaldopesos__f3_rel_mean",
+    "Master_msaldopesos__f3_rel_prev",
+    "Master_msaldototal__f3_rel_first",
+    "Master_msaldototal__f3_rel_mean",
+    "Master_msaldototal__f3_rel_prev",
+    "Visa_cadelantosefectivo__f3_rel_first",
+    "Visa_cadelantosefectivo__f3_rel_mean",
+    "Visa_cadelantosefectivo__f3_rel_prev",
+    "Visa_cconsumos__f3_rel_first",
+    "Visa_cconsumos__f3_rel_mean",
+    "Visa_cconsumos__f3_rel_prev",
+    "Visa_madelantodolares__f3_rel_first",
+    "Visa_madelantodolares__f3_rel_mean",
+    "Visa_madelantodolares__f3_rel_prev",
+    "Visa_madelantopesos__f3_rel_first",
+    "Visa_madelantopesos__f3_rel_mean",
+    "Visa_madelantopesos__f3_rel_prev",
+    "Visa_mconsumosdolares__f3_rel_first",
+    "Visa_mconsumosdolares__f3_rel_mean",
+    "Visa_mconsumosdolares__f3_rel_prev",
+    "Visa_mconsumospesos__f3_rel_first",
+    "Visa_mconsumospesos__f3_rel_mean",
+    "Visa_mconsumospesos__f3_rel_prev",
+    "Visa_mfinanciacion_limite__f3_rel_first",
+    "Visa_mfinanciacion_limite__f3_rel_mean",
+    "Visa_mfinanciacion_limite__f3_rel_prev",
+    "Visa_mlimitecompra__f3_rel_first",
+    "Visa_mlimitecompra__f3_rel_mean",
+    "Visa_mlimitecompra__f3_rel_prev",
+    "Visa_mpagado__f3_rel_first",
+    "Visa_mpagado__f3_rel_mean",
+    "Visa_mpagado__f3_rel_prev",
+    "Visa_mpagominimo__f3_rel_first",
+    "Visa_mpagominimo__f3_rel_mean",
+    "Visa_mpagominimo__f3_rel_prev",
+    "Visa_mpagosdolares__f3_rel_first",
+    "Visa_mpagosdolares__f3_rel_mean",
+    "Visa_mpagosdolares__f3_rel_prev",
+    "Visa_mpagospesos__f3_rel_first",
+    "Visa_mpagospesos__f3_rel_mean",
+    "Visa_mpagospesos__f3_rel_prev",
+    "Visa_msaldodolares__f3_rel_first",
+    "Visa_msaldodolares__f3_rel_mean",
+    "Visa_msaldodolares__f3_rel_prev",
+    "Visa_msaldopesos__f3_rel_first",
+    "Visa_msaldopesos__f3_rel_mean",
+    "Visa_msaldopesos__f3_rel_prev",
+    "Visa_msaldototal__f3_rel_first",
+    "Visa_msaldototal__f3_rel_mean",
+    "Visa_msaldototal__f3_rel_prev",
+    "catm_trx__f3_rel_first",
+    "catm_trx__f3_rel_mean",
+    "catm_trx__f3_rel_prev",
+    "catm_trx_other__f3_rel_first",
+    "catm_trx_other__f3_rel_mean",
+    "catm_trx_other__f3_rel_prev",
+    "ccaja_ahorro__f3_rel_first",
+    "ccaja_ahorro__f3_rel_mean",
+    "ccaja_ahorro__f3_rel_prev",
+    "ccajas_consultas__f3_rel_first",
+    "ccajas_consultas__f3_rel_mean",
+    "ccajas_consultas__f3_rel_prev",
+    "ccajas_depositos__f3_rel_first",
+    "ccajas_depositos__f3_rel_mean",
+    "ccajas_depositos__f3_rel_prev",
+    "ccajas_extracciones__f3_rel_first",
+    "ccajas_extracciones__f3_rel_mean",
+    "ccajas_extracciones__f3_rel_prev",
+    "ccajas_otras__f3_rel_first",
+    "ccajas_otras__f3_rel_mean",
+    "ccajas_otras__f3_rel_prev",
+    "ccajas_transacciones__f3_rel_first",
+    "ccajas_transacciones__f3_rel_mean",
+    "ccajas_transacciones__f3_rel_prev",
+    "ccajeros_propios_descuentos__f3_rel_first",
+    "ccajeros_propios_descuentos__f3_rel_mean",
+    "ccajeros_propios_descuentos__f3_rel_prev",
+    "ccallcenter_transacciones__f3_rel_first",
+    "ccallcenter_transacciones__f3_rel_mean",
+    "ccallcenter_transacciones__f3_rel_prev",
+    "ccheques_depositados__f3_rel_first",
+    "ccheques_depositados__f3_rel_mean",
+    "ccheques_depositados__f3_rel_prev",
+    "ccheques_depositados_rechazados__f3_rel_first",
+    "ccheques_depositados_rechazados__f3_rel_mean",
+    "ccheques_depositados_rechazados__f3_rel_prev",
+    "ccheques_emitidos__f3_rel_first",
+    "ccheques_emitidos__f3_rel_mean",
+    "ccheques_emitidos__f3_rel_prev",
+    "ccheques_emitidos_rechazados__f3_rel_first",
+    "ccheques_emitidos_rechazados__f3_rel_mean",
+    "ccheques_emitidos_rechazados__f3_rel_prev",
+    "ccomisiones_mantenimiento__f3_rel_first",
+    "ccomisiones_mantenimiento__f3_rel_mean",
+    "ccomisiones_mantenimiento__f3_rel_prev",
+    "ccuenta_corriente__f3_rel_first",
+    "ccuenta_corriente__f3_rel_mean",
+    "ccuenta_corriente__f3_rel_prev",
+    "ccuenta_debitos_automaticos__f3_rel_first",
+    "ccuenta_debitos_automaticos__f3_rel_mean",
+    "ccuenta_debitos_automaticos__f3_rel_prev",
+    "cextraccion_autoservicio__f3_rel_first",
+    "cextraccion_autoservicio__f3_rel_mean",
+    "cextraccion_autoservicio__f3_rel_prev",
+    "cforex__f3_rel_first",
+    "cforex__f3_rel_mean",
+    "cforex__f3_rel_prev",
+    "cforex_buy__f3_rel_first",
+    "cforex_buy__f3_rel_mean",
+    "cforex_buy__f3_rel_prev",
+    "cforex_sell__f3_rel_first",
+    "cforex_sell__f3_rel_mean",
+    "cforex_sell__f3_rel_prev",
+    "chomebanking_transacciones__f3_rel_first",
+    "chomebanking_transacciones__f3_rel_mean",
+    "chomebanking_transacciones__f3_rel_prev",
+    "cinversion1__f3_rel_first",
+    "cinversion1__f3_rel_mean",
+    "cinversion1__f3_rel_prev",
+    "cinversion2__f3_rel_first",
+    "cinversion2__f3_rel_mean",
+    "cinversion2__f3_rel_prev",
+    "cpagodeservicios__f3_rel_first",
+    "cpagodeservicios__f3_rel_mean",
+    "cpagodeservicios__f3_rel_prev",
+    "cpagomiscuentas__f3_rel_first",
+    "cpagomiscuentas__f3_rel_mean",
+    "cpagomiscuentas__f3_rel_prev",
+    "cpayroll2_trx__f3_rel_first",
+    "cpayroll2_trx__f3_rel_mean",
+    "cpayroll2_trx__f3_rel_prev",
+    "cpayroll_trx__f3_rel_first",
+    "cpayroll_trx__f3_rel_mean",
+    "cpayroll_trx__f3_rel_prev",
+    "cplazo_fijo__f3_rel_first",
+    "cplazo_fijo__f3_rel_mean",
+    "cplazo_fijo__f3_rel_prev",
+    "cprestamos_hipotecarios__f3_rel_first",
+    "cprestamos_hipotecarios__f3_rel_mean",
+    "cprestamos_hipotecarios__f3_rel_prev",
+    "cprestamos_personales__f3_rel_first",
+    "cprestamos_personales__f3_rel_mean",
+    "cprestamos_personales__f3_rel_prev",
+    "cprestamos_prendarios__f3_rel_first",
+    "cprestamos_prendarios__f3_rel_mean",
+    "cprestamos_prendarios__f3_rel_prev",
+    "cproductos__f3_rel_first",
+    "cproductos__f3_rel_mean",
+    "cproductos__f3_rel_prev",
+    "cseguro_accidentes_personales__f3_rel_first",
+    "cseguro_accidentes_personales__f3_rel_mean",
+    "cseguro_accidentes_personales__f3_rel_prev",
+    "cseguro_auto__f3_rel_first",
+    "cseguro_auto__f3_rel_mean",
+    "cseguro_auto__f3_rel_prev",
+    "cseguro_vida__f3_rel_first",
+    "cseguro_vida__f3_rel_mean",
+    "cseguro_vida__f3_rel_prev",
+    "cseguro_vivienda__f3_rel_first",
+    "cseguro_vivienda__f3_rel_mean",
+    "cseguro_vivienda__f3_rel_prev",
+    "ctarjeta_debito__f3_rel_first",
+    "ctarjeta_debito__f3_rel_mean",
+    "ctarjeta_debito__f3_rel_prev",
+    "ctarjeta_debito_transacciones__f3_rel_first",
+    "ctarjeta_debito_transacciones__f3_rel_mean",
+    "ctarjeta_debito_transacciones__f3_rel_prev",
+    "ctarjeta_master__f3_rel_first",
+    "ctarjeta_master__f3_rel_mean",
+    "ctarjeta_master__f3_rel_prev",
+    "ctarjeta_master_debitos_automaticos__f3_rel_first",
+    "ctarjeta_master_debitos_automaticos__f3_rel_mean",
+    "ctarjeta_master_debitos_automaticos__f3_rel_prev",
+    "ctarjeta_master_descuentos__f3_rel_first",
+    "ctarjeta_master_descuentos__f3_rel_mean",
+    "ctarjeta_master_descuentos__f3_rel_prev",
+    "ctarjeta_master_transacciones__f3_rel_first",
+    "ctarjeta_master_transacciones__f3_rel_mean",
+    "ctarjeta_master_transacciones__f3_rel_prev",
+    "ctarjeta_visa__f3_rel_first",
+    "ctarjeta_visa__f3_rel_mean",
+    "ctarjeta_visa__f3_rel_prev",
+    "ctarjeta_visa_descuentos__f3_rel_first",
+    "ctarjeta_visa_descuentos__f3_rel_mean",
+    "ctarjeta_visa_descuentos__f3_rel_prev",
+    "ctarjeta_visa_transacciones__f3_rel_first",
+    "ctarjeta_visa_transacciones__f3_rel_mean",
+    "ctarjeta_visa_transacciones__f3_rel_prev",
+    "ctransferencias_emitidas__f3_rel_first",
+    "ctransferencias_emitidas__f3_rel_mean",
+    "ctransferencias_emitidas__f3_rel_prev",
+    "ctransferencias_recibidas__f3_rel_first",
+    "ctransferencias_recibidas__f3_rel_mean",
+    "ctransferencias_recibidas__f3_rel_prev",
+    "ctrx_quarter__f3_rel_first",
+    "ctrx_quarter__f3_rel_mean",
+    "ctrx_quarter__f3_rel_prev",
+    "matm__f3_rel_first",
+    "matm__f3_rel_mean",
+    "matm__f3_rel_prev",
+    "matm_other__f3_rel_first",
+    "matm_other__f3_rel_mean",
+    "matm_other__f3_rel_prev",
+    "mautoservicio__f3_rel_first",
+    "mautoservicio__f3_rel_mean",
+    "mautoservicio__f3_rel_prev",
+    "mcaja_ahorro__f3_rel_first",
+    "mcaja_ahorro__f3_rel_mean",
+    "mcaja_ahorro__f3_rel_prev",
+    "mcaja_ahorro_adicional__f3_rel_first",
+    "mcaja_ahorro_adicional__f3_rel_mean",
+    "mcaja_ahorro_adicional__f3_rel_prev",
+    "mcaja_ahorro_dolares__f3_rel_first",
+    "mcaja_ahorro_dolares__f3_rel_mean",
+    "mcaja_ahorro_dolares__f3_rel_prev",
+    "mcajeros_propios_descuentos__f3_rel_first",
+    "mcajeros_propios_descuentos__f3_rel_mean",
+    "mcajeros_propios_descuentos__f3_rel_prev",
+    "mcheques_depositados__f3_rel_first",
+    "mcheques_depositados__f3_rel_mean",
+    "mcheques_depositados__f3_rel_prev",
+    "mcheques_depositados_rechazados__f3_rel_first",
+    "mcheques_depositados_rechazados__f3_rel_mean",
+    "mcheques_depositados_rechazados__f3_rel_prev",
+    "mcheques_emitidos__f3_rel_first",
+    "mcheques_emitidos__f3_rel_mean",
+    "mcheques_emitidos__f3_rel_prev",
+    "mcheques_emitidos_rechazados__f3_rel_first",
+    "mcheques_emitidos_rechazados__f3_rel_mean",
+    "mcheques_emitidos_rechazados__f3_rel_prev",
+    "mcomisiones_mantenimiento__f3_rel_first",
+    "mcomisiones_mantenimiento__f3_rel_mean",
+    "mcomisiones_mantenimiento__f3_rel_prev",
+    "mcuenta_corriente__f3_rel_first",
+    "mcuenta_corriente__f3_rel_mean",
+    "mcuenta_corriente__f3_rel_prev",
+    "mcuenta_corriente_adicional__f3_rel_first",
+    "mcuenta_corriente_adicional__f3_rel_mean",
+    "mcuenta_corriente_adicional__f3_rel_prev",
+    "mcuenta_debitos_automaticos__f3_rel_first",
+    "mcuenta_debitos_automaticos__f3_rel_mean",
+    "mcuenta_debitos_automaticos__f3_rel_prev",
+    "mcuentas_saldo__f3_rel_first",
+    "mcuentas_saldo__f3_rel_mean",
+    "mcuentas_saldo__f3_rel_prev",
+    "mextraccion_autoservicio__f3_rel_first",
+    "mextraccion_autoservicio__f3_rel_mean",
+    "mextraccion_autoservicio__f3_rel_prev",
+    "mforex_buy__f3_rel_first",
+    "mforex_buy__f3_rel_mean",
+    "mforex_buy__f3_rel_prev",
+    "mforex_sell__f3_rel_first",
+    "mforex_sell__f3_rel_mean",
+    "mforex_sell__f3_rel_prev",
+    "minversion1_dolares__f3_rel_first",
+    "minversion1_dolares__f3_rel_mean",
+    "minversion1_dolares__f3_rel_prev",
+    "minversion1_pesos__f3_rel_first",
+    "minversion1_pesos__f3_rel_mean",
+    "minversion1_pesos__f3_rel_prev",
+    "minversion2__f3_rel_first",
+    "minversion2__f3_rel_mean",
+    "minversion2__f3_rel_prev",
+    "mpagodeservicios__f3_rel_first",
+    "mpagodeservicios__f3_rel_mean",
+    "mpagodeservicios__f3_rel_prev",
+    "mpagomiscuentas__f3_rel_first",
+    "mpagomiscuentas__f3_rel_mean",
+    "mpagomiscuentas__f3_rel_prev",
+    "mpayroll2__f3_rel_first",
+    "mpayroll2__f3_rel_mean",
+    "mpayroll2__f3_rel_prev",
+    "mpayroll__f3_rel_first",
+    "mpayroll__f3_rel_mean",
+    "mpayroll__f3_rel_prev",
+    "mplazo_fijo_dolares__f3_rel_first",
+    "mplazo_fijo_dolares__f3_rel_mean",
+    "mplazo_fijo_dolares__f3_rel_prev",
+    "mplazo_fijo_pesos__f3_rel_first",
+    "mplazo_fijo_pesos__f3_rel_mean",
+    "mplazo_fijo_pesos__f3_rel_prev",
+    "mprestamos_hipotecarios__f3_rel_first",
+    "mprestamos_hipotecarios__f3_rel_mean",
+    "mprestamos_hipotecarios__f3_rel_prev",
+    "mprestamos_personales__f3_rel_first",
+    "mprestamos_personales__f3_rel_mean",
+    "mprestamos_personales__f3_rel_prev",
+    "mprestamos_prendarios__f3_rel_first",
+    "mprestamos_prendarios__f3_rel_mean",
+    "mprestamos_prendarios__f3_rel_prev",
+    "mtarjeta_master_consumo__f3_rel_first",
+    "mtarjeta_master_consumo__f3_rel_mean",
+    "mtarjeta_master_consumo__f3_rel_prev",
+    "mtarjeta_master_descuentos__f3_rel_first",
+    "mtarjeta_master_descuentos__f3_rel_mean",
+    "mtarjeta_master_descuentos__f3_rel_prev",
+    "mtarjeta_visa_consumo__f3_rel_first",
+    "mtarjeta_visa_consumo__f3_rel_mean",
+    "mtarjeta_visa_consumo__f3_rel_prev",
+    "mtarjeta_visa_descuentos__f3_rel_first",
+    "mtarjeta_visa_descuentos__f3_rel_mean",
+    "mtarjeta_visa_descuentos__f3_rel_prev",
+    "mtransferencias_emitidas__f3_rel_first",
+    "mtransferencias_emitidas__f3_rel_mean",
+    "mtransferencias_emitidas__f3_rel_prev",
+    "mtransferencias_recibidas__f3_rel_first",
+    "mtransferencias_recibidas__f3_rel_mean",
+    "mtransferencias_recibidas__f3_rel_prev",
+    "mttarjeta_master_debitos_automaticos__f3_rel_first",
+    "mttarjeta_master_debitos_automaticos__f3_rel_mean",
+    "mttarjeta_master_debitos_automaticos__f3_rel_prev"
+  ],
+  "excluded_pairs": {
+    "Master_mconsumototal__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "Master_mconsumototal__f3_rel_first_W3",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_first_W3"
+      },
+      {
+        "arm": "R4",
+        "column": "Master_mconsumototal__f3_rel_first_W4",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_first_W4"
+      },
+      {
+        "arm": "R6",
+        "column": "Master_mconsumototal__f3_rel_first_W6",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_first_W6"
+      }
+    ],
+    "Master_mconsumototal__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "Master_mconsumototal__f3_rel_mean_W3",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_mean_W3"
+      },
+      {
+        "arm": "R4",
+        "column": "Master_mconsumototal__f3_rel_mean_W4",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_mean_W4"
+      },
+      {
+        "arm": "R6",
+        "column": "Master_mconsumototal__f3_rel_mean_W6",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_mean_W6"
+      }
+    ],
+    "Master_mconsumototal__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "Master_mconsumototal__f3_rel_prev_W3",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_prev_W3"
+      },
+      {
+        "arm": "R4",
+        "column": "Master_mconsumototal__f3_rel_prev_W4",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_prev_W4"
+      },
+      {
+        "arm": "R6",
+        "column": "Master_mconsumototal__f3_rel_prev_W6",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f3_rel_prev_W6"
+      }
+    ],
+    "Visa_mconsumototal__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "Visa_mconsumototal__f3_rel_first_W3",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_first_W3"
+      },
+      {
+        "arm": "R4",
+        "column": "Visa_mconsumototal__f3_rel_first_W4",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_first_W4"
+      },
+      {
+        "arm": "R6",
+        "column": "Visa_mconsumototal__f3_rel_first_W6",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_first_W6"
+      }
+    ],
+    "Visa_mconsumototal__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "Visa_mconsumototal__f3_rel_mean_W3",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_mean_W3"
+      },
+      {
+        "arm": "R4",
+        "column": "Visa_mconsumototal__f3_rel_mean_W4",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_mean_W4"
+      },
+      {
+        "arm": "R6",
+        "column": "Visa_mconsumototal__f3_rel_mean_W6",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_mean_W6"
+      }
+    ],
+    "Visa_mconsumototal__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "Visa_mconsumototal__f3_rel_prev_W3",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_prev_W3"
+      },
+      {
+        "arm": "R4",
+        "column": "Visa_mconsumototal__f3_rel_prev_W4",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_prev_W4"
+      },
+      {
+        "arm": "R6",
+        "column": "Visa_mconsumototal__f3_rel_prev_W6",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f3_rel_prev_W6"
+      }
+    ],
+    "ccomisiones_otras__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "ccomisiones_otras__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "ccomisiones_otras__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "ccomisiones_otras__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "ccomisiones_otras__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "ccomisiones_otras__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "ccomisiones_otras__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "ccomisiones_otras__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "ccomisiones_otras__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "ccomisiones_otras__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "ccomisiones_otras__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "ccomisiones_otras__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "cmobile_app_trx__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "cmobile_app_trx__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "cmobile_app_trx__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "cmobile_app_trx__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "cmobile_app_trx__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "cmobile_app_trx__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "cmobile_app_trx__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "cmobile_app_trx__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "cmobile_app_trx__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "cmobile_app_trx__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "cmobile_app_trx__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "cmobile_app_trx__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "ctarjeta_visa_debitos_automaticos__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "ctarjeta_visa_debitos_automaticos__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "ctarjeta_visa_debitos_automaticos__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "ctarjeta_visa_debitos_automaticos__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mactivos_margen__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mactivos_margen__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mactivos_margen__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mactivos_margen__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mactivos_margen__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mactivos_margen__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mactivos_margen__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mactivos_margen__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mactivos_margen__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mactivos_margen__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mactivos_margen__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mactivos_margen__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mcomisiones__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mcomisiones__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mcomisiones__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mcomisiones__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mcomisiones__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mcomisiones__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mcomisiones__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mcomisiones__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mcomisiones__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones_otras__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mcomisiones_otras__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mcomisiones_otras__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mcomisiones_otras__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones_otras__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mcomisiones_otras__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mcomisiones_otras__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mcomisiones_otras__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones_otras__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mcomisiones_otras__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mcomisiones_otras__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mcomisiones_otras__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mpasivos_margen__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mpasivos_margen__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mpasivos_margen__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mpasivos_margen__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mpasivos_margen__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mpasivos_margen__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mpasivos_margen__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mpasivos_margen__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mpasivos_margen__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mpasivos_margen__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mpasivos_margen__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mpasivos_margen__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mrentabilidad__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mrentabilidad__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mrentabilidad__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mrentabilidad__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mrentabilidad__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mrentabilidad__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mrentabilidad__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mrentabilidad__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mrentabilidad__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad_annual__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mrentabilidad_annual__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mrentabilidad_annual__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mrentabilidad_annual__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad_annual__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mrentabilidad_annual__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mrentabilidad_annual__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mrentabilidad_annual__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad_annual__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mrentabilidad_annual__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mrentabilidad_annual__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mrentabilidad_annual__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mttarjeta_visa_debitos_automaticos__f3_rel_first": [
+      {
+        "arm": "R3",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_first_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_first_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_first_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mttarjeta_visa_debitos_automaticos__f3_rel_mean": [
+      {
+        "arm": "R3",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_mean_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_mean_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_mean_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mttarjeta_visa_debitos_automaticos__f3_rel_prev": [
+      {
+        "arm": "R3",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_prev_W3",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R4",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_prev_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "R6",
+        "column": "mttarjeta_visa_debitos_automaticos__f3_rel_prev_W6",
+        "reason": "all_missing"
+      }
+    ]
+  },
+  "selection_months": [
+    201906
+  ]
+}

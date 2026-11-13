@@ -1,0 +1,9 @@
+{
+  "01_full_audit.py": "c382a8092c2f6dc80ba9d55c3558257eca71b5c808357774276f92441daaf9e7",
+  "auditar_etapa1.py": "ac8be4605609b425cfda56bd37aa9fa8473c06605fe193e5751ed1c68ea4cdb7",
+  "control_cloudshell.py": "ece64f9c62de08f2fbbdfbcf7704e82cfdf533f09725b884b1bc0f73ff2e513c",
+  "ejecutar_etapa1.py": "0d36c1c708cbe87a53a9479ccb5c186d17d8eff710ab19b43d58f58dcbf1874f",
+  "fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+  "supervisar.py": "41cec6ab82447fc7e886cfb4eaf9148da4c741e2e5cfff9535d16f4c51096383",
+  "worker_vm.py": "2daafebba4c2634a4221ee0b886e0953045d3b82bd0c16383d576c2c312ac247"
+}

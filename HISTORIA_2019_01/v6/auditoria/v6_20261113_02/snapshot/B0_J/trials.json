@@ -1,0 +1,41 @@
+[
+  {
+    "trial": 0,
+    "auc": 0.9038513035027317,
+    "params": {
+      "num_leaves": 29,
+      "learning_rate": 0.011926244614204879,
+      "min_data_in_leaf": 277,
+      "feature_fraction": 0.5718455657063783,
+      "bagging_fraction": 0.6659300449146752
+    },
+    "rounds": 380,
+    "seconds": 28.94336175918579
+  },
+  {
+    "trial": 1,
+    "auc": 0.8900692139145203,
+    "params": {
+      "num_leaves": 83,
+      "learning_rate": 0.08573562420684387,
+      "min_data_in_leaf": 256,
+      "feature_fraction": 0.8317096270528164,
+      "bagging_fraction": 0.745761316790686
+    },
+    "rounds": 29,
+    "seconds": 16.000568628311157
+  },
+  {
+    "trial": 2,
+    "auc": 0.9021347005987812,
+    "params": {
+      "num_leaves": 26,
+      "learning_rate": 0.011356105298273727,
+      "min_data_in_leaf": 113,
+      "feature_fraction": 0.41765513847005264,
+      "bagging_fraction": 0.6287911870907968
+    },
+    "rounds": 492,
+    "seconds": 29.095993280410767
+  }
+]
