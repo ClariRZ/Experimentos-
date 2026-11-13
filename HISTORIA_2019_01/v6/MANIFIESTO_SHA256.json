@@ -1,7 +1,9 @@
 {
   "README.md": "bb4ec40083414660cf89fea92e30167e05d0536973f14543a368e7dc5c2686bf",
+  "auditoria/INCIDENTE_ARRANQUE_01.json": "c6d054bc9db0281d2e01c11e3904d3035db537381281e56095ea916388194af8",
   "auditoria/PLAN_LANZAMIENTO.json": "f2df82a28215466c617c4d894fdfe8d5eb1343ebf5b0cf0d2865d16890513435",
   "auditoria/VALIDACION_LOCAL.json": "223699dcd8504ad53631a2732215213853ed08018e0bf95714c4707e8e049c01",
+  "auditoria/v6_20261113_01/control_publico.json": "890b4f39e1707d8ca97edfb5902b829e631938ef4f8409910c4a1ba8ac26b80c",
   "configuraciones/contrato_v6.json": "f5c5852556b5f52db587b32e807efaf3c72f9b0e6a27bd83ee94d14644345f06",
   "prompts/PROMPT_MAESTRO_HISTORIA_2019_v6.md": "f780a6de907e0683c5b305d66ec7d14ef58b0eeda0ce4916e475911877b58276",
   "prompts/procedencia.json": "47b57a370e0a95ec9e57160536477f30429d0b67b02b6c4d16fb9891cbe66aee",
@@ -11,7 +13,7 @@
   "pruebas/test_workflow.py": "e31b5b4a83c903ae408ed1ea3c8291b3d87e94c9c0298daf0556e61fcf68aab0",
   "scripts/01_full_audit.py": "c382a8092c2f6dc80ba9d55c3558257eca71b5c808357774276f92441daaf9e7",
   "scripts/auditar_etapa1.py": "ac8be4605609b425cfda56bd37aa9fa8473c06605fe193e5751ed1c68ea4cdb7",
-  "scripts/control_cloudshell.py": "adfb45387844bc2dbf8506a81e03cb6a166f77a5c77341ad3bddaaecb3153c0b",
+  "scripts/control_cloudshell.py": "e9860dcec50bec5eb1df48568ea195dde2a53349d02c2e5b4386040a8f168a8b",
   "scripts/ejecutar_etapa1.py": "0d36c1c708cbe87a53a9479ccb5c186d17d8eff710ab19b43d58f58dcbf1874f",
   "scripts/fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
   "scripts/supervisar.py": "41cec6ab82447fc7e886cfb4eaf9148da4c741e2e5cfff9535d16f4c51096383",
