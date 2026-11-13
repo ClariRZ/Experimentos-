@@ -1,6 +1,6 @@
 {
-  "captured_epoch": 1794605652.055935,
-  "archive_sha256": "e61af80863a9c989297dff3237e06d0d4f4c7a46eb1a7b410b3f9ada344c48b9",
+  "captured_epoch": 1794608335.6075225,
+  "archive_sha256": "e6424480f0f824ccbc73cbcb2bc2cfe85804e12e330fcd17bf13e35702a4298e",
   "kind": "live_checkpoint_not_final",
   "source_run": "v6_20261113_02",
   "note": "Files copied during execution; individual writes are atomic, snapshot is not a simultaneous transaction."
