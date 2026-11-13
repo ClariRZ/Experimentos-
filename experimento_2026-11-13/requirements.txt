@@ -1,0 +1,6 @@
+lightgbm==4.7.0
+polars==2.1.0
+numpy==2.3.5
+optuna==5.0.0
+scikit-learn
+pytest

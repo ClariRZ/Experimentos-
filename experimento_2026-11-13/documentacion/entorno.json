@@ -1,0 +1,14 @@
+{
+  "recorded_versions": {
+    "lightgbm": "4.7.0",
+    "polars": "2.1.0",
+    "numpy": "2.3.5",
+    "optuna": "5.0.0"
+  },
+  "unknown_original_versions": [
+    "python",
+    "scikit-learn",
+    "system libraries"
+  ],
+  "note": "No se inventan versiones no registradas; la igualdad numerica debe verificarse con resultados esperados."
+}

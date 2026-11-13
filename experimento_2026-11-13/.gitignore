@@ -1,0 +1,8 @@
+ejecuciones/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.npz
+*.parquet
+*.csv.gz

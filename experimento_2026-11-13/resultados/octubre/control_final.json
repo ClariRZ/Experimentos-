@@ -1,0 +1,10 @@
+{
+  "started": 1794575421.122369,
+  "output": "/home/clarirz/HISTORIA_2019_01/v4/resultados/octubre_20261113_01",
+  "returncode": 0,
+  "stop_returncode": 0,
+  "finished": 1794575664.9369628,
+  "verified_vm_status": "TERMINATED",
+  "verified_date": "2026-11-13",
+  "verification": "gcloud describe via owner Cloud Shell; live UI output"
+}

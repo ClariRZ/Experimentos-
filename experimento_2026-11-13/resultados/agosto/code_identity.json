@@ -1,0 +1,11 @@
+{
+  "01_full_audit.py": "16f3b96ac6c52cbdda878f37d3452c427c7226604cc88d31e723b8d2cff1794f",
+  "calibrar.py": "0e95de37f1d6f2fb0e6831399919ebac6f82dd50527baf52e022a7791cec9110",
+  "control_cloud.py": "555c9b248d986b718a418e3bbfa58ab0c3eb7c6a96f065f2df120674c08c4825",
+  "ejecutar_completa.py": "a53fb98fef69b9c5ae67923e6007776243036cd44baa667e101531e163143929",
+  "ejecutar_inicial.py": "20ae176f0fcb6da50cc5db70378aef7729e34b6e1419048960956cebbc6af0ba",
+  "fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+  "preparar_completa.py": "668fedabfe1eacfb7a64566a160b754a36dc183b1a776040f31aa37cf13f04d4",
+  "supervisar.py": "3ead7a7d700e623980b85b5c637f3e6bfc4fc290912ab3db8f949a0cdf933113",
+  "supervisar_completa.py": "beb1f4e2e9002f9ab81735a9e8e55916a470a6d4b3e313e22519a6172ef9e4d6"
+}

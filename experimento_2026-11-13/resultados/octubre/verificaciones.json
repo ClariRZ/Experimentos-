@@ -1,0 +1,137 @@
+{
+  "B0": [
+    {
+      "seed": 101,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "a92c7100349088d95ea9db1b511b1ea525d5bd81287abf7a718a54c01fb8ee5f"
+    },
+    {
+      "seed": 211,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "bb4776674067e9a921781b9d324572b393554fb89db9f149ac042cb74952ca4c"
+    },
+    {
+      "seed": 307,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "3c2bdeb6ed7d44ef97e0b4de58969dc78c6d01db99260195ab70b95904f16d96"
+    },
+    {
+      "seed": 401,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "c852ebcf854d0942b80c652d6f213dac25a0f46a0c82f8c28098f4aadc9ac773"
+    },
+    {
+      "seed": 503,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "5cc24f3f00c7dbe9954250bf0b448204acf4d9bbe777cf226fb55bd7c61c5e86"
+    }
+  ],
+  "F1": [
+    {
+      "seed": 101,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "8896933785cb3ab257936d587caf623d5778ec352a7b53e6c655dadb043875e3"
+    },
+    {
+      "seed": 211,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "80a0b1a4ea51f7f9fd2444903a27ff4f66f1aa378aaf3f9fb8b588f82da09704"
+    },
+    {
+      "seed": 307,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "7e7de07bc58e8b9c57c1f4bd7bf93f84e5944eaf8b752c509683eedf21f97c97"
+    },
+    {
+      "seed": 401,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "70bc009ffe5e6971c94876c923e07df8dca5291c51d631e8f10221e0576c44b6"
+    },
+    {
+      "seed": 503,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "b5a6aefb9d1674873480ec1c5397e91ef2fec67d293b3fc61f21e58ec841138d"
+    }
+  ],
+  "F3": [
+    {
+      "seed": 101,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "b21c238db119425fb0ab7b97510d1a6cc87a05d049bed8c59d46e89291c1dadf"
+    },
+    {
+      "seed": 211,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "a7c596ba183123728481d9e3364fe64dd4126ef89d7b78987007fd475ac9900a"
+    },
+    {
+      "seed": 307,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "ae7e6265bb03380cfdecdcce4cc8d693f697b38c12ae5f3320827930f449d342"
+    },
+    {
+      "seed": 401,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "98e6bfbb1a86856cb17fc79bf92e13ec03ae9244c7da37d6ab5bfecc5e8964a1"
+    },
+    {
+      "seed": 503,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "c3d0fa8721c3146cba6110c7664c8fb619e6b05fcf7ba97998e02eedc028a7b5"
+    }
+  ],
+  "F4a": [
+    {
+      "seed": 101,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "ea2e629875b210fdf3e23c6989cd37d5f40323370d40dec464dea6af3e0024a0"
+    },
+    {
+      "seed": 211,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "47fac170f24e708ced252494cc62982163f83c71b492de6a40e85a9f2fb797cd"
+    },
+    {
+      "seed": 307,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "55d1a0260b015f8260e445f5a4835a6b790c17f29d35ae9410726971b2a4c4e8"
+    },
+    {
+      "seed": 401,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "8bec7d7665cf0a3326e57c9b41caa2d8b4fe89d4c8a47f3daec74d286d325791"
+    },
+    {
+      "seed": 503,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "b2f141d190811b5b409deade787beabdaea853f77d0933052a77f84199a0d153"
+    }
+  ],
+  "F4b": [
+    {
+      "seed": 101,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "e1ecb2d9feed371cff27be41c3b2a52a393556d677ff7f4854b5a16f6b65cc5b"
+    },
+    {
+      "seed": 211,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "02cfa8f9c89c578c3c575295af56477451efaeaa1072f76fbbfb2c6c53a0b2d9"
+    },
+    {
+      "seed": 307,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "a6a0afaddbd4c300bcf1f83313a953b237ad6d8fa721d74d3eb3d6c5c9aec8d4"
+    },
+    {
+      "seed": 401,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "3c2241465f35c2bcaa3369f12c4587139ba2128f7b53f2e50c9f629472ee656b"
+    },
+    {
+      "seed": 503,
+      "august_max_abs_error": 0.0,
+      "prediction_sha256": "0ba82c4574d5daa44240864c30cc8dfb5a9e9688fce6c14974758498d677df46"
+    }
+  ]
+}

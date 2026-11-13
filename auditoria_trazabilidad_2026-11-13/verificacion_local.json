@@ -1,0 +1,18 @@
+{
+  "archivos_originales_verificados": 53,
+  "modelos_con_hash_registrado": 25,
+  "archivos_modelo_verificados": false,
+  "protocolo_completo_verificado": {
+    "B0": 652,
+    "F1": 1156,
+    "F3": 1030,
+    "F4a": 778,
+    "F4b": 1786
+  },
+  "dataset_verificado": false,
+  "reentrenamiento_independiente": false,
+  "entorno_verificador": {
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "platform": "Linux-7.0.0-43-generic-x86_64-desconocido-with-glibc2.43"
+  }
+}

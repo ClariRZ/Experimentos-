@@ -1,0 +1,123 @@
+{
+  "authorized_user_request": "hagmaos no? (evaluar octubre con modelos y cortes congelados)",
+  "prior": "/home/clarirz/HISTORIA_2019_01/v4/resultados/completa_20261111_03",
+  "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "evaluator_sha256": "0b8f4f781ea6a2393fc75002f9383ff1549dbd5bc6d059e58f205be79d9b011e",
+  "created_epoch": 1794575447.8774788,
+  "training": false,
+  "refit": false,
+  "cut_search_october": false,
+  "test_month": 201910,
+  "auc_positive": "BAJA+2",
+  "gain_hit": 1072500,
+  "gain_miss": -27500,
+  "cut_policy": "floor(August ensemble proportion per arm * N_october); same per-arm cut for all seeds and ensemble",
+  "comparison": "all four variants vs B0, F4b additionally vs F4a; no model reselection",
+  "limitations": [
+    "Group October results already known before this evaluation.",
+    "Five seeds measure algorithmic variation, not five independent test periods.",
+    "No new sanitization based on October. Nine original masks retained."
+  ],
+  "frozen": {
+    "B0": {
+      "proportion": 0.02712928491814963,
+      "august_ensemble_gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 206927838.58070964,
+        "cut_contacts": 3578,
+        "contact_proportion": 0.02712928491814963,
+        "point_gain_at_cut": 209605000.0
+      },
+      "models": {
+        "101": "1491e0ae350cd83f33f692db3d0a076319595acdb80dc3983894884d8110def9",
+        "211": "3500d1b77d2bc09e4397662bb6b9fe400b0018a69972961a2254a741afdf3183",
+        "307": "ee9b8c0fed8f2ed8d3f5a3bc949f1731ff749c5abf9d737286ea48ce8b53af25",
+        "401": "ffaa0ada66a6e1748ce42f8b169b21e0c7ab7d4cf81e851dbe0965877074ff75",
+        "503": "95cdd2587d9b057eb47c74f87fde8931487e0e5f4ddb3561a1d2e5309cc63629"
+      },
+      "august_result_sha256": "d57aa23e4d14e59ad4174c9f616427101615b82539649675b7617662bee70620",
+      "n_columns": 652,
+      "columns_sha256": "3cd7b9143cd85d4d0cbf75043f893544f317fa732053e5d931a9220d045274c7"
+    },
+    "F1": {
+      "proportion": 0.03241411208079644,
+      "august_ensemble_gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 210125356.07196403,
+        "cut_contacts": 4275,
+        "contact_proportion": 0.03241411208079644,
+        "point_gain_at_cut": 209137500.0
+      },
+      "models": {
+        "101": "10ace8cc3f45fc22202c78afbf1d75eee7f10ace0f08d1d7446e2381e1130ccc",
+        "211": "28f6911cf37ea21c84fefac67c47251d9825b4bba678a3d2e2bfead043426484",
+        "307": "09f4785fea65d02834c68c47caf33d048520476124ee109543e88315508ead9c",
+        "401": "8df4315a07c20bf958573a927b0ebc4d2a01119a5e4ea03e7447865a285b1923",
+        "503": "098bd39a4426c75cf6555844889cf46786ab5830f8c791d4bd73d0414cb5f9a2"
+      },
+      "august_result_sha256": "0d5a717b4c07e743f524dac3e081dc9b8758eb61e85a84d64bf36969ebc8f230",
+      "n_columns": 1156,
+      "columns_sha256": "aaaa269641424a15e7bb9884e95b0da3fdc6a83fd2db31c1cd59e9aa1379b163"
+    },
+    "F3": {
+      "proportion": 0.031102383100684677,
+      "august_ensemble_gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 209660467.2663668,
+        "cut_contacts": 4102,
+        "contact_proportion": 0.031102383100684677,
+        "point_gain_at_cut": 211695000.0
+      },
+      "models": {
+        "101": "99651a53d7961b017f9097ee2bca65eeffbd6fe9828a4c25f2696fca838e53f6",
+        "211": "511d9365ec2b84560134872eb418722f43ce6d0d673fcf86756715a792bba2a6",
+        "307": "38efd28d413298dd4ccb0cef83d4c811470fe5347467219550f21d7fa3a107d3",
+        "401": "ab9cda5659447c8aee42fa5aedae9385c3c046d4ae80d2aa0fe8056751dcc044",
+        "503": "622d12abfd4459659996babb28782d77aa4c21186e15e7d6246234b773448146"
+      },
+      "august_result_sha256": "016179ae873970d1134ce220c20a2816f8282e8002433f09840131e69d151ca7",
+      "n_columns": 1030,
+      "columns_sha256": "b34eece2926023b37b10e8dec17b03184b724f6932cdad876712546144b6daba"
+    },
+    "F4a": {
+      "proportion": 0.030268335772289916,
+      "august_ensemble_gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 199422798.60069966,
+        "cut_contacts": 3992,
+        "contact_proportion": 0.030268335772289916,
+        "point_gain_at_cut": 201520000.0
+      },
+      "models": {
+        "101": "ce1cc86c6abab25f26e8d30937f60e8022fcaf262a530b3b8335ff8fed50898f",
+        "211": "28683472c1dfabc2c56a22be2284bf048381534557974a08fbda40bb2c5a1587",
+        "307": "4a258b70797828c7d59172f967ab7c8abd5b2da92dbbbc61f433eba7c4d9e445",
+        "401": "69608b35e33b5d0a8fad032578b991d5af11db99ece6163c71838f4171a6bf62",
+        "503": "1eddc64a6e11db9d9cc5fdd8bac2a80337becc29a42a342bc508e64d5761d083"
+      },
+      "august_result_sha256": "1451d84ddf7da71490e661202dcd843aa46a6df1655376d3da64d4967e2d9732",
+      "n_columns": 778,
+      "columns_sha256": "8dc82c6c8048190f5b207c6d7a9870c7980525d7a4386677bd7057df9e705c78"
+    },
+    "F4b": {
+      "proportion": 0.04338562557340754,
+      "august_ensemble_gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 195751596.7016492,
+        "cut_contacts": 5722,
+        "contact_proportion": 0.04338562557340754,
+        "point_gain_at_cut": 191345000.0
+      },
+      "models": {
+        "101": "8adde8d54b744b75069a04c8c7c047f69706a72cd0652406d3ed132573310ba2",
+        "211": "7736f9b36d5f4f3339ce0f7f2633e26d5f129f319db73b4b93e51feb87ac89e6",
+        "307": "8bfd5dc9e22e6903476b05bdc90467b3bbfea86c6f7935359d2ce5b16d5ec98c",
+        "401": "c600443bbd0fdf55a7ba558b18924bf5c0ae7debc8bff840ced724aa2af5f3c0",
+        "503": "42956763e1cd0ba5fc646f393630495fdb6ff2fa3fe014c3bef8ccea52dbbac4"
+      },
+      "august_result_sha256": "3c359b6e6cc33a1bc7e0a364a90aa086e11b5f610aea225916ffd83782a5f2f5",
+      "n_columns": 1786,
+      "columns_sha256": "b2cbf91627317420dddb8216d376d0bf045edf047e6276dab734136872b98493"
+    }
+  }
+}

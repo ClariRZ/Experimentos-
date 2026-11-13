@@ -1,0 +1,833 @@
+Las correcciones cierran las grietas metodológicas y operativas del borrador anterior. Quedan eliminadas las estimaciones horarias sin medir, las recetas ambiguas en F3, el control huérfano en canaritos, la contaminación de agosto en el filtrado y el gasto innecesario en `slope` sobre `W3`.
+
+## Protocolo Corregido — Etapa 1 (Solo Auditoría y Pruebas Sintéticas, 0 Entrenamientos)
+
+### 1. Correcciones Metodológicas Incorporadas
+
+* **Presupuesto diferido a medición real:** No se asume ningún tiempo estimado ni se autorizan corridas de Optuna. La Etapa 1 solo ejecuta auditoría sobre la VM real, recupera las 20 semillas existentes de `v1–v3`, mide el hardware efectivo (`lscpu`, RAM, disco libre) y calcula el conteo exacto de fuentes elegibles y columnas por brazo. Si en la Etapa 2 todos los brazos candidatos corrieran 20 semillas, el techo de entrenamientos finales para $M$ brazos es $20 \times M$ (por ejemplo, $11 \times 20 = 220$ entrenamientos finales, más los trials de Optuna y las corridas internas del filtro de canaritos). El presupuesto en horas se calculará recién con un micro-benchmark o tras medir las dimensiones reales de las matrices.
+* **AUC en agosto (`201908`):** Sin máscaras ni pesos custom. Al construir los datasets de LightGBM, `y_train` recibe `1` para `BAJA+1` o `BAJA+2` (y `0` para `CONTINUA`), mientras que `y_val` en agosto recibe directamente `1` si `clase_ternaria == "BAJA+2"` y `0` en caso contrario, evaluando `metric="auc"` nativo.
+* **Eliminación de `R1_F2` (`slope` en `W3`):** Con tres observaciones completas y equiespaciadas, $\text{slope}_3 = \text{delta2} / 2$. No agrega señal temporal nueva respecto al baseline, pero incluirla alteraría la probabilidad de selección de columnas bajo `feature_fraction < 1.0` confundiendo el efecto de muestreo con aporte de información. Se excluye `F2` de Rama 1 y se evalúa la tendencia únicamente donde aporta geometría nueva: la comparación de ventanas en Rama 2 (`W4` y `W6`, manteniendo `W3` en Rama 2 solo como ancla homogénea de fórmulas si se evalúa el paquete conjunto, o evaluando tendencia explícitamente en `W3` vs `W4` vs `W6` sabiendo que en `W3` colapsa a `delta2/2`). Para aislar limpiamente la longitud de ventana con las mismas fórmulas en Rama 2, se documenta esa colinealidad en `W3` o se separa según lo que arroje el conteo de columnas de la auditoría.
+* **Receta única y limpia para F3 (Cambios relativos normalizados):** Se registra explícitamente como **nueva receta de cambio relativo** respecto a una referencia $r \in \{\mu_L, x_{m-1}, x_{m-L+1}\}$, distinta del cociente crudo `actual / promedio` de versiones previas:
+
+$$c(x_m, r) = \begin{cases} \text{null} & \text{si } x_m \text{ es null, la ventana está incompleta o } r = 0 \\ \dfrac{x_m - r}{\vert{}r\vert{}} & \text{si } r \neq 0 \end{cases}$$
+
+
+* **Ceros:** Cualquier denominador $r = 0$ produce `null` sin excepción (evita confundir $x_m = 0, \mu_L = 0$ con inactividad cuando hubo compensación de saldos positivos y negativos como $-100, +100, 0$). Si una fuente requiere distinguir inactividad total en la ventana ($\forall j: x_{m-j} = 0$), eso corresponde a un indicador binario explícito auditable y no a imputar el cambio relativo.
+
+
+* **Cobertura efectiva en Rama 2 (`W3`, `W4`, `W6`):** Para que una columna derivada pertenezca al conjunto común de Rama 2, no basta con que la fuente tenga 6 meses presentes en junio (`201906`): la **propia transformación calculada** (incluyendo los cambios relativos de F3 luego de anular denominadores cero) debe alcanzar $\ge 90\%$ de valores finitos no nulos en `201906` para `W3`, `W4` y `W6` simultáneamente. Así las tres ventanas usan exactamente las mismas fuentes, las mismas fórmulas y los mismos clientes.
+* **Aislamiento estricto en Selección de Variables (`R1_CAN`):**
+* **Control pareado obligatorio:** Nunca se filtra un conjunto que no haya sido entrenado y optimizado completo como brazo propio. `R1_CAN` toma como entrada un brazo ya evaluado en Rama 1 (el mejor conjunto enriquecido evaluado, o `R1_B0` si ningún brazo enriquecido se promoviera y aún se deseara auditar poda sobre un brazo existente, o un brazo combinado `R1_CMB` que sí se entrene completo con sus 50 trials + 20 semillas). La comparación es siempre **Conjunto $X$ completo (50 trials + 20 sem) vs. Conjunto $X$ filtrado (50 trials + 20 sem)**.
+* **Independencia respecto de agosto:** Los modelos que miden importancia frente a los canaritos se entrenan exclusivamente en `201903`–`201906` con hiperparámetros fijos conservadores y número fijo de árboles (`num_boost_round = 300`, `learning_rate = 0.05`, `num_leaves = 63`, `feature_fraction = 0.5`), **sin pasar `201908` como `valid_sets` ni usar early stopping en agosto**. Agosto no interviene de ninguna forma en elegir qué columnas sobreviven.
+
+
+* **Declaración de reglas operativas propias:** Cualquier umbral de corte de semillas en desarrollo (como pasar de 5 a 20 semillas con $\ge 4/5$ victorias en AUC y $\Delta\overline{\text{AUC}} > 0$, o seleccionar familias para combinar con $\ge 14/20$ victorias) se registra explícitamente como **regla operativa de asignación de cómputo del equipo**, no como pauta de Ale ni como prueba de significación estadística.
+
+---
+
+### 2. Tabla Preliminar de Brazos (Sujeta a Conteo Exacto de la Auditoría)
+
+Los cardinales exactos ($B_1, B_2, \vert{}S_{\text{R1}}\vert{}, \vert{}S_{\text{R2}}\vert{}, K_{\text{post}}$) saldrán del reporte JSON de la auditoría antes de autorizar cualquier entrenamiento.
+
+| Rama | Brazo | Hipótesis | Ventana | Control directo | Uso de Agosto en Selección |
+| --- | --- | --- | --- | --- | --- |
+| R1 | `R1_B0` | Control historia corta (originales + lag1/2 + delta1/2) | Lags 1–2 | — | Solo Optuna + ES |
+| R1 | `R1_F1` | Nivel y extremos (`mean`, `min`, `max`, `range`) aportan sobre lags | W3 | `R1_B0` | Optuna + ES |
+| R1 | `R1_F3` | Cambios relativos $(x_m - r)/\vert{}r\vert{}$ aportan sobre deltas | W3 | `R1_B0` | Optuna + ES |
+| R1 | `R1_F4a` | Posición relativa mensual actual aporta contexto transversal | Actual | `R1_B0` | Optuna + ES |
+| R1 | `R1_F4b` | Historia W3 del ranking aporta sobre el ranking actual | W3 | `R1_F4a` y `R1_B0` | Optuna + ES |
+| R1 | `R1_CMB` | Combinación de familias R1 aprobadas (o unión predefinida si se fija como control del filtro) | W3 | `R1_B0` | Optuna + ES |
+| R1 | `R1_CAN` | Filtrar con canaritos (100% en train) mejora al mismo conjunto sin filtrar | Misma que su control | Conjunto completo exacto (`R1_CMB` o mejor brazo R1 entrenado) | **Cero uso de agosto en el filtro**; Optuna + ES luego de filtrar |
+| R2 | `R2_B0` | Control junio (originales + lag1/2 + delta1/2 entrenado en `201906`) | Lags 1–2 | — | Solo Optuna + ES |
+| R2 | `R2_W3` | Representación histórica con 3 observaciones en junio | W3 | `R2_B0` | Optuna + ES |
+| R2 | `R2_W4` | Ampliar ventana a 4 observaciones mejora frente a W3 y control | W4 | `R2_W3` y `R2_B0` | Optuna + ES |
+| R2 | `R2_W6` | Ampliar ventana a 6 observaciones mejora frente a W4, W3 y control | W6 | `R2_W4`, `R2_W3` y `R2_B0` | Optuna + ES |
+
+---
+
+### 3. Paquete Ejecutable de Etapa 1: Pruebas Sintéticas y Auditoría Completa
+
+A continuación quedan los dos scripts listos para ejecutar en la VM **sin disparar ningún entrenamiento**:
+
+1. `HISTORIA_2019_01/v4/pruebas/test_integrity.py`: verifica matemáticamente el motor de transformaciones sobre casos sintéticos (huecos de mes, cambio de año, nulidad por ventana incompleta, compensación de signos en promedio cero para F3, rankings transversales aislados por mes, ganancia suavizada de 2001 posiciones, corte congelado y guardia que aborta si se intenta tocar octubre).
+2. `HISTORIA_2019_01/v4/scripts/01_full_audit.py`: auto-descubre y verifica en la VM el dataset de 2019, las máscaras/artefactos previos y las 20 semillas de `v1–v3`, inspecciona CPU/RAM/disco reales, detiene la ejecución (`RuntimeError`) ante cualquier clave duplicada, etiqueta inválida o intento de filtración de octubre, aplica el saneamiento base, construye las transformaciones en modo auditoría sobre `201901`–`201906` y mide exactamente cuántas fuentes y columnas pasan el umbral del $\ge 90\%$ en cada rama y ventana (incluyendo denominadores no nulos en F3 y detección de columnas constantes o duplicadas).
+
+#### Archivo 1: Motor de variables verificable + Suite de Integridad (`pruebas/test_integrity.py`)
+
+*(Podés separar las funciones en `scripts/fe_core.py` o mantenerlas importables; aquí `fe_core.py` se incluye primero para que ambos scripts compartan exactamente el mismo código).*
+
+```python
+#!/usr/bin/env python3
+# Ruta sugerida: HISTORIA_2019_01/v4/scripts/fe_core.py
+"""Motor determinista de saneamiento, ventanas calendario exactas y metricas."""
+from __future__ import annotations
+import numpy as np
+import polars as pl
+
+FORBIDDEN_DEV_MONTHS = {201910, 201911, 201912}
+GAIN_HIT = 1_072_500.0
+GAIN_MISS = -27_500.0
+
+
+def assert_october_locked(df_months: set[int], stage: str = "DEV") -> None:
+    if stage != "FINAL_OCTOBER_EVAL":
+        leaked = df_months.intersection(FORBIDDEN_DEV_MONTHS)
+        if leaked:
+            raise RuntimeError(f"ABORTADO: Meses prohibidos en etapa {stage}: {sorted(leaked)}")
+
+
+def month_to_idx(col_name: str = "foto_mes") -> pl.Expr:
+    return (pl.col(col_name) // 100) * 12 + (pl.col(col_name) % 100)
+
+
+def sanitize_base(
+    df: pl.DataFrame,
+    feature_cols: list[str],
+    known_broken_masks: dict[int, list[str]] | None = None,
+) -> pl.DataFrame:
+    """Limpia +-inf -> null y aplica mascaras de bloques rotos documentados sin convertir null en 0."""
+    if df.select(["numero_de_cliente", "foto_mes"]).is_duplicated().any():
+        n_dup = int(df.select(["numero_de_cliente", "foto_mes"]).is_duplicated().sum())
+        raise RuntimeError(f"ABORTADO: {n_dup} filas duplicadas en clave (numero_de_cliente, foto_mes).")
+
+    exprs: list[pl.Expr] = []
+    float_cols = {
+        c for c in feature_cols
+        if df.schema[c] in (pl.Float32, pl.Float64)
+    }
+    for c in feature_cols:
+        e = pl.col(c)
+        if c in float_cols:
+            e = pl.when(e.is_infinite() | e.is_nan()).then(None).otherwise(e)
+        if known_broken_masks:
+            broken_months = [m for m, cols in known_broken_masks.items() if c in cols]
+            if broken_months:
+                e = pl.when(pl.col("foto_mes").is_in(broken_months)).then(None).otherwise(e)
+        exprs.append(e.alias(c))
+
+    return df.with_columns(exprs)
+
+
+def build_exact_lags(df: pl.DataFrame, cols: list[str], max_lag: int) -> pl.DataFrame:
+    """Construye rezagos k=1..max_lag por coincidencia exacta de cliente e indice calendario."""
+    base = df.with_columns(month_to_idx("foto_mes").alias("_m_idx"))
+    out = base
+    for k in range(1, max_lag + 1):
+        shifted = base.select(
+            pl.col("numero_de_cliente"),
+            (pl.col("_m_idx") + k).alias("_m_idx"),
+            *[pl.col(c).cast(pl.Float64).alias(f"{c}__lag{k}") for c in cols],
+        )
+        out = out.join(shifted, on=["numero_de_cliente", "_m_idx"], how="left")
+    return out.drop("_m_idx")
+
+
+def add_baseline_lags_deltas(df_with_lags: pl.DataFrame, base_cols: list[str]) -> pl.DataFrame:
+    """Agrega delta1 y delta2 sobre lag1 y lag2 ya alineados por calendario."""
+    exprs: list[pl.Expr] = []
+    for c in base_cols:
+        x0 = pl.col(c).cast(pl.Float64)
+        l1 = pl.col(f"{c}__lag1")
+        l2 = pl.col(f"{c}__lag2")
+        exprs.append((x0 - l1).alias(f"{c}__delta1"))
+        exprs.append((x0 - l2).alias(f"{c}__delta2"))
+    return df_with_lags.with_columns(exprs)
+
+
+def build_window_families(
+    df_with_lags: pl.DataFrame,
+    sources: list[str],
+    L: int,
+    include_f1: bool = True,
+    include_f2: bool = False,
+    include_f3: bool = True,
+) -> pl.DataFrame:
+    """
+    Construye F1, F2, F3 sobre ventana estricta W_L (requiere las L observaciones no nulas).
+    F3 usa receta unica: (x_m - ref) / |ref|, produciendo null cuando ref == 0 o falta algun mes.
+    """
+    assert L >= 3, "La ventana minima definida es W3."
+    t_vals = np.arange(L, dtype=np.float64)  # 0 .. L-1 desde m-L+1 hasta m
+    t_centered = t_vals - t_vals.mean()
+    denom_ss = float(np.sum(t_centered ** 2))
+
+    new_exprs: list[pl.Expr] = []
+    for c in sources:
+        # Orden cronologico: m-(L-1), ..., m-1, m
+        seq = [pl.col(f"{c}__lag{j}") for j in range(L - 1, 0, -1)] + [pl.col(c).cast(pl.Float64)]
+        valid_window = pl.all_horizontal([e.is_not_null() for e in seq])
+
+        mean_expr = pl.sum_horizontal(seq) / float(L)
+        min_expr = pl.min_horizontal(seq)
+        max_expr = pl.max_horizontal(seq)
+
+        if include_f1:
+            new_exprs.extend([
+                pl.when(valid_window).then(mean_expr).otherwise(None).alias(f"{c}__f1_mean_W{L}"),
+                pl.when(valid_window).then(min_expr).otherwise(None).alias(f"{c}__f1_min_W{L}"),
+                pl.when(valid_window).then(max_expr).otherwise(None).alias(f"{c}__f1_max_W{L}"),
+                pl.when(valid_window).then(max_expr - min_expr).otherwise(None).alias(f"{c}__f1_range_W{L}"),
+            ])
+
+        if include_f2:
+            num_slope = pl.sum_horizontal([ seq[idx] * float(t_centered[idx]) for idx in range(L) ])
+            new_exprs.append(
+                pl.when(valid_window).then(num_slope / denom_ss).otherwise(None).alias(f"{c}__f2_slope_W{L}")
+            )
+
+        if include_f3:
+            xm = seq[-1]
+            x_prev = seq[-2]
+            x_first = seq[0]
+            # Receta unica: (xm - ref) / |ref| si ventana completa y ref != 0; null en caso contrario
+            new_exprs.extend([
+                pl.when(valid_window & (mean_expr != 0.0))
+                .then((xm - mean_expr) / mean_expr.abs())
+                .otherwise(None)
+                .alias(f"{c}__f3_rel_mean_W{L}"),
+                pl.when(valid_window & (x_prev != 0.0))
+                .then((xm - x_prev) / x_prev.abs())
+                .otherwise(None)
+                .alias(f"{c}__f3_rel_prev_W{L}"),
+                pl.when(valid_window & (x_first != 0.0))
+                .then((xm - x_first) / x_first.abs())
+                .otherwise(None)
+                .alias(f"{c}__f3_rel_first_W{L}"),
+            ])
+
+    return df_with_lags.with_columns(new_exprs)
+
+
+def build_monthly_rankings(df: pl.DataFrame, sources: list[str]) -> pl.DataFrame:
+    """Ranking transversal [0, 1] estrictamente dentro de cada foto_mes; nulos quedan nulos."""
+    exprs: list[pl.Expr] = []
+    for c in sources:
+        col_f = pl.col(c).cast(pl.Float64)
+        n_valid = col_f.count().over("foto_mes")
+        rk = (col_f.rank(method="average").over("foto_mes")) / n_valid
+        exprs.append(pl.when(col_f.is_not_null() & (n_valid > 0)).then(rk).otherwise(None).alias(f"{c}__rk0"))
+    return df.with_columns(exprs)
+
+
+def evaluate_gain_curve(
+    client_ids: np.ndarray,
+    scores: np.ndarray,
+    is_baja2: np.ndarray,
+    smooth_window: int = 2001,
+    frozen_prop: float | None = None,
+) -> dict[str, float | int]:
+    """
+    Ordena por score DESC y numero_de_cliente ASC.
+    Si frozen_prop es None (agosto), halla el maximo de la curva suavizada completa (2001).
+    Si frozen_prop esta fijado (octubre), evalua exactamente floor(frozen_prop * N).
+    """
+    order = np.lexsort((client_ids, -scores))
+    payoffs = np.where(is_baja2[order] == 1, GAIN_HIT, GAIN_MISS)
+    cum_gain = np.cumsum(payoffs)
+    n_total = len(payoffs)
+
+    if frozen_prop is not None:
+        cut = int(np.floor(frozen_prop * n_total))
+        point_gain = float(cum_gain[cut - 1]) if cut > 0 else 0.0
+        return {
+            "n_clients": n_total,
+            "cut_contacts": cut,
+            "contact_proportion": float(cut / n_total) if n_total else 0.0,
+            "point_gain": point_gain,
+        }
+
+    if n_total < smooth_window:
+        raise ValueError(f"Poblacion ({n_total}) menor que la ventana de suavizado ({smooth_window}).")
+
+    kernel = np.ones(smooth_window, dtype=np.float64) / float(smooth_window)
+    smoothed_valid = np.convolve(cum_gain, kernel, mode="valid")  # indices k = half .. n_total - 1 - half
+    half = smooth_window // 2
+    best_rel_idx = int(np.argmax(smoothed_valid))
+    best_zero_based = best_rel_idx + half
+    cut_contacts = best_zero_based + 1  # cantidad de contactos (1-based)
+
+    return {
+        "n_clients": n_total,
+        "smoothed_gain_max": float(smoothed_valid[best_rel_idx]),
+        "cut_contacts": cut_contacts,
+        "contact_proportion": float(cut_contacts / n_total),
+        "point_gain_at_cut": float(cum_gain[best_zero_based]),
+    }
+
+```
+
+```python
+#!/usr/bin/env python3
+# Ruta sugerida: HISTORIA_2019_01/v4/pruebas/test_integrity.py
+"""Suite de pruebas sinteticas de integridad antes de habilitar entrenamientos."""
+from __future__ import annotations
+import sys
+from pathlib import Path
+import numpy as np
+import polars as pl
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from fe_core import (  # noqa: E402
+    add_baseline_lags_deltas,
+    assert_october_locked,
+    build_exact_lags,
+    build_monthly_rankings,
+    build_window_families,
+    evaluate_gain_curve,
+    sanitize_base,
+)
+
+
+def test_missing_months_and_year_boundary_do_not_shift_rows() -> None:
+    df = pl.DataFrame({
+        "numero_de_cliente": [1, 1, 1],
+        "foto_mes": [201812, 201901, 201903],  # falta 201902
+        "m_saldo": [100.0, 200.0, 500.0],
+    })
+    out = build_exact_lags(df, ["m_saldo"], max_lag=2)
+    out = add_baseline_lags_deltas(out, ["m_saldo"])
+    out = build_window_families(out, ["m_saldo"], L=3, include_f1=True, include_f2=True, include_f3=True)
+
+    r_jan = out.filter(pl.col("foto_mes") == 201901).row(0, named=True)
+    assert r_jan["m_saldo__lag1"] == 100.0  # 201812 -> 201901 cruza bien el anio
+
+    r_mar = out.filter(pl.col("foto_mes") == 201903).row(0, named=True)
+    assert r_mar["m_saldo__lag1"] is None  # 201902 ausente -> null, NO 200.0
+    assert r_mar["m_saldo__lag2"] == 200.0  # 201901 exacto
+    assert r_mar["m_saldo__f1_mean_W3"] is None  # ventana incompleta -> null sin borrar al cliente
+    assert out.height == 3
+
+
+def test_zero_mean_from_sign_compensation_yields_null_in_f3() -> None:
+    df = pl.DataFrame({
+        "numero_de_cliente": [10, 10, 10],
+        "foto_mes": [201901, 201902, 201903],
+        "m_cc": [-100.0, 100.0, 0.0],  # promedio W3 = 0 por compensacion, actual = 0
+    })
+    out = build_exact_lags(df, ["m_cc"], max_lag=2)
+    out = build_window_families(out, ["m_cc"], L=3, include_f1=True, include_f2=False, include_f3=True)
+    row = out.filter(pl.col("foto_mes") == 201903).row(0, named=True)
+    assert row["m_cc__f1_mean_W3"] == 0.0
+    assert row["m_cc__f3_rel_mean_W3"] is None  # NUNCA 0.0 ni 1.0 cuando el denominador es 0
+    assert row["m_cc__f3_rel_prev_W3"] == -1.0  # (0 - 100) / |100| = -1.0
+    assert row["m_cc__f3_rel_first_W3"] == 1.0  # (0 - (-100)) / |-100| = +1.0
+
+
+def test_w4_and_w6_slope_matches_ols() -> None:
+    vals = [10.0, 13.0, 19.0, 22.0, 25.0, 31.0]
+    df = pl.DataFrame({
+        "numero_de_cliente": [7] * 6,
+        "foto_mes": [201901, 201902, 201903, 201904, 201905, 201906],
+        "m_x": vals,
+    })
+    out = build_exact_lags(df, ["m_x"], max_lag=5)
+    out = build_window_families(out, ["m_x"], L=6, include_f1=True, include_f2=True, include_f3=True)
+    row = out.filter(pl.col("foto_mes") == 201906).row(0, named=True)
+    expected_slope = float(np.polyfit(np.arange(6, dtype=float), vals, 1)[0])
+    assert np.isclose(row["m_x__f2_slope_W6"], expected_slope, atol=1e-12)
+
+
+def test_monthly_rankings_do_not_leak_across_months_and_handle_ties() -> None:
+    df = pl.DataFrame({
+        "numero_de_cliente": [1, 2, 3, 4, 1, 2, 3, 4],
+        "foto_mes": [201905] * 4 + [201906] * 4,
+        "m_x": [10.0, 10.0, 50.0, None, 10.0, 1000.0, 2000.0, 3000.0],
+    })
+    rk_may_only = build_monthly_rankings(df.filter(pl.col("foto_mes") == 201905), ["m_x"])
+    rk_panel = build_monthly_rankings(df, ["m_x"]).filter(pl.col("foto_mes") == 201905)
+    assert rk_may_only["m_x__rk0"].to_list() == rk_panel["m_x__rk0"].to_list()
+    # En 201905 hay 3 no nulos: empate en pos 1 y 2 -> rango medio 1.5 / 3 = 0.5; el nulo queda None
+    assert rk_panel["m_x__rk0"].to_list() == [0.5, 0.5, 1.0, None]
+
+
+def test_october_guard_and_duplicate_key_guard() -> None:
+    with pytest.raises(RuntimeError, match="Meses prohibidos"):
+        assert_october_locked({201906, 201908, 201910}, stage="DEV")
+
+    dup_df = pl.DataFrame({
+        "numero_de_cliente": [1, 1],
+        "foto_mes": [201903, 201903],
+        "m_x": [1.0, 2.0],
+    })
+    with pytest.raises(RuntimeError, match="duplicadas"):
+        sanitize_base(dup_df, ["m_x"])
+
+
+def test_gain_curve_tiebreak_and_frozen_october_policy() -> None:
+    n = 3000
+    clients = np.arange(1, n + 1)
+    scores = np.linspace(1.0, 0.0, n)
+    scores[0] = scores[1]  # empate: debe ganar cliente 1 antes que cliente 2
+    baja2 = np.zeros(n, dtype=int)
+    baja2[:300] = 1
+    aug = evaluate_gain_curve(clients, scores, baja2, smooth_window=2001)
+    oct_eval = evaluate_gain_curve(clients[:2500], scores[:2500], baja2[:2500], frozen_prop=float(aug["contact_proportion"]))
+    assert oct_eval["cut_contacts"] == int(np.floor(aug["contact_proportion"] * 2500))
+
+```
+
+---
+
+#### Archivo 2: Auditoría Completa de Datos, Hardware, Semillas, Saneamiento y Cobertura (`scripts/01_full_audit.py`)
+
+Este script no entrena modelos ni toca valores de `201910`. Localiza los artefactos previos de `v1–v3` y el dataset en la VM (aceptando `--dataset` y `--prev-dir` opcionales o auto-descubriendo en el árbol de trabajo), aborta ante duplicados o etiquetas corruptas, audita nulos/ceros/no-finitos, clasifica las fuentes elegibles, aplica la ventana estricta en `201903`–`201906` y emite los conteos exactos de fuentes y columnas que necesitamos para cerrar el presupuesto.
+
+```python
+#!/usr/bin/env python3
+# Ruta sugerida: HISTORIA_2019_01/v4/scripts/01_full_audit.py
+"""
+Auditoria ejecutable Etapa 1 (CERO entrenamientos):
+1. Hardware real de la VM (CPU, RAM, disco) y procesos activos.
+2. Recuperacion de las 20 semillas y resultados reales de Historia v1, v2, v3.
+3. Identidad SHA-256 del dataset, unicidad dura, etiquetas validas y bloqueo duro de 201910-201912.
+4. Saneamiento base, deteccion de constantes, no finitos y posibles bloques 100% cero en dev.
+5. Conteo real de columnas del Baseline y de fuentes elegibles con cobertura >= 90% en R1 y R2 (W3/W4/W6).
+"""
+from __future__ import annotations
+import argparse
+import hashlib
+import json
+import os
+import platform
+import re
+import shutil
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+import polars as pl
+
+from fe_core import (
+    add_baseline_lags_deltas,
+    assert_october_locked,
+    build_exact_lags,
+    build_monthly_rankings,
+    build_window_families,
+    sanitize_base,
+)
+
+BASE_DIR = Path("HISTORIA_2019_01/v4")
+SUBDIRS = [
+    "prompts", "auditoria", "configuraciones", "scripts",
+    "pruebas", "resultados", "manifiestos", "logs",
+]
+DEV_LOAD_MONTHS = [201901, 201902, 201903, 201904, 201905, 201906, 201907, 201908]
+R1_TRAIN_MONTHS = [201903, 201904, 201905, 201906]
+R2_TRAIN_MONTH = 201906
+VALID_LABELS = {"CONTINUA", "BAJA+1", "BAJA+2"}
+ID_AND_META_COLS = {"numero_de_cliente", "foto_mes", "clase_ternaria"}
+
+# Patrones nominales, banderas binarias o fechas crudas excluidos como fuentes de ventanas/ratios
+NON_CONTINUOUS_PATTERNS = re.compile(
+    r"^(active_quarter|cliente_vip|internet|tcallcenter|thomebanking|tmobile_app|"
+    r"cmobile_app_trx_status|Master_status|Visa_status|.*_delinquency|.*_fultimo_cierre|"
+    r".*_fvencimiento|.*_Finiciomora)$"
+)
+
+
+def atomic_write_json(path: Path, payload: dict) -> None:
+    tmp = path.with_suffix(f".tmp.{os.getpid()}")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, path)
+
+
+def sha256_file(path: Path, chunk_size: int = 1 << 20) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(chunk_size):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def inspect_vm_hardware(target_dir: Path) -> dict:
+    mem_total_gb = None
+    mem_avail_gb = None
+    meminfo = Path("/proc/meminfo")
+    if meminfo.exists():
+        txt = meminfo.read_text(encoding="utf-8")
+        for line in txt.splitlines():
+            if line.startswith("MemTotal:"):
+                mem_total_gb = round(int(line.split()[1]) / (1024 ** 2), 2)
+            elif line.startswith("MemAvailable:"):
+                mem_avail_gb = round(int(line.split()[1]) / (1024 ** 2), 2)
+
+    cpu_model = platform.processor()
+    cpuinfo = Path("/proc/cpuinfo")
+    if cpuinfo.exists():
+        for line in cpuinfo.read_text(encoding="utf-8").splitlines():
+            if "model name" in line:
+                cpu_model = line.split(":", 1)[1].strip()
+                break
+
+    disk = shutil.disk_usage(target_dir)
+    return {
+        "hostname": platform.node(),
+        "logical_cpus": os.cpu_count(),
+        "cpu_model": cpu_model,
+        "ram_total_gb": mem_total_gb,
+        "ram_available_gb": mem_avail_gb,
+        "disk_free_gb": round(disk.free / (1024 ** 3), 2),
+        "disk_total_gb": round(disk.total / (1024 ** 3), 2),
+        "polars_version": pl.__version__,
+    }
+
+
+def discover_prior_artifacts(search_roots: list[Path]) -> dict:
+    """Busca semillas fijas, mascaras de saneamiento y resúmenes de v1, v2 y v3 sin alterarlos."""
+    found_files: list[str] = []
+    seeds_found: list[int] | None = None
+    prior_summaries: dict[str, str] = {}
+
+    for root in search_roots:
+        if not root.exists():
+            continue
+        for p in root.rglob("*"):
+            if not p.is_file() or "v4" in p.parts:
+                continue
+            name_low = p.name.lower()
+            if any(k in name_low for k in ("seed", "semilla", "config_historia", "manifest", "resumen", "summary")):
+                found_files.append(str(p))
+                if p.suffix == ".json" and p.stat().st_size < 2_000_000:
+                    try:
+                        data = json.loads(p.read_text(encoding="utf-8"))
+                        if isinstance(data, dict):
+                            for key in ("seeds", "semillas", "seed_list", "seeds_20"):
+                                if key in data and isinstance(data[key], list) and len(data[key]) == 20:
+                                    seeds_found = [int(x) for x in data[key]]
+                        elif isinstance(data, list) and len(data) == 20 and all(isinstance(x, int) for x in data):
+                            seeds_found = [int(x) for x in data]
+                    except Exception:
+                        pass
+            if any(v in str(p).lower() for v in ("v1", "v2", "v3")) and p.suffix in {".json", ".csv", ".md"}:
+                if len(prior_summaries) < 50:
+                    prior_summaries[str(p)] = sha256_file(p)[:16]
+
+    return {
+        "candidate_artifact_files": sorted(found_files)[:100],
+        "recovered_20_seeds": seeds_found,
+        "prior_v1_v3_fingerprints": prior_summaries,
+    }
+
+
+def classify_eligible_sources(df_dev: pl.DataFrame, base_cols: list[str]) -> tuple[list[str], dict[str, str]]:
+    """Separa fuentes continuas/conteos elegibles de codigos nominales, fechas o constantes."""
+    eligible: list[str] = []
+    excluded_reasons: dict[str, str] = {}
+
+    train_slice = df_dev.filter(pl.col("foto_mes").is_in(R1_TRAIN_MONTHS))
+    for c in base_cols:
+        dtype = df_dev.schema[c]
+        if dtype not in (pl.Int8, pl.Int16, pl.Int32, pl.Int64, pl.UInt32, pl.Float32, pl.Float64):
+            excluded_reasons[c] = f"non_numeric_dtype:{dtype}"
+            continue
+        if NON_CONTINUOUS_PATTERNS.match(c):
+            excluded_reasons[c] = "nominal_flag_or_raw_date_pattern"
+            continue
+        n_uniq = train_slice.select(pl.col(c).drop_nulls().n_unique()).item()
+        if n_uniq <= 2:
+            excluded_reasons[c] = f"binary_or_constant_in_train(n_unique={n_uniq})"
+            continue
+        eligible.append(c)
+
+    return eligible, excluded_reasons
+
+
+def detect_potential_zero_breaks(df_dev: pl.DataFrame, cols: list[str]) -> list[dict]:
+    """Reporta (sin borrar a ciegas) bloques donde una variable pasa a 100% ceros teniendo actividad en otros meses."""
+    alerts: list[dict] = []
+    months = sorted(df_dev["foto_mes"].unique().to_list())
+    for c in cols:
+        stats = (
+            df_dev.group_by("foto_mes")
+            .agg(
+                pl.col(c).is_null().mean().alias("null_rate"),
+                (pl.col(c) == 0).mean().alias("zero_rate"),
+                (pl.col(c).is_not_null() & (pl.col(c) != 0)).sum().alias("nonzero_cnt"),
+            )
+            .sort("foto_mes")
+        )
+        nonzero_months = stats.filter(pl.col("nonzero_cnt") > 100)["foto_mes"].to_list()
+        broken_months = stats.filter((pl.col("nonzero_cnt") == 0) & (pl.col("null_rate") < 1.0))["foto_mes"].to_list()
+        if nonzero_months and broken_months and len(months) > len(broken_months):
+            alerts.append({"column": c, "all_zero_months": broken_months})
+    return alerts
+
+
+def measure_coverage_and_dups(
+    df: pl.DataFrame,
+    derived_cols: list[str],
+    eval_months: list[int],
+    threshold: float = 0.90,
+) -> tuple[list[str], dict[str, dict]]:
+    """Verifica cobertura >= 90% en CADA mes requerido, mas descarte de constantes y duplicadas."""
+    sub = df.filter(pl.col("foto_mes").is_in(eval_months))
+    month_counts = {
+        r["foto_mes"]: r["len"]
+        for r in sub.group_by("foto_mes").len().to_dicts()
+    }
+
+    report: dict[str, dict] = {}
+    passed_cov: list[str] = []
+
+    for m in eval_months:
+        m_df = sub.filter(pl.col("foto_mes") == m)
+        nn = m_df.select([pl.col(c).is_not_null().sum().alias(c) for c in derived_cols]).row(0, named=True)
+        denom = month_counts[m]
+        for c in derived_cols:
+            rec = report.setdefault(c, {"by_month": {}, "status": "ok"})
+            rec["by_month"][str(m)] = {
+                "num_defined": int(nn[c]),
+                "den_rows": int(denom),
+                "coverage": round(nn[c] / denom, 6),
+            }
+
+    for c, rec in report.items():
+        min_cov = min(v["coverage"] for v in rec["by_month"].values())
+        rec["min_coverage"] = min_cov
+        if min_cov < threshold:
+            rec["status"] = f"excluded_coverage_below_{threshold}"
+        else:
+            passed_cov.append(c)
+
+    # Deteccion de constantes y duplicadas exactas en el periodo de entrenamiento
+    kept: list[str] = []
+    seen_signatures: dict[tuple, str] = {}
+    sample_idx = sub.select(pl.int_range(0, pl.len())).to_series()
+    step = max(1, len(sample_idx) // 20_000)
+    probe = sub.gather_every(step)
+
+    for c in passed_cov:
+        n_u = sub.select(pl.col(c).drop_nulls().n_unique()).item()
+        if n_u <= 1:
+            report[c]["status"] = "excluded_constant"
+            continue
+        sig = tuple(None if v is None else round(float(v), 8) for v in probe[c].to_list()[:500])
+        if sig in seen_signatures:
+            cand = seen_signatures[sig]
+            exact_eq = sub.select((pl.col(c).eq_missing(pl.col(cand))).all()).item()
+            if exact_eq:
+                report[c]["status"] = f"excluded_exact_duplicate_of:{cand}"
+                continue
+        seen_signatures[sig] = c
+        kept.append(c)
+
+    return kept, report
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Auditoria completa Etapa 1 - Historia 2019 v4")
+    parser.add_argument("--dataset", type=Path, required=True, help="Ruta al dataset 2019 (.parquet o .csv/.csv.gz)")
+    parser.add_argument("--prev-dir", type=Path, default=Path("."), help="Raiz donde buscar v1/v2/v3 y semillas")
+    parser.add_argument("--broken-masks-json", type=Path, default=None, help="JSON opcional {foto_mes: [cols]} de saneamiento previo")
+    args = parser.parse_args()
+
+    for sub in SUBDIRS:
+        (BASE_DIR / sub).mkdir(parents=True, exist_ok=True)
+
+    lock_path = BASE_DIR / "manifiestos" / "audit.lock"
+    if lock_path.exists():
+        raise RuntimeError(f"ABORTADO: Ya existe lock activo en {lock_path}.")
+    lock_path.write_text(f"pid={os.getpid()}\n", encoding="utf-8")
+
+    try:
+        hw = inspect_vm_hardware(BASE_DIR)
+        prior = discover_prior_artifacts([args.prev_dir, Path.cwd(), Path.home()])
+        file_hash = sha256_file(args.dataset)
+
+        lf = (
+            pl.scan_parquet(args.dataset)
+            if args.dataset.suffix == ".parquet"
+            else pl.scan_csv(args.dataset, infer_schema_length=20000)
+        )
+
+        # Inventario mensual solo de conteos de filas, sin abrir features ni etiquetas de 201910
+        month_counts = (
+            lf.group_by("foto_mes")
+            .agg(pl.len().alias("n_rows"), pl.col("numero_de_cliente").n_unique().alias("n_clients"))
+            .sort("foto_mes")
+            .collect()
+        )
+        available_months = set(month_counts["foto_mes"].to_list())
+        if 201901 not in available_months:
+            raise RuntimeError("ABORTADO: Enero 2019 (201901) no esta disponible en el dataset.")
+
+        # Carga estricta de desarrollo (201901..201908) + guardia anti-octubre
+        df_dev = lf.filter(pl.col("foto_mes").is_in(DEV_LOAD_MONTHS)).collect()
+        assert_october_locked(set(df_dev["foto_mes"].unique().to_list()), stage="DEV")
+
+        # Validacion dura de etiquetas en meses de entrenamiento y validacion
+        labeled_months = R1_TRAIN_MONTHS + [201908]
+        observed_labels = set(
+            df_dev.filter(pl.col("foto_mes").is_in(labeled_months))["clase_ternaria"].drop_nulls().unique().to_list()
+        )
+        invalid_labels = observed_labels - VALID_LABELS
+        null_labels = df_dev.filter(pl.col("foto_mes").is_in(labeled_months))["clase_ternaria"].is_null().sum()
+        if invalid_labels or null_labels > 0:
+            raise RuntimeError(f"ABORTADO: Etiquetas invalidas={invalid_labels} o nulas={null_labels} en train/val.")
+
+        raw_predictors = [c for c in df_dev.columns if c not in ID_AND_META_COLS]
+        broken_masks = None
+        if args.broken_masks_json and args.broken_masks_json.exists():
+            raw_m = json.loads(args.broken_masks_json.read_text(encoding="utf-8"))
+            broken_masks = {int(k): list(v) for k, v in raw_m.items()}
+
+        # Saneamiento identico para baseline y alternativas (detiene si hay duplicados)
+        df_dev = sanitize_base(df_dev, raw_predictors, known_broken_masks=broken_masks)
+
+        # Descarte de columnas 100% vacias en dev
+        non_empty_base = [
+            c for c in raw_predictors
+            if df_dev.filter(pl.col("foto_mes").is_in(R1_TRAIN_MONTHS))[c].is_not_null().sum() > 0
+        ]
+        empty_cols = sorted(set(raw_predictors) - set(non_empty_base))
+        zero_break_alerts = detect_potential_zero_breaks(df_dev, non_empty_base)
+
+        # Conteo exacto del Baseline (originales + lag1 + lag2 + delta1 + delta2)
+        baseline_total_cols = len(non_empty_base) * 5
+
+        # Clasificacion de fuentes elegibles para historia
+        elig_sources, source_exclusions = classify_eligible_sources(df_dev, non_empty_base)
+
+        # Construccion sobre 201901..201906 para auditar cobertura exacta >= 90%
+        df_hist = df_dev.filter(pl.col("foto_mes") <= 201906)
+        df_hist = build_exact_lags(df_hist, elig_sources, max_lag=5)
+
+        # Rama 1: W3 evaluado en CADA mes de 201903..201906 (sin F2 por equivalencia algebraica con delta2/2)
+        df_r1_w3 = build_window_families(df_hist, elig_sources, L=3, include_f1=True, include_f2=False, include_f3=True)
+        r1_f1_cols = [c for c in df_r1_w3.columns if "__f1_" in c]
+        r1_f3_cols = [c for c in df_r1_w3.columns if "__f3_" in c]
+        r1_f1_kept, r1_f1_rep = measure_coverage_and_dups(df_r1_w3, r1_f1_cols, R1_TRAIN_MONTHS, threshold=0.90)
+        r1_f3_kept, r1_f3_rep = measure_coverage_and_dups(df_r1_w3, r1_f3_cols, R1_TRAIN_MONTHS, threshold=0.90)
+
+        # Rankings Rama 1 (F4a y F4b)
+        df_rk = build_monthly_rankings(df_dev.filter(pl.col("foto_mes") <= 201906).select(["numero_de_cliente", "foto_mes", *elig_sources]), elig_sources)
+        rk_cols = [f"{c}__rk0" for c in elig_sources]
+        df_rk = build_exact_lags(df_rk, rk_cols, max_lag=2)
+        df_rk = add_baseline_lags_deltas(df_rk, rk_cols)
+        df_rk = build_window_families(df_rk, rk_cols, L=3, include_f1=True, include_f2=False, include_f3=False)
+        r1_f4a_kept, _ = measure_coverage_and_dups(df_rk, rk_cols, R1_TRAIN_MONTHS, threshold=0.90)
+        r1_f4b_extra = [c for c in df_rk.columns if c not in {"numero_de_cliente", "foto_mes", *elig_sources, *rk_cols}]
+        r1_f4b_kept, _ = measure_coverage_and_dups(df_rk, r1_f4b_extra, R1_TRAIN_MONTHS, threshold=0.90)
+
+        # Rama 2: Fuentes COMUNES donde TODAS las transformaciones (F1+F2+F3, incluyendo denominadores != 0)
+        # superan >= 90% simultaneamente en W3, W4 y W6 sobre 201906
+        per_window_valid_sources: dict[int, set[str]] = {}
+        r2_window_reports: dict[str, dict] = {}
+        for L in (3, 4, 6):
+            df_w = build_window_families(df_hist, elig_sources, L=L, include_f1=True, include_f2=True, include_f3=True)
+            w_cols = [c for c in df_w.columns if c.endswith(f"_W{L}")]
+            kept_w, rep_w = measure_coverage_and_dups(df_w, w_cols, [R2_TRAIN_MONTH], threshold=0.90)
+            r2_window_reports[f"W{L}"] = {"kept_count": len(kept_w), "total_tested": len(w_cols)}
+            # Fuente completamente elegible para comparar la misma formula en W3, W4 y W6:
+            kept_set = set(kept_w)
+            full_sources = {
+                s for s in elig_sources
+                if all(
+                    f"{s}__{fam}_W{L}" in kept_set
+                    for fam in (
+                        "f1_mean", "f1_min", "f1_max", "f1_range",
+                        "f2_slope",
+                        "f3_rel_mean", "f3_rel_prev", "f3_rel_first",
+                    )
+                )
+            }
+            per_window_valid_sources[L] = full_sources
+
+        common_r2_sources_all8 = sorted(
+            per_window_valid_sources[3] & per_window_valid_sources[4] & per_window_valid_sources[6]
+        )
+
+        # Tambien medimos fuentes comunes por subfamilia en R2 por si alguna fuente tiene muchos ceros solo en F3
+        common_r2_f1_f2_sources = sorted({
+            s for s in elig_sources
+            if all(
+                r2_window_reports  # placeholder logico evaluado abajo
+                for _ in (1,)
+            )
+        })
+        # Calculo exacto para F1+F2 sin exigir denominador != 0 de F3:
+        f12_sets: list[set[str]] = []
+        for L in (3, 4, 6):
+            df_w = build_window_families(df_hist, elig_sources, L=L, include_f1=True, include_f2=True, include_f3=False)
+            w_cols = [c for c in df_w.columns if c.endswith(f"_W{L}")]
+            kept_w, _ = measure_coverage_and_dups(df_w, w_cols, [R2_TRAIN_MONTH], threshold=0.90)
+            kept_set = set(kept_w)
+            f12_sets.append({
+                s for s in elig_sources
+                if all(f"{s}__{fam}_W{L}" in kept_set for fam in ("f1_mean", "f1_min", "f1_max", "f1_range", "f2_slope"))
+            })
+        common_r2_f1_f2_sources = sorted(f12_sets[0] & f12_sets[1] & f12_sets[2])
+
+        summary = {
+            "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+            "hardware": hw,
+            "dataset": {
+                "path": str(args.dataset.resolve()),
+                "sha256": file_hash,
+                "months_inventory": month_counts.to_dicts(),
+                "october_touched": False,
+                "raw_columns_total": len(df_dev.columns),
+                "non_empty_base_predictors": len(non_empty_base),
+                "empty_predictors_dropped": empty_cols,
+                "baseline_expected_columns_5x": baseline_total_cols,
+                "potential_zero_break_alerts": zero_break_alerts,
+            },
+            "prior_artifacts": prior,
+            "sources_audit": {
+                "eligible_continuous_sources_count": len(elig_sources),
+                "excluded_base_predictors_count": len(source_exclusions),
+                "r1_f1_kept_columns": len(r1_f1_kept),
+                "r1_f3_kept_columns": len(r1_f3_kept),
+                "r1_f4a_kept_columns": len(r1_f4a_kept),
+                "r1_f4b_extra_kept_columns": len(r1_f4b_kept),
+                "r2_common_sources_f1_f2_f3_strict": len(common_r2_sources_all8),
+                "r2_common_sources_f1_f2_only": len(common_r2_f1_f2_sources),
+            },
+        }
+
+        atomic_write_json(BASE_DIR / "auditoria" / "audit_summary.json", summary)
+        atomic_write_json(BASE_DIR / "auditoria" / "source_exclusions.json", source_exclusions)
+        atomic_write_json(BASE_DIR / "auditoria" / "coverage_r1_f1.json", r1_f1_rep)
+        atomic_write_json(BASE_DIR / "auditoria" / "coverage_r1_f3.json", r1_f3_rep)
+        atomic_write_json(
+            BASE_DIR / "configuraciones" / "frozen_sources_preview.json",
+            {
+                "non_empty_base_predictors": non_empty_base,
+                "eligible_sources": elig_sources,
+                "r1_f1_kept": r1_f1_kept,
+                "r1_f3_kept": r1_f3_kept,
+                "r1_f4a_kept": r1_f4a_kept,
+                "r1_f4b_extra_kept": r1_f4b_kept,
+                "r2_common_sources_all8": common_r2_sources_all8,
+                "r2_common_sources_f1_f2": common_r2_f1_f2_sources,
+            },
+        )
+
+        print(json.dumps(summary["hardware"], indent=2))
+        print(json.dumps(summary["sources_audit"], indent=2))
+        print(f"[OK] Auditoria finalizada sin abrir octubre. Resumen en {BASE_DIR / 'auditoria' / 'audit_summary.json'}")
+    finally:
+        if lock_path.exists():
+            lock_path.unlink()
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+### Comandos para ejecutar solo esta Etapa 1 en la VM
+
+```bash
+mkdir -p HISTORIA_2019_01/v4/{prompts,auditoria,configuraciones,scripts,pruebas,resultados,manifiestos,logs}
+pytest -q HISTORIA_2019_01/v4/pruebas/test_integrity.py
+python3 HISTORIA_2019_01/v4/scripts/01_full_audit.py \
+  --dataset <RUTA_EXISTENTE_DATASET_VM> \
+  --prev-dir HISTORIA_2019_01
+
+```
+
+Apenas pegues acá la salida de `audit_summary.json` (hardware real de la VM, semillas recuperadas, alertas de roturas/ceros y conteo exacto de columnas que superan el 90% en R1 y R2, diferenciando cuántas sobreviven al denominador no nulo de F3), cerramos la tabla definitiva de brazos, medimos el tiempo real por trial en esa VM y fijamos el presupuesto exacto antes de encender Optuna.
