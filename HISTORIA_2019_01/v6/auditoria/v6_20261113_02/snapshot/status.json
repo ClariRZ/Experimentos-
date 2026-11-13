@@ -1,9 +1,9 @@
 {
   "status": "OPTUNA",
-  "fits_started": 98,
-  "updated": 1794608313.6502352,
+  "fits_started": 157,
+  "updated": 1794610237.8374128,
   "october_used": false,
-  "arm": "T4",
-  "trial": 8,
-  "auc": 0.9032930979606564
+  "arm": "R6",
+  "trial": 7,
+  "auc": 0.9055233114930968
 }

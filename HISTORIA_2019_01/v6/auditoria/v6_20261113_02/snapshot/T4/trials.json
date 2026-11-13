@@ -102,5 +102,31 @@
     },
     "rounds": 328,
     "seconds": 31.009270191192627
+  },
+  {
+    "trial": 8,
+    "auc": 0.9040085376114962,
+    "params": {
+      "num_leaves": 72,
+      "learning_rate": 0.012501218549441768,
+      "min_data_in_leaf": 258,
+      "feature_fraction": 0.3199386452400732,
+      "bagging_fraction": 0.9038720932760083
+    },
+    "rounds": 213,
+    "seconds": 25.73464059829712
+  },
+  {
+    "trial": 9,
+    "auc": 0.9025039076372777,
+    "params": {
+      "num_leaves": 76,
+      "learning_rate": 0.010212816260011474,
+      "min_data_in_leaf": 193,
+      "feature_fraction": 0.6485769800387157,
+      "bagging_fraction": 0.7494794495599528
+    },
+    "rounds": 292,
+    "seconds": 38.433862924575806
   }
 ]
