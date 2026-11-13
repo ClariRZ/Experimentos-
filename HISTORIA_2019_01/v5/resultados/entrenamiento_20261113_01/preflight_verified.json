@@ -1,0 +1,12 @@
+{
+  "all_seven_matrix_hashes_match": true,
+  "matrix_sha256": {
+    "B0": "82fcc3d1b42cfec55cd1cd9a6288b2b0ca3d22b39b21b72378d0032ec255251f",
+    "L": "9f7d24ddc8471df9a709f7c6533b003a24fce317ce680ec5bf7b57521e420779",
+    "P": "58a45d114e1dea3ff650c6956711255ceda83f4472050b1a2873c8acf0e3c281",
+    "MIN": "6ebd61c846fa394a7f5ea5005176312e8e8baef41b1619c0d2dd32bc0194ce78",
+    "MAX": "e41d10b76f5a8833c3f0b97e6a439d6ff9956d9ad1ca0d38b6f6d88854c1efe8",
+    "RANGO": "0a4a4158009afb365f61e7ffb35ac0c138d0b416488fa6d04bb0ba359381706b",
+    "F1": "a89b3c57523dbfdd6c09d4c87da77da2150890154d47e5f8ad47c748a10906c5"
+  }
+}

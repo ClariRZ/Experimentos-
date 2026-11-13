@@ -1,0 +1,22 @@
+{
+  "211": {
+    "seed_211.txt": "84f35c465e96b315b08df0bfcd69178478ccdbeda5eee49beaa03ca2f3a1b5c3",
+    "seed_211.npz": "728f86992db7ae42a93ae1368ce6aeb4b0352f586c5779b29295ad92c3385b1a"
+  },
+  "307": {
+    "seed_307.txt": "38792bf092795e8414c33001b64918e962ec7d45592bc975429289380e4e8d65",
+    "seed_307.npz": "ca3dccf36773b0ffa85bfe4bc776ea96e02b937d43cdb35fd0edace867b67c1a"
+  },
+  "401": {
+    "seed_401.txt": "e3c638d1f15b8f50753f447c3eebcbd955093c7ebcde9e451eee61ad16f7bc28",
+    "seed_401.npz": "977ca9e1e66e2426b967dc5240211a350d1dfb755844aff554c6d00ce0450618"
+  },
+  "503": {
+    "seed_503.txt": "0cc5c5617fd246651cbe21e3897fa31208bec4191101d7abec4387a8031594fd",
+    "seed_503.npz": "10487fb5230746f3fcd06ca270e78dc1635b82d4899fe80f909cbfadb6e3dc74"
+  },
+  "601": {
+    "seed_601.txt": "c43ce0e856a25af50a71ac20002f2e2e8b36ae8a6b3992fd98ae80063b432109",
+    "seed_601.npz": "cbec67542c4009f9f2263bf4ae8e3b122ed3f4315236fca4e12c507d45b5df38"
+  }
+}

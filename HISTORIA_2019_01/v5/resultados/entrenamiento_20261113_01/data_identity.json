@@ -1,0 +1,20 @@
+{
+  "n_train": 507328,
+  "n_valid": 131887,
+  "train_months": [
+    201903,
+    201904,
+    201905,
+    201906
+  ],
+  "validation_month": 201908,
+  "train_keys_sha256": "45cf1bdf931a992b054ce8e2c5af4b741e5adc2da78d7d39f09372ee10fc8559",
+  "valid_ids_sha256": "7b34734736c167a91ea89a3405490cdfd896f62ec4cb81a248fe874b8a4485a7",
+  "versions": {
+    "lightgbm": "4.7.0",
+    "polars": "2.1.0",
+    "numpy": "2.3.5",
+    "optuna": "5.0.0"
+  },
+  "october_used": false
+}
