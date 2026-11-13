@@ -1,0 +1,23 @@
+{
+  "run": "v6_20261113_02",
+  "commit": "45e84bfb5341732e78f2c590635d8e073f3f0f98",
+  "vm": "clari-c1-fundados",
+  "project": "proj-uba-261002122233861",
+  "zone": "northamerica-northeast2-b",
+  "remote_root": "/home/clarirz/HISTORIA_2019_01/v6/deployments/v6_20261113_02",
+  "max_seconds": 21203,
+  "october_used": false,
+  "bundle_sha256": "254a59b714cb4baf5c4732a571ae15e0b1e9dfe0d1bad59841a451ced322c86e",
+  "verified_scheduling": {
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "21203"
+    },
+    "instanceTerminationAction": "STOP"
+  },
+  "started_epoch": 1794605376.7532678,
+  "deadline": 1794625477.845066,
+  "worker_dispatch_attempted": true,
+  "worker_launched": true,
+  "worker_pid": "1498"
+}
