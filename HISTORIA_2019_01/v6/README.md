@@ -6,7 +6,7 @@ Autorizada por Clara: «lanzá v6», 13/11/2026. Preparada para once brazos, 165
 
 B0_J, L4, L6, S3, S4, S6, T4, T6, R3, R4, R6. Cada brazo tiene 10 trials Optuna y cinco semillas propias de evaluación. La auditoría real construye y congela columnas, matrices y exclusiones antes del primer ajuste; cualquier error aborta. Las pruebas sintéticas no sustituyen esa auditoría.
 
-Octubre queda fuera de esta corrida de desarrollo. Es una fase pendiente explícita, sin reentrenamiento y con proporciones de contacto congeladas. La ejecución de agosto no representa el cierre económico completo del prompt.
+La corrida de desarrollo se completó con 165 ajustes. El cierre de octubre fue autorizado por separado y se completó sin reentrenamiento, con proporciones de contacto congeladas. [Informe y tabla completa de octubre](resultados/octubre_v6_01/INFORME.md). T4, R3 y R4 ganaron contra B0_J en las cinco semillas de octubre; resultados exploratorios.
 
 ## Tiempo y protección
 
