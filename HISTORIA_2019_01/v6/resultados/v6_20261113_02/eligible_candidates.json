@@ -1,0 +1,9 @@
+{
+  "operational_only": true,
+  "candidates": [
+    "T4",
+    "R3",
+    "R4"
+  ],
+  "confirmation_pending": true
+}

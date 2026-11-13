@@ -1,0 +1,74 @@
+{
+  "arm": "L6",
+  "columns": 1012,
+  "seeds": [
+    {
+      "seed": 211,
+      "auc": 0.9053347099558444,
+      "gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 192241106.94652674,
+        "cut_contacts": 4438,
+        "contact_proportion": 0.03365001857650868,
+        "point_gain_at_cut": 191455000.0
+      },
+      "seconds": 15.550808429718018
+    },
+    {
+      "seed": 307,
+      "auc": 0.9052818000154534,
+      "gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 187844474.01299348,
+        "cut_contacts": 4033,
+        "contact_proportion": 0.030579207958327963,
+        "point_gain_at_cut": 186092500.0
+      },
+      "seconds": 15.771472692489624
+    },
+    {
+      "seed": 401,
+      "auc": 0.905301570356256,
+      "gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 191722729.88505748,
+        "cut_contacts": 5157,
+        "contact_proportion": 0.03910165520483444,
+        "point_gain_at_cut": 190382500.0
+      },
+      "seconds": 15.357980251312256
+    },
+    {
+      "seed": 503,
+      "auc": 0.9034940692521934,
+      "gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 194826340.57971016,
+        "cut_contacts": 4167,
+        "contact_proportion": 0.031595229249281584,
+        "point_gain_at_cut": 197807500.0
+      },
+      "seconds": 15.716035842895508
+    },
+    {
+      "seed": 601,
+      "auc": 0.9028398262138132,
+      "gain": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 187897412.5437281,
+        "cut_contacts": 4221,
+        "contact_proportion": 0.03200467066503901,
+        "point_gain_at_cut": 189722500.0
+      },
+      "seconds": 15.620195150375366
+    }
+  ],
+  "ensemble_auc": 0.9068356467254888,
+  "ensemble_gain": {
+    "n_clients": 131887,
+    "smoothed_gain_max": 193707361.3193403,
+    "cut_contacts": 4748,
+    "contact_proportion": 0.03600051559289392,
+    "point_gain_at_cut": 193930000.0
+  }
+}

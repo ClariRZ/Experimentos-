@@ -19,5 +19,13 @@
   "deadline": 1794625477.845066,
   "worker_dispatch_attempted": true,
   "worker_launched": true,
-  "worker_pid": "1498"
+  "worker_pid": "1498",
+  "last_status": {
+    "status": "COMPLETO",
+    "fits_started": 165,
+    "updated": 1794610429.0766397,
+    "october_used": false
+  },
+  "archive_sha256": "54d0c10ba49205ae5fdd19015b9b3abb2420e85b3e7c9f995e006b61aad48805",
+  "recovered": true
 }

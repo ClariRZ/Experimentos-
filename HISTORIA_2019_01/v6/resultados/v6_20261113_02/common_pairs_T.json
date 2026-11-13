@@ -1,0 +1,270 @@
+{
+  "retained_pairs": [
+    "Master_cadelantosefectivo__f2_slope",
+    "Master_cconsumos__f2_slope",
+    "Master_madelantodolares__f2_slope",
+    "Master_madelantopesos__f2_slope",
+    "Master_mconsumosdolares__f2_slope",
+    "Master_mconsumospesos__f2_slope",
+    "Master_mfinanciacion_limite__f2_slope",
+    "Master_mlimitecompra__f2_slope",
+    "Master_mpagado__f2_slope",
+    "Master_mpagominimo__f2_slope",
+    "Master_mpagosdolares__f2_slope",
+    "Master_mpagospesos__f2_slope",
+    "Master_msaldodolares__f2_slope",
+    "Master_msaldopesos__f2_slope",
+    "Master_msaldototal__f2_slope",
+    "Visa_cadelantosefectivo__f2_slope",
+    "Visa_cconsumos__f2_slope",
+    "Visa_madelantodolares__f2_slope",
+    "Visa_madelantopesos__f2_slope",
+    "Visa_mconsumosdolares__f2_slope",
+    "Visa_mconsumospesos__f2_slope",
+    "Visa_mfinanciacion_limite__f2_slope",
+    "Visa_mlimitecompra__f2_slope",
+    "Visa_mpagado__f2_slope",
+    "Visa_mpagominimo__f2_slope",
+    "Visa_mpagosdolares__f2_slope",
+    "Visa_mpagospesos__f2_slope",
+    "Visa_msaldodolares__f2_slope",
+    "Visa_msaldopesos__f2_slope",
+    "Visa_msaldototal__f2_slope",
+    "catm_trx__f2_slope",
+    "catm_trx_other__f2_slope",
+    "ccaja_ahorro__f2_slope",
+    "ccajas_consultas__f2_slope",
+    "ccajas_depositos__f2_slope",
+    "ccajas_extracciones__f2_slope",
+    "ccajas_otras__f2_slope",
+    "ccajas_transacciones__f2_slope",
+    "ccajeros_propios_descuentos__f2_slope",
+    "ccallcenter_transacciones__f2_slope",
+    "ccheques_depositados__f2_slope",
+    "ccheques_depositados_rechazados__f2_slope",
+    "ccheques_emitidos__f2_slope",
+    "ccheques_emitidos_rechazados__f2_slope",
+    "ccomisiones_mantenimiento__f2_slope",
+    "ccuenta_corriente__f2_slope",
+    "ccuenta_debitos_automaticos__f2_slope",
+    "cextraccion_autoservicio__f2_slope",
+    "cforex__f2_slope",
+    "cforex_buy__f2_slope",
+    "cforex_sell__f2_slope",
+    "chomebanking_transacciones__f2_slope",
+    "cinversion1__f2_slope",
+    "cinversion2__f2_slope",
+    "cpagodeservicios__f2_slope",
+    "cpagomiscuentas__f2_slope",
+    "cpayroll2_trx__f2_slope",
+    "cpayroll_trx__f2_slope",
+    "cplazo_fijo__f2_slope",
+    "cprestamos_hipotecarios__f2_slope",
+    "cprestamos_personales__f2_slope",
+    "cprestamos_prendarios__f2_slope",
+    "cproductos__f2_slope",
+    "cseguro_accidentes_personales__f2_slope",
+    "cseguro_auto__f2_slope",
+    "cseguro_vida__f2_slope",
+    "cseguro_vivienda__f2_slope",
+    "ctarjeta_debito__f2_slope",
+    "ctarjeta_debito_transacciones__f2_slope",
+    "ctarjeta_master__f2_slope",
+    "ctarjeta_master_debitos_automaticos__f2_slope",
+    "ctarjeta_master_descuentos__f2_slope",
+    "ctarjeta_master_transacciones__f2_slope",
+    "ctarjeta_visa__f2_slope",
+    "ctarjeta_visa_descuentos__f2_slope",
+    "ctarjeta_visa_transacciones__f2_slope",
+    "ctransferencias_emitidas__f2_slope",
+    "ctransferencias_recibidas__f2_slope",
+    "ctrx_quarter__f2_slope",
+    "matm__f2_slope",
+    "matm_other__f2_slope",
+    "mautoservicio__f2_slope",
+    "mcaja_ahorro__f2_slope",
+    "mcaja_ahorro_adicional__f2_slope",
+    "mcaja_ahorro_dolares__f2_slope",
+    "mcajeros_propios_descuentos__f2_slope",
+    "mcheques_depositados__f2_slope",
+    "mcheques_depositados_rechazados__f2_slope",
+    "mcheques_emitidos__f2_slope",
+    "mcheques_emitidos_rechazados__f2_slope",
+    "mcomisiones_mantenimiento__f2_slope",
+    "mcuenta_corriente__f2_slope",
+    "mcuenta_corriente_adicional__f2_slope",
+    "mcuenta_debitos_automaticos__f2_slope",
+    "mcuentas_saldo__f2_slope",
+    "mextraccion_autoservicio__f2_slope",
+    "mforex_buy__f2_slope",
+    "mforex_sell__f2_slope",
+    "minversion1_dolares__f2_slope",
+    "minversion1_pesos__f2_slope",
+    "minversion2__f2_slope",
+    "mpagodeservicios__f2_slope",
+    "mpagomiscuentas__f2_slope",
+    "mpayroll2__f2_slope",
+    "mpayroll__f2_slope",
+    "mplazo_fijo_dolares__f2_slope",
+    "mplazo_fijo_pesos__f2_slope",
+    "mprestamos_hipotecarios__f2_slope",
+    "mprestamos_personales__f2_slope",
+    "mprestamos_prendarios__f2_slope",
+    "mtarjeta_master_consumo__f2_slope",
+    "mtarjeta_master_descuentos__f2_slope",
+    "mtarjeta_visa_consumo__f2_slope",
+    "mtarjeta_visa_descuentos__f2_slope",
+    "mtransferencias_emitidas__f2_slope",
+    "mtransferencias_recibidas__f2_slope",
+    "mttarjeta_master_debitos_automaticos__f2_slope"
+  ],
+  "excluded_pairs": {
+    "Master_mconsumototal__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "Master_mconsumototal__f2_slope_W4",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f2_slope_W4"
+      },
+      {
+        "arm": "T6",
+        "column": "Master_mconsumototal__f2_slope_W6",
+        "reason": "exact_duplicate_of:Master_mconsumospesos__f2_slope_W6"
+      }
+    ],
+    "Visa_mconsumototal__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "Visa_mconsumototal__f2_slope_W4",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f2_slope_W4"
+      },
+      {
+        "arm": "T6",
+        "column": "Visa_mconsumototal__f2_slope_W6",
+        "reason": "exact_duplicate_of:Visa_mconsumospesos__f2_slope_W6"
+      }
+    ],
+    "ccomisiones_otras__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "ccomisiones_otras__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "ccomisiones_otras__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "cmobile_app_trx__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "cmobile_app_trx__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "cmobile_app_trx__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "ctarjeta_visa_debitos_automaticos__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "ctarjeta_visa_debitos_automaticos__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "ctarjeta_visa_debitos_automaticos__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mactivos_margen__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mactivos_margen__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mactivos_margen__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mcomisiones__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mcomisiones__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mcomisiones_otras__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mcomisiones_otras__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mcomisiones_otras__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mpasivos_margen__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mpasivos_margen__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mpasivos_margen__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mrentabilidad__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mrentabilidad__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mrentabilidad_annual__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mrentabilidad_annual__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mrentabilidad_annual__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ],
+    "mttarjeta_visa_debitos_automaticos__f2_slope": [
+      {
+        "arm": "T4",
+        "column": "mttarjeta_visa_debitos_automaticos__f2_slope_W4",
+        "reason": "all_missing"
+      },
+      {
+        "arm": "T6",
+        "column": "mttarjeta_visa_debitos_automaticos__f2_slope_W6",
+        "reason": "all_missing"
+      }
+    ]
+  },
+  "selection_months": [
+    201906
+  ]
+}

@@ -1,0 +1,465 @@
+PREPARANDO {}
+CORRIDA_COMPLETA_AUTORIZADA {}
+OPTUNA {'arm': 'B0_J'}
+[I 2026-11-13 21:32:23,551] A new study created in memory with name: no-name-2584be48-baac-4145-8dc6-b217e29745a9
+FIT_START 1 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 1, 'auc': 0.9038513035027317}
+[I 2026-11-13 21:32:53,924] Trial 0 finished with value: 0.9038513035027317 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9038513035027317.
+FIT_START 2 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 2, 'auc': 0.8900692139145203}
+[I 2026-11-13 21:33:10,106] Trial 1 finished with value: 0.8900692139145203 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9038513035027317.
+FIT_START 3 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 3, 'auc': 0.9021347005987812}
+[I 2026-11-13 21:33:40,720] Trial 2 finished with value: 0.9021347005987812 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9038513035027317.
+FIT_START 4 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 4, 'auc': 0.9057164497883673}
+[I 2026-11-13 21:34:14,672] Trial 3 finished with value: 0.9057164497883673 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9057164497883673.
+FIT_START 5 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 5, 'auc': 0.9003855251899945}
+[I 2026-11-13 21:34:31,738] Trial 4 finished with value: 0.9003855251899945 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 3 with value: 0.9057164497883673.
+FIT_START 6 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 6, 'auc': 0.9044691107032756}
+[I 2026-11-13 21:34:49,336] Trial 5 finished with value: 0.9044691107032756 and parameters: {'num_leaves': 85, 'learning_rate': 0.0349247006054594, 'min_data_in_leaf': 1601, 'feature_fraction': 0.3734990754545553, 'bagging_fraction': 0.7817448653229727}. Best is trial 3 with value: 0.9057164497883673.
+FIT_START 7 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 7, 'auc': 0.9013356073832901}
+[I 2026-11-13 21:35:16,176] Trial 6 finished with value: 0.9013356073832901 and parameters: {'num_leaves': 122, 'learning_rate': 0.020490613145495412, 'min_data_in_leaf': 310, 'feature_fraction': 0.6429134462174358, 'bagging_fraction': 0.5673862915305459}. Best is trial 3 with value: 0.9057164497883673.
+FIT_START 8 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 8, 'auc': 0.9067446492837947}
+[I 2026-11-13 21:35:49,137] Trial 7 finished with value: 0.9067446492837947 and parameters: {'num_leaves': 38, 'learning_rate': 0.014731357425741788, 'min_data_in_leaf': 808, 'feature_fraction': 0.8175800654223404, 'bagging_fraction': 0.8866723276980226}. Best is trial 7 with value: 0.9067446492837947.
+FIT_START 9 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 9, 'auc': 0.9041688978300828}
+[I 2026-11-13 21:36:13,586] Trial 8 finished with value: 0.9041688978300828 and parameters: {'num_leaves': 35, 'learning_rate': 0.01903907330386089, 'min_data_in_leaf': 904, 'feature_fraction': 0.8620606249501361, 'bagging_fraction': 0.878272426597533}. Best is trial 7 with value: 0.9067446492837947.
+FIT_START 10 seed 101 round_cap 1500
+OPTUNA {'arm': 'B0_J', 'trial': 10, 'auc': 0.9028459224824006}
+[I 2026-11-13 21:36:32,022] Trial 9 finished with value: 0.9028459224824006 and parameters: {'num_leaves': 17, 'learning_rate': 0.025667078424784884, 'min_data_in_leaf': 902, 'feature_fraction': 0.5471895251645202, 'bagging_fraction': 0.8441112808450881}. Best is trial 7 with value: 0.9067446492837947.
+SEMILLAS {'arm': 'B0_J', 'seed': 211}
+FIT_START 11 seed 211 round_cap 320
+SEMILLAS {'arm': 'B0_J', 'seed': 307}
+FIT_START 12 seed 307 round_cap 320
+SEMILLAS {'arm': 'B0_J', 'seed': 401}
+FIT_START 13 seed 401 round_cap 320
+SEMILLAS {'arm': 'B0_J', 'seed': 503}
+FIT_START 14 seed 503 round_cap 320
+SEMILLAS {'arm': 'B0_J', 'seed': 601}
+FIT_START 15 seed 601 round_cap 320
+OPTUNA {'arm': 'L4'}
+[I 2026-11-13 21:38:29,281] A new study created in memory with name: no-name-885c95f5-549e-4aea-bfc5-bfd76c44895c
+FIT_START 16 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 1, 'auc': 0.9027804088611391}
+[I 2026-11-13 21:39:01,848] Trial 0 finished with value: 0.9027804088611391 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9027804088611391.
+FIT_START 17 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 2, 'auc': 0.8958572523266836}
+[I 2026-11-13 21:39:26,525] Trial 1 finished with value: 0.8958572523266836 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9027804088611391.
+FIT_START 18 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 3, 'auc': 0.9026971380854456}
+[I 2026-11-13 21:39:54,800] Trial 2 finished with value: 0.9026971380854456 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9027804088611391.
+FIT_START 19 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 4, 'auc': 0.9020078060592657}
+[I 2026-11-13 21:40:36,706] Trial 3 finished with value: 0.9020078060592657 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 0 with value: 0.9027804088611391.
+FIT_START 20 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 5, 'auc': 0.9020615099323102}
+[I 2026-11-13 21:41:06,107] Trial 4 finished with value: 0.9020615099323102 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 0 with value: 0.9027804088611391.
+FIT_START 21 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 6, 'auc': 0.9051438613056365}
+[I 2026-11-13 21:41:19,593] Trial 5 finished with value: 0.9051438613056365 and parameters: {'num_leaves': 18, 'learning_rate': 0.05674048704295806, 'min_data_in_leaf': 1112, 'feature_fraction': 0.3389436862441869, 'bagging_fraction': 0.6353986717976893}. Best is trial 5 with value: 0.9051438613056365.
+FIT_START 22 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 7, 'auc': 0.898388146585487}
+[I 2026-11-13 21:41:35,343] Trial 6 finished with value: 0.898388146585487 and parameters: {'num_leaves': 23, 'learning_rate': 0.08046421841513493, 'min_data_in_leaf': 1271, 'feature_fraction': 0.5134537408222388, 'bagging_fraction': 0.5007853886647892}. Best is trial 5 with value: 0.9051438613056365.
+FIT_START 23 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 8, 'auc': 0.8984155656167616}
+[I 2026-11-13 21:41:50,797] Trial 7 finished with value: 0.8984155656167616 and parameters: {'num_leaves': 19, 'learning_rate': 0.0462548053043263, 'min_data_in_leaf': 198, 'feature_fraction': 0.6251729274429518, 'bagging_fraction': 0.7775403956111892}. Best is trial 5 with value: 0.9051438613056365.
+FIT_START 24 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 9, 'auc': 0.9057996000564258}
+[I 2026-11-13 21:42:09,964] Trial 8 finished with value: 0.9057996000564258 and parameters: {'num_leaves': 50, 'learning_rate': 0.0284185170861881, 'min_data_in_leaf': 1095, 'feature_fraction': 0.306291353218907, 'bagging_fraction': 0.64149986135473}. Best is trial 8 with value: 0.9057996000564258.
+FIT_START 25 seed 101 round_cap 1500
+OPTUNA {'arm': 'L4', 'trial': 10, 'auc': 0.9030496654495395}
+[I 2026-11-13 21:42:40,561] Trial 9 finished with value: 0.9030496654495395 and parameters: {'num_leaves': 125, 'learning_rate': 0.0222183282883003, 'min_data_in_leaf': 486, 'feature_fraction': 0.30810234785798873, 'bagging_fraction': 0.515143812263298}. Best is trial 8 with value: 0.9057996000564258.
+SEMILLAS {'arm': 'L4', 'seed': 211}
+FIT_START 26 seed 211 round_cap 149
+SEMILLAS {'arm': 'L4', 'seed': 307}
+FIT_START 27 seed 307 round_cap 149
+SEMILLAS {'arm': 'L4', 'seed': 401}
+FIT_START 28 seed 401 round_cap 149
+SEMILLAS {'arm': 'L4', 'seed': 503}
+FIT_START 29 seed 503 round_cap 149
+SEMILLAS {'arm': 'L4', 'seed': 601}
+FIT_START 30 seed 601 round_cap 149
+OPTUNA {'arm': 'L6'}
+[I 2026-11-13 21:43:38,474] A new study created in memory with name: no-name-309f3e1b-819e-415f-8fbd-12166d79fcc3
+FIT_START 31 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 1, 'auc': 0.902529200063231}
+[I 2026-11-13 21:44:22,625] Trial 0 finished with value: 0.902529200063231 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.902529200063231.
+FIT_START 32 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 2, 'auc': 0.8902857448683241}
+[I 2026-11-13 21:44:49,876] Trial 1 finished with value: 0.8902857448683241 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.902529200063231.
+FIT_START 33 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 3, 'auc': 0.9025397551143086}
+[I 2026-11-13 21:45:35,559] Trial 2 finished with value: 0.9025397551143086 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 2 with value: 0.9025397551143086.
+FIT_START 34 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 4, 'auc': 0.9044318454893638}
+[I 2026-11-13 21:46:40,191] Trial 3 finished with value: 0.9044318454893638 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9044318454893638.
+FIT_START 35 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 5, 'auc': 0.9039576692122133}
+[I 2026-11-13 21:47:10,869] Trial 4 finished with value: 0.9039576692122133 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 3 with value: 0.9044318454893638.
+FIT_START 36 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 6, 'auc': 0.9047666156990258}
+[I 2026-11-13 21:47:38,968] Trial 5 finished with value: 0.9047666156990258 and parameters: {'num_leaves': 85, 'learning_rate': 0.0349247006054594, 'min_data_in_leaf': 1601, 'feature_fraction': 0.3734990754545553, 'bagging_fraction': 0.7817448653229727}. Best is trial 5 with value: 0.9047666156990258.
+FIT_START 37 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 7, 'auc': 0.9046095729847402}
+[I 2026-11-13 21:48:03,393] Trial 6 finished with value: 0.9046095729847402 and parameters: {'num_leaves': 93, 'learning_rate': 0.03482562551473562, 'min_data_in_leaf': 1863, 'feature_fraction': 0.4266045679003507, 'bagging_fraction': 0.5709568614736164}. Best is trial 5 with value: 0.9047666156990258.
+FIT_START 38 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 8, 'auc': 0.9026312629412794}
+[I 2026-11-13 21:48:20,892] Trial 7 finished with value: 0.9026312629412794 and parameters: {'num_leaves': 24, 'learning_rate': 0.05753772751454238, 'min_data_in_leaf': 602, 'feature_fraction': 0.3253562529473752, 'bagging_fraction': 0.7201159511393176}. Best is trial 5 with value: 0.9047666156990258.
+FIT_START 39 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 9, 'auc': 0.9045874704667685}
+[I 2026-11-13 21:48:59,003] Trial 8 finished with value: 0.9045874704667685 and parameters: {'num_leaves': 35, 'learning_rate': 0.028125607433207092, 'min_data_in_leaf': 1283, 'feature_fraction': 0.5351313492764007, 'bagging_fraction': 0.8831206393916804}. Best is trial 5 with value: 0.9047666156990258.
+FIT_START 40 seed 101 round_cap 1500
+OPTUNA {'arm': 'L6', 'trial': 10, 'auc': 0.9011063451522968}
+[I 2026-11-13 21:49:36,707] Trial 9 finished with value: 0.9011063451522968 and parameters: {'num_leaves': 125, 'learning_rate': 0.0222183282883003, 'min_data_in_leaf': 486, 'feature_fraction': 0.30810234785798873, 'bagging_fraction': 0.515143812263298}. Best is trial 5 with value: 0.9047666156990258.
+SEMILLAS {'arm': 'L6', 'seed': 211}
+FIT_START 41 seed 211 round_cap 135
+SEMILLAS {'arm': 'L6', 'seed': 307}
+FIT_START 42 seed 307 round_cap 135
+SEMILLAS {'arm': 'L6', 'seed': 401}
+FIT_START 43 seed 401 round_cap 135
+SEMILLAS {'arm': 'L6', 'seed': 503}
+FIT_START 44 seed 503 round_cap 135
+SEMILLAS {'arm': 'L6', 'seed': 601}
+FIT_START 45 seed 601 round_cap 135
+OPTUNA {'arm': 'S3'}
+[I 2026-11-13 21:51:00,305] A new study created in memory with name: no-name-6f990d5d-5874-4d36-95a9-41fe6b948661
+FIT_START 46 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 1, 'auc': 0.9034698188628474}
+[I 2026-11-13 21:51:44,101] Trial 0 finished with value: 0.9034698188628474 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9034698188628474.
+FIT_START 47 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 2, 'auc': 0.8980958801275114}
+[I 2026-11-13 21:52:20,575] Trial 1 finished with value: 0.8980958801275114 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9034698188628474.
+FIT_START 48 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 3, 'auc': 0.9017847818705479}
+[I 2026-11-13 21:52:57,310] Trial 2 finished with value: 0.9017847818705479 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9034698188628474.
+FIT_START 49 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 4, 'auc': 0.9038598453674385}
+[I 2026-11-13 21:53:56,151] Trial 3 finished with value: 0.9038598453674385 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9038598453674385.
+FIT_START 50 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 5, 'auc': 0.903883599548876}
+[I 2026-11-13 21:54:27,257] Trial 4 finished with value: 0.903883599548876 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 4 with value: 0.903883599548876.
+FIT_START 51 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 6, 'auc': 0.9027099615155324}
+[I 2026-11-13 21:54:45,707] Trial 5 finished with value: 0.9027099615155324 and parameters: {'num_leaves': 18, 'learning_rate': 0.06197245272869738, 'min_data_in_leaf': 1337, 'feature_fraction': 0.35102052358159663, 'bagging_fraction': 0.6326541982722583}. Best is trial 4 with value: 0.903883599548876.
+FIT_START 52 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 7, 'auc': 0.9026824999521514}
+[I 2026-11-13 21:55:20,112] Trial 6 finished with value: 0.9026824999521514 and parameters: {'num_leaves': 82, 'learning_rate': 0.03505908800667792, 'min_data_in_leaf': 1861, 'feature_fraction': 0.4823021531075873, 'bagging_fraction': 0.5518588256423023}. Best is trial 4 with value: 0.903883599548876.
+FIT_START 53 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 8, 'auc': 0.8895790951861453}
+[I 2026-11-13 21:55:43,565] Trial 7 finished with value: 0.8895790951861453 and parameters: {'num_leaves': 32, 'learning_rate': 0.07042567240502545, 'min_data_in_leaf': 257, 'feature_fraction': 0.9263238010689607, 'bagging_fraction': 0.514086248025128}. Best is trial 4 with value: 0.903883599548876.
+FIT_START 54 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 9, 'auc': 0.9012127959259914}
+[I 2026-11-13 21:56:09,710] Trial 8 finished with value: 0.9012127959259914 and parameters: {'num_leaves': 33, 'learning_rate': 0.08462659439372666, 'min_data_in_leaf': 1516, 'feature_fraction': 0.9215514990168059, 'bagging_fraction': 0.8686204811591637}. Best is trial 4 with value: 0.903883599548876.
+FIT_START 55 seed 101 round_cap 1500
+OPTUNA {'arm': 'S3', 'trial': 10, 'auc': 0.9029588168702184}
+[I 2026-11-13 21:56:39,725] Trial 9 finished with value: 0.9029588168702184 and parameters: {'num_leaves': 33, 'learning_rate': 0.03965437609414311, 'min_data_in_leaf': 297, 'feature_fraction': 0.9299449731600046, 'bagging_fraction': 0.8782995105018441}. Best is trial 4 with value: 0.903883599548876.
+SEMILLAS {'arm': 'S3', 'seed': 211}
+FIT_START 56 seed 211 round_cap 122
+SEMILLAS {'arm': 'S3', 'seed': 307}
+FIT_START 57 seed 307 round_cap 122
+SEMILLAS {'arm': 'S3', 'seed': 401}
+FIT_START 58 seed 401 round_cap 122
+SEMILLAS {'arm': 'S3', 'seed': 503}
+FIT_START 59 seed 503 round_cap 122
+SEMILLAS {'arm': 'S3', 'seed': 601}
+FIT_START 60 seed 601 round_cap 122
+OPTUNA {'arm': 'S4'}
+[I 2026-11-13 21:58:07,381] A new study created in memory with name: no-name-200340ee-ea68-4e51-a1a7-e32c850255e6
+FIT_START 61 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 1, 'auc': 0.9041917730146544}
+[I 2026-11-13 21:59:03,369] Trial 0 finished with value: 0.9041917730146544 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9041917730146544.
+FIT_START 62 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 2, 'auc': 0.8943622913179919}
+[I 2026-11-13 21:59:36,875] Trial 1 finished with value: 0.8943622913179919 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9041917730146544.
+FIT_START 63 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 3, 'auc': 0.9028997468630798}
+[I 2026-11-13 22:00:25,840] Trial 2 finished with value: 0.9028997468630798 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9041917730146544.
+FIT_START 64 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 4, 'auc': 0.9041997903167153}
+[I 2026-11-13 22:01:31,091] Trial 3 finished with value: 0.9041997903167153 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9041997903167153.
+FIT_START 65 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 5, 'auc': 0.902120062465487}
+[I 2026-11-13 22:02:02,811] Trial 4 finished with value: 0.902120062465487 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 3 with value: 0.9041997903167153.
+FIT_START 66 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 6, 'auc': 0.9034420453973527}
+[I 2026-11-13 22:02:29,982] Trial 5 finished with value: 0.9034420453973527 and parameters: {'num_leaves': 85, 'learning_rate': 0.0349247006054594, 'min_data_in_leaf': 1601, 'feature_fraction': 0.3734990754545553, 'bagging_fraction': 0.7817448653229727}. Best is trial 3 with value: 0.9041997903167153.
+FIT_START 67 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 7, 'auc': 0.8997950519565123}
+[I 2026-11-13 22:03:14,104] Trial 6 finished with value: 0.8997950519565123 and parameters: {'num_leaves': 122, 'learning_rate': 0.020490613145495412, 'min_data_in_leaf': 310, 'feature_fraction': 0.6429134462174358, 'bagging_fraction': 0.5673862915305459}. Best is trial 3 with value: 0.9041997903167153.
+FIT_START 68 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 8, 'auc': 0.9053126428812951}
+[I 2026-11-13 22:04:06,803] Trial 7 finished with value: 0.9053126428812951 and parameters: {'num_leaves': 38, 'learning_rate': 0.014731357425741788, 'min_data_in_leaf': 808, 'feature_fraction': 0.8175800654223404, 'bagging_fraction': 0.8866723276980226}. Best is trial 7 with value: 0.9053126428812951.
+FIT_START 69 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 9, 'auc': 0.9044227294412202}
+[I 2026-11-13 22:04:52,263] Trial 8 finished with value: 0.9044227294412202 and parameters: {'num_leaves': 35, 'learning_rate': 0.01903907330386089, 'min_data_in_leaf': 904, 'feature_fraction': 0.8620606249501361, 'bagging_fraction': 0.878272426597533}. Best is trial 7 with value: 0.9053126428812951.
+FIT_START 70 seed 101 round_cap 1500
+OPTUNA {'arm': 'S4', 'trial': 10, 'auc': 0.9058202919262012}
+[I 2026-11-13 22:05:22,577] Trial 9 finished with value: 0.9058202919262012 and parameters: {'num_leaves': 17, 'learning_rate': 0.025667078424784884, 'min_data_in_leaf': 902, 'feature_fraction': 0.5471895251645202, 'bagging_fraction': 0.8441112808450881}. Best is trial 9 with value: 0.9058202919262012.
+SEMILLAS {'arm': 'S4', 'seed': 211}
+FIT_START 71 seed 211 round_cap 165
+SEMILLAS {'arm': 'S4', 'seed': 307}
+FIT_START 72 seed 307 round_cap 165
+SEMILLAS {'arm': 'S4', 'seed': 401}
+FIT_START 73 seed 401 round_cap 165
+SEMILLAS {'arm': 'S4', 'seed': 503}
+FIT_START 74 seed 503 round_cap 165
+SEMILLAS {'arm': 'S4', 'seed': 601}
+FIT_START 75 seed 601 round_cap 165
+OPTUNA {'arm': 'S6'}
+[I 2026-11-13 22:06:55,175] A new study created in memory with name: no-name-c9dcbe0a-96c9-45ea-93d0-6370932eeede
+FIT_START 76 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 1, 'auc': 0.9033067720328716}
+[I 2026-11-13 22:07:44,916] Trial 0 finished with value: 0.9033067720328716 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9033067720328716.
+FIT_START 77 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 2, 'auc': 0.894854444498791}
+[I 2026-11-13 22:08:22,843] Trial 1 finished with value: 0.894854444498791 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9033067720328716.
+FIT_START 78 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 3, 'auc': 0.9029273785548867}
+[I 2026-11-13 22:09:16,162] Trial 2 finished with value: 0.9029273785548867 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9033067720328716.
+FIT_START 79 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 4, 'auc': 0.9044304561072205}
+[I 2026-11-13 22:10:23,525] Trial 3 finished with value: 0.9044304561072205 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9044304561072205.
+FIT_START 80 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 5, 'auc': 0.9060675523268961}
+[I 2026-11-13 22:10:57,354] Trial 4 finished with value: 0.9060675523268961 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 4 with value: 0.9060675523268961.
+FIT_START 81 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 6, 'auc': 0.9026389612525424}
+[I 2026-11-13 22:11:17,163] Trial 5 finished with value: 0.9026389612525424 and parameters: {'num_leaves': 18, 'learning_rate': 0.06197245272869738, 'min_data_in_leaf': 1337, 'feature_fraction': 0.35102052358159663, 'bagging_fraction': 0.6326541982722583}. Best is trial 4 with value: 0.9060675523268961.
+FIT_START 82 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 7, 'auc': 0.903088348400332}
+[I 2026-11-13 22:11:44,695] Trial 6 finished with value: 0.903088348400332 and parameters: {'num_leaves': 82, 'learning_rate': 0.03505908800667792, 'min_data_in_leaf': 1861, 'feature_fraction': 0.4823021531075873, 'bagging_fraction': 0.5518588256423023}. Best is trial 4 with value: 0.9060675523268961.
+FIT_START 83 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 8, 'auc': 0.8934860590388171}
+[I 2026-11-13 22:12:09,104] Trial 7 finished with value: 0.8934860590388171 and parameters: {'num_leaves': 32, 'learning_rate': 0.07042567240502545, 'min_data_in_leaf': 257, 'feature_fraction': 0.9263238010689607, 'bagging_fraction': 0.514086248025128}. Best is trial 4 with value: 0.9060675523268961.
+FIT_START 84 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 9, 'auc': 0.9040673666033647}
+[I 2026-11-13 22:12:36,315] Trial 8 finished with value: 0.9040673666033647 and parameters: {'num_leaves': 33, 'learning_rate': 0.08462659439372666, 'min_data_in_leaf': 1516, 'feature_fraction': 0.9215514990168059, 'bagging_fraction': 0.8686204811591637}. Best is trial 4 with value: 0.9060675523268961.
+FIT_START 85 seed 101 round_cap 1500
+OPTUNA {'arm': 'S6', 'trial': 10, 'auc': 0.9013487001833843}
+[I 2026-11-13 22:13:10,367] Trial 9 finished with value: 0.9013487001833843 and parameters: {'num_leaves': 33, 'learning_rate': 0.03965437609414311, 'min_data_in_leaf': 297, 'feature_fraction': 0.9299449731600046, 'bagging_fraction': 0.8782995105018441}. Best is trial 4 with value: 0.9060675523268961.
+SEMILLAS {'arm': 'S6', 'seed': 211}
+FIT_START 86 seed 211 round_cap 136
+SEMILLAS {'arm': 'S6', 'seed': 307}
+FIT_START 87 seed 307 round_cap 136
+SEMILLAS {'arm': 'S6', 'seed': 401}
+FIT_START 88 seed 401 round_cap 136
+SEMILLAS {'arm': 'S6', 'seed': 503}
+FIT_START 89 seed 503 round_cap 136
+SEMILLAS {'arm': 'S6', 'seed': 601}
+FIT_START 90 seed 601 round_cap 136
+OPTUNA {'arm': 'T4'}
+[I 2026-11-13 22:14:48,800] A new study created in memory with name: no-name-58a57ca9-29c7-47b2-93b9-3c7a8e3cdccb
+FIT_START 91 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 1, 'auc': 0.903820304685833}
+[I 2026-11-13 22:15:18,050] Trial 0 finished with value: 0.903820304685833 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.903820304685833.
+FIT_START 92 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 2, 'auc': 0.8932707118953086}
+[I 2026-11-13 22:15:39,097] Trial 1 finished with value: 0.8932707118953086 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.903820304685833.
+FIT_START 93 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 3, 'auc': 0.9025664936318804}
+[I 2026-11-13 22:16:10,024] Trial 2 finished with value: 0.9025664936318804 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.903820304685833.
+FIT_START 94 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 4, 'auc': 0.903214073306921}
+[I 2026-11-13 22:16:51,725] Trial 3 finished with value: 0.903214073306921 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 0 with value: 0.903820304685833.
+FIT_START 95 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 5, 'auc': 0.9031720232310364}
+[I 2026-11-13 22:17:12,150] Trial 4 finished with value: 0.9031720232310364 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 0 with value: 0.903820304685833.
+FIT_START 96 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 6, 'auc': 0.9028242807289152}
+[I 2026-11-13 22:17:26,090] Trial 5 finished with value: 0.9028242807289152 and parameters: {'num_leaves': 18, 'learning_rate': 0.05674048704295806, 'min_data_in_leaf': 1112, 'feature_fraction': 0.3389436862441869, 'bagging_fraction': 0.6353986717976893}. Best is trial 0 with value: 0.903820304685833.
+FIT_START 97 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 7, 'auc': 0.9044000527398119}
+[I 2026-11-13 22:18:01,772] Trial 6 finished with value: 0.9044000527398119 and parameters: {'num_leaves': 26, 'learning_rate': 0.01304420309149896, 'min_data_in_leaf': 168, 'feature_fraction': 0.4601557327062038, 'bagging_fraction': 0.8940273357770734}. Best is trial 6 with value: 0.9044000527398119.
+FIT_START 98 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 8, 'auc': 0.9032930979606564}
+[I 2026-11-13 22:18:33,651] Trial 7 finished with value: 0.9032930979606564 and parameters: {'num_leaves': 20, 'learning_rate': 0.01535757819943489, 'min_data_in_leaf': 236, 'feature_fraction': 0.55085354392648, 'bagging_fraction': 0.9431743582392943}. Best is trial 6 with value: 0.9044000527398119.
+FIT_START 99 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 9, 'auc': 0.9040085376114962}
+[I 2026-11-13 22:19:00,343] Trial 8 finished with value: 0.9040085376114962 and parameters: {'num_leaves': 72, 'learning_rate': 0.012501218549441768, 'min_data_in_leaf': 258, 'feature_fraction': 0.3199386452400732, 'bagging_fraction': 0.9038720932760083}. Best is trial 6 with value: 0.9044000527398119.
+FIT_START 100 seed 101 round_cap 1500
+OPTUNA {'arm': 'T4', 'trial': 10, 'auc': 0.9025039076372777}
+[I 2026-11-13 22:19:40,250] Trial 9 finished with value: 0.9025039076372777 and parameters: {'num_leaves': 76, 'learning_rate': 0.010212816260011474, 'min_data_in_leaf': 193, 'feature_fraction': 0.6485769800387157, 'bagging_fraction': 0.7494794495599528}. Best is trial 6 with value: 0.9044000527398119.
+SEMILLAS {'arm': 'T4', 'seed': 211}
+FIT_START 101 seed 211 round_cap 399
+SEMILLAS {'arm': 'T4', 'seed': 307}
+FIT_START 102 seed 307 round_cap 399
+SEMILLAS {'arm': 'T4', 'seed': 401}
+FIT_START 103 seed 401 round_cap 399
+SEMILLAS {'arm': 'T4', 'seed': 503}
+FIT_START 104 seed 503 round_cap 399
+SEMILLAS {'arm': 'T4', 'seed': 601}
+FIT_START 105 seed 601 round_cap 399
+OPTUNA {'arm': 'T6'}
+[I 2026-11-13 22:21:46,258] A new study created in memory with name: no-name-b9ad918c-a219-457e-8764-33b5589a6a37
+FIT_START 106 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 1, 'auc': 0.9057485686174017}
+[I 2026-11-13 22:22:24,353] Trial 0 finished with value: 0.9057485686174017 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9057485686174017.
+FIT_START 107 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 2, 'auc': 0.8981058397290989}
+[I 2026-11-13 22:22:49,023] Trial 1 finished with value: 0.8981058397290989 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9057485686174017.
+FIT_START 108 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 3, 'auc': 0.9045849539838052}
+[I 2026-11-13 22:23:32,213] Trial 2 finished with value: 0.9045849539838052 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9057485686174017.
+FIT_START 109 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 4, 'auc': 0.9073224833929847}
+[I 2026-11-13 22:24:16,186] Trial 3 finished with value: 0.9073224833929847 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9073224833929847.
+FIT_START 110 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 5, 'auc': 0.907366674251559}
+[I 2026-11-13 22:24:39,006] Trial 4 finished with value: 0.907366674251559 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 4 with value: 0.907366674251559.
+FIT_START 111 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 6, 'auc': 0.9043126209063733}
+[I 2026-11-13 22:24:52,730] Trial 5 finished with value: 0.9043126209063733 and parameters: {'num_leaves': 18, 'learning_rate': 0.06197245272869738, 'min_data_in_leaf': 1337, 'feature_fraction': 0.35102052358159663, 'bagging_fraction': 0.6326541982722583}. Best is trial 4 with value: 0.907366674251559.
+FIT_START 112 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 7, 'auc': 0.908307987742247}
+[I 2026-11-13 22:25:18,832] Trial 6 finished with value: 0.908307987742247 and parameters: {'num_leaves': 82, 'learning_rate': 0.03505908800667792, 'min_data_in_leaf': 1861, 'feature_fraction': 0.4823021531075873, 'bagging_fraction': 0.5518588256423023}. Best is trial 6 with value: 0.908307987742247.
+FIT_START 113 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 8, 'auc': 0.9068431040214816}
+[I 2026-11-13 22:25:37,015] Trial 7 finished with value: 0.9068431040214816 and parameters: {'num_leaves': 102, 'learning_rate': 0.05198314048750766, 'min_data_in_leaf': 1786, 'feature_fraction': 0.34371808956797545, 'bagging_fraction': 0.7374905961826475}. Best is trial 6 with value: 0.908307987742247.
+FIT_START 114 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 9, 'auc': 0.9065193496273833}
+[I 2026-11-13 22:26:15,805] Trial 8 finished with value: 0.9065193496273833 and parameters: {'num_leaves': 105, 'learning_rate': 0.018607319292980772, 'min_data_in_leaf': 1015, 'feature_fraction': 0.575419381669593, 'bagging_fraction': 0.507760659643089}. Best is trial 6 with value: 0.908307987742247.
+FIT_START 115 seed 101 round_cap 1500
+OPTUNA {'arm': 'T6', 'trial': 10, 'auc': 0.9017385565595495}
+[I 2026-11-13 22:26:30,900] Trial 9 finished with value: 0.9017385565595495 and parameters: {'num_leaves': 117, 'learning_rate': 0.09948206928248107, 'min_data_in_leaf': 1836, 'feature_fraction': 0.6894679127604147, 'bagging_fraction': 0.5118407170572302}. Best is trial 6 with value: 0.908307987742247.
+SEMILLAS {'arm': 'T6', 'seed': 211}
+FIT_START 116 seed 211 round_cap 247
+SEMILLAS {'arm': 'T6', 'seed': 307}
+FIT_START 117 seed 307 round_cap 247
+SEMILLAS {'arm': 'T6', 'seed': 401}
+FIT_START 118 seed 401 round_cap 247
+SEMILLAS {'arm': 'T6', 'seed': 503}
+FIT_START 119 seed 503 round_cap 247
+SEMILLAS {'arm': 'T6', 'seed': 601}
+FIT_START 120 seed 601 round_cap 247
+OPTUNA {'arm': 'R3'}
+[I 2026-11-13 22:27:59,290] A new study created in memory with name: no-name-cd57fdad-b93d-46a9-9c36-5937a8cc8f73
+FIT_START 121 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 1, 'auc': 0.9028630345665519}
+[I 2026-11-13 22:28:33,282] Trial 0 finished with value: 0.9028630345665519 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9028630345665519.
+FIT_START 122 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 2, 'auc': 0.8936189860487602}
+[I 2026-11-13 22:29:00,193] Trial 1 finished with value: 0.8936189860487602 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9028630345665519.
+FIT_START 123 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 3, 'auc': 0.9049144573009549}
+[I 2026-11-13 22:29:56,189] Trial 2 finished with value: 0.9049144573009549 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 2 with value: 0.9049144573009549.
+FIT_START 124 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 4, 'auc': 0.9054354188951718}
+[I 2026-11-13 22:30:47,384] Trial 3 finished with value: 0.9054354188951718 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9054354188951718.
+FIT_START 125 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 5, 'auc': 0.9042307678675606}
+[I 2026-11-13 22:31:24,906] Trial 4 finished with value: 0.9042307678675606 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 3 with value: 0.9054354188951718.
+FIT_START 126 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 6, 'auc': 0.9026836412303403}
+[I 2026-11-13 22:31:47,388] Trial 5 finished with value: 0.9026836412303403 and parameters: {'num_leaves': 85, 'learning_rate': 0.0349247006054594, 'min_data_in_leaf': 1601, 'feature_fraction': 0.3734990754545553, 'bagging_fraction': 0.7817448653229727}. Best is trial 3 with value: 0.9054354188951718.
+FIT_START 127 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 7, 'auc': 0.9036355310381591}
+[I 2026-11-13 22:32:27,299] Trial 6 finished with value: 0.9036355310381591 and parameters: {'num_leaves': 122, 'learning_rate': 0.020490613145495412, 'min_data_in_leaf': 310, 'feature_fraction': 0.6429134462174358, 'bagging_fraction': 0.5673862915305459}. Best is trial 3 with value: 0.9054354188951718.
+FIT_START 128 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 8, 'auc': 0.9053072483924637}
+[I 2026-11-13 22:33:13,703] Trial 7 finished with value: 0.9053072483924637 and parameters: {'num_leaves': 38, 'learning_rate': 0.014731357425741788, 'min_data_in_leaf': 808, 'feature_fraction': 0.8175800654223404, 'bagging_fraction': 0.8866723276980226}. Best is trial 3 with value: 0.9054354188951718.
+FIT_START 129 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 9, 'auc': 0.9043145986493221}
+[I 2026-11-13 22:33:40,241] Trial 8 finished with value: 0.9043145986493221 and parameters: {'num_leaves': 16, 'learning_rate': 0.025271296965515163, 'min_data_in_leaf': 463, 'feature_fraction': 0.9889296700346697, 'bagging_fraction': 0.5121117630542872}. Best is trial 3 with value: 0.9054354188951718.
+FIT_START 130 seed 101 round_cap 1500
+OPTUNA {'arm': 'R3', 'trial': 10, 'auc': 0.9007256898884879}
+[I 2026-11-13 22:34:05,445] Trial 9 finished with value: 0.9007256898884879 and parameters: {'num_leaves': 78, 'learning_rate': 0.030232165081747087, 'min_data_in_leaf': 1976, 'feature_fraction': 0.7891634511224817, 'bagging_fraction': 0.5201991327056117}. Best is trial 3 with value: 0.9054354188951718.
+SEMILLAS {'arm': 'R3', 'seed': 211}
+FIT_START 131 seed 211 round_cap 220
+SEMILLAS {'arm': 'R3', 'seed': 307}
+FIT_START 132 seed 307 round_cap 220
+SEMILLAS {'arm': 'R3', 'seed': 401}
+FIT_START 133 seed 401 round_cap 220
+SEMILLAS {'arm': 'R3', 'seed': 503}
+FIT_START 134 seed 503 round_cap 220
+SEMILLAS {'arm': 'R3', 'seed': 601}
+FIT_START 135 seed 601 round_cap 220
+OPTUNA {'arm': 'R4'}
+[I 2026-11-13 22:36:53,636] A new study created in memory with name: no-name-1d6a5648-b1bb-47bb-8958-88ab794302dc
+FIT_START 136 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 1, 'auc': 0.9024565126933528}
+[I 2026-11-13 22:37:30,923] Trial 0 finished with value: 0.9024565126933528 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9024565126933528.
+FIT_START 137 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 2, 'auc': 0.8963688781235402}
+[I 2026-11-13 22:37:56,999] Trial 1 finished with value: 0.8963688781235402 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9024565126933528.
+FIT_START 138 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 3, 'auc': 0.9022606239885334}
+[I 2026-11-13 22:39:01,245] Trial 2 finished with value: 0.9022606239885334 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9024565126933528.
+FIT_START 139 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 4, 'auc': 0.9061989623583769}
+[I 2026-11-13 22:39:57,239] Trial 3 finished with value: 0.9061989623583769 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 3 with value: 0.9061989623583769.
+FIT_START 140 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 5, 'auc': 0.9041930418891626}
+[I 2026-11-13 22:40:34,917] Trial 4 finished with value: 0.9041930418891626 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 3 with value: 0.9061989623583769.
+FIT_START 141 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 6, 'auc': 0.9053522260950069}
+[I 2026-11-13 22:41:03,831] Trial 5 finished with value: 0.9053522260950069 and parameters: {'num_leaves': 85, 'learning_rate': 0.0349247006054594, 'min_data_in_leaf': 1601, 'feature_fraction': 0.3734990754545553, 'bagging_fraction': 0.7817448653229727}. Best is trial 3 with value: 0.9061989623583769.
+FIT_START 142 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 7, 'auc': 0.9003453394381081}
+[I 2026-11-13 22:41:40,775] Trial 6 finished with value: 0.9003453394381081 and parameters: {'num_leaves': 122, 'learning_rate': 0.020490613145495412, 'min_data_in_leaf': 310, 'feature_fraction': 0.6429134462174358, 'bagging_fraction': 0.5673862915305459}. Best is trial 3 with value: 0.9061989623583769.
+FIT_START 143 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 8, 'auc': 0.9058791138293854}
+[I 2026-11-13 22:42:29,901] Trial 7 finished with value: 0.9058791138293854 and parameters: {'num_leaves': 38, 'learning_rate': 0.014731357425741788, 'min_data_in_leaf': 808, 'feature_fraction': 0.8175800654223404, 'bagging_fraction': 0.8866723276980226}. Best is trial 3 with value: 0.9061989623583769.
+FIT_START 144 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 9, 'auc': 0.9034587392491239}
+[I 2026-11-13 22:42:50,582] Trial 8 finished with value: 0.9034587392491239 and parameters: {'num_leaves': 16, 'learning_rate': 0.025271296965515163, 'min_data_in_leaf': 463, 'feature_fraction': 0.9889296700346697, 'bagging_fraction': 0.5121117630542872}. Best is trial 3 with value: 0.9061989623583769.
+FIT_START 145 seed 101 round_cap 1500
+OPTUNA {'arm': 'R4', 'trial': 10, 'auc': 0.9038753908523363}
+[I 2026-11-13 22:43:26,465] Trial 9 finished with value: 0.9038753908523363 and parameters: {'num_leaves': 78, 'learning_rate': 0.030232165081747087, 'min_data_in_leaf': 1976, 'feature_fraction': 0.7891634511224817, 'bagging_fraction': 0.5201991327056117}. Best is trial 3 with value: 0.9061989623583769.
+SEMILLAS {'arm': 'R4', 'seed': 211}
+FIT_START 146 seed 211 round_cap 250
+SEMILLAS {'arm': 'R4', 'seed': 307}
+FIT_START 147 seed 307 round_cap 250
+SEMILLAS {'arm': 'R4', 'seed': 401}
+FIT_START 148 seed 401 round_cap 250
+SEMILLAS {'arm': 'R4', 'seed': 503}
+FIT_START 149 seed 503 round_cap 250
+SEMILLAS {'arm': 'R4', 'seed': 601}
+FIT_START 150 seed 601 round_cap 250
+OPTUNA {'arm': 'R6'}
+[I 2026-11-13 22:46:34,732] A new study created in memory with name: no-name-d28b9592-eb78-44b6-a785-c025ca26a5eb
+FIT_START 151 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 1, 'auc': 0.9061903779615637}
+[I 2026-11-13 22:47:27,018] Trial 0 finished with value: 0.9061903779615637 and parameters: {'num_leaves': 29, 'learning_rate': 0.011926244614204879, 'min_data_in_leaf': 277, 'feature_fraction': 0.5718455657063783, 'bagging_fraction': 0.6659300449146752}. Best is trial 0 with value: 0.9061903779615637.
+FIT_START 152 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 2, 'auc': 0.8972215192610187}
+[I 2026-11-13 22:47:59,460] Trial 1 finished with value: 0.8972215192610187 and parameters: {'num_leaves': 83, 'learning_rate': 0.08573562420684387, 'min_data_in_leaf': 256, 'feature_fraction': 0.8317096270528164, 'bagging_fraction': 0.745761316790686}. Best is trial 0 with value: 0.9061903779615637.
+FIT_START 153 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 3, 'auc': 0.9010398391152188}
+[I 2026-11-13 22:48:25,763] Trial 2 finished with value: 0.9010398391152188 and parameters: {'num_leaves': 26, 'learning_rate': 0.011356105298273727, 'min_data_in_leaf': 113, 'feature_fraction': 0.41765513847005264, 'bagging_fraction': 0.6287911870907968}. Best is trial 0 with value: 0.9061903779615637.
+FIT_START 154 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 4, 'auc': 0.9055079077818868}
+[I 2026-11-13 22:49:16,226] Trial 3 finished with value: 0.9055079077818868 and parameters: {'num_leaves': 81, 'learning_rate': 0.01926285755650513, 'min_data_in_leaf': 1158, 'feature_fraction': 0.8522595393225629, 'bagging_fraction': 0.665727128473967}. Best is trial 0 with value: 0.9061903779615637.
+FIT_START 155 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 5, 'auc': 0.9074983182096251}
+[I 2026-11-13 22:49:52,833] Trial 4 finished with value: 0.9074983182096251 and parameters: {'num_leaves': 37, 'learning_rate': 0.03570529843113109, 'min_data_in_leaf': 1344, 'feature_fraction': 0.9087895231897494, 'bagging_fraction': 0.6447286003247746}. Best is trial 4 with value: 0.9074983182096251.
+FIT_START 156 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 6, 'auc': 0.9054470301602254}
+[I 2026-11-13 22:50:11,372] Trial 5 finished with value: 0.9054470301602254 and parameters: {'num_leaves': 18, 'learning_rate': 0.06197245272869738, 'min_data_in_leaf': 1337, 'feature_fraction': 0.35102052358159663, 'bagging_fraction': 0.6326541982722583}. Best is trial 4 with value: 0.9074983182096251.
+FIT_START 157 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 7, 'auc': 0.9055233114930968}
+[I 2026-11-13 22:50:37,838] Trial 6 finished with value: 0.9055233114930968 and parameters: {'num_leaves': 82, 'learning_rate': 0.03505908800667792, 'min_data_in_leaf': 1861, 'feature_fraction': 0.4823021531075873, 'bagging_fraction': 0.5518588256423023}. Best is trial 4 with value: 0.9074983182096251.
+FIT_START 158 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 8, 'auc': 0.8970347040722364}
+[I 2026-11-13 22:51:11,662] Trial 7 finished with value: 0.8970347040722364 and parameters: {'num_leaves': 32, 'learning_rate': 0.07042567240502545, 'min_data_in_leaf': 257, 'feature_fraction': 0.9263238010689607, 'bagging_fraction': 0.514086248025128}. Best is trial 4 with value: 0.9074983182096251.
+FIT_START 159 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 9, 'auc': 0.8999066065829775}
+[I 2026-11-13 22:51:35,478] Trial 8 finished with value: 0.8999066065829775 and parameters: {'num_leaves': 33, 'learning_rate': 0.08462659439372666, 'min_data_in_leaf': 1516, 'feature_fraction': 0.9215514990168059, 'bagging_fraction': 0.8686204811591637}. Best is trial 4 with value: 0.9074983182096251.
+FIT_START 160 seed 101 round_cap 1500
+OPTUNA {'arm': 'R6', 'trial': 10, 'auc': 0.9048304705681367}
+[I 2026-11-13 22:52:01,781] Trial 9 finished with value: 0.9048304705681367 and parameters: {'num_leaves': 33, 'learning_rate': 0.03965437609414311, 'min_data_in_leaf': 297, 'feature_fraction': 0.9299449731600046, 'bagging_fraction': 0.8782995105018441}. Best is trial 4 with value: 0.9074983182096251.
+SEMILLAS {'arm': 'R6', 'seed': 211}
+FIT_START 161 seed 211 round_cap 187
+SEMILLAS {'arm': 'R6', 'seed': 307}
+FIT_START 162 seed 307 round_cap 187
+SEMILLAS {'arm': 'R6', 'seed': 401}
+FIT_START 163 seed 401 round_cap 187
+SEMILLAS {'arm': 'R6', 'seed': 503}
+FIT_START 164 seed 503 round_cap 187
+SEMILLAS {'arm': 'R6', 'seed': 601}
+FIT_START 165 seed 601 round_cap 187
+COMPLETO {}
