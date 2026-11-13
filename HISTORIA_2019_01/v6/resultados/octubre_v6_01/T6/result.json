@@ -1,0 +1,68 @@
+{
+  "arm": "T6",
+  "seeds": [
+    {
+      "seed": 211,
+      "frozen_august_proportion": 0.03419594046418525,
+      "auc": 0.9135686186891008,
+      "gain": {
+        "n_clients": 135754,
+        "cut_contacts": 4642,
+        "contact_proportion": 0.03419420422234336,
+        "point_gain": 270545000.0
+      }
+    },
+    {
+      "seed": 307,
+      "frozen_august_proportion": 0.03593227535693434,
+      "auc": 0.9143858222171475,
+      "gain": {
+        "n_clients": 135754,
+        "cut_contacts": 4877,
+        "contact_proportion": 0.03592527660326768,
+        "point_gain": 268482500.0
+      }
+    },
+    {
+      "seed": 401,
+      "frozen_august_proportion": 0.03484801383002115,
+      "auc": 0.9149637276143301,
+      "gain": {
+        "n_clients": 135754,
+        "cut_contacts": 4730,
+        "contact_proportion": 0.034842435582008634,
+        "point_gain": 270325000.0
+      }
+    },
+    {
+      "seed": 503,
+      "frozen_august_proportion": 0.035803377133455154,
+      "auc": 0.9127052377052377,
+      "gain": {
+        "n_clients": 135754,
+        "cut_contacts": 4860,
+        "contact_proportion": 0.035800050090605065,
+        "point_gain": 266750000.0
+      }
+    },
+    {
+      "seed": 601,
+      "frozen_august_proportion": 0.0313525972992031,
+      "auc": 0.9128546243004073,
+      "gain": {
+        "n_clients": 135754,
+        "cut_contacts": 4256,
+        "contact_proportion": 0.03135082575835703,
+        "point_gain": 265760000.0
+      }
+    }
+  ],
+  "ensemble_auc": 0.9161250477515537,
+  "frozen_august_proportion": 0.040731838619424206,
+  "ensemble_gain": {
+    "n_clients": 135754,
+    "cut_contacts": 5529,
+    "contact_proportion": 0.04072808167715132,
+    "point_gain": 263752500.0
+  }
+}

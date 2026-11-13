@@ -1,0 +1,244 @@
+{
+  "B0_J": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "L4": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "L6": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "S3": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "S4": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "S6": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "T4": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "T6": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "R3": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "R4": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "R6": {
+    "211": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "307": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "401": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "503": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "601": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  }
+}

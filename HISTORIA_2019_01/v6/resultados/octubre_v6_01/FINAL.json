@@ -1,0 +1,274 @@
+{
+  "status": "OCTOBER_EVALUATED",
+  "training_fits": 0,
+  "n_october": 135754,
+  "arms": [
+    "B0_J",
+    "L4",
+    "L6",
+    "S3",
+    "S4",
+    "S6",
+    "T4",
+    "T6",
+    "R3",
+    "R4",
+    "R6"
+  ],
+  "comparisons": [
+    {
+      "arm": "L4",
+      "control": "B0_J",
+      "ensemble_gain_delta": 4317500.0,
+      "paired_seed_deltas": [
+        -6737500.0,
+        2365000.0,
+        -2282500.0,
+        -770000.0,
+        5830000.0
+      ],
+      "mean_seed_delta": -319000.0,
+      "gain_wins": 2
+    },
+    {
+      "arm": "L6",
+      "control": "B0_J",
+      "ensemble_gain_delta": 6352500.0,
+      "paired_seed_deltas": [
+        -5280000.0,
+        467500.0,
+        -1375000.0,
+        6160000.0,
+        2640000.0
+      ],
+      "mean_seed_delta": 522500.0,
+      "gain_wins": 3
+    },
+    {
+      "arm": "S3",
+      "control": "B0_J",
+      "ensemble_gain_delta": 6930000.0,
+      "paired_seed_deltas": [
+        2365000.0,
+        2612500.0,
+        6187500.0,
+        -3217500.0,
+        7617500.0
+      ],
+      "mean_seed_delta": 3113000.0,
+      "gain_wins": 4
+    },
+    {
+      "arm": "S4",
+      "control": "B0_J",
+      "ensemble_gain_delta": 6517500.0,
+      "paired_seed_deltas": [
+        -4455000.0,
+        -825000.0,
+        -2090000.0,
+        1045000.0,
+        4070000.0
+      ],
+      "mean_seed_delta": -451000.0,
+      "gain_wins": 2
+    },
+    {
+      "arm": "S6",
+      "control": "B0_J",
+      "ensemble_gain_delta": 6792500.0,
+      "paired_seed_deltas": [
+        -5912500.0,
+        5390000.0,
+        -3630000.0,
+        2887500.0,
+        -5307500.0
+      ],
+      "mean_seed_delta": -1314500.0,
+      "gain_wins": 2
+    },
+    {
+      "arm": "T4",
+      "control": "B0_J",
+      "ensemble_gain_delta": 6820000.0,
+      "paired_seed_deltas": [
+        3795000.0,
+        5747500.0,
+        3795000.0,
+        4317500.0,
+        1732500.0
+      ],
+      "mean_seed_delta": 3877500.0,
+      "gain_wins": 5
+    },
+    {
+      "arm": "T6",
+      "control": "B0_J",
+      "ensemble_gain_delta": 1897500.0,
+      "paired_seed_deltas": [
+        2585000.0,
+        3602500.0,
+        2420000.0,
+        4757500.0,
+        -1540000.0
+      ],
+      "mean_seed_delta": 2365000.0,
+      "gain_wins": 4
+    },
+    {
+      "arm": "R3",
+      "control": "B0_J",
+      "ensemble_gain_delta": 11687500.0,
+      "paired_seed_deltas": [
+        16912500.0,
+        4125000.0,
+        3795000.0,
+        18397500.0,
+        4482500.0
+      ],
+      "mean_seed_delta": 9542500.0,
+      "gain_wins": 5
+    },
+    {
+      "arm": "R4",
+      "control": "B0_J",
+      "ensemble_gain_delta": 15125000.0,
+      "paired_seed_deltas": [
+        4042500.0,
+        4455000.0,
+        12292500.0,
+        19195000.0,
+        8965000.0
+      ],
+      "mean_seed_delta": 9790000.0,
+      "gain_wins": 5
+    },
+    {
+      "arm": "R6",
+      "control": "B0_J",
+      "ensemble_gain_delta": 16060000.0,
+      "paired_seed_deltas": [
+        5417500.0,
+        4207500.0,
+        7975000.0,
+        10862500.0,
+        -3767500.0
+      ],
+      "mean_seed_delta": 4939000.0,
+      "gain_wins": 4
+    },
+    {
+      "arm": "S4",
+      "control": "S3",
+      "ensemble_gain_delta": -412500.0,
+      "paired_seed_deltas": [
+        -6820000.0,
+        -3437500.0,
+        -8277500.0,
+        4262500.0,
+        -3547500.0
+      ],
+      "mean_seed_delta": -3564000.0,
+      "gain_wins": 1
+    },
+    {
+      "arm": "S6",
+      "control": "S3",
+      "ensemble_gain_delta": -137500.0,
+      "paired_seed_deltas": [
+        -8277500.0,
+        2777500.0,
+        -9817500.0,
+        6105000.0,
+        -12925000.0
+      ],
+      "mean_seed_delta": -4427500.0,
+      "gain_wins": 2
+    },
+    {
+      "arm": "S6",
+      "control": "S4",
+      "ensemble_gain_delta": 275000.0,
+      "paired_seed_deltas": [
+        -1457500.0,
+        6215000.0,
+        -1540000.0,
+        1842500.0,
+        -9377500.0
+      ],
+      "mean_seed_delta": -863500.0,
+      "gain_wins": 2
+    },
+    {
+      "arm": "T6",
+      "control": "T4",
+      "ensemble_gain_delta": -4922500.0,
+      "paired_seed_deltas": [
+        -1210000.0,
+        -2145000.0,
+        -1375000.0,
+        440000.0,
+        -3272500.0
+      ],
+      "mean_seed_delta": -1512500.0,
+      "gain_wins": 1
+    },
+    {
+      "arm": "R4",
+      "control": "R3",
+      "ensemble_gain_delta": 3437500.0,
+      "paired_seed_deltas": [
+        -12870000.0,
+        330000.0,
+        8497500.0,
+        797500.0,
+        4482500.0
+      ],
+      "mean_seed_delta": 247500.0,
+      "gain_wins": 4
+    },
+    {
+      "arm": "R6",
+      "control": "R3",
+      "ensemble_gain_delta": 4372500.0,
+      "paired_seed_deltas": [
+        -11495000.0,
+        82500.0,
+        4180000.0,
+        -7535000.0,
+        -8250000.0
+      ],
+      "mean_seed_delta": -4603500.0,
+      "gain_wins": 2
+    },
+    {
+      "arm": "R6",
+      "control": "R4",
+      "ensemble_gain_delta": 935000.0,
+      "paired_seed_deltas": [
+        1375000.0,
+        -247500.0,
+        -4317500.0,
+        -8332500.0,
+        -12732500.0
+      ],
+      "mean_seed_delta": -4851000.0,
+      "gain_wins": 1
+    },
+    {
+      "arm": "L6",
+      "control": "L4",
+      "ensemble_gain_delta": 2035000.0,
+      "paired_seed_deltas": [
+        1457500.0,
+        -1897500.0,
+        907500.0,
+        6930000.0,
+        -3190000.0
+      ],
+      "mean_seed_delta": 841500.0,
+      "gain_wins": 3
+    }
+  ],
+  "seconds": 157.12188863754272,
+  "warning": "Exploratory: October was observed in earlier experiments; no tuning, threshold selection or retraining in this evaluation."
+}

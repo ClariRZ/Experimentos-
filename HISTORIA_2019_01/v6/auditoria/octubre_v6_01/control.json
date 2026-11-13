@@ -15,5 +15,7 @@
   },
   "bundle_sha256": "a64f539998d20b2f82722c8a4dba1441c3df016c6cfa0537e75490ddb2660593",
   "pid": "1394",
-  "launched": true
+  "launched": true,
+  "archive_sha256": "69eb58e6793b995ab32c2b8299c3c0af23ef0e3f0de24d327b4e204bd9b6075b",
+  "recovered": true
 }

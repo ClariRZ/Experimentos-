@@ -1,0 +1,13 @@
+{
+  "worker_octubre.py": "8f6e79579e67cf067ac54ac8ea1c0b8aaba44ee2e309c620bb4793e85367dd67",
+  "recuperar_hito.py": "1dfae51ef8bfc9f633db2022858c2754ecaf3831d88c4667de9210883939b7ca",
+  "evaluar_octubre.py": "cfa1e89f12114149c5483abfd2d75e0c23c6742482c259c559f8935867e25f76",
+  "supervisar.py": "41cec6ab82447fc7e886cfb4eaf9148da4c741e2e5cfff9535d16f4c51096383",
+  "fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+  "auditar_etapa1.py": "ac8be4605609b425cfda56bd37aa9fa8473c06605fe193e5751ed1c68ea4cdb7",
+  "control_octubre.py": "5f25c03909ab4ff01a33e25f6a2cce5409787f5196babfc127ac262544e40ef1",
+  "01_full_audit.py": "c382a8092c2f6dc80ba9d55c3558257eca71b5c808357774276f92441daaf9e7",
+  "worker_vm.py": "2daafebba4c2634a4221ee0b886e0953045d3b82bd0c16383d576c2c312ac247",
+  "control_cloudshell.py": "ece64f9c62de08f2fbbdfbcf7704e82cfdf533f09725b884b1bc0f73ff2e513c",
+  "ejecutar_etapa1.py": "0d36c1c708cbe87a53a9479ccb5c186d17d8eff710ab19b43d58f58dcbf1874f"
+}
