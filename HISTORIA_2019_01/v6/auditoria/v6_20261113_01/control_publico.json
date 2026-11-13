@@ -1,0 +1,23 @@
+{
+  "run": "v6_20261113_01",
+  "commit": "ec613ff48c1a69590abbb6527c2333945b55d925",
+  "vm": "clari-c1-fundados",
+  "project": "proj-uba-261002122233861",
+  "zone": "northamerica-northeast2-b",
+  "remote_root": "/home/clarirz/HISTORIA_2019_01/v6/deployments/v6_20261113_01",
+  "max_seconds": 21600,
+  "october_used": false,
+  "bundle_sha256": "e45a1776e5436d7a83012b58c2106aa36183a56fc093560de68d315762fdbed7",
+  "verified_scheduling": {
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "21600"
+    },
+    "instanceTerminationAction": "STOP"
+  },
+  "started_epoch": 1794604477.8450646,
+  "deadline": 1794625477.845066,
+  "error": "TimeoutExpired(['gcloud', 'compute', 'ssh', 'clarirz@clari-c1-fundados', '--command=cd /home/clarirz/HISTORIA_2019_01/v6/deployments/v6_20261113_01 && nohup env POLARS_MAX_THREADS=4 PYTHONPATH=/home/clarirz/HISTORIA_2019_01/v4/.auditdeps /home/clarirz/HISTORIA_2019_01/historia_2019_v1/.venv/bin/python scripts/worker_vm.py --deadline 1794625477.845066 --dataset /home/clarirz/HISTORIA_2019_01/datos/analistasr_competencia_2026.csv.gz > worker.log 2>&1 < /dev/null &', '--project=proj-uba-261002122233861', '--zone=northamerica-northeast2-b', '--quiet'], 30)",
+  "vm_status": "TERMINATED",
+  "controller_finished_epoch": 1794604620.572281
+}
