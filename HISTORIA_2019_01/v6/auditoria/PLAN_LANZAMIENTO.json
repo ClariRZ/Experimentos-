@@ -1,0 +1,19 @@
+{
+  "scope": "11 arms; 165 max fits; 18 preregistered contrasts",
+  "train_months": [
+    201906
+  ],
+  "validation_month": 201908,
+  "october_evaluation": "Not in this development launch; explicit final phase pending",
+  "authorization": "User: lanz\u00e1 v6, 2026-11-13",
+  "gate": "Real matrix construction and complete train-only feature audit must succeed before first fit",
+  "time_estimate_hours": [
+    2,
+    5
+  ],
+  "hard_stop_hours": 6,
+  "v5_measured_seconds": 8769.542241096497,
+  "shutdown": "detached worker + supervisor + GCE hard stop; three-minute recovery grace",
+  "source_repo": "ClariRZ/Experimentos-",
+  "v5_metrics_not_used_to_choose_v6_arms": true
+}

@@ -1,0 +1,12 @@
+{
+  "synthetic_tests_passed": 15,
+  "real_data_audit": "pending; automatic prerequisite before first fit",
+  "training_started": false,
+  "python": "3.14",
+  "polars": "2.1.0",
+  "lightgbm": "4.7.0",
+  "numpy": "2.5.4",
+  "optuna": "5.0.0",
+  "scikit_learn": "1.9.1",
+  "orchestration_mock": "all 165 calls and 18 contrasts verified with fake models, no real fits"
+}

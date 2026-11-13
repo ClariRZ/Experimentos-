@@ -1,0 +1,19 @@
+{
+  "README.md": "bb4ec40083414660cf89fea92e30167e05d0536973f14543a368e7dc5c2686bf",
+  "auditoria/PLAN_LANZAMIENTO.json": "f2df82a28215466c617c4d894fdfe8d5eb1343ebf5b0cf0d2865d16890513435",
+  "auditoria/VALIDACION_LOCAL.json": "223699dcd8504ad53631a2732215213853ed08018e0bf95714c4707e8e049c01",
+  "configuraciones/contrato_v6.json": "f5c5852556b5f52db587b32e807efaf3c72f9b0e6a27bd83ee94d14644345f06",
+  "prompts/PROMPT_MAESTRO_HISTORIA_2019_v6.md": "f780a6de907e0683c5b305d66ec7d14ef58b0eeda0ce4916e475911877b58276",
+  "prompts/procedencia.json": "47b57a370e0a95ec9e57160536477f30429d0b67b02b6c4d16fb9891cbe66aee",
+  "pruebas/test_integrity.py": "b8780f308da3b8707f080b2a5c8e1f9a9b4f666a36fc63f15fcd0cae4e8433db",
+  "pruebas/test_preparacion.py": "5ce43fd7a6a3223918ffedece1606589e59c056535ff2d2ee5aa3ff53ea1dfdf",
+  "pruebas/test_supervisor.py": "37a98236048cea541142a86ea839a5f164c25a1093387f1c6ae9ecce0d662e09",
+  "pruebas/test_workflow.py": "e31b5b4a83c903ae408ed1ea3c8291b3d87e94c9c0298daf0556e61fcf68aab0",
+  "scripts/01_full_audit.py": "c382a8092c2f6dc80ba9d55c3558257eca71b5c808357774276f92441daaf9e7",
+  "scripts/auditar_etapa1.py": "ac8be4605609b425cfda56bd37aa9fa8473c06605fe193e5751ed1c68ea4cdb7",
+  "scripts/control_cloudshell.py": "adfb45387844bc2dbf8506a81e03cb6a166f77a5c77341ad3bddaaecb3153c0b",
+  "scripts/ejecutar_etapa1.py": "0d36c1c708cbe87a53a9479ccb5c186d17d8eff710ab19b43d58f58dcbf1874f",
+  "scripts/fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+  "scripts/supervisar.py": "41cec6ab82447fc7e886cfb4eaf9148da4c741e2e5cfff9535d16f4c51096383",
+  "scripts/worker_vm.py": "2daafebba4c2634a4221ee0b886e0953045d3b82bd0c16383d576c2c312ac247"
+}

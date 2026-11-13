@@ -1,0 +1,62 @@
+{
+  "status": "PROPUESTA_NO_EJECUTABLE_SIN_CONTRATO_APROBADO",
+  "date": "2026-11-13",
+  "sources": [
+    {
+      "path": "HISTORIA_2019_01/v2/prompts/PROMPT_MAESTRO_HISTORIA_2019_v2.md",
+      "sha256": "bd48c6a1a152b4e1e8308c37a944392a33341f5d230f967daeeb1aaf4bf4aa97"
+    },
+    {
+      "path": "HISTORIA_2019_01/v3/prompts/PROMPT_MAESTRO_HISTORIA_2019_v3.md",
+      "sha256": "9127d62059e16d9ff36a67c3a728d7a425681e1fd33797ceb952207ff04d4dcd"
+    },
+    {
+      "path": "experimento_2026-11-13/prompts/01_prompt_original.txt",
+      "sha256": "897f278b58866df8e75903b6e5baa8b9f0914c4dfb0e3cb866ca222ac1f73b18"
+    },
+    {
+      "path": "experimento_2026-11-13/prompts/02_plan_adaptado.md",
+      "sha256": "f026ca4d3976680ff8c37fe15347470dc01676495b48bdaa94e0f4d9d4734d8d"
+    },
+    {
+      "path": "experimento_2026-11-13/prompts/03_contrato_ejecutado.json",
+      "sha256": "7bb93edd205a356240f3667627aa8ec37f9558e5eb530d858719f0da109dc179"
+    },
+    {
+      "path": "HISTORIA_2019_01/v5/prompts/PROMPT_MAESTRO_HISTORIA_2019_v5.md",
+      "sha256": "764071ab9f91c3cc5db5a4e638631a6ed1a996f9fbf59e4cba3cc395e1c22027"
+    },
+    {
+      "path": "HISTORIA_2019_01/v5/configuraciones/etapa1_autorizada_20261113.json",
+      "sha256": "e7c1579b747cb0f6407f3774182cd73e761a082f5fb3f07efa4cffc4157ec023"
+    }
+  ],
+  "notebook": {
+    "local_path": "/home/clara-m-rodr-guez/Documents/Maestría DM/EyF/DMEyF2026/dmeyf2026/monday/z402_Feature_Engineering_en_SQL.ipynb",
+    "sha256": "90a22d49eb622eb7b96b9a6ab66da55e72a585ff580a05ae5524bc79c8e54cb1",
+    "url": "https://github.com/alejandro-bolanos/dmeyf2026/blob/main/monday/z402_Feature_Engineering_en_SQL.ipynb",
+    "inspected_cells_zero_based": [
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      29
+    ],
+    "caveat": "Local copy inspected; current remote revision not asserted"
+  },
+  "conversation_sources": [
+    "Pautas de Alejandro del 28 de octubre copiadas por la usuaria",
+    "Transcripción de reunión compartida por la usuaria",
+    "Pedido de completar v5 y redactar v6 sin esperar sus resultados"
+  ],
+  "new_design_choices": [
+    "June-only common train",
+    "Eleven core arms and eighteen contrasts",
+    "Common train-only source-formula eligibility across comparable windows",
+    "Proposed 165 fits, not an execution authorization"
+  ],
+  "v5_modified": false,
+  "vm_actions_for_drafting": false
+}
