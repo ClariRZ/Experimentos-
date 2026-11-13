@@ -5,7 +5,7 @@ PROJECT='proj-uba-261002122233861';ZONE='northamerica-northeast2-b';VM='clari-c1
 BASE='/home/clarirz/HISTORIA_2019_01';PYTHON=BASE+'/historia_2019_v1/.venv/bin/python'
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--repo',type=Path,required=True);p.add_argument('--commit',required=True);p.add_argument('--run',required=True);p.add_argument('--deadline',type=float);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--repo',type=Path,required=True);p.add_argument('--commit',required=True);p.add_argument('--run',required=True);p.add_argument('--deadline',type=float);p.add_argument('--use-running-vm',action='store_true');a=p.parse_args()
  if not re.fullmatch(r'[0-9a-f]{40}',a.commit) or not re.fullmatch(r'v6_[0-9_]+',a.run):raise ValueError('Invalid run identity')
  repo=a.repo.resolve();source=repo/'HISTORIA_2019_01/v6'
  def command(args,timeout=120,check=True):
@@ -28,12 +28,20 @@ def main():
    if hashlib.sha256(b).hexdigest()!=h:raise ValueError('Hash mismatch '+n)
    info=tarfile.TarInfo(n);info.size=len(b);t.addfile(info,io.BytesIO(b))
  record['bundle_sha256']=hashlib.sha256(bundle.read_bytes()).hexdigest()
- if describe()['status']!='TERMINATED':raise RuntimeError('VM is not stopped; refusing concurrent run')
+ before=describe()
  if a.deadline is not None and a.deadline<=time.time()+600:raise ValueError('Insufficient remaining approved time')
  cap=21600 if a.deadline is None else min(21600,int(a.deadline-time.time())+600)
+ if a.use_running_vm:
+  if before['status']!='RUNNING' or a.deadline is None:raise ValueError('Recovery requires running VM and original deadline')
+  from datetime import datetime
+  scheduling=before['scheduling'];cap=int(scheduling.get('maxRunDuration',{}).get('seconds',0))
+  absolute_stop=datetime.fromisoformat(before['lastStartTimestamp']).timestamp()+cap
+  if not 0<cap<=21600 or absolute_stop>a.deadline+620:raise ValueError('Existing stop cap would extend approved budget')
+ else:
+  if before['status']!='TERMINATED':raise RuntimeError('VM is not stopped; refusing concurrent run')
+  gc(['instances','set-scheduling',VM,'--max-run-duration='+str(cap)+'s','--instance-termination-action=STOP'])
+  scheduling=describe()['scheduling']
  record['max_seconds']=cap
- gc(['instances','set-scheduling',VM,'--max-run-duration='+str(cap)+'s','--instance-termination-action=STOP'])
- scheduling=describe()['scheduling']
  if int(scheduling.get('maxRunDuration',{}).get('seconds',0))!=cap or scheduling.get('instanceTerminationAction')!='STOP':raise RuntimeError('Provider stop cap unverified')
  record['verified_scheduling']={k:scheduling[k] for k in ['maxRunDuration','instanceTerminationAction']}
  started=False;launched=False
@@ -46,7 +54,8 @@ def main():
    command(['git','-C',str(repo),'push','origin','main'])
  try:
   record['started_epoch']=time.time();record['deadline']=a.deadline if a.deadline is not None else time.time()+21000;save()
-  started=True;gc(['instances','start',VM],timeout=180)
+  started=True
+  if not a.use_running_vm:gc(['instances','start',VM],timeout=180)
   for attempt in range(15):
    try:
     if ssh('true',timeout=30,check=False).returncode==0:break

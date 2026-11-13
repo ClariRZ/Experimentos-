@@ -3,10 +3,10 @@
   "stage": "SSH worker dispatch",
   "error": "timeout after 30 seconds",
   "vm_confirmed": "TERMINATED",
-  "worker_started": "Unknown until log recovery",
-  "fits_completed": "Unknown until log recovery",
+  "worker_started": "Preparation only; status PREPARANDO fits_started=0; log contains PREPARANDO only",
+  "fits_completed": 0,
   "correction": "Detached subprocess with closed descriptors; mark dispatch before SSH; timeout no longer causes stop of possibly active worker",
-  "next_step": "Recover first attempt log before retry, no duplicate fits",
+  "next_step": "New deployment v6_20261113_02 on recovered VM, same original deadline; previous output preserved",
   "original_worker_deadline": 1794625477.845066,
-  "automatic_approval": "Restart blocked; explicit user confirmation requested"
+  "automatic_approval": "Clara authorized recovery/restart 2026-11-13"
 }
