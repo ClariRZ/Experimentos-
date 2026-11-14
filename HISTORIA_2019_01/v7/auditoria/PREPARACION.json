@@ -1,19 +1,26 @@
 {
-  "state": "PREPARACION_NO_LANZADA",
+  "state": "EJECUTOR_VALIDADO_EN_SINTETICO_AUDITORIA_REAL_PENDIENTE",
   "training_executed": false,
   "vm_started_by_this_turn": false,
   "tests": {
-    "count": 5,
-    "passed": 5,
-    "scope": "Inherited feature formulas, temporal gaps, zero denominator, ranks, tie/cut"
+    "unit_tests": 9,
+    "passed": 9,
+    "synthetic_full_workflow_fits": 150,
+    "synthetic_max_rounds": 3,
+    "real_training_executed": false
   },
   "blockers": [
-    "Remote VM access/status pending",
-    "Real-data July-October sanitation audit pending",
-    "Complete ten-arm execution controller pending validation",
-    "Provider STOP cap and finish shutdown not yet configured"
+    "Real-data July-October audit and sanitation review pending",
+    "Executable configuration must bind real audit hash",
+    "Training controller/provider six-hour cap not yet configured"
   ],
   "authorization": "EJECUTAMOS, APAGAR LA VM CUANDO TERMINE",
   "requested_initial_cap_hours": 6,
-  "fe_core_sha256": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a"
+  "fe_core_sha256": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+  "vm_observed_user_output": {
+    "status": "TERMINATED",
+    "machine_type": "e2-highmem-8",
+    "maxRunDuration_seconds": 2700,
+    "instanceTerminationAction": "STOP"
+  }
 }
