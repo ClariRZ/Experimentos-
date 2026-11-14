@@ -1,0 +1,19 @@
+{
+  "bagging_freq": 1,
+  "num_threads": 4,
+  "deterministic": true,
+  "force_col_wise": true,
+  "objective": "binary",
+  "metric": "auc",
+  "num_leaves": 35,
+  "learning_rate": 0.019762909696181094,
+  "min_data_in_leaf": 1478,
+  "feature_fraction": 0.7614584393307321,
+  "bagging_fraction": 0.7164292414274216,
+  "seed": 100057,
+  "feature_fraction_seed": 100057,
+  "bagging_seed": 100057,
+  "data_random_seed": 100057,
+  "feature_pre_filter": false,
+  "verbosity": -1
+}

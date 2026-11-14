@@ -1,0 +1,222 @@
+{
+  "B0": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "RK": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "P3": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "MIN3": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "RAN3": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "R3": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "R4": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "T4": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "H_T": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  },
+  "H_S": {
+    "100019": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100043": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100049": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100057": {
+      "exact": true,
+      "max_error": 0.0
+    },
+    "100069": {
+      "exact": true,
+      "max_error": 0.0
+    }
+  }
+}

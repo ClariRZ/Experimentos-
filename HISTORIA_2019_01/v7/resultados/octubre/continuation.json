@@ -1,0 +1,8 @@
+{
+  "source": "/home/clarirz/HISTORIA_2019_01/v7/deployments/v7_20261114_120354/resultados/ejecucion",
+  "source_policy_sha256": "a71b36b096699aba00e30c1d2864b2e9ac6227129efe3f5783115abc6365dad4",
+  "new_fits": 0,
+  "feature_generation": "original functions, frozen columns, one arm at a time in memory",
+  "script_sha256": "666af43a3c5b0ab222bacc5949d2083770a1a6b3262799498b130d507e81eb46",
+  "started_epoch": 1794680747.6388578
+}

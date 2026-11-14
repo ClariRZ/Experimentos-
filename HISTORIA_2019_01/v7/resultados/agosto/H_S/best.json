@@ -1,0 +1,12 @@
+{
+  "trial": 0,
+  "auc": 0.9098678881887633,
+  "params": {
+    "num_leaves": 16,
+    "learning_rate": 0.013697883199900894,
+    "min_data_in_leaf": 198,
+    "feature_fraction": 0.5325553240876523,
+    "bagging_fraction": 0.6235398602236146
+  },
+  "rounds": 547
+}

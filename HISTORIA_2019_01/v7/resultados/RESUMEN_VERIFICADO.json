@@ -1,0 +1,152 @@
+[
+  {
+    "arm": "B0",
+    "agosto": {
+      "gain": 200172500,
+      "delta": 0,
+      "wins": 0,
+      "mean_seed_delta": 0.0
+    },
+    "octubre": {
+      "gain": 272167500,
+      "delta": 0,
+      "wins": 0,
+      "mean_seed_delta": 0.0
+    }
+  },
+  {
+    "arm": "RK",
+    "agosto": {
+      "gain": 200172500,
+      "delta": 0,
+      "wins": 3,
+      "mean_seed_delta": 2420000.0
+    },
+    "octubre": {
+      "gain": 275467500,
+      "delta": 3300000,
+      "wins": 4,
+      "mean_seed_delta": 6600000.0
+    }
+  },
+  {
+    "arm": "P3",
+    "agosto": {
+      "gain": 197972500,
+      "delta": -2200000,
+      "wins": 3,
+      "mean_seed_delta": 0.0
+    },
+    "octubre": {
+      "gain": 282067500,
+      "delta": 9900000,
+      "wins": 5,
+      "mean_seed_delta": 12540000.0
+    }
+  },
+  {
+    "arm": "MIN3",
+    "agosto": {
+      "gain": 193572500,
+      "delta": -6600000,
+      "wins": 0,
+      "mean_seed_delta": -10120000.0
+    },
+    "octubre": {
+      "gain": 274367500,
+      "delta": 2200000,
+      "wins": 2,
+      "mean_seed_delta": 2640000.0
+    }
+  },
+  {
+    "arm": "RAN3",
+    "agosto": {
+      "gain": 193572500,
+      "delta": -6600000,
+      "wins": 0,
+      "mean_seed_delta": -10120000.0
+    },
+    "octubre": {
+      "gain": 272167500,
+      "delta": 0,
+      "wins": 4,
+      "mean_seed_delta": 3520000.0
+    }
+  },
+  {
+    "arm": "R3",
+    "agosto": {
+      "gain": 203472500,
+      "delta": 3300000,
+      "wins": 4,
+      "mean_seed_delta": 880000.0
+    },
+    "octubre": {
+      "gain": 279867500,
+      "delta": 7700000,
+      "wins": 4,
+      "mean_seed_delta": 5720000.0
+    }
+  },
+  {
+    "arm": "R4",
+    "agosto": {
+      "gain": 196872500,
+      "delta": -3300000,
+      "wins": 3,
+      "mean_seed_delta": 1320000.0
+    },
+    "octubre": {
+      "gain": 282067500,
+      "delta": 9900000,
+      "wins": 5,
+      "mean_seed_delta": 9460000.0
+    }
+  },
+  {
+    "arm": "T4",
+    "agosto": {
+      "gain": 199072500,
+      "delta": -1100000,
+      "wins": 2,
+      "mean_seed_delta": 1320000.0
+    },
+    "octubre": {
+      "gain": 283167500,
+      "delta": 11000000,
+      "wins": 5,
+      "mean_seed_delta": 9460000.0
+    }
+  },
+  {
+    "arm": "H_T",
+    "agosto": {
+      "gain": 199072500,
+      "delta": -1100000,
+      "wins": 2,
+      "mean_seed_delta": 220000.0
+    },
+    "octubre": {
+      "gain": 275467500,
+      "delta": 3300000,
+      "wins": 4,
+      "mean_seed_delta": 5720000.0
+    }
+  },
+  {
+    "arm": "H_S",
+    "agosto": {
+      "gain": 206772500,
+      "delta": 6600000,
+      "wins": 5,
+      "mean_seed_delta": 5940000.0
+    },
+    "octubre": {
+      "gain": 276567500,
+      "delta": 4400000,
+      "wins": 5,
+      "mean_seed_delta": 8580000.0
+    }
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "arm": "R4",
+  "seeds": [
+    {
+      "seed": 100019,
+      "auc": 0.9104457860961127,
+      "own_policy_august": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 199263364.56771612,
+        "cut_contacts": 4633,
+        "contact_proportion": 0.03512855702229939,
+        "point_gain_at_cut": 201492500.0
+      },
+      "seconds": 116.54233503341675,
+      "common": {
+        "contacts": 3481,
+        "hits": 264,
+        "gain": 194672500
+      }
+    },
+    {
+      "seed": 100043,
+      "auc": 0.9097843551317467,
+      "own_policy_august": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 201448233.38330835,
+        "cut_contacts": 4334,
+        "contact_proportion": 0.03286146473875363,
+        "point_gain_at_cut": 202015000.0
+      },
+      "seconds": 114.8052134513855,
+      "common": {
+        "contacts": 3481,
+        "hits": 274,
+        "gain": 205672500
+      }
+    },
+    {
+      "seed": 100049,
+      "auc": 0.910930240965649,
+      "own_policy_august": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 204337533.7331334,
+        "cut_contacts": 3938,
+        "contact_proportion": 0.029858894356532484,
+        "point_gain_at_cut": 203005000.0
+      },
+      "seconds": 119.56223821640015,
+      "common": {
+        "contacts": 3481,
+        "hits": 273,
+        "gain": 204572500
+      }
+    },
+    {
+      "seed": 100057,
+      "auc": 0.9111649756610021,
+      "own_policy_august": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 200462218.89055473,
+        "cut_contacts": 4640,
+        "contact_proportion": 0.03518163276137906,
+        "point_gain_at_cut": 201300000.0
+      },
+      "seconds": 116.85959553718567,
+      "common": {
+        "contacts": 3481,
+        "hits": 267,
+        "gain": 197972500
+      }
+    },
+    {
+      "seed": 100069,
+      "auc": 0.9082939025263365,
+      "own_policy_august": {
+        "n_clients": 131887,
+        "smoothed_gain_max": 196621522.98850575,
+        "cut_contacts": 4783,
+        "contact_proportion": 0.03626589428829225,
+        "point_gain_at_cut": 197367500.0
+      },
+      "seconds": 117.0050756931305,
+      "common": {
+        "contacts": 3481,
+        "hits": 262,
+        "gain": 192472500
+      }
+    }
+  ],
+  "ensemble_auc": 0.9111304254132172,
+  "common": {
+    "contacts": 3481,
+    "hits": 266,
+    "gain": 196872500
+  },
+  "own_policy_august": {
+    "n_clients": 131887,
+    "smoothed_gain_max": 201409835.08245876,
+    "cut_contacts": 4048,
+    "contact_proportion": 0.030692941684927248,
+    "point_gain_at_cut": 202180000.0
+  }
+}

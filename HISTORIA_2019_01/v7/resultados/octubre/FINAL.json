@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_EXPLORATORY",
+  "source_run": "/home/clarirz/HISTORIA_2019_01/v7/deployments/v7_20261114_120354/resultados/ejecucion",
+  "new_fits": 0,
+  "original_fits": 150,
+  "arms": [
+    "B0",
+    "RK",
+    "P3",
+    "MIN3",
+    "RAN3",
+    "R3",
+    "R4",
+    "T4",
+    "H_T",
+    "H_S"
+  ],
+  "august_predictions_regenerated": 50,
+  "common_october_contacts": 3583,
+  "seconds": 196.68292999267578,
+  "independent_full_rerun": false
+}

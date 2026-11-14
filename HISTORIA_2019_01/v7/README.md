@@ -2,7 +2,7 @@
 
 ## Estado vigente — 14 de noviembre de 2026
 
-**Preparado para lanzamiento con controles previos obligatorios; entrenamiento real todavía no confirmado.** Esta revisión sustituye el bloqueo de `0079bf5` tras la decisión expresa de Clara: tratar octubre como en v4/v6, documentar las anomalías y seguir adelante.
+**Entrenamiento real de 150 ajustes completado; evaluación de octubre completada sin reentrenar.** Esta revisión sustituye el bloqueo de `0079bf5` tras la decisión expresa de Clara: tratar octubre como en v4/v6, documentar las anomalías y seguir adelante.
 
 - Se mantienen las nueve máscaras históricas de abril–mayo. Su continuidad es una decisión del experimento, no una confirmación oficial nueva.
 - **No se aplican máscaras en julio ni octubre.** Se conservan ceros y faltantes originales. Las 14 anomalías de octubre quedan documentadas sin tratamiento.
@@ -11,6 +11,35 @@
 - Comparaciones pareadas por semilla, dispersión y peor resultado; bootstrap condicional por cliente; tres contrastes principales con ajuste Bonferroni. Son resultados exploratorios, no una garantía temporal ni de ganancia futura.
 
 [Prompt](prompts/PROMPT_MAESTRO_HISTORIA_2019_v7.md) y [contrato ejecutable](configuraciones/contrato_v7.json). El prompt incluye la resolución posterior del saneamiento. Los documentos históricos de auditoría se conservan; su estado queda actualizado por [CIERRE_REVISION.json](auditoria/CIERRE_REVISION.json).
+
+## Resultados reales publicados
+
+Corrida original `v7_20261114_120354`: desarrollo congelado y luego interrupción por `DISK_CAP`. Continuación `octubre_20261114_182415`: `COMPLETE_EXPLORATORY`, supervisor con código de salida 0, cero ajustes nuevos y 50 predicciones de agosto reproducidas exactamente. Se preservan ambos estados originales en carpetas separadas; el fallo original no se presenta como una ejecución completa.
+
+- [Agosto: búsqueda, hiperparámetros, resultados por semilla y auditorías](resultados/agosto/).
+- [Octubre: resultados por semilla, contrastes e intervalos](resultados/octubre/).
+- [Procedencia y hashes de los archivos descargados](resultados/PROCEDENCIA.json).
+- [Resumen numérico verificado](resultados/RESUMEN_VERIFICADO.json).
+- [Continuación sin entrenamiento](../../herramientas/continuar_octubre_v7.py) y [evaluador](../../herramientas/evaluar_octubre_v7.py).
+
+Ganancias en millones; ensemble de cinco semillas. Presupuesto común: 3.481 contactos en agosto y 3.583 en octubre. La mejora se calcula frente a B0 del mismo mes. Las victorias por semilla son una medida distinta de la ganancia del ensemble.
+
+| Brazo | Ganancia octubre | Diferencia octubre vs B0 | Semillas favorables octubre | Diferencia agosto vs B0 |
+|---|---:|---:|---:|---:|
+| B0 | 272.1675 | +0.00 | 0/5 | +0.00 |
+| RK | 275.4675 | +3.30 | 4/5 | +0.00 |
+| P3 | 282.0675 | +9.90 | 5/5 | -2.20 |
+| MIN3 | 274.3675 | +2.20 | 2/5 | -6.60 |
+| RAN3 | 272.1675 | +0.00 | 4/5 | -6.60 |
+| R3 | 279.8675 | +7.70 | 4/5 | +3.30 |
+| R4 | 282.0675 | +9.90 | 5/5 | -3.30 |
+| T4 | 283.1675 | +11.00 | 5/5 | -1.10 |
+| H_T | 275.4675 | +3.30 | 4/5 | -1.10 |
+| H_S | 276.5675 | +4.40 | 5/5 | +6.60 |
+
+T4 obtuvo la mayor ganancia en octubre (+11 M, aproximadamente +4,04%), pero había perdido 1,1 M en agosto. R3 y H_S mejoraron frente a B0 en ambos meses. Los tres contrastes principales (H_T vs R4, H_T vs T4, H_S vs R4) no excluyen cero con el ajuste previsto. T4 vs B0 tiene un intervalo nominal del 95% positivo en octubre, pero es secundario, sin ajuste por multiplicidad. No se declara ganador confirmatorio ni se modifica la selección mirando octubre.
+
+**Alcance del respaldo:** se publican código, configuración, prompts, auditorías agregadas, parámetros, hashes, métricas y registros. No se publican dataset, modelos ni predicciones individuales. El respaldo privado de octubre sufrió una transferencia interrumpida: su recuperación completa y el estado actual de la VM siguen pendientes de verificación. Esto no es una reproducción independiente desde cero. Los hashes locales de los archivos descargados no sustituyen la comparación con los manifiestos externos de transferencia, no disponibles localmente.
 
 ## Verificaciones realizadas
 

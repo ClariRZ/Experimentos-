@@ -1,0 +1,7 @@
+{
+  "returncode": -15,
+  "reason": "DISK_CAP",
+  "peak_rss_bytes": 15625129984,
+  "finished_epoch": 1794669561.7754984,
+  "complete": false
+}

@@ -1,0 +1,86 @@
+{
+  "arm": "H_S",
+  "seeds": [
+    {
+      "seed": 100019,
+      "auc": 0.9218326564712107,
+      "common": {
+        "contacts": 3583,
+        "hits": 343,
+        "gain": 278767500
+      },
+      "own": {
+        "contacts": 4036,
+        "hits": 359,
+        "gain": 283910000
+      }
+    },
+    {
+      "seed": 100043,
+      "auc": 0.9209417757610527,
+      "common": {
+        "contacts": 3583,
+        "hits": 342,
+        "gain": 277667500
+      },
+      "own": {
+        "contacts": 4283,
+        "hits": 362,
+        "gain": 280417500
+      }
+    },
+    {
+      "seed": 100049,
+      "auc": 0.9219029152764092,
+      "common": {
+        "contacts": 3583,
+        "hits": 348,
+        "gain": 284267500
+      },
+      "own": {
+        "contacts": 3906,
+        "hits": 357,
+        "gain": 285285000
+      }
+    },
+    {
+      "seed": 100057,
+      "auc": 0.9217644416439598,
+      "common": {
+        "contacts": 3583,
+        "hits": 341,
+        "gain": 276567500
+      },
+      "own": {
+        "contacts": 3974,
+        "hits": 359,
+        "gain": 285615000
+      }
+    },
+    {
+      "seed": 100069,
+      "auc": 0.9212622162923367,
+      "common": {
+        "contacts": 3583,
+        "hits": 341,
+        "gain": 276567500
+      },
+      "own": {
+        "contacts": 3992,
+        "hits": 357,
+        "gain": 282920000
+      }
+    }
+  ],
+  "ensemble_auc": 0.9225032691900164,
+  "common": {
+    "contacts": 3583,
+    "hits": 341,
+    "gain": 276567500
+  },
+  "own": {
+    "contacts": 4061,
+    "hits": 361,
+    "gain": 285422500
+  }
+}
