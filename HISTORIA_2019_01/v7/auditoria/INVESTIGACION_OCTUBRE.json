@@ -1,0 +1,28 @@
+{
+  "review_date": "2026-11-14",
+  "source": "https://github.com/miglesias91/rutiles/blob/main/R/eyf.R",
+  "source_context": "feature_eng, correccion_catedra, comment CORRECCIÓN DE GUSTAVO",
+  "october_variables": [
+    "mpasivos_margen",
+    "mactivos_margen",
+    "ccomisiones_otras",
+    "mcomisiones_otras",
+    "mcomisiones",
+    "mrentabilidad",
+    "mrentabilidad_annual",
+    "chomebanking_transacciones",
+    "ctarjeta_visa_descuentos",
+    "ctarjeta_master_descuentos",
+    "mtarjeta_visa_descuentos",
+    "mtarjeta_master_descuentos",
+    "ccajeros_propios_descuentos",
+    "mcajeros_propios_descuentos"
+  ],
+  "interpretation": "External historical code corroborates all 14 October masks. Its author attributes these to the chair; this is not direct confirmation from Alejandro for the current dataset.",
+  "current_dataset_evidence": "All 14 variables are zero for every October row and varied in September (RESUMEN_REAL.json).",
+  "group_source": "https://github.com/ezequielabregu/DMEyF-2026-experi-colab-feature_historico/blob/main/pipeline/parametros.py",
+  "group_observation": "Manual discount corrections plus rule-based financial/homebanking corrections and two extra Master discount corrections; do not treat as official confirmation.",
+  "ale_material_checked": "monday listing and z402 notebook; no explicit October broken-variable confirmation found in z402",
+  "recommendation": "WITHDRAWN: external source is an investigative lead only; user rejected using it as authority. October sanitation unresolved, launch blocked.",
+  "execution": "No training or VM action performed during this review."
+}

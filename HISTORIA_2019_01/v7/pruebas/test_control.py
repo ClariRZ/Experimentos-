@@ -7,9 +7,21 @@ import tarfile
 import tempfile
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from control_entrenamiento import validate_audit,verify_archive,digest
+from control_entrenamiento import validate_audit,verify_archive,digest,validate_launch_gate,main
+from unittest.mock import patch
 
 class ControllerTests(unittest.TestCase):
+    def test_unresolved_gate_blocks(self):
+        for cfg in [{}, {'training_authorized':True,'real_audit_approved':False,'sanitation_review':{'resolved':True}}, {'training_authorized':True,'real_audit_approved':True,'sanitation_review':{'resolved':False}}]:
+            with self.assertRaisesRegex(ValueError,'V7 BLOCKED'):validate_launch_gate(cfg)
+        validate_launch_gate({'training_authorized':True,'real_audit_approved':True,'sanitation_review':{'resolved':True}})
+
+    def test_blocked_main_never_calls_cloud(self):
+        cfg={'training_authorized':True,'real_audit_approved':False,'sanitation_review':{'resolved':False}}
+        with patch.object(sys,'argv',['controller','--output','/tmp/unused_v7_block_test']), patch('control_entrenamiento.Path.read_text',return_value=json.dumps(cfg)), patch('control_entrenamiento.subprocess.run') as cloud:
+            with self.assertRaisesRegex(ValueError,'V7 BLOCKED'):main()
+            cloud.assert_not_called()
+
     def fixture(self,path):
         rows=[dict(month=m,variable='x'+str(i),rows=10,zeros=0,nulls=0,nonfinite=0,distinct_finite=5,minimum=1,maximum=5)
               for m in range(201901,201911) for i in range(152)]

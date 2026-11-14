@@ -1,6 +1,6 @@
 {
   "version": "v7",
-  "status": "LISTO_PARA_LANZAR_NO_ENTRENADO",
+  "status": "BLOCKED_PENDING_METHOD_AND_SANITATION_REVIEW",
   "training_authorized": true,
   "scope": "10 arms, April-June, common budget, August and October",
   "data": {
@@ -188,8 +188,8 @@
       "Visa_cadelantosefectivo",
       "Visa_mpagominimo"
     ],
-    "sanitation_status": "REVIEWED_BEFORE_TRAINING",
-    "broken_masks_status": "Frozen v7; same treatment for all arms; raw dataset unchanged"
+    "sanitation_status": "UNRESOLVED_DO_NOT_EXECUTE",
+    "broken_masks_status": "Candidate masks retained for review only; no permission to apply while audit gate is false"
   },
   "feature_policy": {
     "automatic_coverage_threshold": null,
@@ -451,13 +451,13 @@
     ]
   ],
   "preflight_required": true,
-  "real_audit_approved": true,
+  "real_audit_approved": false,
   "real_audit_file": "calidad_real.json",
   "real_audit_sha256": "430abb720b73f5ca225d6eeb5c131354766c5ca2be8f2853cd2a6ebf93d40401",
   "sanitation_review": {
-    "resolved": true,
+    "resolved": false,
     "official_confirmation": false,
-    "basis": "Original nine masks retained. Fourteen October variables entirely zero with September variation. July closing-date fields retain substantial nonzero variation and zero can be a valid day count; preserve original values. Full June-July-August statistics reviewed before training, without using outcomes.",
+    "basis": "Previous automatic approval withdrawn. April/May inherited masks and October candidates require documented justification; July preservation is provisional. See auditoria/REVISION_CRITICA.json.",
     "october_labels_used": false,
     "gain_used_to_choose_masks": false,
     "comparability": "New sanitation differs from older experiments; compare arms only under this shared v7 sanitation.",

@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-14",
+  "scope": "Static review of v7 contract, feature generator, runner, supervisor and controller against v7 prompt and recorded experiment history; not a complete independent validation",
+  "execution": "No VM call or training in this review",
+  "findings": [
+    {
+      "id": "S01",
+      "severity": "blocking",
+      "issue": "Premature sanitation approval",
+      "evidence": "real_audit_approved and resolved were true despite no resolved business justification for all 14 October masks. External historical source incorrectly elevated to authority.",
+      "action": "Approval flags withdrawn; launch blocked."
+    },
+    {
+      "id": "S02",
+      "severity": "blocking",
+      "issue": "Inherited April/May assumptions",
+      "evidence": "Nine masks were retained without fresh semantic justification in v7; historical official_confirmation was false. Dataset all-zero evidence alone does not establish cause.",
+      "action": "Review all nine with dictionary and month-variable statistics; do not silently treat inherited as confirmed."
+    },
+    {
+      "id": "S03",
+      "severity": "review",
+      "issue": "July decision overstated",
+      "evidence": "Initial all-finite-zero hypothesis was false. Mixed zeros/nonzeros does not prove correct measurement either. Preserving July is provisional, not evidence that there is no defect.",
+      "action": "Retain raw data; document anomaly and defer any transformation."
+    },
+    {
+      "id": "C01",
+      "severity": "blocking",
+      "issue": "Missing coverage provenance",
+      "evidence": "materialize records null fraction by month but does not separate absent client-month, original missing, sanitation and formula-induced missing as required by prompt section 5.",
+      "action": "Implement and validate provenance report before approval; no claim current matrix audit fully satisfies prompt."
+    },
+    {
+      "id": "O01",
+      "severity": "blocking",
+      "issue": "Early worker failures bypass local shutdown",
+      "evidence": "Lock acquisition, existing-output check, sudo check and deadline validation occur before worker try/finally. Failed worker can leave VM running until OS/provider cap.",
+      "action": "Fix startup failure handling without shutting down a different active experiment; test failure paths before launch."
+    },
+    {
+      "id": "O02",
+      "severity": "review",
+      "issue": "Recovery not guaranteed",
+      "evidence": "Backup creation has no separate deadline; Cloud Shell connection or 90-second transfers can fail. Provider STOP caps runtime but does not ensure off-VM recovery.",
+      "action": "Record backup success only after remote and local verification; plan recovery without auto-restarting."
+    },
+    {
+      "id": "R01",
+      "severity": "blocking",
+      "issue": "Environment not frozen before training",
+      "evidence": "Controller imports installed packages; runner logs five package versions after startup. No enforced complete dependency lock, despite prompt requiring environment frozen before fitting.",
+      "action": "Capture VM environment read-only and freeze/validate compatible dependency versions before training."
+    },
+    {
+      "id": "R02",
+      "severity": "limitation",
+      "issue": "No independent reproduction",
+      "evidence": "Synthetic tests, hashes and regenerated predictions are not independent full-dataset training reproduction.",
+      "action": "Separate explicitly; full rerun not performed or budgeted here."
+    },
+    {
+      "id": "M01",
+      "severity": "limitation",
+      "issue": "Statistical interpretation",
+      "evidence": "Five seeds do not establish temporal robustness; August used in tuning/cuts; conditional bootstrap does not cover tuning uncertainty or prior October exploration.",
+      "action": "Existing runner labels exploratory and conditional appropriately; keep those limits in report."
+    },
+    {
+      "id": "G01",
+      "severity": "blocking",
+      "issue": "Controller did not check review flags before Cloud actions",
+      "evidence": "Runner checks flags, but Cloud Shell controller previously did not check them before starting VM.",
+      "action": "Fixed: explicit launch gate before manifest/audit discovery or Cloud actions; regression test added."
+    }
+  ],
+  "checked_without_detected_contradiction": [
+    "129 historical sources equal frozen v5 and v6 lists",
+    "Calendar lags use exact client/month joins",
+    "Feature generation rejects label column; October labels loaded after frozen prediction generation",
+    "Train target combines BAJA+1/BAJA+2; August AUC and economic positives BAJA+2",
+    "Economic payoff 1072500 for hit and -27500 otherwise; common contact budget from August B0",
+    "Separate evaluation seeds from BO seed; five refits at fixed selected iteration",
+    "All arms use same training calendar and sanitation config",
+    "No missing-to-zero imputation in sanitize_base; nonfinite values go to NA; symmetric 0/0 feature explicitly defined as 0, not raw-data imputation"
+  ],
+  "next_steps": [
+    "Complete semantic review and cross-variable October checks from existing audit without labels",
+    "Repair implementation/operational gaps and test",
+    "Present resolved contract and remaining uncertainty before re-enabling execution"
+  ],
+  "old_commits": "Already shared pinned checkout cc6a4c1 remains runnable; main changes cannot revoke that copy. Do not execute earlier launch blocks."
+}

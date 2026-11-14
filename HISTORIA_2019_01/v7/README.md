@@ -1,5 +1,7 @@
 # Historia 2019 v7
 
+> **LANZAMIENTO BLOQUEADO — revisión 2026-11-14.** La aprobación de saneamiento se retiró. No ejecutar los comandos de commits anteriores. El estado histórico de preparación que sigue no constituye autorización actual. Ver [revisión crítica](auditoria/REVISION_CRITICA.json).
+
 [Prompt maestro completo](prompts/PROMPT_MAESTRO_HISTORIA_2019_v7.md): diez brazos, entrenamiento abril–junio y ganancia a igual presupuesto de contactos.
 
 ## Estado

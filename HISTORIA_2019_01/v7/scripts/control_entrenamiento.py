@@ -18,6 +18,11 @@ def digest(p):
     return h.hexdigest()
 
 
+def validate_launch_gate(cfg):
+    if not cfg.get('training_authorized') or not cfg.get('real_audit_approved') or not cfg.get('sanitation_review',{}).get('resolved'):
+        raise ValueError('V7 BLOCKED: method/sanitation review unresolved; no Cloud calls permitted')
+
+
 def validate_audit(path,cfg):
     if digest(path)!=cfg['real_audit_sha256']:raise ValueError('Audit hash mismatch')
     a=json.loads(Path(path).read_text())
@@ -56,6 +61,7 @@ def main():
     p.add_argument('--audit-root',type=Path,default=Path.home());a=p.parse_args()
     root=Path(__file__).resolve().parents[1]
     cfg=json.loads((root/'configuraciones/contrato_v7.json').read_text())
+    validate_launch_gate(cfg)
     manifest=json.loads((root/'MANIFIESTO_CODIGO.json').read_text())
     for name,expected in manifest.items():
         if digest(root/name)!=expected:raise ValueError('Code/config modified: '+name)
