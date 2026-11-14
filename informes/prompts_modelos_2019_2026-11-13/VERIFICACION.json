@@ -1,0 +1,17 @@
+{
+  "scope": "Verificación documental y aritmética; no reentrenamiento",
+  "source_commit": "e7c9db8d98bb84759d2458799ea42ca43dce5f64",
+  "models": 23,
+  "optuna_trials": 230,
+  "evaluation_fits": 115,
+  "august_seed_rows": 115,
+  "october_seed_rows": 80,
+  "source_files_verified": 107,
+  "best_trial_checked": true,
+  "all_column_counts_checked": true,
+  "base_paired_gain_means_checked": true,
+  "october_ensemble_floor_cut_checked": true,
+  "integer_hits_checked": true,
+  "full_training_rerun": false,
+  "private_artifact_recovery_tested": false
+}

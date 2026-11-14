@@ -19,3 +19,7 @@ El híbrido es una propuesta: R4 como control, R4 + tendencia T4 y R4 + cambios 
 - Los enlaces específicos están en las notas de cada diapositiva y en el informe.
 
 El manifiesto identifica esta entrega documental. No sustituye los manifiestos ni la reproducción de los experimentos originales.
+
+## Actualización
+
+[Corrección de los pendientes de trazabilidad de v4](ACLARACION_TRAZABILIDAD.md) y [nuevo informe detallado](../../informes/prompts_modelos_2019_2026-11-13/README.md).

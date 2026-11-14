@@ -1,0 +1,20 @@
+{
+  "INFORME.md": "3029b3791d58e4cd44659b30a67026f77802e312c8466e472de0238974ab4ae6",
+  "Informe_prompts_modelos_hipotesis_2019.docx": "e356102c74340df601889c2cdf9d801c5ac93fd21068351fb039c4534f27001f",
+  "README.md": "21a2e6c2859a9b61c47641cb366777136a96cd9b0a889a8ad738c798ef3ffde1",
+  "VERIFICACION.json": "1d198853689d441a3975a3b5ebfa11c7875f24355da252f8ba0fa61798e7b606",
+  "evidencia.json": "c5425716da27054fce31baf104493f6bd377ab08d6cd7f1d4628b143611b34cf",
+  "fuentes_sha256.json": "316b77b0b6d6c4ab5be7e86634f5144ab0db0a57b89db6b397f9dd075a926bd7",
+  "modelos_resumen.csv": "902d2c9de3c0182cf79928ad96af1ffe1f36b86ccdb8ba9bce2e52508f3d01b9",
+  "prompts_originales/01_01_prompt_original.txt": "897f278b58866df8e75903b6e5baa8b9f0914c4dfb0e3cb866ca222ac1f73b18",
+  "prompts_originales/02_02_plan_adaptado.md": "f026ca4d3976680ff8c37fe15347470dc01676495b48bdaa94e0f4d9d4734d8d",
+  "prompts_originales/03_03_contrato_ejecutado.json": "7bb93edd205a356240f3667627aa8ec37f9558e5eb530d858719f0da109dc179",
+  "prompts_originales/04_PROMPT_MAESTRO_HISTORIA_2019_v5.md": "764071ab9f91c3cc5db5a4e638631a6ed1a996f9fbf59e4cba3cc395e1c22027",
+  "prompts_originales/05_config_frozen.json": "e7c1579b747cb0f6407f3774182cd73e761a082f5fb3f07efa4cffc4157ec023",
+  "prompts_originales/06_PROMPT_MAESTRO_HISTORIA_2019_v6.md": "f780a6de907e0683c5b305d66ec7d14ef58b0eeda0ce4916e475911877b58276",
+  "prompts_originales/07_config_frozen.json": "f5c5852556b5f52db587b32e807efaf3c72f9b0e6a27bd83ee94d14644345f06",
+  "prompts_originales/PROCEDENCIA.json": "2973b095ec2f00d76e1b53de7c5dabadbc1b3e5159cfc6b28a0476b4e9c209ba",
+  "scripts/extraer.py": "bb972ebb8fdc069990be4b78f7d49682a9d723d36441f343fcf94b88f6c3824c",
+  "scripts/redactar.py": "07a523c0dedc35d4251008a87009ec3218415f3d3ef0a9b27fab3019f5b6eb1c",
+  "semillas.csv": "5835950cfb72b934507d70d4b2ad8cdf215c918114b993b485a1300c42bd94aa"
+}

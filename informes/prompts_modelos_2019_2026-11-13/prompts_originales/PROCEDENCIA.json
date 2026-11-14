@@ -1,0 +1,37 @@
+[
+  {
+    "copy": "01_01_prompt_original.txt",
+    "source": "experimento_2026-11-13/prompts/01_prompt_original.txt",
+    "sha256": "897f278b58866df8e75903b6e5baa8b9f0914c4dfb0e3cb866ca222ac1f73b18"
+  },
+  {
+    "copy": "02_02_plan_adaptado.md",
+    "source": "experimento_2026-11-13/prompts/02_plan_adaptado.md",
+    "sha256": "f026ca4d3976680ff8c37fe15347470dc01676495b48bdaa94e0f4d9d4734d8d"
+  },
+  {
+    "copy": "03_03_contrato_ejecutado.json",
+    "source": "experimento_2026-11-13/prompts/03_contrato_ejecutado.json",
+    "sha256": "7bb93edd205a356240f3667627aa8ec37f9558e5eb530d858719f0da109dc179"
+  },
+  {
+    "copy": "04_PROMPT_MAESTRO_HISTORIA_2019_v5.md",
+    "source": "HISTORIA_2019_01/v5/prompts/PROMPT_MAESTRO_HISTORIA_2019_v5.md",
+    "sha256": "764071ab9f91c3cc5db5a4e638631a6ed1a996f9fbf59e4cba3cc395e1c22027"
+  },
+  {
+    "copy": "05_config_frozen.json",
+    "source": "HISTORIA_2019_01/v5/resultados/entrenamiento_20261113_01/config_frozen.json",
+    "sha256": "e7c1579b747cb0f6407f3774182cd73e761a082f5fb3f07efa4cffc4157ec023"
+  },
+  {
+    "copy": "06_PROMPT_MAESTRO_HISTORIA_2019_v6.md",
+    "source": "HISTORIA_2019_01/v6/prompts/PROMPT_MAESTRO_HISTORIA_2019_v6.md",
+    "sha256": "f780a6de907e0683c5b305d66ec7d14ef58b0eeda0ce4916e475911877b58276"
+  },
+  {
+    "copy": "07_config_frozen.json",
+    "source": "HISTORIA_2019_01/v6/resultados/v6_20261113_02/config_frozen.json",
+    "sha256": "f5c5852556b5f52db587b32e807efaf3c72f9b0e6a27bd83ee94d14644345f06"
+  }
+]
