@@ -1,0 +1,44 @@
+{
+  "v1_zip_sha256": "6aa6364ce638bc65f0052bb7f394daba19f38e06dfe8700afa5585a2dd9efc34",
+  "v1_zip_crc_valid": true,
+  "v1_code_comparison": {
+    "historia.py": {
+      "zip_sha256": "33864f8bae02b7fa7c8288ba33a0e7158f817f4c01c7acdba3f43d21821122a8",
+      "git_sha256": "33864f8bae02b7fa7c8288ba33a0e7158f817f4c01c7acdba3f43d21821122a8",
+      "equal": true
+    },
+    "historia_features.py": {
+      "zip_sha256": "c35998bd3a59e52b72dc0527661f843585f84397c95fe23f545b18d331da72e0",
+      "git_sha256": "c35998bd3a59e52b72dc0527661f843585f84397c95fe23f545b18d331da72e0",
+      "equal": true
+    },
+    "historia_metrics.py": {
+      "zip_sha256": "bb19462cbed663a7daf3f0e16c58d98df8adeb916cf9f93d938f82c05bd5710d",
+      "git_sha256": "bb19462cbed663a7daf3f0e16c58d98df8adeb916cf9f93d938f82c05bd5710d",
+      "equal": true
+    },
+    "requirements.txt": {
+      "zip_sha256": "372e90104e99385567ba255a947095ad668aa4b401fe75b6465887bac0015d53",
+      "git_sha256": "372e90104e99385567ba255a947095ad668aa4b401fe75b6465887bac0015d53",
+      "equal": true
+    }
+  },
+  "private_v6_found_locally": false,
+  "vm_cleanup_executed": false,
+  "tests_passed": 7,
+  "v1_zip_files": [
+    "historia_2019_v1/CAMBIOS.txt",
+    "historia_2019_v1/historia_metrics.py",
+    "historia_2019_v1/generar_sintetico.py",
+    "historia_2019_v1/historia.py",
+    "historia_2019_v1/VALIDACION.txt",
+    "historia_2019_v1/tests/test_metrics.py",
+    "historia_2019_v1/tests/test_runner_contract.py",
+    "historia_2019_v1/tests/test_features.py",
+    "historia_2019_v1/tests/test_integration.py",
+    "historia_2019_v1/LEEME.txt",
+    "historia_2019_v1/config_historia.json",
+    "historia_2019_v1/requirements.txt",
+    "historia_2019_v1/historia_features.py"
+  ]
+}
