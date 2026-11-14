@@ -1,0 +1,19 @@
+{
+  "validation": "synthetic_only",
+  "real_october_executed": false,
+  "date": "2026-11-14",
+  "arms": 10,
+  "august_prediction_checks": 50,
+  "october_results_equal_to_original": true,
+  "bootstrap_comparisons_equal_to_original": true,
+  "fit_forbidden_in_continuation_test": true,
+  "source_run": "v7_20261114_120354",
+  "new_fits": 0,
+  "hard_cap_seconds": 3600,
+  "cleanup": "Only hash-matched generated training parquet matrices; models and predictions verified first; journal retained",
+  "files": {
+    "continuar_octubre_v7.py": "c6d3219b7bc1c044c675b8b4c3155bcd7a16a31d7132ad08db1ac2ff9dbd2481",
+    "evaluar_octubre_v7.py": "666af43a3c5b0ab222bacc5949d2083770a1a6b3262799498b130d507e81eb46",
+    "test_continuacion_octubre_v7.py": "4633da2810cf9a5d14f734e6a93ce7e92d505a1e39964a527d6834105d1439c8"
+  }
+}
