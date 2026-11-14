@@ -26,3 +26,11 @@ La copia en Cloud Shell queda fuera de la VM, pero **todavía debe descargarse a
 Hasta 11 matrices de entrenamiento y 11 de octubre en la corrida v6 completada. No limpia otras corridas, entornos, C1/C3 ni v1. Los nuevos archivos privados de respaldo en VM se conservan; el espacio neto libre puede crecer menos que el tamaño bruto de matrices eliminadas.
 
 Siete pruebas locales aprobadas: paquete válido, contenido alterado, miembro faltante, extra, duplicado, bloqueo por hash incorrecto y lista limitada de candidatos. No equivalen a una prueba integral en Google Cloud. El resultado real permanece pendiente hasta recibir el informe del controlador.
+
+## Incidente y recuperación directa local
+
+El controlador ejecutado el 14/11 terminó de preparar el paquete, pero se detuvo por espacio insuficiente en Cloud Shell antes de descargarlo o limpiar. La VM quedó TERMINATED. La comprobación anterior exigía dos copias simultáneas; se corrigió con ensamblado incremental y reanudación de prefijos verificados (nueve pruebas pasan).
+
+Por pedido posterior de Clara, el destino definitivo es la computadora local. `habilitar_rescate_local.py` habilita únicamente una clave pública dedicada y temporal (caduca en una hora, sin forwarding ni PTY), informa la clave del host para verificarla y mantiene apagado máximo independiente. No contiene claves privadas. Esta habilitación requiere una ejecución desde la sesión Cloud Shell autenticada. Luego se puede transferir directamente con SSH, verificar el archivo y todos los miembros localmente y, solo entonces, enviar el comprobante al limpiador. No usar ese comprobante antes de la verificación real.
+
+El incidente no implica pérdida de originales ni autoriza borrar todo: se conserva el alcance de matrices v6 identificadas. V1 se recupera y conserva. La habilitación deja la VM encendida para la transferencia; debe retirarse la clave dedicada y detener la VM al concluir. El paquete ya creado se reutiliza, no se vuelve a construir.

@@ -158,10 +158,69 @@ def clean(folder):
         print(json.dumps(summary), flush=True)
 
 
-def controller():
+def prefix_state(dest, pkg):
+    """Validate existing assembled prefix without altering it."""
+    if sum(p['bytes'] for p in pkg['chunks']) != pkg['bytes']:
+        raise ValueError('Tamaño del paquete inconsistente')
+    for i, part in enumerate(pkg['chunks']):
+        if part['name'] != f'parte_{i:04d}' or not 0 < part['bytes'] <= 32 * 1024**2:
+            raise ValueError('Parte inválida')
+    archive = dest / 'respaldo.tar.gz'
+    done = 0; length = 0
+    if archive.exists():
+        regular(archive)
+        with archive.open('rb') as f:
+            for part in pkg['chunks']:
+                data = f.read(part['bytes'])
+                if len(data) < part['bytes']:
+                    break  # An interrupted append is discarded only during recovery.
+                if hashlib.sha256(data).hexdigest() != part['sha256']:
+                    raise ValueError('Prefijo local no coincide; no se sobrescribe')
+                done += 1; length += len(data)
+            if done == len(pkg['chunks']) and f.read(1):
+                raise ValueError('Archivo local contiene bytes extra')
+    need = pkg['bytes'] - length + 128 * 1024**2
+    free = shutil.disk_usage(dest).free
+    print(f'ESPACIO: libre={free / 2**30:.2f} GiB; requerido adicional={need / 2**30:.2f} GiB; partes completas={done}', flush=True)
+    if free < need:
+        raise OSError('No alcanza para una copia del respaldo. No se enciende la VM al reanudar ni se borra nada.')
+    return done, length
+
+
+def receive_parts(dest, pkg, fetch):
+    done, length = prefix_state(dest, pkg)
+    archive = dest / 'respaldo.tar.gz'
+    with archive.open('r+b' if archive.exists() else 'w+b') as out:
+        out.truncate(length); out.seek(length)
+        for part in pkg['chunks'][done:]:
+            local = dest / part['name']
+            if local.exists():
+                verify(local, part['sha256'])
+            else:
+                fetch(part, local)
+                verify(local, part['sha256'])
+            with local.open('rb') as f:
+                shutil.copyfileobj(f, out)
+            out.flush(); os.fsync(out.fileno())
+            # Only remove our verified transfer fragment after its bytes are durable.
+            regular(local).unlink()
+            print('Parte incorporada y verificada:', part['name'], flush=True)
+    verify(archive, pkg['archive_sha256'])
+    return archive
+
+
+def controller(resume=None):
     here = Path(__file__).resolve().parent
-    dest = Path.home() / ('respaldo_v1_v6_' + time.strftime('%Y%m%d_%H%M%S'))
-    dest.mkdir(mode=0o700)
+    dest = Path(resume).resolve() if resume else Path.home() / ('respaldo_v1_v6_' + time.strftime('%Y%m%d_%H%M%S'))
+    if not resume:
+        dest.mkdir(mode=0o700)
+    else:
+        pkg = json.loads((dest / 'paquete.json').read_text())
+        verify(dest / 'inventario.json', pkg['inventory_sha256'])
+        prefix_state(dest, pkg)  # Check BEFORE any VM start.
+        remote_saved = json.loads((dest / 'ubicacion.json').read_text())['remote']
+        if not remote_saved.startswith('/home/clarirz/respaldo_v1_v6.') or '\n' in remote_saved:
+            raise ValueError('Ruta remota inesperada')
     if gc(['instances', 'describe', VM, '--format=value(status)']).stdout.strip() != 'TERMINATED':
         raise RuntimeError('VM activa: no se interviene')
     remote_dir = None
@@ -178,7 +237,7 @@ def controller():
             print('Esperando conexión', attempt + 1, flush=True); time.sleep(5)
         else:
             raise RuntimeError('Sin conexión')
-        remote_dir = gc(['ssh', 'clarirz@' + VM, '--command=mktemp -d /home/clarirz/respaldo_v1_v6.XXXXXX']).stdout.strip()
+        remote_dir = remote_saved if resume else gc(['ssh', 'clarirz@' + VM, '--command=mktemp -d /home/clarirz/respaldo_v1_v6.XXXXXX']).stdout.strip()
         if not remote_dir.startswith('/home/clarirz/respaldo_v1_v6.') or '\n' in remote_dir:
             raise ValueError('Ruta inesperada')
         dump(dest / 'ubicacion.json', {'remote': remote_dir})
@@ -191,26 +250,22 @@ def controller():
             (dest / (phase + '.log')).write_text(r.stdout + r.stderr)
             if r.returncode: raise RuntimeError('Falló ' + phase + '; originales preservados salvo eliminaciones ya registradas. Ver ' + str(dest))
             print(r.stdout, flush=True)
-        print('Inventariando y respaldando v1/v6; todavía no se borra nada.', flush=True)
-        run('prepare')
+        if not resume:
+            print('Inventariando y respaldando v1/v6; todavía no se borra nada.', flush=True)
+            run('prepare')
+        else:
+            print('Recuperando el paquete existente; no se vuelve a empaquetar.', flush=True)
         for name in ['inventario.json', 'paquete.json']:
             gc(['scp', 'clarirz@' + VM + ':' + remote_dir + '/' + name, str(dest / name)])
         pkg = json.loads((dest / 'paquete.json').read_text()); verify(dest / 'inventario.json', pkg['inventory_sha256'])
-        if shutil.disk_usage(dest).free < 2 * pkg['bytes'] + 512 * 1024**2:
-            raise OSError('Cloud Shell sin espacio para respaldo; no se limpia')
-        for part in pkg['chunks']:
+        def fetch(part, local):
             for attempt in range(3):
                 try:
-                    gc(['scp', 'clarirz@' + VM + ':' + remote_dir + '/' + part['name'], str(dest / part['name'])], timeout=300)
-                    verify(dest / part['name'], part['sha256']); break
+                    gc(['scp', 'clarirz@' + VM + ':' + remote_dir + '/' + part['name'], str(local)], timeout=300)
+                    verify(local, part['sha256']); return
                 except (subprocess.SubprocessError, ValueError):
                     if attempt == 2: raise
-            print('Parte verificada:', part['name'], flush=True)
-        archive = dest / 'respaldo.tar.gz'
-        with archive.open('wb') as out:
-            for part in pkg['chunks']:
-                with (dest / part['name']).open('rb') as f: shutil.copyfileobj(f, out)
-        verify(archive, pkg['archive_sha256'])
+        archive = receive_parts(dest, pkg, fetch)
         validate_archive(archive, json.loads((dest / 'inventario.json').read_text()))
         receipt = {'archive_sha256': pkg['archive_sha256'], 'inventory_sha256': pkg['inventory_sha256'], 'all_members_verified': True}
         dump(dest / 'recibo.json', receipt)
@@ -229,7 +284,8 @@ def controller():
 if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--phase', choices=['prepare', 'clean']); p.add_argument('--folder', type=Path)
+    p.add_argument('--resume', type=Path, help='Directorio Cloud Shell de una recuperación anterior')
     a = p.parse_args()
     if a.phase == 'prepare': prepare(a.folder)
     elif a.phase == 'clean': clean(a.folder)
-    else: controller()
+    else: controller(a.resume)

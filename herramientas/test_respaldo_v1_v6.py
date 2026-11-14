@@ -40,3 +40,24 @@ class BackupTests(unittest.TestCase):
         with patch.object(m,'BASE',self.root):self.assertEqual(set(m.candidates(expected)),{'matrix'})
 
 if __name__=='__main__':unittest.main()
+
+class PartialTransferTests(unittest.TestCase):
+    def test_resume_keeps_verified_prefix_and_discards_incomplete_tail(self):
+        with tempfile.TemporaryDirectory() as d:
+            dest=Path(d); blocks=[b'abc',b'def']
+            pkg={'bytes':6,'archive_sha256':hashlib.sha256(b'abcdef').hexdigest(),
+                 'chunks':[{'name':f'parte_{i:04d}','bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()} for i,b in enumerate(blocks)]}
+            (dest/'respaldo.tar.gz').write_bytes(b'abcd')
+            fetched=[]
+            def fetch(part,local):
+                fetched.append(part['name']);local.write_bytes(b'def')
+            result=m.receive_parts(dest,pkg,fetch)
+            self.assertEqual(result.read_bytes(),b'abcdef')
+            self.assertEqual(fetched,['parte_0001'])
+            self.assertFalse((dest/'parte_0001').exists())
+    def test_bad_existing_prefix_is_not_overwritten(self):
+        with tempfile.TemporaryDirectory() as d:
+            dest=Path(d);p=dest/'respaldo.tar.gz';p.write_bytes(b'xyz')
+            pkg={'bytes':3,'chunks':[{'name':'parte_0000','bytes':3,'sha256':hashlib.sha256(b'abc').hexdigest()}]}
+            with self.assertRaises(ValueError):m.prefix_state(dest,pkg)
+            self.assertEqual(p.read_bytes(),b'xyz')
