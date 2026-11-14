@@ -1,5 +1,7 @@
 # Verificación de respaldos v1 y v6 — 14/11/2026
 
+**Actualización:** la recuperación local y la limpieza ya se ejecutaron. Ver [resultado efectivo](../respaldo_local_v1_v6_2026-11-14/README.md). El texto siguiente conserva el diagnóstico y preparación anteriores.
+
 ## Comprobado localmente
 
 - `HISTORIA_2019_paquete_v1.zip` pasa la comprobación de integridad de todos sus miembros. Contiene código, configuración y pruebas; no contiene los modelos ni resultados de la corrida.

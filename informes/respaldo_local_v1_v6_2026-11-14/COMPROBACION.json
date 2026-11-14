@@ -1,0 +1,76 @@
+{
+  "archive_bytes": 2329383991,
+  "archive_sha256": "6431f6aac382ae380706d4beafaa6b74429d2e0310be1f8d6868d1dc111dda1a",
+  "inventory_sha256": "cc9d5ecd96edc62cffcc0cc4d9c1aba1e6ef6513e5216a90fbc3bca5c9b65c52",
+  "verified_members": 827,
+  "public_reference_hashes_matched": 298,
+  "restoration": {
+    "restored": [
+      "resultados_historia_01/FINAL.json",
+      "resultados_historia_01/iteraciones/000/seed_101.npz",
+      "resultados_historia_01/iteraciones/000/seed_101.txt",
+      "v6/deployments/v6_20261113_02/resultados/entrenamiento/private/B0_J/seed_211.npz",
+      "v6/deployments/v6_20261113_02/resultados/entrenamiento/private/B0_J/seed_211.txt"
+    ],
+    "v1_final_status": "MODELOS_CONGELADOS_TEST_EXTERNO_PENDIENTE",
+    "v1_october_exports_match": {
+      "baseline": true,
+      "selected": true
+    },
+    "independent_retraining": false
+  },
+  "readable_restored_models": {
+    "v1_seed_101.txt": {
+      "trees": 304,
+      "features": 760,
+      "prediction_arrays": {
+        "validation": [
+          131887
+        ],
+        "test": [
+          135754
+        ],
+        "gain": [
+          760
+        ]
+      }
+    },
+    "v6_seed_211.txt": {
+      "trees": 320,
+      "features": 634,
+      "prediction_arrays": {
+        "ids": [
+          131887
+        ],
+        "prediction": [
+          131887
+        ]
+      }
+    }
+  },
+  "matrices_cleanup": {
+    "deleted_files": 22,
+    "deleted_bytes": 7633068007,
+    "free_before": 5967863808,
+    "free_after": 13600997376,
+    "v1_deleted_files": 0,
+    "models_predictions_and_dataset_preserved": true
+  },
+  "transfer_cleanup": {
+    "files": 71,
+    "bytes": 4658767982,
+    "free_before": 13600980992,
+    "free_after": 18259726336,
+    "reason": "Transfer copies: verified archive now on local computer; original experiment models and predictions retained on VM"
+  },
+  "shutdown": {
+    "ssh_returncode": 0,
+    "output": "{\"temporary_key_removed\": true}\n{\"shutdown_returncode\": 0, \"stderr\": \"\"}\n",
+    "stderr": "",
+    "gce_status_queried": false,
+    "ssh_port_after_shutdown": "unreachable",
+    "connection_result": "TimeoutError"
+  },
+  "independent_full_training_reproduced": false,
+  "private_data_published": false
+}
