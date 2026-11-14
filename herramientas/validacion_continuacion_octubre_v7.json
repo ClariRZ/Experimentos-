@@ -12,8 +12,10 @@
   "hard_cap_seconds": 3600,
   "cleanup": "Only hash-matched generated training parquet matrices; models and predictions verified first; journal retained",
   "files": {
-    "continuar_octubre_v7.py": "c6d3219b7bc1c044c675b8b4c3155bcd7a16a31d7132ad08db1ac2ff9dbd2481",
+    "continuar_octubre_v7.py": "1cfc091779c9966e2c38c35a6d8f8c69c2f5daaacf97912156c2a7d7dd48ff9f",
     "evaluar_octubre_v7.py": "666af43a3c5b0ab222bacc5949d2083770a1a6b3262799498b130d507e81eb46",
-    "test_continuacion_octubre_v7.py": "4633da2810cf9a5d14f734e6a93ce7e92d505a1e39964a527d6834105d1439c8"
-  }
+    "test_continuacion_octubre_v7.py": "4633da2810cf9a5d14f734e6a93ce7e92d505a1e39964a527d6834105d1439c8",
+    "test_espera_octubre_v7.py": "8103d24a7b136005c779e1829f43e4d2faaab9446fdc0d050c54b81d5c3a8b0b"
+  },
+  "connection_retry_tests_passed": 3
 }

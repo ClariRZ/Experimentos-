@@ -74,6 +74,20 @@ def worker(root,deadline):
         subprocess.run(['sudo','-n','shutdown','-h','now'],check=True)
 
 
+def wait_for_ssh(ssh, attempts=8):
+    last_error=''
+    for attempt in range(1, attempts+1):
+        try:
+            result=ssh('true',check=False,timeout=45)
+            if result.returncode==0:return
+            last_error=(result.stderr or result.stdout or 'SSH unavailable')[-2000:]
+        except subprocess.TimeoutExpired:
+            last_error='SSH connection attempt exceeded 45 seconds'
+        print(f'ESPERANDO_CONEXION {attempt}/{attempts}: {last_error}',flush=True)
+        if attempt<attempts:time.sleep(5)
+    raise RuntimeError('SSH unavailable after bounded retries: '+last_error)
+
+
 def controller(output):
     output.mkdir(parents=True,exist_ok=False)
     common=['--project='+PROJECT,'--zone='+ZONE,'--quiet']
@@ -91,10 +105,7 @@ def controller(output):
         schedule=json.loads(gc(['instances','describe',VM,'--format=json']).stdout)['scheduling']
         assert int(schedule['maxRunDuration']['seconds'])==3600 and schedule['instanceTerminationAction']=='STOP'
         started=True;gc(['instances','start',VM]);deadline=time.time()+3000
-        for _ in range(18):
-            if ssh('true',check=False,timeout=30).returncode==0:break
-            time.sleep(5)
-        else:raise RuntimeError('SSH unavailable')
+        wait_for_ssh(ssh)
         ssh('sudo -n shutdown -h +55')
         ssh('mkdir -p '+BASE+'/v7/continuaciones && mkdir '+root)
         for name in ['continuar_octubre_v7.py','evaluar_octubre_v7.py']:
