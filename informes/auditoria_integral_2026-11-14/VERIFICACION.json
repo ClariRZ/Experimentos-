@@ -1,0 +1,31 @@
+{
+  "manifests": {
+    "experimento_2026-11-13/MANIFIESTO_SHA256.json": {
+      "checked": 53,
+      "mismatches": []
+    },
+    "HISTORIA_2019_01/v5/MANIFIESTO_SHA256.json": {
+      "checked": 59,
+      "mismatches": []
+    },
+    "HISTORIA_2019_01/v6/MANIFIESTO_SHA256.json": {
+      "checked": 20,
+      "mismatches": [
+        "README.md"
+      ]
+    },
+    "HISTORIA_2019_01/v7/MANIFIESTO_CODIGO.json": {
+      "checked": 26,
+      "mismatches": []
+    },
+    "HISTORIA_2019_01/v7/resultados/MANIFIESTO_SHA256.json": {
+      "checked": 153,
+      "mismatches": []
+    }
+  },
+  "v7_trials_verified": 100,
+  "v7_seed_common_gains_verified": 100,
+  "v7_ensemble_common_gains_verified": 20,
+  "v7_new_fits": 0,
+  "independent_training_reproduction": false
+}
