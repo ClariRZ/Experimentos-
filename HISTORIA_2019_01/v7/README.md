@@ -1,48 +1,38 @@
 # Historia 2019 v7
 
-> **LANZAMIENTO BLOQUEADO — revisión 2026-11-14.** La aprobación de saneamiento se retiró. No ejecutar los comandos de commits anteriores. El estado histórico de preparación que sigue no constituye autorización actual. Ver [revisión crítica](auditoria/REVISION_CRITICA.json).
+## Estado vigente — 14 de noviembre de 2026
 
-[Prompt maestro completo](prompts/PROMPT_MAESTRO_HISTORIA_2019_v7.md): diez brazos, entrenamiento abril–junio y ganancia a igual presupuesto de contactos.
+**Preparado para lanzamiento con controles previos obligatorios; entrenamiento real todavía no confirmado.** Esta revisión sustituye el bloqueo de `0079bf5` tras la decisión expresa de Clara: tratar octubre como en v4/v6, documentar las anomalías y seguir adelante.
 
-## Estado
+- Se mantienen las nueve máscaras históricas de abril–mayo. Su continuidad es una decisión del experimento, no una confirmación oficial nueva.
+- **No se aplican máscaras en julio ni octubre.** Se conservan ceros y faltantes originales. Las 14 anomalías de octubre quedan documentadas sin tratamiento.
+- No se modifica el dataset original. No se decide saneamiento por AUC o ganancias.
+- Diez brazos, entrenamiento abril–junio, selección por AUC de agosto, cinco semillas diferentes de la búsqueda, presupuesto común de contactos, evaluación congelada en octubre.
+- Comparaciones pareadas por semilla, dispersión y peor resultado; bootstrap condicional por cliente; tres contrastes principales con ajuste Bonferroni. Son resultados exploratorios, no una garantía temporal ni de ganancia futura.
 
-**No se ha entrenado v7 con datos reales.** El ejecutor pasó nueve pruebas y una ejecución sintética de los diez brazos (150 ajustes, hasta tres árboles por ajuste), con reproducción exacta de las 50 predicciones de agosto. Esto valida el circuito, no la auditoría real ni la calidad predictiva.
+[Prompt](prompts/PROMPT_MAESTRO_HISTORIA_2019_v7.md) y [contrato ejecutable](configuraciones/contrato_v7.json). El prompt incluye la resolución posterior del saneamiento. Los documentos históricos de auditoría se conservan; su estado queda actualizado por [CIERRE_REVISION.json](auditoria/CIERRE_REVISION.json).
 
-La autorización de Clara es ejecutar y apagar la VM al terminar. La auditoría real ya terminó; el contrato de lanzamiento incorpora el hash del informe y la revisión del saneamiento. La comprobación del informe completo y de las matrices sigue siendo obligatoria antes del primer ajuste.
+## Verificaciones realizadas
 
-## Auditoría remota
+20 pruebas locales aprobadas. Ejecución sintética completa: 150 ajustes pequeños, diez brazos, 50 predicciones de agosto regeneradas exactamente y evaluación de ambos meses. No equivale a una corrida sobre datos reales ni a reproducción independiente.
 
-`scripts/control_auditoria.py` se ejecuta desde Cloud Shell. Requiere VM apagada, verifica límite GCE STOP de 45 minutos, programa apagado del sistema, ejecuta solamente estadísticas sin etiquetas de octubre, recupera agregados y detiene la VM. No entrena ni borra discos.
+Se verifican antes de encender: aprobación del contrato, manifiesto y hash del informe real recuperado en Cloud Shell. Antes de entrenar: hash del dataset, entorno compatible, matrices, claves, columnas y cobertura. El informe distingue ausencia del cliente-mes, faltantes originales, saneamiento y valores no finitos; los reportes de fórmulas separan inputs incompletos de faltantes producidos con inputs completos. Las causas de una ventana incompleta pueden superponerse.
 
-## Ejecutor
+El entorno exige Python 3.12 y las cinco versiones centrales ya usadas en v6 y validadas localmente; se registra el inventario completo de distribuciones antes del primer ajuste. No instala ni actualiza paquetes automáticamente. Capturar el entorno no prueba por sí solo reproducción idéntica en otra máquina.
 
-`scripts/ejecutar_v7.py` reconstruye matrices, optimiza diez brazos, entrena cinco semillas por brazo, congela el presupuesto común desde B0 en agosto y evalúa octubre después de regenerar exactamente agosto. Incluye comparaciones pareadas y bootstrap de contribuciones fijas.
+## Lanzamiento y apagado
 
-`scripts/worker_vm.py` supervisa el proceso con guardas de tiempo, memoria y disco, genera archivos de recuperación y solicita apagado tras éxito o error. Antes de lanzarlo debe verificarse además el límite GCE de seis horas. **Ese límite se configurará y verificará automáticamente al ejecutar el controlador de entrenamiento.**
-
-Presupuesto inicial: 100 trials y 50 entrenamientos por semilla. Reproducción independiente completa: presupuesto separado, no ejecutada.
-
-Datos y modelos individuales se mantienen privados. Los manifiestos documentales y de código no certifican una corrida real.
-
-## Actualización posterior a la auditoría real
-
-La auditoría real finalizó con retorno 0, dataset identificado y VM `TERMINATED`. [Revisión de saneamiento](auditoria/REVISION_SANEAMIENTO.md) y [contrato de lanzamiento](configuraciones/contrato_v7.json). El contrato propuesto anterior se conserva como antecedente. **Todavía no hay entrenamiento real confirmado de v7.**
-
-El controlador `scripts/control_entrenamiento.py` requiere el informe completo recuperado en Cloud Shell, verifica su hash y los criterios de saneamiento, y comprueba el manifiesto de código antes de encender. Configura y verifica STOP de GCE a seis horas, más apagado del sistema y supervisor independiente. No interfiere con una VM que ya esté encendida. El límite previo de auditoría era 45 minutos; solo cambia al ejecutar este controlador.
-
-Presupuesto: 150 ajustes como máximo. Las doce pruebas locales pasaron; la prueba sintética anterior valida el circuito, no resultados reales. El supervisor limita el trabajo a 5 h 50 min desde el arranque para dejar margen de respaldo antes de las seis horas. No se garantiza completar los 150 ajustes dentro del límite.
-
-En Cloud Shell, ejecutar desde un checkout fijado del commit publicado:
+Desde un checkout fijado de esta revisión en Cloud Shell:
 
 ```bash
 python3 HISTORIA_2019_01/v7/scripts/control_entrenamiento.py \
   --output "$HOME/v7_lanzamiento_$(date +%Y%m%d_%H%M%S)"
 ```
 
-Mantener Cloud Shell abierto favorece la recuperación de archivos. Si se desconecta, el supervisor continúa y el apagado sigue protegido por GCE. El controlador recupera `aggregates.tar.gz` y `private_recovery.tar.gz` a la carpeta de salida, comprueba hashes y lectura del archivo, y detiene la VM. La recuperación es un respaldo privado en Cloud Shell, no una reproducción independiente. Si la conexión falla, quedan archivos en el disco persistente de la VM y hay que recuperarlos después; no reiniciar ni relanzar a ciegas.
+El controlador exige VM apagada. Configura y verifica STOP de GCE a seis horas, programa apagado del sistema y lanza un supervisor independiente. El trabajo tiene un plazo de 5 h 50 min desde el arranque, dejando margen de respaldo. La duración no garantiza completar los 150 ajustes. El controlador no modifica una VM ya encendida.
 
-El archivo privado incluye modelos y predicciones individuales: **no subirlo a GitHub**. Los agregados todavía requieren publicación al terminar; el controlador no hace push ni afirma que estén publicados. El dataset original permanece en su ubicación privada; no se crea otra copia del dataset en esta etapa. Una nueva máquina necesita ese dataset exacto y el entorno registrado para intentar una reproducción completa.
+El supervisor solicita apagado al terminar o fallar, también ante fallos de inicialización si obtuvo el bloqueo de ejecución. Un conflicto de bloqueo no autoriza apagar otro proceso. Ante fallos de SSH, permisos o cierre de Cloud Shell, el límite GCE sigue siendo el respaldo, no una garantía de apagado inmediato.
 
-### Corrección de julio antes del arranque
+Mantener Cloud Shell abierto permite recuperar `aggregates.tar.gz` y `private_recovery.tar.gz`, verificar sus hashes y detener la VM. Una interrupción o el vencimiento del plazo puede impedir el respaldo externo; quedan archivos en disco persistente y hay que verificar su recuperación antes de afirmar que están respaldados. No se reinicia ni se reentrena automáticamente.
 
-El primer intento de lanzamiento se bloqueó antes de encender la VM. Las estadísticas completas mostraron que Visa/Master_fultimo_cierre en julio tienen ceros, faltantes y valores no nulos distintos de cero. Se conservan sin máscara por falta de evidencia suficiente de rotura, igual para todos los brazos. El controlador coteja las seis estadísticas revisadas contra el informe completo; mantiene el hash del dataset, del informe y los controles de octubre. Véase auditoria/REVISION_JULIO.json. No hubo entrenamiento real en ese intento.
+**No subir el archivo privado a GitHub:** contiene modelos y predicciones por cliente. El controlador no publica resultados automáticamente. Dataset original privado; no se realiza una copia adicional en esta etapa. Una reproducción independiente completa requiere ese dataset exacto, entorno y presupuesto separado.

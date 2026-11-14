@@ -20,6 +20,8 @@ from sklearn.metrics import roc_auc_score
 from fe_core import (sanitize_base, month_to_idx, add_baseline_lags_deltas,
     build_window_families, build_monthly_rankings, evaluate_gain_curve)
 
+from preflight import capture_environment, coverage_provenance
+
 ID='numero_de_cliente'; MONTH='foto_mes'; LABEL='clase_ternaria'
 ARMS=['B0','RK','P3','MIN3','RAN3','R3','R4','T4','H_T','H_S']
 TRAIN=[201904,201905,201906]
@@ -98,6 +100,7 @@ def extras(hist,arm,sources):
 def materialize(hist,raw,cfg,private,check,registry=None):
     """Train-only selection or frozen inference. No label is available here."""
     sources=cfg['data']['history_sources']; keys=hist.select([ID,MONTH])
+    formula_missing={}
     base_names=raw+[f'{c}__{f}' for c in sources for f in ['lag1','lag2','delta1','delta2']]
     base=numeric(hist.select([ID,MONTH,*base_names]),base_names)
     selecting=registry is None
@@ -115,6 +118,19 @@ def materialize(hist,raw,cfg,private,check,registry=None):
         out.write_parquet(private/f'{arm}.parquet');check()
     for arm in ['RK','P3','MIN3','RAN3','R3','R4','T4']:
         f,names=extras(hist,arm,sources)
+        report={}
+        for m in sorted(f[MONTH].unique()):
+            fm=f.filter(pl.col(MONTH)==m);values={}
+            for n in names:
+                source=n.split('__',1)[0]
+                w=1 if arm=='RK' else int(arm[-1])
+                inputs=[source]+[f'{source}__lag{k}' for k in range(1,w)]
+                complete=fm.select(pl.all_horizontal([pl.col(x).is_not_null() & pl.col(x).is_finite() for x in inputs])).to_series()
+                missing=~numeric(fm.select(n),[n])[n].is_not_null()
+                values[n]={'incomplete_input':int((missing & ~complete).sum()),
+                           'formula_or_float32_nonfinite_with_complete_input':int((missing & complete).sum())}
+            report[str(m)]=values
+        formula_missing[arm]=report
         frame=base.hstack(numeric(f.select(names),names))
         persist(arm,frame,names,registry['B0']['columns']);del f,frame;gc.collect()
     # Keep the same source/formula pairs for R3 and R4, using training only.
@@ -146,6 +162,7 @@ def materialize(hist,raw,cfg,private,check,registry=None):
             registry[arm]['matrix_sha256']=sha(path)
             registry[arm]['n_columns']=len(cols)
             if arm!='B0' and cols==registry['B0']['columns']:raise ValueError('Non-identifiable arm '+arm)
+    save((private.parent if selecting else private.parent.parent)/('formula_missingness.json' if selecting else 'formula_missingness_inference.json'),formula_missing)
     return registry
 
 def payoff(ids,scores,y,cut):
@@ -183,14 +200,12 @@ class Runner:
         self.dataset=a.dataset
         save(self.out/'config_frozen.json',c)
         save(self.out/'code_identity.json',{p.name:sha(p) for p in Path(__file__).parent.glob('*.py')})
-        from importlib.metadata import version
-        save(self.out/'environment.json',{'python':sys.version,'platform':platform.platform(),
-            'packages':{n:version(n) for n in ['numpy','polars','lightgbm','optuna','scikit-learn']},
-            'threads':4,'argv':sys.argv})
+        save(self.out/'environment.json',capture_environment(c))
         self.state('PREPARING')
         df=read_data(a.dataset,list(range(201901,201909)))
         meta=df.filter(pl.col(MONTH).is_in(TRAIN+[201908])).select([ID,MONTH,LABEL]).sort([ID,MONTH])
         if meta[LABEL].null_count() or not set(meta[LABEL].unique())<={'BAJA+1','BAJA+2','CONTINUA'}:raise ValueError('Invalid outcomes')
+        save(self.out/'coverage_provenance.json',coverage_provenance(df.drop(LABEL),c,TRAIN+[201908]))
         hist,raw=history(df.drop(LABEL),c,TRAIN+[201908]);del df;gc.collect()
         self.registry=materialize(hist,raw,c,self.private,self.check);del hist;gc.collect()
         save(self.out/'feature_manifest.json',self.registry)
@@ -311,6 +326,7 @@ class Runner:
         octdir=self.private/'october';octdir.mkdir()
         # Read features without October labels, rebuild August+October with frozen columns.
         df=read_data(self.dataset,list(range(201901,201911)),labels=False)
+        save(self.out/'coverage_provenance_october.json',coverage_provenance(df,self.cfg,[201908,201910]))
         hist,raw=history(df,self.cfg,[201908,201910]);del df;gc.collect()
         materialize(hist,raw,self.cfg,octdir,self.check,self.registry);del hist;gc.collect()
         verification={};octids=None

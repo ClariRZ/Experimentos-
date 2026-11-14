@@ -1,0 +1,568 @@
+{
+  "scope": "Provisional semantic classification of 25 variable-month pairs; not a full real-dataset diagnostic",
+  "sources": [
+    "User course dictionary (local extracted JSON)",
+    "v7 RESUMEN_REAL.json",
+    "v7 REVISION_JULIO.json",
+    "Recorded historical masks; not external repositories"
+  ],
+  "dataset_modified": false,
+  "training_started": false,
+  "execution_blocked": false,
+  "rules": [
+    {
+      "case": "Valid zero in transaction count or amount",
+      "action": "Keep zero; no imputation or masking solely because zero"
+    },
+    {
+      "case": "Original missing with unknown cause",
+      "action": "Preserve NA; do not assert no product/no activity"
+    },
+    {
+      "case": "Client absent in required previous calendar month",
+      "action": "Keep historical feature missing; do not shift previous available row into missing month"
+    },
+    {
+      "case": "Division by zero in derived feature",
+      "action": "Apply frozen formula rule (usually NA); do not rewrite source values"
+    },
+    {
+      "case": "Confirmed invalid measurement",
+      "action": "Document variable/month evidence and approved NA mask; retain raw source"
+    },
+    {
+      "case": "Mass zeros without confirmed cause",
+      "action": "Investigate, no automatic correction"
+    }
+  ],
+  "variable_months": [
+    {
+      "month": 201904,
+      "variable": "ctarjeta_visa_debitos_automaticos",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de débitos automáticos debitados durante el mes en las tarjeta de crédito VISA"
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201904,
+      "variable": "mttarjeta_visa_debitos_automaticos",
+      "dictionary": null,
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "mrentabilidad",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Ganancia total que ha obtenido el banco de ese cliente, en ese mes."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "mrentabilidad_annual",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Ganancia total que el banco ha obtenido de ese cliente en el ultimo año de relacion cliente-banco,  o meses desde que ingresó si es cliente reciente."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "mcomisiones",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total de las comisiones que ha ganado el banco por ese cliente."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "mactivos_margen",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total de la ganancia que el banco ha obtenido en concepto de intereses que ha cobrado al cliente."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "mpasivos_margen",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total de la ganancia que el banco ha obtenido por el dinero/inversiones que el cliente tiene en el banco."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "mcomisiones_otras",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total en pesos de otras comisiones que se cobraron al cliente durante el mes."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201905,
+      "variable": "ccomisiones_otras",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de otras comisiones que se cobraron al cliente durante el mes."
+      },
+      "status": "KEEP_HISTORICAL_MASK_FOR_CONTINUITY_NOT_OFFICIALLY_CONFIRMED",
+      "raw_action": "preserve_original_dataset",
+      "evidence": "Historical mask applied, but full current month-variable statistics are in Cloud Shell report, not locally available. Prior application is not independent evidence of corruption.",
+      "hypotheses": [
+        "True zero for individual clients",
+        "Missing monthly source/calculation"
+      ],
+      "required_check": "Retrieve original April/May statistics and adjacent months from exact audited report; confirm semantics."
+    },
+    {
+      "month": 201910,
+      "variable": "mrentabilidad",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Ganancia total que ha obtenido el banco de ese cliente, en ese mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 0.2861,
+        "september_distinct": 117449
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "mrentabilidad_annual",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Ganancia total que el banco ha obtenido de ese cliente en el ultimo año de relacion cliente-banco,  o meses desde que ingresó si es cliente reciente."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 0.2509,
+        "september_distinct": 131360
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "mpasivos_margen",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total de la ganancia que el banco ha obtenido por el dinero/inversiones que el cliente tiene en el banco."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 1.0671,
+        "september_distinct": 106232
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "mactivos_margen",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total de la ganancia que el banco ha obtenido en concepto de intereses que ha cobrado al cliente."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 4.2475,
+        "september_distinct": 103676
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "mcomisiones",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total de las comisiones que ha ganado el banco por ese cliente."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 3.4335,
+        "september_distinct": 96503
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "mcomisiones_otras",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total en pesos de otras comisiones que se cobraron al cliente durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 3.4335,
+        "september_distinct": 96568
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "ccomisiones_otras",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de otras comisiones que se cobraron al cliente durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 3.4305,
+        "september_distinct": 132
+      },
+      "hypotheses": [
+        "Accounting calculation/feed not loaded",
+        "Change in business definition or reporting"
+      ],
+      "required_check": "Cross-check maintenance commissions, loans and balances in October. Annual profitability all-zero is not explained by one inactive month, but no accounting identity is assumed."
+    },
+    {
+      "month": 201910,
+      "variable": "chomebanking_transacciones",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de transacciones por home banking que el cliente hizo durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 45.0995,
+        "september_distinct": 82
+      },
+      "hypotheses": [
+        "Missing channel records or channel reclassification",
+        "Service interruption or actual lack of channel use"
+      ],
+      "required_check": "Compare channel-related activity and consult source; account activity does not prove homebanking use."
+    },
+    {
+      "month": 201910,
+      "variable": "mcajeros_propios_descuentos",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total en pesos  de descuentos con los que se benefició el cliente al utilizar su tarjeta de débito durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 96.4916,
+        "september_distinct": 3002
+      },
+      "hypotheses": [
+        "No qualifying discounts or campaign discontinued",
+        "Discount feed missing or not loaded"
+      ],
+      "required_check": "Campaign calendar/source confirmation. Transaction activity alone cannot prove a discount should exist."
+    },
+    {
+      "month": 201910,
+      "variable": "ccajeros_propios_descuentos",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de descuentos con los que se benefició el cliente al utilizar su tarjeta de débito durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 95.9382,
+        "september_distinct": 28
+      },
+      "hypotheses": [
+        "No qualifying discounts or campaign discontinued",
+        "Discount feed missing or not loaded"
+      ],
+      "required_check": "Campaign calendar/source confirmation. Transaction activity alone cannot prove a discount should exist."
+    },
+    {
+      "month": 201910,
+      "variable": "ctarjeta_visa_descuentos",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de descuentos con los que se benefició el cliente al utilizar su tarjeta de crédito VISA durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 93.181,
+        "september_distinct": 22
+      },
+      "hypotheses": [
+        "No qualifying discounts or campaign discontinued",
+        "Discount feed missing or not loaded"
+      ],
+      "required_check": "Campaign calendar/source confirmation. Transaction activity alone cannot prove a discount should exist."
+    },
+    {
+      "month": 201910,
+      "variable": "mtarjeta_visa_descuentos",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total en pesos  de descuentos con los que se benefició el cliente al utilizar su tarjeta de crédito VISA durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 93.4708,
+        "september_distinct": 4686
+      },
+      "hypotheses": [
+        "No qualifying discounts or campaign discontinued",
+        "Discount feed missing or not loaded"
+      ],
+      "required_check": "Campaign calendar/source confirmation. Transaction activity alone cannot prove a discount should exist."
+    },
+    {
+      "month": 201910,
+      "variable": "ctarjeta_master_descuentos",
+      "dictionary": {
+        "unit": "--",
+        "meaning": "Cantidad de descuentos con los que se benefició el cliente al utilizar su tarjeta de crédito MasterCard durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 98.0762,
+        "september_distinct": 17
+      },
+      "hypotheses": [
+        "No qualifying discounts or campaign discontinued",
+        "Discount feed missing or not loaded"
+      ],
+      "required_check": "Campaign calendar/source confirmation. Transaction activity alone cannot prove a discount should exist."
+    },
+    {
+      "month": 201910,
+      "variable": "mtarjeta_master_descuentos",
+      "dictionary": {
+        "unit": "pesos",
+        "meaning": "Monto total en pesos  de descuentos con los que se benefició el cliente al utilizar su tarjeta de crédito MasterCard durante el mes."
+      },
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "raw_action": "preserve_original_dataset",
+      "evidence": {
+        "october_zero_percent": 100,
+        "september_zero_percent": 98.1945,
+        "september_distinct": 1682
+      },
+      "hypotheses": [
+        "No qualifying discounts or campaign discontinued",
+        "Discount feed missing or not loaded"
+      ],
+      "required_check": "Campaign calendar/source confirmation. Transaction activity alone cannot prove a discount should exist."
+    },
+    {
+      "month": 201907,
+      "variable": "Visa_fultimo_cierre",
+      "dictionary": {
+        "unit": "dias",
+        "meaning": "Dias  del utlimo cierre de la tarjeta de crédito, contados a la fecha de la foto."
+      },
+      "evidence": [
+        {
+          "month": 201906,
+          "variable": "Visa_fultimo_cierre",
+          "rows": 128474,
+          "nulls": 5250,
+          "zeros": 0,
+          "nonfinite": 0,
+          "distinct_finite": 79,
+          "minimum": 4.0,
+          "maximum": 4449.0
+        },
+        {
+          "month": 201907,
+          "variable": "Visa_fultimo_cierre",
+          "rows": 129957,
+          "nulls": 4973,
+          "zeros": 86019,
+          "nonfinite": 0,
+          "distinct_finite": 78,
+          "minimum": 0.0,
+          "maximum": 4466.0
+        },
+        {
+          "month": 201908,
+          "variable": "Visa_fultimo_cierre",
+          "rows": 131887,
+          "nulls": 5077,
+          "zeros": 0,
+          "nonfinite": 0,
+          "distinct_finite": 78,
+          "minimum": 3.0,
+          "maximum": 4497.0
+        }
+      ],
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "hypotheses": [
+        "Closing date coincides with monthly snapshot for many clients",
+        "Default-zero source problem affecting a subset"
+      ],
+      "required_check": "Compare actual snapshot/closing-calendar convention; mixed nonzero values neither prove nor disprove partial corruption."
+    },
+    {
+      "month": 201907,
+      "variable": "Master_fultimo_cierre",
+      "dictionary": {
+        "unit": "dias",
+        "meaning": "Dias desde del utlimo cierre de la tarjeta de crédito, contados a la fecha de la foto."
+      },
+      "evidence": [
+        {
+          "month": 201906,
+          "variable": "Master_fultimo_cierre",
+          "rows": 128474,
+          "nulls": 17018,
+          "zeros": 0,
+          "nonfinite": 0,
+          "distinct_finite": 105,
+          "minimum": 4.0,
+          "maximum": 4358.0
+        },
+        {
+          "month": 201907,
+          "variable": "Master_fultimo_cierre",
+          "rows": 129957,
+          "nulls": 16683,
+          "zeros": 82468,
+          "nonfinite": 0,
+          "distinct_finite": 105,
+          "minimum": 0.0,
+          "maximum": 4389.0
+        },
+        {
+          "month": 201908,
+          "variable": "Master_fultimo_cierre",
+          "rows": 131887,
+          "nulls": 16821,
+          "zeros": 0,
+          "nonfinite": 0,
+          "distinct_finite": 106,
+          "minimum": 3.0,
+          "maximum": 4420.0
+        }
+      ],
+      "status": "PRESERVE_ORIGINAL_DOCUMENT_ANOMALY",
+      "hypotheses": [
+        "Closing date coincides with monthly snapshot for many clients",
+        "Default-zero source problem affecting a subset"
+      ],
+      "required_check": "Compare actual snapshot/closing-calendar convention; mixed nonzero values neither prove nor disprove partial corruption."
+    }
+  ],
+  "remaining_access_gap": "Full quality report identified by hash remains in Cloud Shell; only summaries and July detail are available in this local workspace. No new VM boot is needed to read that report.",
+  "questions_for_tutor": [
+    "Are all-zero profitability/margin/commission fields in 201905 and 201910 known measurement faults? Which exact fields and months?",
+    "Were homebanking transactions missing/redefined in October, or truly absent?",
+    "Were the six discount fields inactive due to campaigns ending, or were their feeds missing?",
+    "Are July closing-date zeros expected from snapshot/closing dates?",
+    "Are both April Visa direct-debit variables known broken fields?"
+  ],
+  "decision_update": "2026-11-14 user resolves treatment policy: nine historical April/May masks retained; no new July/October masks. Causes remain unconfirmed."
+}

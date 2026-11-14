@@ -1,4 +1,6 @@
 {
+  "auditoria/CIERRE_REVISION.json": "ba77b9b6adf23a41886315fc6f3442100e0abeb3af884e4fce5497f00b9446e1",
+  "auditoria/CLASIFICACION_TRATAMIENTO_PROVISIONAL.json": "61d57ecaddcaffd67ca0b0d2cf72cf49631a6750a15e523623849e8f2b9ac8b2",
   "auditoria/CONTROL_REAL.json": "175734cee69a446b43380fa1897142443a2e9a5bfd3de191f9c8acbd244aeb8e",
   "auditoria/INVESTIGACION_OCTUBRE.json": "524206a5874090801e2a948599854464db37053c77fe7df6aff9b929d6f18c85",
   "auditoria/PREPARACION.json": "8928e839349245ec56d2f75b035e8bbc73f8b008fb7c404226a69e2892a432de",
@@ -6,17 +8,21 @@
   "auditoria/REVISION_CRITICA.json": "274685f286ad70731dcdf511071a92ba35fa742a3fb7e09dd8ef0a0bcf4373a3",
   "auditoria/REVISION_JULIO.json": "21f10d6f4724949c7bcd7c700d2ebd8dbefe9fb7148678c5267ca6e106c29ebe",
   "auditoria/REVISION_SANEAMIENTO.md": "122e57c02abf423d1a6fbf027a82714614aa92d0dc5cb8b3df2497225d717b02",
-  "auditoria/VALIDACION_CONTROL.json": "41941433c840dd30409ea7dc4d24e576ef4f381d7f14e2942fc4726a4955d39e",
+  "auditoria/VALIDACION_CONTROL.json": "c4c6bb6bf9d4aa407477955957e4aa1295e3d2baa3a35a17ef5d676d454040fc",
   "auditoria/VALIDACION_SINTETICA.json": "47d3325ad053ac9c42ce3b38f31e4b3ffe6950f202fa4b3fe449617249d59fa1",
-  "configuraciones/contrato_v7.json": "18a3353ec04d51c06c49624f5eaa78ba9a781797d606c3bd0315dbddff064b4a",
+  "auditoria/VALIDACION_SINTETICA_REVISION.json": "e2df2f01d79b2da2c3c1197ac224854e09a1d3d21d13ff4e9ac59da21af0401b",
+  "configuraciones/contrato_v7.json": "a53c3e2c6fccd1300865bab78f5d6b0f1504f8a9b32371468ad2bb4db5698408",
   "configuraciones/contrato_v7_propuesto.json": "403513aacf4d601e06f1d697a49a2536e542a09167d9165158fc8932b458b783",
   "pruebas/test_control.py": "98abc49c9e991b0dba4251a8e71276bbcb3f9ccc61373e4b1c91390710184156",
   "pruebas/test_definiciones.py": "ed93319b125e84fe6c17f97cb8b5ee467ad0052b25a866cfb1a93734e3b3887c",
   "pruebas/test_ejecucion.py": "c37b980e1d5d36ad6da71f7aaea23bbd73e79f7ba524d8bf15b164816422e761",
+  "pruebas/test_preflight.py": "c83c9113882af754f8854ddfab206b008915b4624351f8f3ecc1871f5474ad68",
+  "pruebas/test_worker.py": "9e3578006953ef03f0c299e908d5d072a3ccd11e9dd5a2e3e0319fb5c92d4e2c",
   "scripts/auditar_datos.py": "9e49c779240a3e95cb5abbab9396a58270d289c4b1d002ab3786c86e1e1ac33e",
   "scripts/control_auditoria.py": "edf9829a64f417745041053134be9307dff8c608ad16b75d3997255af5a72920",
-  "scripts/control_entrenamiento.py": "9eb0f8f515eb280566c967aaaa2f489a29d065083be7c7d8c08258af8f8f39cf",
-  "scripts/ejecutar_v7.py": "e6d0d6fc15239844457b65792d131935175fc2b54eb4e517509c0f983d27848f",
+  "scripts/control_entrenamiento.py": "7257993601bf614181d160b6cc55964684f5493801541c0294b3fb1f3d459579",
+  "scripts/ejecutar_v7.py": "5808b4d64c88cec73f5c715f087209b85a0e2ef1d141341d25409e9f1928d8a0",
   "scripts/fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
-  "scripts/worker_vm.py": "e55ab004bd7ace9f5668e66df2da786aa474be116449f51b824216aff802352e"
+  "scripts/preflight.py": "d79c1b20741dbcd31b588d127380c4c1cded522638064bbd993fee4aebfd57cd",
+  "scripts/worker_vm.py": "77f546e928432ae522e1f393b9115761aafd9c85b4ca0c6bd05fb1c774d5574e"
 }

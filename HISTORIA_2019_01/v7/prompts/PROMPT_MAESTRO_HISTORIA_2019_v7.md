@@ -304,3 +304,15 @@ Comenzar por auditoría, sin entrenar. Informar dataset accesible e identificado
 Si falta evidencia, decir exactamente qué falta y cómo obtenerla. No sustituirla por suposiciones ni interpretar este documento como una corrida ya realizada.
 
 Una vez aprobado el contrato ejecutable y presupuesto, ejecutar el alcance cerrado de diez brazos. No agregar pruebas a partir de sus resultados.
+
+## Resolución de saneamiento y revisión previa — 2026-11-14
+
+Esta resolución posterior prevalece sobre las propuestas anteriores de correcciones nuevas. Clara indicó: «tratemos octubre como siempre, documentemos anomalías y sigamos adelante».
+
+Conservar las nueve máscaras históricas de abril/mayo por continuidad con v4/v5/v6, sin presentarlas como una confirmación oficial nueva. No agregar máscaras de julio ni octubre. Preservar ceros y faltantes originales de esos meses; registrar las anomalías con su evidencia, hipótesis y causa no confirmada. Ningún listado externo se toma como autoridad para modificar el dataset. El archivo de origen permanece intacto.
+
+La auditoría del dataset y la decisión de tratamiento son diferentes: el hash certifica qué archivo se examinó, no demuestra la causa de los ceros. El tratamiento de todos los brazos será idéntico y no se escogerá según el resultado de octubre.
+
+El control de entorno se realiza antes de entrenar, exige las versiones centrales del contrato y captura el inventario completo de distribuciones. Los controles de cobertura y fórmulas distinguen causas de faltantes, sin imputar. Guardar advertencias y abortar ante identidad, claves, calendario o entorno incompatibles. La autorización comprende continuar con este protocolo; las verificaciones técnicas siguen siendo obligatorias.
+
+El apagado del sistema y el límite independiente de GCE son defensas complementarias. Si falla la conexión, el apagado inmediato y la recuperación externa no pueden darse por hechos; verificar su estado. No ampliar presupuesto ni iniciar reproducción independiente automáticamente.

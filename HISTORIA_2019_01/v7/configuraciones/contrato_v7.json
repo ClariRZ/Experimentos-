@@ -1,6 +1,6 @@
 {
   "version": "v7",
-  "status": "BLOCKED_PENDING_METHOD_AND_SANITATION_REVIEW",
+  "status": "READY_PENDING_RUNTIME_PREFLIGHT",
   "training_authorized": true,
   "scope": "10 arms, April-June, common budget, August and October",
   "data": {
@@ -39,22 +39,6 @@
         "mpasivos_margen",
         "mcomisiones_otras",
         "ccomisiones_otras"
-      ],
-      "201910": [
-        "mrentabilidad",
-        "mrentabilidad_annual",
-        "mpasivos_margen",
-        "mactivos_margen",
-        "mcomisiones",
-        "mcomisiones_otras",
-        "ccomisiones_otras",
-        "chomebanking_transacciones",
-        "mcajeros_propios_descuentos",
-        "ccajeros_propios_descuentos",
-        "ctarjeta_visa_descuentos",
-        "mtarjeta_visa_descuentos",
-        "ctarjeta_master_descuentos",
-        "mtarjeta_master_descuentos"
       ]
     },
     "history_sources": [
@@ -188,8 +172,8 @@
       "Visa_cadelantosefectivo",
       "Visa_mpagominimo"
     ],
-    "sanitation_status": "UNRESOLVED_DO_NOT_EXECUTE",
-    "broken_masks_status": "Candidate masks retained for review only; no permission to apply while audit gate is false"
+    "sanitation_status": "HISTORICAL_POLICY_AUTHORIZED_NO_NEW_MASKS",
+    "broken_masks_status": "Nine historical April/May masks retained; July and October original values preserved"
   },
   "feature_policy": {
     "automatic_coverage_threshold": null,
@@ -388,7 +372,8 @@
   "authorization": {
     "user_request": "EJECUTAMOS, APAGAR LA VM CUANDO TERMINE",
     "date": "2026-11-13",
-    "scope": "Initial v7 including October; shutdown on completion/failure/deadline; independent full rerun not launched"
+    "scope": "Initial v7 including October; shutdown on completion/failure/deadline; independent full rerun not launched",
+    "sanitation_update": "2026-11-14: tratar octubre como siempre, documentar anomalías y seguir; review v7 for launch"
   },
   "comparisons": [
     [
@@ -451,16 +436,16 @@
     ]
   ],
   "preflight_required": true,
-  "real_audit_approved": false,
+  "real_audit_approved": true,
   "real_audit_file": "calidad_real.json",
   "real_audit_sha256": "430abb720b73f5ca225d6eeb5c131354766c5ca2be8f2853cd2a6ebf93d40401",
   "sanitation_review": {
-    "resolved": false,
+    "resolved": true,
     "official_confirmation": false,
-    "basis": "Previous automatic approval withdrawn. April/May inherited masks and October candidates require documented justification; July preservation is provisional. See auditoria/REVISION_CRITICA.json.",
+    "basis": "User explicitly requests treating October as in v4/v6 and documenting anomalies only. Nine inherited April/May masks retained for continuity, not newly certified as official. No July/October masks. No outcome-based sanitation choice.",
     "october_labels_used": false,
     "gain_used_to_choose_masks": false,
-    "comparability": "New sanitation differs from older experiments; compare arms only under this shared v7 sanitation.",
+    "comparability": "Same nine masks as v4/v5/v6; other v7 changes (calendar, features, tuning, seeds, contacts) preclude attribution of cross-version gains solely to history.",
     "july_expected_statistics": [
       {
         "month": 201906,
@@ -529,5 +514,20 @@
         "maximum": 4497.0
       }
     ]
+  },
+  "runtime": {
+    "python_major_minor": [
+      3,
+      12
+    ],
+    "packages": {
+      "numpy": "2.3.5",
+      "polars": "2.1.0",
+      "lightgbm": "4.7.0",
+      "optuna": "5.0.0",
+      "scikit-learn": "1.8.0"
+    },
+    "freeze_all_distributions_before_fit": true,
+    "automatic_install_or_upgrade": false
   }
 }

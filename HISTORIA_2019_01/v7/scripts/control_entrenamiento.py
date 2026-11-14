@@ -39,7 +39,7 @@ def validate_audit(path,cfg):
         actual=rows[(expected['month'],expected['variable'])]
         if any(actual.get(k)!=v for k,v in expected.items()):
             raise ValueError('Reviewed July statistics mismatch')
-    for name in cfg['data']['broken_masks']['201910']:
+    for name in cfg['data']['broken_masks'].get('201910',[]):
         if rows[201910,name]['zeros']!=rows[201910,name]['rows'] or rows[201909,name]['distinct_finite']<=1:
             raise ValueError('October mask not supported: '+name)
     return a
@@ -119,6 +119,8 @@ def main():
         preflight="import shutil,importlib; assert shutil.disk_usage('.').free>10*2**30; [importlib.import_module(x) for x in ['numpy','polars','lightgbm','optuna','sklearn']]"
         env=['env','POLARS_MAX_THREADS=4','PYTHONPATH='+BASE+'/v4/.auditdeps',PY]
         ssh(shlex.join(env+['-c',preflight]))
+        ssh(shlex.join(env+[remote+'/scripts/preflight.py',remote+'/configuraciones/contrato_v7.json',remote+'/environment_before_launch.json']))
+        gc(['scp','clarirz@'+VM+':'+remote+'/environment_before_launch.json',str(a.output/'environment_before_launch.json')])
         args=[PY,remote+'/scripts/worker_vm.py','--dataset',BASE+'/datos/analistasr_competencia_2026.csv.gz',
               '--config',remote+'/configuraciones/contrato_v7.json','--deadline',str(deadline)]
         launch='import subprocess; f=open('+repr(remote+'/worker.log')+',"a"); p=subprocess.Popen('+repr(args)+',stdin=subprocess.DEVNULL,stdout=f,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True); print(p.pid)'

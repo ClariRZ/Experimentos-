@@ -49,12 +49,14 @@ def main():
     parser.add_argument('--config',required=True);parser.add_argument('--deadline',type=float,required=True)
     a=parser.parse_args();root=Path(__file__).resolve().parents[1]
     out=root/'resultados/ejecucion';out.parent.mkdir(exist_ok=True)
-    lock=open('/tmp/historia_experiment.lock','w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    if out.exists():raise FileExistsError('Fresh run required')
-    subprocess.run(['sudo','-n','true'],check=True)
-    if not time.time()<a.deadline<=time.time()+21600:raise ValueError('Invalid cap')
-    p=None;reason=None;peak=0
+    p=None;reason=None;peak=0;owns_lock=False;lock=None
     try:
+        lock=open('/tmp/historia_experiment.lock','w')
+        fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);owns_lock=True
+        (out.parent/'worker_started.json').write_text(json.dumps({'pid':os.getpid(),'owns_lock':True,'epoch':time.time()}))
+        if out.exists():raise FileExistsError('Fresh run required')
+        subprocess.run(['sudo','-n','true'],check=True)
+        if not time.time()<a.deadline<=time.time()+21600:raise ValueError('Invalid cap')
         cmd=[sys.executable,str(root/'scripts/ejecutar_v7.py'),'--config',a.config,'--dataset',a.dataset,
              '--output',str(out),'--deadline',str(a.deadline)]
         with (out.parent/'runner.log').open('w') as log:
@@ -78,12 +80,17 @@ def main():
         archive_outputs(out)
     except Exception as e:
         if p is not None:terminate(p)
-        (out.parent/'worker_error.json').write_text(json.dumps({'error':str(e)}))
+        (out.parent/'worker_error.json').write_text(json.dumps({'error':str(e),'safe_to_stop':owns_lock}))
         raise
     finally:
-        # Applies on success, timeout and failure; not dependent on Cloud Shell.
-        (out.parent/'shutdown_pending.json').write_text(json.dumps({'shutdown_epoch':time.time()+480}))
-        time.sleep(480)
-        subprocess.run(['sudo','-n','shutdown','-h','now'],check=True)
+        # Keep the lock through shutdown grace; never stop another active worker.
+        try:
+            if owns_lock:
+                grace=480 if (out.parent/'private_recovery.tar.gz.json').exists() else 0
+                (out.parent/'shutdown_pending.json').write_text(json.dumps({'shutdown_epoch':time.time()+grace}))
+                if grace:time.sleep(grace)
+                subprocess.run(['sudo','-n','shutdown','-h','now'],check=True)
+        finally:
+            if lock is not None:lock.close()
 
 if __name__=='__main__':main()

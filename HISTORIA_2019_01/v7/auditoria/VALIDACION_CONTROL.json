@@ -1,5 +1,5 @@
 {
-  "tests_passed": 15,
+  "tests_passed": 20,
   "real_training_executed": false,
   "checks": [
     "audit hash rejects tampering",
@@ -7,7 +7,11 @@
     "recovery tar rejects unsafe paths",
     "feature and economic tests",
     "Reviewed July mixed values preserved; exact reviewed statistics enforced",
-    "Blocked configuration cannot call gcloud"
+    "Blocked configuration cannot call gcloud",
+    "October source zero/null retained under actual contract",
+    "Missingness causes and exact calendar",
+    "Runtime mismatch rejection",
+    "Owned worker early failure requests shutdown; lock conflict does not"
   ],
   "cloud_controller_end_to_end_executed": false
 }

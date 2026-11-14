@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-14",
+  "status": "READY_FOR_GATED_LAUNCH",
+  "user_decision": "Treat October as before; document anomalies; continue and review readiness",
+  "resolutions": {
+    "S01": "User authorizes historical October policy: remove all October masks, preserve raw zero/null; test enforces it.",
+    "S02": "Nine April/May masks retained as explicitly documented continuity choice, not newly confirmed official corrections.",
+    "S03": "No July mask, preserve original values and document anomaly without declaring validity.",
+    "C01": "Added preflight coverage by source/lag/window and causes, plus generated-feature formula missingness reports; synthetic cause tests passed.",
+    "O01": "Worker initialization inside try/finally after tracking lock ownership; invalid-deadline shutdown and no-shutdown-on-conflict regression tests passed.",
+    "O02": "Explicit residual limitation: GCE cap remains; archive creation/recovery not guaranteed under interrupted connection or hard cutoff. Never claim recovery without hash/readback success.",
+    "R01": "Core versions enforced before dispatch and before fitting; full distribution metadata captured before fitting; no automatic install.",
+    "R02": "Independent full reproduction still not performed; no claim otherwise.",
+    "M01": "Conditional bootstrap and five-seed stability retained, not promoted to temporal guarantee.",
+    "G01": "Review gate enforced before any Cloud call; tested."
+  },
+  "tests_passed": 20,
+  "synthetic_pipeline": {
+    "synthetic_only": true,
+    "not_actual_experiment": true,
+    "fits": 150,
+    "maximum_rounds_per_fit": 3,
+    "arms": 10,
+    "august_predictions_exact": 50,
+    "both_months_evaluated": true,
+    "seconds": 3.1869282722473145
+  },
+  "real_training_started_by_this_review": false,
+  "real_matrix_preflight": "Will execute before first fit; not claimed complete yet",
+  "scope": "10 arms; 100 BO fits and 50 seed fits; no model changes from approved scope",
+  "operational_remaining_limits": [
+    "Cloud controller and shutdown not tested end-to-end live in this turn",
+    "Provider six-hour STOP is set and verified only when launch controller runs",
+    "Six hours may not suffice to complete all fits",
+    "Do not start earlier pinned revisions"
+  ]
+}

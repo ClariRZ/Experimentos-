@@ -1,0 +1,10 @@
+{
+  "synthetic_only": true,
+  "not_actual_experiment": true,
+  "fits": 150,
+  "maximum_rounds_per_fit": 3,
+  "arms": 10,
+  "august_predictions_exact": 50,
+  "both_months_evaluated": true,
+  "seconds": 3.1869282722473145
+}
