@@ -1,0 +1,73 @@
+{
+  "source": "Full audit statistics pasted by Clara, 2026-11-14",
+  "statistics": [
+    {
+      "month": 201906,
+      "variable": "Master_fultimo_cierre",
+      "rows": 128474,
+      "nulls": 17018,
+      "zeros": 0,
+      "nonfinite": 0,
+      "distinct_finite": 105,
+      "minimum": 4.0,
+      "maximum": 4358.0
+    },
+    {
+      "month": 201906,
+      "variable": "Visa_fultimo_cierre",
+      "rows": 128474,
+      "nulls": 5250,
+      "zeros": 0,
+      "nonfinite": 0,
+      "distinct_finite": 79,
+      "minimum": 4.0,
+      "maximum": 4449.0
+    },
+    {
+      "month": 201907,
+      "variable": "Master_fultimo_cierre",
+      "rows": 129957,
+      "nulls": 16683,
+      "zeros": 82468,
+      "nonfinite": 0,
+      "distinct_finite": 105,
+      "minimum": 0.0,
+      "maximum": 4389.0
+    },
+    {
+      "month": 201907,
+      "variable": "Visa_fultimo_cierre",
+      "rows": 129957,
+      "nulls": 4973,
+      "zeros": 86019,
+      "nonfinite": 0,
+      "distinct_finite": 78,
+      "minimum": 0.0,
+      "maximum": 4466.0
+    },
+    {
+      "month": 201908,
+      "variable": "Master_fultimo_cierre",
+      "rows": 131887,
+      "nulls": 16821,
+      "zeros": 0,
+      "nonfinite": 0,
+      "distinct_finite": 106,
+      "minimum": 3.0,
+      "maximum": 4420.0
+    },
+    {
+      "month": 201908,
+      "variable": "Visa_fultimo_cierre",
+      "rows": 131887,
+      "nulls": 5077,
+      "zeros": 0,
+      "nonfinite": 0,
+      "distinct_finite": 78,
+      "minimum": 3.0,
+      "maximum": 4497.0
+    }
+  ],
+  "decision": "Preserve original values and missingness; mass zeros do not establish corruption of days-since-closing fields; no July mask",
+  "outcome_labels_used": false
+}

@@ -30,6 +30,18 @@ class ControllerTests(unittest.TestCase):
             next(x for x in a['variable_month_statistics'] if x['month']==201907 and x['variable']=='x0')['zeros']=9
             p.write_text(json.dumps(a));cfg['real_audit_sha256']=digest(p)
             with self.assertRaises(ValueError):validate_audit(p,cfg)
+    def test_reviewed_july_is_preserved_and_verified(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'audit.json';cfg=self.fixture(p)
+            a=json.loads(p.read_text())
+            x=next(x for x in a['variable_month_statistics'] if x['month']==201907 and x['variable']=='x0')
+            x.update(rows=129957,nulls=4973,zeros=86019,distinct_finite=78,minimum=0,maximum=4466)
+            p.write_text(json.dumps(a));cfg['real_audit_sha256']=digest(p)
+            cfg['data']['broken_masks'].pop('201907')
+            cfg['sanitation_review']={'july_expected_statistics':[dict(x)]}
+            validate_audit(p,cfg)
+            cfg['sanitation_review']['july_expected_statistics'][0]['zeros']+=1
+            with self.assertRaises(ValueError):validate_audit(p,cfg)
     def test_recovery_verifies_hash_and_safe_paths(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)/'archive.tar.gz'

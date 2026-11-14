@@ -55,10 +55,6 @@
         "mtarjeta_visa_descuentos",
         "ctarjeta_master_descuentos",
         "mtarjeta_master_descuentos"
-      ],
-      "201907": [
-        "Visa_fultimo_cierre",
-        "Master_fultimo_cierre"
       ]
     },
     "history_sources": [
@@ -461,10 +457,77 @@
   "sanitation_review": {
     "resolved": true,
     "official_confirmation": false,
-    "basis": "Original nine masks retained. Fourteen October variables are entirely zero with September variation. July closing-date fields show abrupt mass zeros against June variation; dictionary defines days since closing. Conservative measurement-failure hypothesis, not proof that any individual zero is invalid. Controller requires all finite July observations zero, remaining rows missing, and previous variation before starting.",
-    "july_gate": "zeros + nulls == rows, nonfinite == 0, distinct_finite == 1, min == max == 0; previous distinct > 1",
+    "basis": "Original nine masks retained. Fourteen October variables entirely zero with September variation. July closing-date fields retain substantial nonzero variation and zero can be a valid day count; preserve original values. Full June-July-August statistics reviewed before training, without using outcomes.",
     "october_labels_used": false,
     "gain_used_to_choose_masks": false,
-    "comparability": "New sanitation differs from older experiments; compare arms only under this shared v7 sanitation."
+    "comparability": "New sanitation differs from older experiments; compare arms only under this shared v7 sanitation.",
+    "july_expected_statistics": [
+      {
+        "month": 201906,
+        "variable": "Master_fultimo_cierre",
+        "rows": 128474,
+        "nulls": 17018,
+        "zeros": 0,
+        "nonfinite": 0,
+        "distinct_finite": 105,
+        "minimum": 4.0,
+        "maximum": 4358.0
+      },
+      {
+        "month": 201906,
+        "variable": "Visa_fultimo_cierre",
+        "rows": 128474,
+        "nulls": 5250,
+        "zeros": 0,
+        "nonfinite": 0,
+        "distinct_finite": 79,
+        "minimum": 4.0,
+        "maximum": 4449.0
+      },
+      {
+        "month": 201907,
+        "variable": "Master_fultimo_cierre",
+        "rows": 129957,
+        "nulls": 16683,
+        "zeros": 82468,
+        "nonfinite": 0,
+        "distinct_finite": 105,
+        "minimum": 0.0,
+        "maximum": 4389.0
+      },
+      {
+        "month": 201907,
+        "variable": "Visa_fultimo_cierre",
+        "rows": 129957,
+        "nulls": 4973,
+        "zeros": 86019,
+        "nonfinite": 0,
+        "distinct_finite": 78,
+        "minimum": 0.0,
+        "maximum": 4466.0
+      },
+      {
+        "month": 201908,
+        "variable": "Master_fultimo_cierre",
+        "rows": 131887,
+        "nulls": 16821,
+        "zeros": 0,
+        "nonfinite": 0,
+        "distinct_finite": 106,
+        "minimum": 3.0,
+        "maximum": 4420.0
+      },
+      {
+        "month": 201908,
+        "variable": "Visa_fultimo_cierre",
+        "rows": 131887,
+        "nulls": 5077,
+        "zeros": 0,
+        "nonfinite": 0,
+        "distinct_finite": 78,
+        "minimum": 3.0,
+        "maximum": 4497.0
+      }
+    ]
   }
 }

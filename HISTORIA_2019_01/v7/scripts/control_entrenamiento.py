@@ -25,11 +25,15 @@ def validate_audit(path,cfg):
         raise ValueError('Audit provenance mismatch')
     rows={(x['month'],x['variable']):x for x in a['variable_month_statistics']}
     if len(a['raw_columns'])!=152 or len(rows)!=1520:raise ValueError('Incomplete audit')
-    for name in cfg['data']['broken_masks']['201907']:
+    for name in cfg['data']['broken_masks'].get('201907',[]):
         x=rows[201907,name];prev=rows[201906,name]
         if not (x['zeros']+x['nulls']==x['rows'] and x['nonfinite']==0 and
                 x['distinct_finite']==1 and x['minimum']==x['maximum']==0 and prev['distinct_finite']>1):
             raise ValueError('July hypothesis not supported by full audit: '+name)
+    for expected in cfg.get('sanitation_review',{}).get('july_expected_statistics',[]):
+        actual=rows[(expected['month'],expected['variable'])]
+        if any(actual.get(k)!=v for k,v in expected.items()):
+            raise ValueError('Reviewed July statistics mismatch')
     for name in cfg['data']['broken_masks']['201910']:
         if rows[201910,name]['zeros']!=rows[201910,name]['rows'] or rows[201909,name]['distinct_finite']<=1:
             raise ValueError('October mask not supported: '+name)
