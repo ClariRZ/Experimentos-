@@ -1,5 +1,7 @@
 # Auditoría integral de Historia 2019
 
+**Actualización posterior:** el respaldo privado v7 ya fue recuperado y verificado. Para estado vigente y comparación con la rama actual de Ezequiel, leer el [cierre v1–v7](../cierre_v1_v7_2026-11-14/INFORME.md). Las referencias a respaldo pendiente más abajo describen el momento de esta auditoría.
+
 Fecha: 14/11/2026. Revisión de los experimentos y de su adecuación a la entrega. No se entrenaron modelos, no se encendió la VM y no se modificaron protocolos congelados.
 
 ## Dictamen

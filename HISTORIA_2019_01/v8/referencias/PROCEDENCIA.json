@@ -1,0 +1,15 @@
+{
+  "source_commit": "4101053be05cf54197f6d6e3885dfc35fb1be594",
+  "sources": {
+    "HISTORIA_2019_01/v7/scripts/fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+    "HISTORIA_2019_01/v7/scripts/ejecutar_v7.py": "5808b4d64c88cec73f5c715f087209b85a0e2ef1d141341d25409e9f1928d8a0",
+    "HISTORIA_2019_01/v7/resultados/agosto/config_frozen.json": "a53c3e2c6fccd1300865bab78f5d6b0f1504f8a9b32371468ad2bb4db5698408",
+    "HISTORIA_2019_01/v7/resultados/agosto/feature_manifest.json": "e86b9571eb2c551cd3ddecefa0436dbe8bb30589296dbec5b184a7f2986bb385",
+    "HISTORIA_2019_01/v7/resultados/agosto/B0/best.json": "b54a3d933aa5971eb0c0e4ee8270d8dddf055fa2c2e366ff5e19a12225b159e0",
+    "HISTORIA_2019_01/v7/resultados/agosto/R3/best.json": "90bfbf111d1ba40fc887d2998dc591c5a54c9b88f684aeb1dd2228e134256ad2",
+    "HISTORIA_2019_01/v7/resultados/agosto/R4/best.json": "cdf57e06d609c11f4789841466e89259b532ead8ec45de432ef98a91cd027e53",
+    "HISTORIA_2019_01/v7/resultados/agosto/T4/best.json": "80ac6e86b15de806304a76dfaeb33eff40f2e33d795309c08377eeb21ab06852"
+  },
+  "status": "PROPOSED_NOT_RUN",
+  "new_fits": 60
+}

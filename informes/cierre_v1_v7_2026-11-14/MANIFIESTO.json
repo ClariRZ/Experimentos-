@@ -1,0 +1,13 @@
+{
+  "informes/cierre_v1_v7_2026-11-14/VALIDACION.json": "cace162ea4bed7c3f2a092be7fc3428074bb6c7321f0ed06ed4fb19020e379b3",
+  "informes/cierre_v1_v7_2026-11-14/EVIDENCIA_EZEQUIEL.json": "d93ca28f383455f5980dfc9a33847789f7670e0bc6faaf50c4384856ac20c605",
+  "informes/cierre_v1_v7_2026-11-14/INFORME.md": "182a3dec97bd1927a371cb1555df13774b89444e4afe34e6130f986f4c0167be",
+  "HISTORIA_2019_01/v8/README.md": "c33dd5ccfba680e8a9ace55c2aec864f40a143366a3f1cc8be56bfc50234db84",
+  "HISTORIA_2019_01/v8/referencias/config_frozen_v7.json": "457f8847e1275ed5f44f1deb223da4e8a9c60343906b8204c21d0305fa58a969",
+  "HISTORIA_2019_01/v8/referencias/recetas_v7.json": "2d33cbf4e47dd689e1a10c41a276f4b63b7d226ed37f3c012487a4a174f51d9f",
+  "HISTORIA_2019_01/v8/referencias/PROCEDENCIA.json": "20c7468f946c101b55560ac381423d42252d4cc8a19d28a7d88e1049687cd29c",
+  "HISTORIA_2019_01/v8/prompts/PROMPT_MAESTRO_V8.md": "e5a08155b44b311df5c4e5fa15e014c9e139dcff55d475e78f4e323d5ba7ea4e",
+  "herramientas/limpiar_matrices_v7.py": "770ec4944ce4c6be6485058579f6a6389de83943a697202198dc95fe4abb7736",
+  "herramientas/limpiar_matrices_v7_evidencia.json": "20177b2736cb2b6088ddd66bf9de97c6f4f0f9aa663d46eb2778b03ba69d3083",
+  "herramientas/test_limpiar_matrices_v7.py": "f9bda87b1a7a6a06a3ac2ec30406c6a2325a86e8ab73538082c743a2a3aac4d4"
+}

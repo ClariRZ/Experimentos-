@@ -1,0 +1,22 @@
+{
+  "source": {
+    "policy_frozen.json": "a71b36b096699aba00e30c1d2864b2e9ac6227129efe3f5783115abc6365dad4",
+    "feature_manifest.json": "e86b9571eb2c551cd3ddecefa0436dbe8bb30589296dbec5b184a7f2986bb385",
+    "config_frozen.json": "a53c3e2c6fccd1300865bab78f5d6b0f1504f8a9b32371468ad2bb4db5698408",
+    "code_identity.json": "14096b3efcd4cf26fc64d9c9d549100f732f062fa39306325b055df0d7079657"
+  },
+  "october": {
+    "FINAL.json": "cb07e129812d776cc3d8199693bb4435ef84da5c65626c93e6108b2a5a6196eb",
+    "private_manifest.json": "984f36cb0d4e6f7f74469b2056a2d71548be66b4abec0840901630176e966b5a",
+    "august_verification.json": "54a00cb190638b228f31c8b5719454cfba3102fd60e05936af4504c184a160d3"
+  },
+  "code": {
+    "ejecutar_v7.py": "5808b4d64c88cec73f5c715f087209b85a0e2ef1d141341d25409e9f1928d8a0",
+    "control_entrenamiento.py": "7257993601bf614181d160b6cc55964684f5493801541c0294b3fb1f3d459579",
+    "fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+    "control_auditoria.py": "edf9829a64f417745041053134be9307dff8c608ad16b75d3997255af5a72920",
+    "preflight.py": "d79c1b20741dbcd31b588d127380c4c1cded522638064bbd993fee4aebfd57cd",
+    "auditar_datos.py": "9e49c779240a3e95cb5abbab9396a58270d289c4b1d002ab3786c86e1e1ac33e",
+    "worker_vm.py": "77f546e928432ae522e1f393b9115761aafd9c85b4ca0c6bd05fb1c774d5574e"
+  }
+}

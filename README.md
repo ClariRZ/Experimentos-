@@ -37,3 +37,9 @@ Usar otra carpeta o máquina, el dataset con el hash esperado y el entorno fijad
 Una reproducción numérica no exige necesariamente archivos de modelo idénticos byte a byte. Para restaurar los modelos originales, en cambio, verificar sus hashes. No atribuir al entorno original versiones observadas hoy que no se registraron durante la corrida.
 
 La preparación v5 es un experimento distinto y no se ejecuta desde este repositorio como parte de la auditoría v4.
+
+## Cierre v1–v7 y propuesta siguiente (14/11/2026)
+
+- [Inventario, fallas, fortalezas y comparación actual con Ezequiel](informes/cierre_v1_v7_2026-11-14/INFORME.md).
+- [Prompt v8: cuatro recetas y tres ventanas, todavía sin ejecutar](HISTORIA_2019_01/v8/prompts/PROMPT_MAESTRO_V8.md).
+- [Limpieza acotada y verificada de matrices v7](herramientas/limpiar_matrices_v7.py): ejecutar en Cloud Shell con `--apply`; no elimina modelos, predicciones ni archivos de v1–v6. Comprueba los dos respaldos conocidos antes de encender la VM, limita la sesión y apaga al terminar. Sus ocho pruebas son sintéticas; la limpieza real sigue pendiente.
