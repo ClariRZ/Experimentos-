@@ -1,0 +1,191 @@
+{
+  "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "monthly_rows": [
+    {
+      "foto_mes": 201901,
+      "len": 124031
+    },
+    {
+      "foto_mes": 201902,
+      "len": 125124
+    },
+    {
+      "foto_mes": 201903,
+      "len": 125732
+    },
+    {
+      "foto_mes": 201904,
+      "len": 126246
+    },
+    {
+      "foto_mes": 201905,
+      "len": 126876
+    },
+    {
+      "foto_mes": 201906,
+      "len": 128474
+    },
+    {
+      "foto_mes": 201907,
+      "len": 129957
+    },
+    {
+      "foto_mes": 201908,
+      "len": 131887
+    },
+    {
+      "foto_mes": 201909,
+      "len": 133538
+    },
+    {
+      "foto_mes": 201910,
+      "len": 135754
+    }
+  ],
+  "suspected_breaks": [
+    {
+      "month": 201907,
+      "variable": "Visa_fultimo_cierre",
+      "zero_fraction": 0.6619035527135899,
+      "previous_zero_fraction": 0.0,
+      "previous_distinct_finite": 79,
+      "all_zero_with_previous_variation": false,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201907,
+      "variable": "Master_fultimo_cierre",
+      "zero_fraction": 0.6345791300199297,
+      "previous_zero_fraction": 0.0,
+      "previous_distinct_finite": 105,
+      "all_zero_with_previous_variation": false,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mrentabilidad",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.002860608965238359,
+      "previous_distinct_finite": 117449,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mrentabilidad_annual",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.0025086492234420166,
+      "previous_distinct_finite": 131360,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mpasivos_margen",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.010671119831059324,
+      "previous_distinct_finite": 106232,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mactivos_margen",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.04247480118018841,
+      "previous_distinct_finite": 103676,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mcomisiones",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.03433479608800491,
+      "previous_distinct_finite": 96503,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mcomisiones_otras",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.03433479608800491,
+      "previous_distinct_finite": 96568,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "ccomisiones_otras",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.0343048420674265,
+      "previous_distinct_finite": 132,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "chomebanking_transacciones",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.45099522233371775,
+      "previous_distinct_finite": 82,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mcajeros_propios_descuentos",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.9649163533975348,
+      "previous_distinct_finite": 3002,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "ccajeros_propios_descuentos",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.9593823480956731,
+      "previous_distinct_finite": 28,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "ctarjeta_visa_descuentos",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.9318096721532447,
+      "previous_distinct_finite": 22,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mtarjeta_visa_descuentos",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.9347077236442062,
+      "previous_distinct_finite": 4686,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "ctarjeta_master_descuentos",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.9807620302835148,
+      "previous_distinct_finite": 17,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    },
+    {
+      "month": 201910,
+      "variable": "mtarjeta_master_descuentos",
+      "zero_fraction": 1.0,
+      "previous_zero_fraction": 0.981945214096362,
+      "previous_distinct_finite": 1682,
+      "all_zero_with_previous_variation": true,
+      "requires_semantic_review": true
+    }
+  ]
+}

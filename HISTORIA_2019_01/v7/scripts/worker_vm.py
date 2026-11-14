@@ -82,8 +82,8 @@ def main():
         raise
     finally:
         # Applies on success, timeout and failure; not dependent on Cloud Shell.
-        (out.parent/'shutdown_pending.json').write_text(json.dumps({'shutdown_epoch':time.time()+120}))
-        time.sleep(120)
+        (out.parent/'shutdown_pending.json').write_text(json.dumps({'shutdown_epoch':time.time()+480}))
+        time.sleep(480)
         subprocess.run(['sudo','-n','shutdown','-h','now'],check=True)
 
 if __name__=='__main__':main()

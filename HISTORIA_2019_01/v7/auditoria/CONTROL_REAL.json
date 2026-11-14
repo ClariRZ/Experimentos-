@@ -1,0 +1,24 @@
+{
+  "run": "v7_audit_20261114_015940",
+  "training_executed": false,
+  "hard_stop_seconds": 2700,
+  "remote": "/home/clarirz/HISTORIA_2019_01/v7/auditorias/v7_audit_20261114_015940",
+  "machine_type": "https://www.googleapis.com/compute/v1/projects/proj-uba-261002122233861/zones/northamerica-northeast2-b/machineTypes/e2-highmem-8",
+  "scheduling": {
+    "automaticRestart": true,
+    "instanceTerminationAction": "STOP",
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "2700"
+    },
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false,
+    "provisioningModel": "STANDARD"
+  },
+  "bundle_sha256": "f00b338603a468f88812997d1f54b8a80c8371c4300da5e61fc16b93315a678b",
+  "started_at": 1794621585.594397,
+  "returncode": 0,
+  "report_sha256": "430abb720b73f5ca225d6eeb5c131354766c5ca2be8f2853cd2a6ebf93d40401",
+  "vm_status": "TERMINATED",
+  "finished_at": 1794621727.0188313
+}
