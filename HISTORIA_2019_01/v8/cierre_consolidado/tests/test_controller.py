@@ -40,5 +40,7 @@ class ControllerTests(unittest.TestCase):
   class NoCloud:
    def describe(self):raise AssertionError('Cloud must not be contacted')
   with tempfile.TemporaryDirectory() as d:
-   with self.assertRaises(ValueError):launch(root,root/'contrato_v8_consolidado.json',Path(d)/'launch',NoCloud())
+   cfg=json.loads((root/'contrato_v8_consolidado.json').read_text());cfg.update(status='DRAFT',training_authorized=False)
+   tmp=Path(d);(tmp/'config.json').write_text(json.dumps(cfg))
+   with self.assertRaises(ValueError):launch(tmp,tmp/'config.json',tmp/'launch',NoCloud())
 if __name__=='__main__':unittest.main()

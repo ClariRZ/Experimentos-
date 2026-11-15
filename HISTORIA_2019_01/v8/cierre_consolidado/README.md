@@ -102,3 +102,11 @@ La prueba sintética ahora cubre congelamiento, reproducción exacta de las 40 p
 Consulta de consola del 14/11: VM detenida, e2-highmem-8, 8 vCPU, 64 GB de memoria, disco de 100 GB y límite vigente de una hora con acción Stop. El controlador configura y verifica seis horas antes de lanzar; ese cambio todavía no se aplicó. El espacio libre y las versiones instaladas no están verificados actualmente.
 
 Los tiempos guardados de B0/R3/T4 en v7 dan una aproximación de 2,62 horas sólo para ajustes, usando el brazo conocido más lento como sustituto provisional de RR4. No incluye evaluación, preparación ni respaldo; RR4 no está medido y esto no garantiza el plazo. Detalle en `preflight/PLANIFICACION_RECURSOS.json`. Sigue pendiente cerrar presupuesto, comparabilidad histórica y contrato antes de ejecutar.
+
+## Autorización de lanzamiento
+
+La instrucción explícita «entrená ya» autoriza los 144 ajustes del contrato. El estado pasa a APPROVED. No cambia ninguna definición, semilla, calendario ni regla de decisión. Las cifras históricas no homologadas y los porcentajes de importancia de C3 no se utilizarán como evidencia ni como criterio de selección. El consumo de entrenamiento de v8 todavía no está medido: se aplican límites, sin presentarlos como mediciones.
+
+El controlador exige 12 GiB libres al iniciar, conserva al menos 4 GiB durante los procesos y limita RSS a 48 GiB en una máquina con al menos 8 GiB adicionales. Compara Python y dependencias contra el contrato antes de despachar. Un fallo de preparación apaga la VM sin entrenar. El límite GCE de seis horas se configura y verifica antes del arranque. Estas comprobaciones remotas todavía no se han ejecutado.
+
+Lanzar desde un checkout limpio con Python estándar: `python3 HISTORIA_2019_01/v8/cierre_consolidado/scripts/control_v8.py --repo . --config HISTORIA_2019_01/v8/cierre_consolidado/contrato_v8_consolidado.json --output RUTA_NUEVA_PRIVADA`. La terminal debe tener gcloud autenticado. No publicar el directorio privado de salida. Si se interrumpe la conexión, usar `--recover RUTA_NUEVA_PRIVADA`; no lanzar otra corrida.

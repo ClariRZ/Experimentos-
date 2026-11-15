@@ -5,7 +5,6 @@ Checkpoints are committed directories; incomplete fits block automatic retries.
 """
 import argparse, gc, hashlib, json, os, shutil, sys, time
 from pathlib import Path
-import numpy as np
 
 ARMS = ['B0', 'R3', 'T4', 'RR4']
 
@@ -42,12 +41,14 @@ def validate_contract(c):
             raise ValueError('Invalid feature schema')
 
 def choose_finalists(trials, count=3):
+    import numpy as np
     if any(t['state']!='COMPLETE' or not np.isfinite(t['auc']) for t in trials):
         raise ValueError('Incomplete or invalid trials')
     if len(trials)<count: raise ValueError('Insufficient trials')
     return sorted(trials,key=lambda t:(-t['auc'],t['trial']))[:count]
 
 def choose_confirmed(rows):
+    import numpy as np
     for r in rows:
         if len(r['aucs'])!=2 or not np.isfinite(r['aucs']).all():raise ValueError('Invalid confirmations')
     return min(rows,key=lambda r:(-float(np.mean(r['aucs'])),float(np.std(r['aucs'],ddof=0)),r['rounds'],r['trial']))
@@ -85,6 +86,7 @@ class Checkpoints:
         return record
 
 def main():
+    import numpy as np
     ap=argparse.ArgumentParser();ap.add_argument('--repo',type=Path,required=True);ap.add_argument('--config',type=Path,required=True);ap.add_argument('--dataset',type=Path,required=True);ap.add_argument('--output',type=Path,required=True)
     a=ap.parse_args();c=json.loads(a.config.read_text());validate_contract(c)
     import importlib.metadata, platform, resource

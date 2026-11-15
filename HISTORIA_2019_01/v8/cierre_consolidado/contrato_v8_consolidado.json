@@ -1,7 +1,7 @@
 {
   "version": "v8_cierre_consolidado",
-  "status": "DRAFT",
-  "training_authorized": false,
+  "status": "APPROVED",
+  "training_authorized": true,
   "prompt_sha256": "502d8b48f8e8d81cf78d04cdbd5010abfba40f026f9d0a780921e1805ce04f49",
   "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
   "dataset_path": "HISTORIA_2019_01/v8/prompts/cierre_consolidado/datos_privados/analistasr_competencia_2026.csv.gz",
@@ -3794,8 +3794,10 @@
   "budget": {
     "requested_max_seconds": 21600,
     "measured_fit_peak_ram": null,
-    "required_free_disk_bytes": null,
-    "approved": false
+    "required_free_disk_bytes": 4294967296,
+    "approved": true,
+    "required_start_free_disk_bytes": 12884901888,
+    "max_rss_bytes": 51539607552
   },
   "economics": {
     "hit_gross": 1100000,
@@ -3854,9 +3856,26 @@
     "seed_mean_positive_both_months": true,
     "october_nonnegative_band_points_min": 4
   },
-  "unresolved": [
-    "training_resources_not_measured",
-    "historical_counts_not_homologated",
-    "C3_importance_percentages_not_verified"
-  ]
+  "unresolved": [],
+  "preflight_passed": true,
+  "authorization": {
+    "instruction": "entren\u00e1 ya",
+    "date": "2026-11-14",
+    "scope": "144 planned fits, frozen September/October evaluation, backup and automatic stop; operational gates mandatory"
+  },
+  "documented_limitations": {
+    "historical_counts_not_homologated": "Not used in selection or claims; no aggregate cross-version win count is asserted",
+    "C3_importance_percentages_not_verified": "No C3 importance percentage is asserted; RR4 definition and parity have separate checks",
+    "training_resources_not_measured": "Use v7 historical planning evidence and enforced caps, not a measured v8 guarantee"
+  },
+  "operational_gate": {
+    "runtime_check_before_dispatch": true,
+    "insufficient_resources": "stop VM without training",
+    "basis": "historical v7 resource planning; v8 training peak remains unmeasured"
+  },
+  "preflight_evidence": {
+    "HISTORIA_2019_01/v8/cierre_consolidado/preflight/causas_reales/coverage_causes.json": "af3de3139393c2c311c19f32dbdd7e6cdf7f047ab0d5c02addcc21ef1b1cf74b",
+    "HISTORIA_2019_01/v8/cierre_consolidado/preflight/VALIDACION_EJECUTOR.json": "07fe5e4ae8c85b0641649e2591bb60ac55e5ee56b71dd539145cc553f4503d1e",
+    "HISTORIA_2019_01/v8/cierre_consolidado/preflight/PLANIFICACION_RECURSOS.json": "b68d6ad10197b0a396dbb50e69bf9534dc589fe296ed06299dbf921df2ca4d3a"
+  }
 }

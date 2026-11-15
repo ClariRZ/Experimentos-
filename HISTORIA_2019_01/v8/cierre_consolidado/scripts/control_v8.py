@@ -70,6 +70,13 @@ def launch(repo,config,folder,cloud=None):
         if cloud.ssh('sha256sum '+shlex.quote(remote+'/code.tar.gz')).stdout.split()[0]!=record['bundle_sha256']:raise ValueError('Uploaded code differs')
         cloud.ssh('tar -xzf '+shlex.quote(remote+'/code.tar.gz')+' -C '+shlex.quote(remote+'/repo'))
         py=BASE+'/historia_2019_v1/.venv/bin/python';script=remote+'/repo/HISTORIA_2019_01/v8/cierre_consolidado/scripts/operacion_v8.py'
+        # Validate the actual VM before dispatching any training process.
+        probe="import json,sys,shutil,importlib.metadata as m; print(json.dumps({'python':list(sys.version_info[:2]),'packages':{p:m.version(p) for p in "+repr(list(c['runtime_reference']['packages']))+"},'free_disk_bytes':shutil.disk_usage('/home/clarirz').free,'mem_total_bytes':int(next(x.split()[1] for x in open('/proc/meminfo') if x.startswith('MemTotal:')))*1024}))"
+        runtime=json.loads(cloud.ssh('PYTHONPATH='+shlex.quote(BASE+'/v4/.auditdeps')+' '+shlex.join([py,'-c',probe])).stdout)
+        save(folder/'runtime_preflight.json',runtime)
+        if runtime['python']!=c['runtime_reference']['python_major_minor'] or runtime['packages']!=c['runtime_reference']['packages']:raise ValueError('VM runtime differs; no training started')
+        if runtime['free_disk_bytes']<c['budget']['required_start_free_disk_bytes']:raise ValueError('Insufficient initial disk space; no training started')
+        if runtime['mem_total_bytes']<c['budget']['max_rss_bytes']+8*1024**3:raise ValueError('Insufficient memory headroom; no training started')
         command=[py,script,'--worker','--repo',remote+'/repo','--config',remote+'/repo/'+str(relative),'--dataset',BASE+'/datos/analistasr_competencia_2026.csv.gz','--run',remote+'/run','--hard-deadline',str(record['hard_deadline'])]
         dispatch="import os,subprocess; e=os.environ.copy(); e['POLARS_MAX_THREADS']='4'; e['PYTHONPATH']="+repr(BASE+'/v4/.auditdeps')+"; f=open("+repr(remote+'/worker.log')+",'ab'); p=subprocess.Popen("+repr(command)+",stdin=subprocess.DEVNULL,stdout=f,stderr=subprocess.STDOUT,env=e,start_new_session=True); print(p.pid)"
         # A timed-out response may still have launched the process. Do not dispatch twice.
