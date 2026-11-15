@@ -1,6 +1,7 @@
 {
-  "README.md": "5926eb9faddf76ba0aca565d9b90fe7f9ebd1e769192385a44c203942367aa23",
+  "README.md": "cc6b8060c01a98a4f9d46eae006ff1f541d0b117e839699a71b97de0a8d742f4",
   "contrato_v8_consolidado.json": "1238fca15f4a48041e2be641157230b7e085bb13cba9467a73b99aec78377bb1",
+  "preflight/VALIDACION_EJECUTOR.json": "35c941930f84c8d98a836fe8d1552d74c7734f1d1e15e57990b494d96f8d4ad2",
   "preflight/c3_paridad.json": "b8086a62c3385dce2ecae0c32e7d814635e021e3f93f5c3c8df49bef26808676",
   "preflight/insumos_locales.json": "db58a8bb97156a4658b7be7723d8fe6313eb56a1d0f13f535fd3a2ea51746478",
   "preflight/matrices_reales/anomalias_sin_tratamiento.json": "62c3e78ac70c0e3078141e580a0da0009c667e1d4a3e918d71741a44c721ba62",
@@ -18,11 +19,17 @@
   "preflight/octubre_real/scenarios.json": "84dc03bd0732d660d7f116cee5ffeac3f5f6f81f0e360c2320d0b61c933431b5",
   "preflight/rr4_real/coverage_rr4.json": "f7fae81a463c203748d4fbc1fa33191781ca91915c5198fa331e131fbde3d364",
   "preflight/rr4_real/resources.json": "8aef6fbb3267d6d627d52ec8a49167bfa90904bc32663d1527d37d6943a95209",
+  "scripts/auditar_causas.py": "4f0dbcdfcfadb357b10aeb54d54639733ac61ce01e0ce22bdc41ce133c1b850e",
   "scripts/auditar_matrices.py": "ce619e2e4fa2eca0dd13e7ea544fc25006f5091422f0cda006d70f2f4028e568",
   "scripts/auditar_rr4.py": "a9e2261aa99c8f56f3910b6f6a726cd962cb4d01040165756fa7f91322ea6f01",
   "scripts/diagnostico_octubre.py": "a4347db7dcef5a09a0f1275bd75de36e0dc5aade87bc869ad6ad9ac29e1b2d63",
+  "scripts/ejecutar_v8.py": "6b75d34f7c709fd247e67d415a682d3b1e3cc49e2f7aaf9aaef8c7c4ae994e0d",
+  "scripts/evaluar_v8.py": "6ef2ce3addaab6bb0ba8ae0c80854adf95a61d0d3917b7ef1bf589a860f8a9f1",
   "scripts/rr4.py": "82bcc7746266702f97366b943d6a42748a49977ce2fbd046582fac4da24c3b04",
   "scripts/verificar_c3.py": "d96f5a372d9103ad09bdc8d282f9eb14294253bb3ece560d9768c9b2f0334ee8",
+  "tests/test_causes.py": "89490299092b82e7f1bf2f37abc7c89f65519bec0b1474bf768a00c40eaa6e03",
+  "tests/test_evaluation.py": "067a38c5bb2d9722336fd1197f1b8f67a2ec5a804f13223017f786b7eba21caa",
+  "tests/test_executor.py": "408a4e7f9109f37848187da0e37c6d73552418a45549827d7ce236803e2ef5aa",
   "tests/test_original_v7.py": "bbe9d5f24ee573e03e57dcdd0e782b3da6a246515a3b991a065921c02ec71c6e",
   "tests/test_rr4.py": "832d26c8d8bba122df27cccb2aefafcfe1bdac09460db14752de6bebc7fb114e"
 }

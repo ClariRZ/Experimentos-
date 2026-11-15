@@ -1,0 +1,28 @@
+{
+  "status": "IMPLEMENTED_NOT_APPROVED",
+  "unit_tests_passed": 37,
+  "lightgbm_fits_executed": 0,
+  "training_entrypoint": "scripts/ejecutar_v8.py",
+  "evaluation_entrypoint": "scripts/evaluar_v8.py",
+  "coverage_entrypoint": "scripts/auditar_causas.py",
+  "validated": [
+    "disjoint seed gate",
+    "confirmation-only selection",
+    "confirmation tie breaks",
+    "exact contact arithmetic",
+    "checkpoint reuse without callback",
+    "checkpoint tamper detection",
+    "interrupted fit blocks silent retry",
+    "deterministic TPE ask/tell replay",
+    "paired shared-index bootstrap",
+    "gain and ID tie ordering",
+    "final classification rules"
+  ],
+  "not_validated": [
+    "end-to-end training with actual LightGBM",
+    "VM deployment and independent shutdown",
+    "off-VM resumable backup for this runner",
+    "final resource limits and approved immutable contract"
+  ],
+  "scope": "Unit tests do not certify end-to-end production readiness."
+}

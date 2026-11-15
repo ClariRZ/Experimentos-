@@ -72,3 +72,13 @@ Son unidades económicas del concurso y ensembles de v7. Las ventajas son sensib
 El diagnóstico tardó 209,4 segundos y alcanzó 3,09 GiB RSS. La auditoría de matrices tardó 44,0 segundos y alcanzó 5,84 GiB RSS; la matriz RR4 de entrenamiento float32 equivale a 1.459.223.104 bytes sin contar otras estructuras. No son mediciones de entrenamiento ni garantizan el plazo de 144 ajustes.
 
 Estado al cierre de esta ejecución local: **DRAFT, entrenamiento no iniciado**. Quedan atribución completa de causas B0/R3/T4, comprobaciones históricas no homologadas, límites operativos y validación del ejecutor de entrenamiento. No se encendió la VM. No se presenta esta ejecución parcial como preflight aprobado.
+
+## Ejecutor de v8 — avance de implementación
+
+`ejecutar_v8.py` implementa las 20 búsquedas, confirmación de tres configuraciones con dos semillas y diez semillas finales por brazo. Reproduce el estado del sampler mediante ask/tell determinista al retomar; no vuelve a entrenar checkpoints completos. Un ajuste interrumpido queda bloqueado para revisión, no se repite silenciosamente. La identidad incluye contrato, dataset y código original importado. El contrato aprobado se copia byte a byte. Los modelos y predicciones quedan bajo `private/` en el directorio de ejecución elegido, fuera de los artefactos públicos.
+
+`evaluar_v8.py` sólo puntúa modelos congelados en septiembre/octubre. Calcula presupuesto común exacto, bootstrap pareado con índices compartidos, intervalos por semilla, sensibilidad, blend descriptivo y diagnóstico RR4. No llama a entrenamiento. Termina en EVALUATED_BACKUP_PENDING: el análisis terminado no equivale a respaldo ni apagado verificados.
+
+Pasaron 37 pruebas unitarias sin entrenar LightGBM, incluidas reanudación, corrupción, desempates, repetición del sampler, contribuciones económicas y reglas de cierre. **No es una validación integral del ejecutor.** La ejecución completa, supervisor independiente, respaldo externo reanudable y apagado siguen pendientes. El contrato continúa DRAFT; estas pruebas no autorizan la corrida.
+
+`auditar_causas.py` está ejecutándose localmente para completar la atribución de faltantes B0/R3/T4 en seis meses. Hasta que cierre y se revise su salida, no se da ese requisito por aprobado.
