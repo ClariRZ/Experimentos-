@@ -23,3 +23,5 @@ Este repositorio reúne el material publicable antes distribuido entre `Segunda_
 [Informe de consolidación](informes/consolidacion_repos_2026-11-15/README.md) · [Inventario archivo por archivo](informes/consolidacion_repos_2026-11-15/INVENTARIO.json) · [Versiones discrepantes originales](fuentes/Segunda_competencia_c89185ae/).
 
 `python3 herramientas/verificar_consolidacion.py` comprueba los 895 archivos publicables del origen y la exclusión de los siete privados. No necesita VM, datos ni entrenamiento.
+
+**Resumen para explicar el experimento:** [qué hicimos, por qué y qué resultados dio](informes/historia_explicada_v1_v8_2026-11-15/README.md), con tiempos medidos y límites.
