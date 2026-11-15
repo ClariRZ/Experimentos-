@@ -15,7 +15,7 @@ Estado: **PARCIAL; NO APROBADO PARA ENTRENAR**. No se entrenaron modelos ni se e
 | Paridad con generador C3 real | PASÓ | 256 combinaciones, `preflight/c3_paridad.json`; se cargaron el generador original y sus funciones puras sin cambiar fórmulas |
 | Dataset exacto | PASÓ | Recuperado del respaldo privado v1–v6; SHA256 completo coincide con v7. Copia local junto al prompt, excluida de Git |
 | Inferencia intacta y perturbaciones | PASÓ ejecución | 50 predicciones por semilla y 10 ensembles intactos exactos; tres escenarios completos en `preflight/octubre_real/` |
-| Cobertura real por mes B0/R3/T4/RR4 | PARCIAL | Disponibilidad por columna B0/R3/T4 y atribución RR4 ejecutadas en seis meses; falta atribución completa de causas de B0/R3/T4 |
+| Cobertura real por mes B0/R3/T4/RR4 | PASÓ | Atribución de causas en seis meses: 14.712 registros B0/R3/T4 y 2.322 RR4; cero causas inesperadas |
 | Esquema RR4 depurado en train | PASÓ | 956 columnas: 652 B0 + 304 nuevas; 83 excluidas; lista y aliases en `preflight/matrices_reales/rr4_schema.json` |
 | Recursos de entrenamiento | PENDIENTE | Disco/RAM del host registrados; no se equiparan a pico de entrenamiento |
 | Conteos 21/23 y 15/29 | PENDIENTE | No homologados; no se usan como evidencia confirmada |
@@ -82,3 +82,7 @@ Estado al cierre de esta ejecución local: **DRAFT, entrenamiento no iniciado**.
 Pasaron 37 pruebas unitarias sin entrenar LightGBM, incluidas reanudación, corrupción, desempates, repetición del sampler, contribuciones económicas y reglas de cierre. **No es una validación integral del ejecutor.** La ejecución completa, supervisor independiente, respaldo externo reanudable y apagado siguen pendientes. El contrato continúa DRAFT; estas pruebas no autorizan la corrida.
 
 `auditar_causas.py` está ejecutándose localmente para completar la atribución de faltantes B0/R3/T4 en seis meses. Hasta que cierre y se revise su salida, no se da ese requisito por aprobado.
+
+### Cierre de auditoría de causas
+
+La ejecución real de `auditar_causas.py` terminó correctamente: 14.712 registros de columna/mes/brazo para B0/R3/T4, seis meses completos y cero causas inesperadas. Las categorías exclusivas suman exactamente el denominador en todos los registros. Se guardan también los solapamientos y los faltantes nuevos atribuibles a las nueve máscaras, comparando contra la variante sin máscaras sólo para diagnóstico. Evidencia en `preflight/causas_reales/`. Esta actualización cierra el pendiente descrito arriba; los controles operativos e integración del ejecutor siguen abiertos.

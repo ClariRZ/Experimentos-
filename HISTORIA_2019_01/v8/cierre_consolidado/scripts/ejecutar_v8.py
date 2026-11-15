@@ -103,6 +103,7 @@ def main():
     import fcntl
     lock=(a.output/'run.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     cp=Checkpoints(a.output/'private/checkpoints',identity)
+    (a.output/'private/.gitignore').write_text('*\n')
     started=a.output/'started.json'
     if not started.exists():save(started,{'epoch':time.time()})
     deadline=json.loads(started.read_text())['epoch']+c['budget']['requested_max_seconds']

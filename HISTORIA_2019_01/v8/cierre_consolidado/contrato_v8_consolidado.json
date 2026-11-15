@@ -3855,7 +3855,6 @@
     "october_nonnegative_band_points_min": 4
   },
   "unresolved": [
-    "full_coverage_cause_attribution_pending",
     "training_resources_not_measured",
     "historical_counts_not_homologated",
     "C3_importance_percentages_not_verified"

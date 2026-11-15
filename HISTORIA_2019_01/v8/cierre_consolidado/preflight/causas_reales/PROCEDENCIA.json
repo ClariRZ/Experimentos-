@@ -1,0 +1,16 @@
+{
+  "script_sha256": "4f0dbcdfcfadb357b10aeb54d54639733ac61ce01e0ce22bdc41ce133c1b850e",
+  "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "records": 14712,
+  "months": [
+    201904,
+    201905,
+    201906,
+    201908,
+    201909,
+    201910
+  ],
+  "all_category_totals_match": true,
+  "fits": 0,
+  "unknown_causes": 0
+}

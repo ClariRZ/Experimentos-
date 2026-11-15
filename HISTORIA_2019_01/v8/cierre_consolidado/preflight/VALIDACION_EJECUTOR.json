@@ -24,5 +24,12 @@
     "off-VM resumable backup for this runner",
     "final resource limits and approved immutable contract"
   ],
-  "scope": "Unit tests do not certify end-to-end production readiness."
+  "scope": "Unit tests do not certify end-to-end production readiness.",
+  "remaining_launch_work": [
+    "Exercise full orchestration without fitting real models",
+    "Implement independent supervisor and resume-safe off-VM recovery",
+    "Verify target VM resources while stopped where possible",
+    "Freeze approved contract after preflight report"
+  ],
+  "real_missingness_audit": "PASSED: 14712 records, six months, zero unexplained"
 }
