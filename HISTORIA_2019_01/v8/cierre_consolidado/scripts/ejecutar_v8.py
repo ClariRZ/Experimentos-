@@ -102,101 +102,104 @@ def main():
     a.output.mkdir(parents=True,exist_ok=True)
     import fcntl
     lock=(a.output/'run.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    cp=Checkpoints(a.output/'private/checkpoints',identity)
-    (a.output/'private/.gitignore').write_text('*\n')
-    started=a.output/'started.json'
-    if not started.exists():save(started,{'epoch':time.time()})
-    deadline=json.loads(started.read_text())['epoch']+c['budget']['requested_max_seconds']
-    def guard(*args):
-        if time.time()>=deadline:raise TimeoutError('Original deadline exceeded')
-        if shutil.disk_usage(a.output).free<c['budget']['required_free_disk_bytes']:raise OSError('Disk guard')
-        if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024>c['budget']['max_rss_bytes']:raise MemoryError('RSS guard')
-    guard.order=0;guard.before_iteration=True
-    guard()
-    frozen_config=a.output/'config_frozen.json'
-    if frozen_config.exists() and sha(frozen_config)!=sha(a.config):raise ValueError('Frozen contract changed')
-    if not frozen_config.exists():shutil.copy2(a.config,frozen_config)
-    save(a.output/'environment.json',{'python':sys.version,'platform':platform.platform(),'packages':{d.metadata['Name']:d.version for d in importlib.metadata.distributions()}})
-    sys.path.insert(0,str(old));import ejecutar_v7 as v7
-    import polars as pl,lightgbm as lgb,optuna
-    from sklearn.metrics import roc_auc_score
-    from rr4 import rr4
-    # Labels are removed before invoking the unchanged feature builder.
-    cfg=json.loads((a.repo/'HISTORIA_2019_01/v7/resultados/agosto/config_frozen.json').read_text())
-    data=v7.read_data(a.dataset,list(range(201901,201909)))
-    meta=data.filter(pl.col(v7.MONTH).is_in(c['train_months']+[201908])).select([v7.ID,v7.MONTH,v7.LABEL]).sort([v7.ID,v7.MONTH])
-    if meta[v7.LABEL].null_count() or not set(meta[v7.LABEL].unique())<={'BAJA+1','BAJA+2','CONTINUA'}:raise ValueError('Invalid labels')
-    hist,_=v7.history(data.drop(v7.LABEL),cfg,c['train_months']+[201908]);del data;gc.collect()
-    if not hist.select([v7.ID,v7.MONTH]).equals(meta.select([v7.ID,v7.MONTH])):raise ValueError('Key order')
-    tr=meta[v7.MONTH].is_in(c['train_months']).to_numpy();va=(meta[v7.MONTH]==201908).to_numpy()
-    yt=meta.filter(pl.Series(tr))[v7.LABEL].is_in(['BAJA+1','BAJA+2']).to_numpy().astype(np.int8)
-    yv=(meta.filter(pl.Series(va))[v7.LABEL]=='BAJA+2').to_numpy().astype(np.int8);ids=meta.filter(pl.Series(va))[v7.ID].to_numpy()
-    def fit(dest,hp,seed,rounds,early,xt,xv):
-        guard();params={**c['search']['fixed'],**hp,'seed':seed,'feature_fraction_seed':seed,'bagging_seed':seed,'data_random_seed':seed,'verbosity':-1}
-        ds=lgb.Dataset(xt,label=yt,feature_name=[f'f{i}' for i in range(xt.shape[1])]);callbacks=[guard];kw={}
-        if early:callbacks.append(lgb.early_stopping(c['search']['early_stopping_rounds'],verbose=False));kw['valid_sets']=[lgb.Dataset(xv,label=yv,reference=ds)]
-        start=time.monotonic();model=lgb.train(params,ds,num_boost_round=rounds,callbacks=callbacks,**kw)
-        pred=model.predict(xv,num_threads=4)
-        if not np.isfinite(pred).all():raise ValueError('Nonfinite predictions')
-        model.save_model(str(dest/'model.txt'));np.savez_compressed(dest/'august.npz',ids=ids,prediction=pred)
-        save(dest/'parameters.json',params)
-        return {'auc':float(roc_auc_score(yv,pred)),'rounds':int(model.best_iteration if early else rounds),'seconds':time.monotonic()-start}
-    models={};policy=None
-    for arm in ARMS:
-        guard();save(a.output/'status.json',{'status':'TRAINING','arm':arm})
-        frame=hist
-        if arm=='RR4':
-            new={}
-            for source in c['history_sources']:
-                values=rr4(hist.select([source,*[f'{source}__lag{k}' for k in range(1,4)]]).to_numpy()).astype(np.float32)
-                for j,operation in enumerate(['recency','zero_run','nonzero_run']):new[f'{source}__rr4_{operation}']=pl.Series(values[:,j],nan_to_null=True)
-            frame=hist.hstack(pl.DataFrame(new));del new
-        elif arm!='B0':frame,_=v7.extras(hist,arm,c['history_sources'])
-        cols=c['arms'][arm]['columns'];frame=v7.numeric(frame.select(cols),cols)
-        xt=frame.filter(pl.Series(tr)).to_numpy(order='c');xv=frame.filter(pl.Series(va)).to_numpy(order='c');del frame;gc.collect();guard()
-        # Deterministic replay of ask/tell restores TPE RNG state without retraining.
-        study=optuna.create_study(direction='maximize',sampler=optuna.samplers.TPESampler(seed=c['search']['sampler_seed'],n_startup_trials=c['search']['startup_trials']))
-        trials=[]
-        for i in range(c['search']['trials_per_arm']):
-            trial=study.ask();hp={n:(trial.suggest_int if v['type']=='int' else trial.suggest_float)(n,v['low'],v['high'],log=v.get('log',False)) for n,v in c['search']['range'].items()}
-            req={'hp':hp,'seed':c['search']['model_seed'],'rounds':c['search']['max_rounds'],'early':True}
-            result=cp.run(f'{arm}_bo_{i:02d}',req,lambda dest:fit(dest,xt=xt,xv=xv,**req))['result']
-            study.tell(trial,result['auc']);trials.append({'trial':i,'params':hp,'state':'COMPLETE',**result});save(a.output/arm/'trials.json',trials)
-        finalists=choose_finalists(trials);confirmed=[]
-        for t in finalists:
-            aucs=[]
-            for seed in c['confirm']['seeds']:
-                req={'hp':t['params'],'seed':seed,'rounds':t['rounds'],'early':False}
-                r=cp.run(f'{arm}_confirm_{t["trial"]:02d}_{seed}',req,lambda dest:fit(dest,xt=xt,xv=xv,**req));aucs.append(r['result']['auc'])
-            confirmed.append({**t,'aucs':aucs})
-        chosen=choose_confirmed(confirmed);save(a.output/arm/'confirmation.json',confirmed);save(a.output/arm/'chosen.json',chosen)
-        predictions=[];models[arm]={}
-        for seed in c['evaluation_seeds']:
-            req={'hp':chosen['params'],'seed':seed,'rounds':chosen['rounds'],'early':False};key=f'{arm}_final_{seed}'
-            r=cp.run(key,req,lambda dest:fit(dest,xt=xt,xv=xv,**req));models[arm][str(seed)]={'checkpoint':key,'hashes':r['hashes']}
-            with np.load(cp.root/key/'august.npz') as f:
-                if not np.array_equal(f['ids'],ids):raise ValueError('Checkpoint IDs')
-                predictions.append(f['prediction'])
-        ensemble=np.mean(predictions,axis=0)
-        if arm=='B0':
-            k=v7.evaluate_gain_curve(ids,ensemble,yv)['cut_contacts'];policy={'k_august':int(k),'n_august':len(ids)};save(a.output/'policy.json',policy)
-        np.savez_compressed(a.output/'private'/f'{arm}_august_ensemble.npz',ids=ids,prediction=ensemble)
-        k=policy['k_august'];save(a.output/arm/'august.json',{'ensemble_auc':float(roc_auc_score(yv,ensemble)),'common':v7.payoff(ids,ensemble,yv,k)[0],'seed_common':[v7.payoff(ids,p,yv,k)[0] for p in predictions]})
-        del xt,xv,predictions;gc.collect()
-    # Economic confirmation diagnostics are computed only after common B0 policy is fixed.
-    for arm in ARMS:
-        diagnostics=[]
-        for trial in json.loads((a.output/arm/'confirmation.json').read_text()):
-            for seed in c['confirm']['seeds']:
-                key=f'{arm}_confirm_{trial["trial"]:02d}_{seed}'
+    try:
+        cp=Checkpoints(a.output/'private/checkpoints',identity)
+        (a.output/'private/.gitignore').write_text('*\n')
+        started=a.output/'started.json'
+        if not started.exists():save(started,{'epoch':time.time()})
+        deadline=json.loads(started.read_text())['epoch']+c['budget']['requested_max_seconds']
+        def guard(*args):
+            if time.time()>=deadline:raise TimeoutError('Original deadline exceeded')
+            if shutil.disk_usage(a.output).free<c['budget']['required_free_disk_bytes']:raise OSError('Disk guard')
+            if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024>c['budget']['max_rss_bytes']:raise MemoryError('RSS guard')
+        guard.order=0;guard.before_iteration=True
+        guard()
+        frozen_config=a.output/'config_frozen.json'
+        if frozen_config.exists() and sha(frozen_config)!=sha(a.config):raise ValueError('Frozen contract changed')
+        if not frozen_config.exists():shutil.copy2(a.config,frozen_config)
+        save(a.output/'environment.json',{'python':sys.version,'platform':platform.platform(),'packages':{d.metadata['Name']:d.version for d in importlib.metadata.distributions()}})
+        sys.path.insert(0,str(old));import ejecutar_v7 as v7
+        import polars as pl,lightgbm as lgb,optuna
+        from sklearn.metrics import roc_auc_score
+        from rr4 import rr4
+        # Labels are removed before invoking the unchanged feature builder.
+        cfg=json.loads((a.repo/'HISTORIA_2019_01/v7/resultados/agosto/config_frozen.json').read_text())
+        data=v7.read_data(a.dataset,list(range(201901,201909)))
+        meta=data.filter(pl.col(v7.MONTH).is_in(c['train_months']+[201908])).select([v7.ID,v7.MONTH,v7.LABEL]).sort([v7.ID,v7.MONTH])
+        if meta[v7.LABEL].null_count() or not set(meta[v7.LABEL].unique())<={'BAJA+1','BAJA+2','CONTINUA'}:raise ValueError('Invalid labels')
+        hist,_=v7.history(data.drop(v7.LABEL),cfg,c['train_months']+[201908]);del data;gc.collect()
+        if not hist.select([v7.ID,v7.MONTH]).equals(meta.select([v7.ID,v7.MONTH])):raise ValueError('Key order')
+        tr=meta[v7.MONTH].is_in(c['train_months']).to_numpy();va=(meta[v7.MONTH]==201908).to_numpy()
+        yt=meta.filter(pl.Series(tr))[v7.LABEL].is_in(['BAJA+1','BAJA+2']).to_numpy().astype(np.int8)
+        yv=(meta.filter(pl.Series(va))[v7.LABEL]=='BAJA+2').to_numpy().astype(np.int8);ids=meta.filter(pl.Series(va))[v7.ID].to_numpy()
+        def fit(dest,hp,seed,rounds,early,xt,xv):
+            guard();params={**c['search']['fixed'],**hp,'seed':seed,'feature_fraction_seed':seed,'bagging_seed':seed,'data_random_seed':seed,'verbosity':-1}
+            ds=lgb.Dataset(xt,label=yt,feature_name=[f'f{i}' for i in range(xt.shape[1])]);callbacks=[guard];kw={}
+            if early:callbacks.append(lgb.early_stopping(c['search']['early_stopping_rounds'],verbose=False));kw['valid_sets']=[lgb.Dataset(xv,label=yv,reference=ds)]
+            start=time.monotonic();model=lgb.train(params,ds,num_boost_round=rounds,callbacks=callbacks,**kw)
+            pred=model.predict(xv,num_threads=4)
+            if not np.isfinite(pred).all():raise ValueError('Nonfinite predictions')
+            model.save_model(str(dest/'model.txt'));np.savez_compressed(dest/'august.npz',ids=ids,prediction=pred)
+            save(dest/'parameters.json',params)
+            return {'auc':float(roc_auc_score(yv,pred)),'rounds':int(model.best_iteration if early else rounds),'seconds':time.monotonic()-start}
+        models={};policy=None
+        for arm in ARMS:
+            guard();save(a.output/'status.json',{'status':'TRAINING','arm':arm})
+            frame=hist
+            if arm=='RR4':
+                new={}
+                for source in c['history_sources']:
+                    values=rr4(hist.select([source,*[f'{source}__lag{k}' for k in range(1,4)]]).to_numpy()).astype(np.float32)
+                    for j,operation in enumerate(['recency','zero_run','nonzero_run']):new[f'{source}__rr4_{operation}']=pl.Series(values[:,j],nan_to_null=True)
+                frame=hist.hstack(pl.DataFrame(new));del new
+            elif arm!='B0':frame,_=v7.extras(hist,arm,c['history_sources'])
+            cols=c['arms'][arm]['columns'];frame=v7.numeric(frame.select(cols),cols)
+            xt=frame.filter(pl.Series(tr)).to_numpy(order='c');xv=frame.filter(pl.Series(va)).to_numpy(order='c');del frame;gc.collect();guard()
+            # Deterministic replay of ask/tell restores TPE RNG state without retraining.
+            study=optuna.create_study(direction='maximize',sampler=optuna.samplers.TPESampler(seed=c['search']['sampler_seed'],n_startup_trials=c['search']['startup_trials']))
+            trials=[]
+            for i in range(c['search']['trials_per_arm']):
+                trial=study.ask();hp={n:(trial.suggest_int if v['type']=='int' else trial.suggest_float)(n,v['low'],v['high'],log=v.get('log',False)) for n,v in c['search']['range'].items()}
+                req={'hp':hp,'seed':c['search']['model_seed'],'rounds':c['search']['max_rounds'],'early':True}
+                result=cp.run(f'{arm}_bo_{i:02d}',req,lambda dest:fit(dest,xt=xt,xv=xv,**req))['result']
+                study.tell(trial,result['auc']);trials.append({'trial':i,'params':hp,'state':'COMPLETE',**result});save(a.output/arm/'trials.json',trials)
+            finalists=choose_finalists(trials);confirmed=[]
+            for t in finalists:
+                aucs=[]
+                for seed in c['confirm']['seeds']:
+                    req={'hp':t['params'],'seed':seed,'rounds':t['rounds'],'early':False}
+                    r=cp.run(f'{arm}_confirm_{t["trial"]:02d}_{seed}',req,lambda dest:fit(dest,xt=xt,xv=xv,**req));aucs.append(r['result']['auc'])
+                confirmed.append({**t,'aucs':aucs})
+            chosen=choose_confirmed(confirmed);save(a.output/arm/'confirmation.json',confirmed);save(a.output/arm/'chosen.json',chosen)
+            predictions=[];models[arm]={}
+            for seed in c['evaluation_seeds']:
+                req={'hp':chosen['params'],'seed':seed,'rounds':chosen['rounds'],'early':False};key=f'{arm}_final_{seed}'
+                r=cp.run(key,req,lambda dest:fit(dest,xt=xt,xv=xv,**req));models[arm][str(seed)]={'checkpoint':key,'hashes':r['hashes']}
                 with np.load(cp.root/key/'august.npz') as f:
-                    if not np.array_equal(ids,f['ids']):raise ValueError('Confirmation IDs')
-                    p=f['prediction']
-                    diagnostics.append({'trial':trial['trial'],'seed':seed,'common':v7.payoff(ids,p,yv,policy['k_august'])[0],'own_smoothed':v7.evaluate_gain_curve(ids,p,yv),'selection_role':'none'})
-        save(a.output/arm/'confirmation_economics.json',diagnostics)
-    guard();save(a.output/'policy_frozen.json',{'identity':identity,'policy':policy,'models':models,'epoch':time.time(),'completed_fits':len(list(cp.root.glob('*/record.json')))})
-    if len(list(cp.root.glob('*/record.json')))!=144:raise ValueError('Incomplete planned fits')
-    save(a.output/'status.json',{'status':'DEVELOPMENT_FROZEN','fits_completed':144,'evaluation_pending':[201909,201910]})
+                    if not np.array_equal(f['ids'],ids):raise ValueError('Checkpoint IDs')
+                    predictions.append(f['prediction'])
+            ensemble=np.mean(predictions,axis=0)
+            if arm=='B0':
+                k=v7.evaluate_gain_curve(ids,ensemble,yv)['cut_contacts'];policy={'k_august':int(k),'n_august':len(ids)};save(a.output/'policy.json',policy)
+            np.savez_compressed(a.output/'private'/f'{arm}_august_ensemble.npz',ids=ids,prediction=ensemble)
+            k=policy['k_august'];save(a.output/arm/'august.json',{'ensemble_auc':float(roc_auc_score(yv,ensemble)),'common':v7.payoff(ids,ensemble,yv,k)[0],'seed_common':[v7.payoff(ids,p,yv,k)[0] for p in predictions]})
+            del xt,xv,predictions;gc.collect()
+        # Economic confirmation diagnostics are computed only after common B0 policy is fixed.
+        for arm in ARMS:
+            diagnostics=[]
+            for trial in json.loads((a.output/arm/'confirmation.json').read_text()):
+                for seed in c['confirm']['seeds']:
+                    key=f'{arm}_confirm_{trial["trial"]:02d}_{seed}'
+                    with np.load(cp.root/key/'august.npz') as f:
+                        if not np.array_equal(ids,f['ids']):raise ValueError('Confirmation IDs')
+                        p=f['prediction']
+                        diagnostics.append({'trial':trial['trial'],'seed':seed,'common':v7.payoff(ids,p,yv,policy['k_august'])[0],'own_smoothed':v7.evaluate_gain_curve(ids,p,yv),'selection_role':'none'})
+            save(a.output/arm/'confirmation_economics.json',diagnostics)
+        guard();save(a.output/'policy_frozen.json',{'identity':identity,'policy':policy,'models':models,'epoch':time.time(),'completed_fits':len(list(cp.root.glob('*/record.json')))})
+        if len(list(cp.root.glob('*/record.json')))!=144:raise ValueError('Incomplete planned fits')
+        save(a.output/'status.json',{'status':'DEVELOPMENT_FROZEN','fits_completed':144,'evaluation_pending':[201909,201910]})
+    finally:
+        lock.close()
 
 if __name__=='__main__':
     try:main()

@@ -1,6 +1,6 @@
 {
   "status": "IMPLEMENTED_NOT_APPROVED",
-  "unit_tests_passed": 37,
+  "unit_tests_passed": 45,
   "lightgbm_fits_executed": 0,
   "training_entrypoint": "scripts/ejecutar_v8.py",
   "evaluation_entrypoint": "scripts/evaluar_v8.py",
@@ -16,7 +16,13 @@
     "deterministic TPE ask/tell replay",
     "paired shared-index bootstrap",
     "gain and ID tie ordering",
-    "final classification rules"
+    "final classification rules",
+    "144-stage synthetic orchestration with fake booster; resume invokes zero additional fits",
+    "independent process timeout",
+    "public/private backup separation and member hash verification",
+    "interrupted transfer reuses verified chunks",
+    "invalid manifest paths rejected before reconstruction",
+    "draft contract rejected before contacting cloud"
   ],
   "not_validated": [
     "end-to-end training with actual LightGBM",
@@ -26,10 +32,11 @@
   ],
   "scope": "Unit tests do not certify end-to-end production readiness.",
   "remaining_launch_work": [
-    "Exercise full orchestration without fitting real models",
-    "Implement independent supervisor and resume-safe off-VM recovery",
-    "Verify target VM resources while stopped where possible",
-    "Freeze approved contract after preflight report"
+    "Validate complete evaluation orchestration with synthetic models",
+    "Verify target VM resources and deployed environment",
+    "Resolve or explicitly document historical comparability gaps",
+    "Freeze resource budget and approved immutable contract after preflight"
   ],
-  "real_missingness_audit": "PASSED: 14712 records, six months, zero unexplained"
+  "real_missingness_audit": "PASSED: 14712 records, six months, zero unexplained",
+  "operational_modules": "Implemented and tested locally; actual GCE deployment and shutdown remain unverified"
 }

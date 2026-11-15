@@ -86,3 +86,11 @@ Pasaron 37 pruebas unitarias sin entrenar LightGBM, incluidas reanudación, corr
 ### Cierre de auditoría de causas
 
 La ejecución real de `auditar_causas.py` terminó correctamente: 14.712 registros de columna/mes/brazo para B0/R3/T4, seis meses completos y cero causas inesperadas. Las categorías exclusivas suman exactamente el denominador en todos los registros. Se guardan también los solapamientos y los faltantes nuevos atribuibles a las nueve máscaras, comparando contra la variante sin máscaras sólo para diagnóstico. Evidencia en `preflight/causas_reales/`. Esta actualización cierra el pendiente descrito arriba; los controles operativos e integración del ejecutor siguen abiertos.
+
+## Validación operativa local — 45 pruebas aprobadas
+
+El flujo real de búsqueda, confirmación y congelamiento recorrió los 144 ajustes con datos sintéticos y un sustituto de LightGBM. Al repetirlo, reutilizó los 144 checkpoints sin invocar nuevos ajustes. Esto comprueba la coordinación; no mide calidad, consumo ni duración de LightGBM real.
+
+Se incorporaron supervisor independiente con límites de tiempo/disco/RAM, controlador de despliegue que exige VM detenida y contrato aprobado, y respaldo por partes con hashes de archivos y contenidos. Una transferencia interrumpida se retomó reutilizando partes verificadas. Se probaron corrupción, rutas inválidas y separación entre archivos privados y públicos. No se encendió ninguna VM.
+
+Las nuevas protecciones todavía requieren validación en GCE. La integración completa de evaluación, el presupuesto operativo y el cierre del contrato siguen pendientes. El contrato permanece DRAFT y no se ejecutaron entrenamientos reales. La publicación del código no implica aprobación del lanzamiento.
