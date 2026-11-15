@@ -1,0 +1,6 @@
+{
+  "cases": 256,
+  "status": "PASSED",
+  "reference_sha256": "061e993d6cd5bd44a845e0ac001b8523a9c345a1220ace27b6c6a1a746b8db43",
+  "method": "actual generate_univariate C3, maxk=3; 256 input combinations"
+}

@@ -1,0 +1,15 @@
+{
+  "contrato_v8_consolidado.json": "400202e2385d007654da4c396124ace68ae394b32c6c2f75961af27be770fcb9",
+  "README.md": "4ae07ed6e3de9fae2665fb2ade60f7fa684e7f7c3c663502d7771a2ffce81f3b",
+  "tests/test_original_v7.py": "bbe9d5f24ee573e03e57dcdd0e782b3da6a246515a3b991a065921c02ec71c6e",
+  "tests/test_rr4.py": "832d26c8d8bba122df27cccb2aefafcfe1bdac09460db14752de6bebc7fb114e",
+  "scripts/rr4.py": "82bcc7746266702f97366b943d6a42748a49977ce2fbd046582fac4da24c3b04",
+  "scripts/auditar_rr4.py": "a9e2261aa99c8f56f3910b6f6a726cd962cb4d01040165756fa7f91322ea6f01",
+  "scripts/verificar_c3.py": "d96f5a372d9103ad09bdc8d282f9eb14294253bb3ece560d9768c9b2f0334ee8",
+  "scripts/diagnostico_octubre.py": "a4347db7dcef5a09a0f1275bd75de36e0dc5aade87bc869ad6ad9ac29e1b2d63",
+  "preflight/insumos_locales.json": "0f426e74fa69eef398cdff13fd3f0c51d062a6dbb4c93728060185c9898bfc1e",
+  "preflight/c3_paridad.json": "b8086a62c3385dce2ecae0c32e7d814635e021e3f93f5c3c8df49bef26808676",
+  "preflight/octubre/fuentes_octubre.json": "2ca84edb2234e95b00496bceb48ce4ffbeda5cc4aa67754427aeca035b172116",
+  "preflight/octubre/importancias.json": "d23e77f74d1f4422d92e79a2b02bdfcfee3cf6c820dc98f6def300c2f82a4737",
+  "preflight/octubre/estado.json": "07aba76799ddb86f88ecbe63c95bd1f58314bcfc9ca24a980015a6c5f728c230"
+}

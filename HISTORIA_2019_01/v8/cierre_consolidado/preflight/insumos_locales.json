@@ -1,0 +1,31 @@
+{
+  "expected_dataset": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "candidates": [
+    {
+      "name": "competencia_02_crudo(3).csv.gz",
+      "bytes": 711222839,
+      "sha256": "6c3ec2fb4d94521c0c3cc72988c4019c8b65a157d81e0f3b6d7e1b87e0c306f4",
+      "matches": false
+    },
+    {
+      "name": "competencia_02_crudo.csv.gz",
+      "bytes": 711222839,
+      "sha256": "6c3ec2fb4d94521c0c3cc72988c4019c8b65a157d81e0f3b6d7e1b87e0c306f4",
+      "matches": false
+    },
+    {
+      "name": "competencia_02_crudo.parquet",
+      "bytes": 639698684,
+      "sha256": "84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22",
+      "matches": false
+    }
+  ],
+  "code_identity": {
+    "ejecutar_v7.py": "5808b4d64c88cec73f5c715f087209b85a0e2ef1d141341d25409e9f1928d8a0",
+    "fe_core.py": "cca88ed72c30e44c6bb6f1b1cc05765a05fc9d1893901e67bd481736a90b110a",
+    "preflight.py": "d79c1b20741dbcd31b588d127380c4c1cded522638064bbd993fee4aebfd57cd"
+  },
+  "disk_free_bytes": 1521728466944,
+  "ram_total_bytes": 32262483968,
+  "training_resource_measurement": "PENDING"
+}

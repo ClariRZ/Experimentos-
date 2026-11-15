@@ -1,0 +1,66 @@
+{
+  "source_commit": "770abaa9cad412647211c255360cb6dfe364e697",
+  "source_files": [
+    "pipeline/funciones.py:ESPERADO_ROTOS_REGLA",
+    "pipeline/parametros.py:ROTOS_A_MANO,ROTOS_EXTRA"
+  ],
+  "official_confirmation": false,
+  "variables": [
+    {
+      "name": "mrentabilidad",
+      "eligible": true
+    },
+    {
+      "name": "mrentabilidad_annual",
+      "eligible": true
+    },
+    {
+      "name": "mpasivos_margen",
+      "eligible": true
+    },
+    {
+      "name": "mactivos_margen",
+      "eligible": true
+    },
+    {
+      "name": "mcomisiones",
+      "eligible": true
+    },
+    {
+      "name": "mcomisiones_otras",
+      "eligible": true
+    },
+    {
+      "name": "ccomisiones_otras",
+      "eligible": true
+    },
+    {
+      "name": "chomebanking_transacciones",
+      "eligible": true
+    },
+    {
+      "name": "mcajeros_propios_descuentos",
+      "eligible": true
+    },
+    {
+      "name": "ccajeros_propios_descuentos",
+      "eligible": true
+    },
+    {
+      "name": "ctarjeta_visa_descuentos",
+      "eligible": true
+    },
+    {
+      "name": "mtarjeta_visa_descuentos",
+      "eligible": true
+    },
+    {
+      "name": "ctarjeta_master_descuentos",
+      "eligible": true
+    },
+    {
+      "name": "mtarjeta_master_descuentos",
+      "eligible": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "models_read_verified": 50,
+  "october_members_verified": 61,
+  "archive_sha256": {
+    "august": "c7e6093d6d1228e93e666cdd269af6a432157217d68fad4108ed3d04db668d4f",
+    "october": "bc98d361ecc938c5ef93025abe556f63b24f4655bbcfb872c92bbefd5a7e0cad"
+  },
+  "fits": 0,
+  "inference": "PENDING_DATASET",
+  "peak_rss_kib": 171212
+}
