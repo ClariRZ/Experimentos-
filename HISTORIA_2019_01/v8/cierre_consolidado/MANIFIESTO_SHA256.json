@@ -1,5 +1,5 @@
 {
-  "README.md": "d1fd16c2def8749fd18591fcb870b21e25f70e314c11f526d59cd6d2602dd30b",
+  "README.md": "4f7da9c9ee4f1b810b923855adabf3072fb96e3189ee9efa6f67df8c20db8f6e",
   "contrato_v8_consolidado.json": "af13b77c44ae6280106e790cba8ab19d6020702ac24684d2a6f2fb6ea7e87f94",
   "preflight/PLANIFICACION_RECURSOS.json": "b68d6ad10197b0a396dbb50e69bf9534dc589fe296ed06299dbf921df2ca4d3a",
   "preflight/VALIDACION_EJECUTOR.json": "07fe5e4ae8c85b0641649e2591bb60ac55e5ee56b71dd539145cc553f4503d1e",
@@ -31,6 +31,7 @@
   "scripts/ejecutar_v8.py": "cf1b341f1d399cae89eba7466c694ddbe123bb559ec94bc4cafdf16c7806d360",
   "scripts/evaluar_v8.py": "dc139f32a80c7d4854ff2792c0abeddc8b815e17e47566f61dccd81a6bbd5002",
   "scripts/operacion_v8.py": "459f36a73acb49d8921fb2fe47b80a57d1e036fa5a38a615dff1489af32a5b20",
+  "scripts/recuperar_v8.py": "cf0376e462de833e3b564fc6172a1d72126234765002f1eebf27f0a7f1c6f0a6",
   "scripts/rr4.py": "82bcc7746266702f97366b943d6a42748a49977ce2fbd046582fac4da24c3b04",
   "scripts/verificar_c3.py": "d96f5a372d9103ad09bdc8d282f9eb14294253bb3ece560d9768c9b2f0334ee8",
   "tests/test_causes.py": "89490299092b82e7f1bf2f37abc7c89f65519bec0b1474bf768a00c40eaa6e03",
@@ -40,5 +41,6 @@
   "tests/test_flow.py": "b85f99c72e46e837e32a6f09561d46810bab93dbb8c1f2a4c2e6052cf3076578",
   "tests/test_operations.py": "d6714e5c8eb4453b39579cfcd2927f8bb19d6e918f5fb440233a4ca307f3d2c6",
   "tests/test_original_v7.py": "bbe9d5f24ee573e03e57dcdd0e782b3da6a246515a3b991a065921c02ec71c6e",
+  "tests/test_recovery_stopped.py": "1a3e8619206b5f35efe54de56c298026bfac06a093b7a76d9a08435ab65f71b0",
   "tests/test_rr4.py": "832d26c8d8bba122df27cccb2aefafcfe1bdac09460db14752de6bebc7fb114e"
 }

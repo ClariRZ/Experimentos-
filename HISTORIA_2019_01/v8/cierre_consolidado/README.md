@@ -110,3 +110,7 @@ La instrucción explícita «entrená ya» autoriza los 144 ajustes del contrato
 El controlador exige 12 GiB libres al iniciar, conserva al menos 4 GiB durante los procesos y limita RSS a 48 GiB en una máquina con al menos 8 GiB adicionales. Compara Python y dependencias contra el contrato antes de despachar. Un fallo de preparación apaga la VM sin entrenar. El límite GCE de seis horas se configura y verifica antes del arranque. Estas comprobaciones remotas todavía no se han ejecutado.
 
 Lanzar desde un checkout limpio con Python estándar: `python3 HISTORIA_2019_01/v8/cierre_consolidado/scripts/control_v8.py --repo . --config HISTORIA_2019_01/v8/cierre_consolidado/contrato_v8_consolidado.json --output RUTA_NUEVA_PRIVADA`. La terminal debe tener gcloud autenticado. No publicar el directorio privado de salida. Si se interrumpe la conexión, usar `--recover RUTA_NUEVA_PRIVADA`; no lanzar otra corrida.
+
+## Recuperación después del apagado
+
+`recuperar_v8.py --control-dir DIRECTORIO_ORIGINAL` consulta y recupera una corrida existente. Exige VM detenida; establece y verifica un límite de una hora para rescate, la enciende, guarda status/FINAL/supervisor y recupera el respaldo por partes con hashes. La apaga al terminar o ante un error de copia. No invoca entrenamiento ni evaluación, no modifica el contrato ejecutado ni extiende su plazo. Sin manifiesto completo conserva la inspección y se detiene sin borrar resultados. Se agregaron tres pruebas de apagado, rechazo de VM activa y fallo de transferencia.
