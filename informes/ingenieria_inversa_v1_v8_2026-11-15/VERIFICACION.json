@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-15",
+  "new_training": false,
+  "vm_started": false,
+  "v4_v6": {
+    "models_verified": 23,
+    "fits_registered": 345,
+    "original_aggregate_extractor_rerun": true,
+    "reconstructed_models_equal_existing_evidence": true
+  },
+  "v7": {
+    "manifests": {
+      "experimento_2026-11-13/MANIFIESTO_SHA256.json": {
+        "checked": 53,
+        "mismatches": []
+      },
+      "HISTORIA_2019_01/v5/MANIFIESTO_SHA256.json": {
+        "checked": 59,
+        "mismatches": []
+      },
+      "HISTORIA_2019_01/v6/MANIFIESTO_SHA256.json": {
+        "checked": 20,
+        "mismatches": [
+          "README.md"
+        ]
+      },
+      "HISTORIA_2019_01/v7/MANIFIESTO_CODIGO.json": {
+        "checked": 26,
+        "mismatches": []
+      },
+      "HISTORIA_2019_01/v7/resultados/MANIFIESTO_SHA256.json": {
+        "checked": 153,
+        "mismatches": []
+      }
+    },
+    "v7_trials_verified": 100,
+    "v7_seed_common_gains_verified": 100,
+    "v7_ensemble_common_gains_verified": 20,
+    "v7_new_fits": 0,
+    "independent_training_reproduction": false
+  },
+  "v8": {
+    "public_members_verified": 33,
+    "receipt_hashes_consistent": true,
+    "private_archive_locally_verified": false,
+    "independent_model_reproduction": false
+  },
+  "private_predictions_recomputed_in_this_review": false,
+  "v1_v3_scope": "Documentary reconstruction; v2 B4-vs-RAW seed gains and v3 FINAL checked. No independent retraining.",
+  "external_source": {
+    "url": "https://raw.githubusercontent.com/ezequielabregu/DMEyF-2026-experi-colab-feature_historico/81b406cf3d3efb982950d831146270772ae4f104/resultados/optuna/evaluacion_final_comparacion.csv",
+    "sha256": "e6c4c1db90cacee98627fd5fdc42995229b5d3097c67f2fbc3e7f6a24528c0d2",
+    "scope": "Frozen revision checked, not current branch state"
+  }
+}

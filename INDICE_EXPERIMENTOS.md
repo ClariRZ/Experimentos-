@@ -16,6 +16,8 @@ Este repositorio reúne el material publicable antes distribuido entre `Segunda_
 | Históricas B0–B5 | [Carpeta](experimento_historicas_B0_B5/README.md) | Modelos y base Optuna conservados localmente; no incluidos en GitHub central. No se renombra como v1. |
 | Experimentos C3 / intrames | [Carpeta](experimentos_c3/) | Configuraciones, preparación, auditorías y resultados del origen. |
 
+**Lectura integral:** [ingeniería inversa v1–v8 en HTML](informes/ingenieria_inversa_v1_v8_2026-11-15/README.md): decisiones, resultados, fortalezas y debilidades, actualizado con el cierre v8.
+
 ## Procedencia y verificación
 
 [Informe de consolidación](informes/consolidacion_repos_2026-11-15/README.md) · [Inventario archivo por archivo](informes/consolidacion_repos_2026-11-15/INVENTARIO.json) · [Versiones discrepantes originales](fuentes/Segunda_competencia_c89185ae/).
