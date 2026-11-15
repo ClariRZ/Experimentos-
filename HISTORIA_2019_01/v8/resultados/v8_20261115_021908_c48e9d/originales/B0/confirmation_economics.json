@@ -1,0 +1,104 @@
+[
+  {
+    "trial": 14,
+    "seed": 100103,
+    "common": {
+      "contacts": 3665,
+      "hits": 271,
+      "gain": 197312500
+    },
+    "own_smoothed": {
+      "n_clients": 131887,
+      "smoothed_gain_max": 197357233.88305846,
+      "cut_contacts": 3970,
+      "contact_proportion": 0.030101526306610962,
+      "point_gain_at_cut": 196625000.0
+    },
+    "selection_role": "none"
+  },
+  {
+    "trial": 14,
+    "seed": 100109,
+    "common": {
+      "contacts": 3665,
+      "hits": 274,
+      "gain": 200612500
+    },
+    "own_smoothed": {
+      "n_clients": 131887,
+      "smoothed_gain_max": 197927724.88755623,
+      "cut_contacts": 3739,
+      "contact_proportion": 0.028350026916981963,
+      "point_gain_at_cut": 200777500.0
+    },
+    "selection_role": "none"
+  },
+  {
+    "trial": 19,
+    "seed": 100103,
+    "common": {
+      "contacts": 3665,
+      "hits": 270,
+      "gain": 196212500
+    },
+    "own_smoothed": {
+      "n_clients": 131887,
+      "smoothed_gain_max": 196832122.68865564,
+      "cut_contacts": 3739,
+      "contact_proportion": 0.028350026916981963,
+      "point_gain_at_cut": 195277500.0
+    },
+    "selection_role": "none"
+  },
+  {
+    "trial": 19,
+    "seed": 100109,
+    "common": {
+      "contacts": 3665,
+      "hits": 272,
+      "gain": 198412500
+    },
+    "own_smoothed": {
+      "n_clients": 131887,
+      "smoothed_gain_max": 197689982.50874564,
+      "cut_contacts": 3478,
+      "contact_proportion": 0.02637106007415439,
+      "point_gain_at_cut": 199155000.0
+    },
+    "selection_role": "none"
+  },
+  {
+    "trial": 17,
+    "seed": 100103,
+    "common": {
+      "contacts": 3665,
+      "hits": 273,
+      "gain": 199512500
+    },
+    "own_smoothed": {
+      "n_clients": 131887,
+      "smoothed_gain_max": 199575154.9225387,
+      "cut_contacts": 3906,
+      "contact_proportion": 0.02961626240645401,
+      "point_gain_at_cut": 202785000.0
+    },
+    "selection_role": "none"
+  },
+  {
+    "trial": 17,
+    "seed": 100109,
+    "common": {
+      "contacts": 3665,
+      "hits": 272,
+      "gain": 198412500
+    },
+    "own_smoothed": {
+      "n_clients": 131887,
+      "smoothed_gain_max": 197099715.1424288,
+      "cut_contacts": 3988,
+      "contact_proportion": 0.030238006778530106,
+      "point_gain_at_cut": 198330000.0
+    },
+    "selection_role": "none"
+  }
+]

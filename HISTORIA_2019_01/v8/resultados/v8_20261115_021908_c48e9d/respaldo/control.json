@@ -1,0 +1,23 @@
+{
+  "commit": "64ac6ed4c21aacf21feaad216c0069d800195518",
+  "remote": "/home/clarirz/HISTORIA_2019_01/v8/deployments/v8_20261115_021908_c48e9d",
+  "bundle_sha256": "1de4d296626b2d9273892d505d5573b8035cb1324a3892a03c63daed4ee5795e",
+  "config_sha256": "af13b77c44ae6280106e790cba8ab19d6020702ac24684d2a6f2fb6ea7e87f94",
+  "recovered": true,
+  "dispatched": true,
+  "vm_started": true,
+  "scheduling": {
+    "automaticRestart": true,
+    "instanceTerminationAction": "STOP",
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "21600"
+    },
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false,
+    "provisioningModel": "STANDARD"
+  },
+  "hard_deadline": 1794730752.6252155,
+  "worker_pid": "1630",
+  "vm_status": "TERMINATED"
+}

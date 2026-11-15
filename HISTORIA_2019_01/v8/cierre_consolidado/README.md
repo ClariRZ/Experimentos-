@@ -1,4 +1,4 @@
-> **Actualización de cierre:** la corrida ejecutada completó 144 ajustes y evaluación según la salida de recuperación compartida. Los tres candidatos fueron clasificados como prometedores inconclusos. Véase [evidencia y pendientes](../evidencia_cierre/v8_20261115_021908_c48e9d/README.md). Las secciones siguientes conservan el historial de preparación; sus estados iniciales no describen el cierre actual.
+> **Cierre actualizado:** 144 ajustes y evaluación completados. [Resultados originales y verificación](../resultados/v8_20261115_021908_c48e9d/README.md): 33 archivos públicos contrastados, recibo de recuperación y apagado registrado. R3/T4/RR4 permanecen prometedores inconclusos. Las secciones siguientes conservan el historial de preparación.
 
 # v8 — Preflight local del cierre consolidado
 

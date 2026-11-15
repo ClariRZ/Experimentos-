@@ -1,0 +1,60 @@
+{
+  "ensemble_auc": 0.9101192104056216,
+  "common": {
+    "contacts": 3665,
+    "hits": 277,
+    "gain": 203912500
+  },
+  "seed_common": [
+    {
+      "contacts": 3665,
+      "hits": 277,
+      "gain": 203912500
+    },
+    {
+      "contacts": 3665,
+      "hits": 271,
+      "gain": 197312500
+    },
+    {
+      "contacts": 3665,
+      "hits": 276,
+      "gain": 202812500
+    },
+    {
+      "contacts": 3665,
+      "hits": 271,
+      "gain": 197312500
+    },
+    {
+      "contacts": 3665,
+      "hits": 272,
+      "gain": 198412500
+    },
+    {
+      "contacts": 3665,
+      "hits": 273,
+      "gain": 199512500
+    },
+    {
+      "contacts": 3665,
+      "hits": 277,
+      "gain": 203912500
+    },
+    {
+      "contacts": 3665,
+      "hits": 275,
+      "gain": 201712500
+    },
+    {
+      "contacts": 3665,
+      "hits": 274,
+      "gain": 200612500
+    },
+    {
+      "contacts": 3665,
+      "hits": 271,
+      "gain": 197312500
+    }
+  ]
+}

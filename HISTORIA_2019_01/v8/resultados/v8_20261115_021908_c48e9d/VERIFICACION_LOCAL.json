@@ -1,0 +1,13 @@
+{
+  "public_members_verified": 33,
+  "zip_sha256": "7cbb20279940f6a75657b5035b2103a86a6a367ba54f003a5b04b647d0fd9d01",
+  "public_archive_sha256": "7ee9c9d7cec1dc96e8560a22c6d8286ac42b87dffec2dcc4c64f5fddf3566276",
+  "executed_code_identity_verified": true,
+  "config_identity_verified": true,
+  "economic_arithmetic_verified": true,
+  "cloud_shell_receipt_verified_consistent": true,
+  "private_archive_locally_rehashed": false,
+  "independent_prediction_recalculation": false,
+  "independent_retraining": false,
+  "vm_status_in_recovery_control": "TERMINATED"
+}

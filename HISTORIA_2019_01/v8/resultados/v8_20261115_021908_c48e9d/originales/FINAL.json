@@ -1,0 +1,12 @@
+{
+  "fits_completed": 144,
+  "classifications": {
+    "R3": "PROMETEDOR_INCONCLUSO",
+    "T4": "PROMETEDOR_INCONCLUSO",
+    "RR4": "PROMETEDOR_INCONCLUSO"
+  },
+  "exposed_months": true,
+  "economic_evaluation_complete": true,
+  "backup_verified": false,
+  "vm_shutdown_verified": false
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "trial": 12,
+    "params": {
+      "num_leaves": 99,
+      "learning_rate": 0.024716498261591745,
+      "min_data_in_leaf": 1984,
+      "feature_fraction": 0.9793731238777671,
+      "bagging_fraction": 0.7706354242833601
+    },
+    "state": "COMPLETE",
+    "auc": 0.9117266263036975,
+    "rounds": 262,
+    "seconds": 128.23459345000083,
+    "aucs": [
+      0.9107375421688113,
+      0.9095042103241017
+    ]
+  },
+  {
+    "trial": 18,
+    "params": {
+      "num_leaves": 85,
+      "learning_rate": 0.025911519903880208,
+      "min_data_in_leaf": 1239,
+      "feature_fraction": 0.9896217095413817,
+      "bagging_fraction": 0.6099936184997637
+    },
+    "state": "COMPLETE",
+    "auc": 0.9110210753676014,
+    "rounds": 190,
+    "seconds": 88.54941962200064,
+    "aucs": [
+      0.908857169389076,
+      0.9087938249052421
+    ]
+  },
+  {
+    "trial": 11,
+    "params": {
+      "num_leaves": 56,
+      "learning_rate": 0.029612595383850596,
+      "min_data_in_leaf": 1842,
+      "feature_fraction": 0.9307736841455345,
+      "bagging_fraction": 0.8700517703300156
+    },
+    "state": "COMPLETE",
+    "auc": 0.9097162895840998,
+    "rounds": 233,
+    "seconds": 93.82620329199926,
+    "aucs": [
+      0.9091692983407516,
+      0.906409234003852
+    ]
+  }
+]

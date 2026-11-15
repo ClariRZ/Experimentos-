@@ -1,0 +1,32 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-1017-gcp-x86_64-with-glibc2.39",
+  "packages": {
+    "packaging": "26.3",
+    "Pygments": "2.21.0",
+    "pytest": "9.0.2",
+    "iniconfig": "2.3.1",
+    "pluggy": "1.7.0",
+    "Mako": "1.4.3",
+    "MarkupSafe": "3.0.4",
+    "joblib": "1.6.0",
+    "typing_extensions": "4.16.0",
+    "polars": "2.1.0",
+    "pip": "24.0",
+    "narwhals": "2.28.0",
+    "scipy": "1.17.0",
+    "SQLAlchemy": "2.1.8",
+    "alembic": "1.20.1",
+    "tqdm": "4.70.1",
+    "PyYAML": "6.0.3",
+    "optuna": "5.0.0",
+    "polars-runtime-32": "2.1.0",
+    "threadpoolctl": "3.7.0",
+    "lightgbm": "4.7.0",
+    "colorlog": "6.12.0",
+    "pyarrow": "26.0.1",
+    "scikit-learn": "1.8.0",
+    "numpy": "2.3.5",
+    "cloudpickle": "3.1.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "B0": {
+    "seeds_verified": 10,
+    "max_absolute_error": 0.0
+  },
+  "R3": {
+    "seeds_verified": 10,
+    "max_absolute_error": 0.0
+  },
+  "T4": {
+    "seeds_verified": 10,
+    "max_absolute_error": 0.0
+  },
+  "RR4": {
+    "seeds_verified": 10,
+    "max_absolute_error": 0.0
+  }
+}

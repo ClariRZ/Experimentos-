@@ -1,3 +1,5 @@
+> **Actualización:** el paquete original ya fue incorporado y verificado. Consultar [resultados y recibo](../../resultados/v8_20261115_021908_c48e9d/README.md). El texto siguiente conserva el estado anterior a recibir los archivos.
+
 # v8: cierre de ejecución reportado
 
 Corrida `v8_20261115_021908_c48e9d`, commit ejecutado `64ac6ed4c21aacf21feaad216c0069d800195518`.

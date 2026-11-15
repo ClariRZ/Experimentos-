@@ -1,8 +1,9 @@
 # Historia 2019 v8 — cierre consolidado
 
-**Ejecución reportada completa: 144 ajustes y evaluación económica.** R3, T4 y RR4 quedaron como `PROMETEDOR_INCONCLUSO`. La verificación de los archivos de resultados y del respaldo está pendiente; no se declara reproducido.
+**Ejecución reportada completa: 144 ajustes y evaluación económica.** R3, T4 y RR4 quedaron como `PROMETEDOR_INCONCLUSO`. Paquete público original incorporado: 33 archivos verificados, contrato y código identificados, ganancias contrastadas aritméticamente. Recibo de recuperación disponible; el archivo privado no se volvió a verificar localmente. No se declara reentrenamiento independiente.
 
-- [Estado y procedencia de la corrida](evidencia_cierre/v8_20261115_021908_c48e9d/README.md).
+- [Resultados, ganancias y verificación](resultados/v8_20261115_021908_c48e9d/README.md).
+- [Estado histórico y procedencia de la corrida](evidencia_cierre/v8_20261115_021908_c48e9d/README.md).
 - [Prompt ejecutado](prompts/cierre_consolidado/PROMPT_MAESTRO_V8.md).
 - [Código, contrato y controles](cierre_consolidado/README.md).
 
