@@ -1,0 +1,1122 @@
+[
+  {
+    "month": 201901,
+    "variable": "mrentabilidad",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 307,
+    "distinct": 109858
+  },
+  {
+    "month": 201901,
+    "variable": "mrentabilidad_annual",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 273,
+    "distinct": 121686
+  },
+  {
+    "month": 201901,
+    "variable": "mpasivos_margen",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 1487,
+    "distinct": 101821
+  },
+  {
+    "month": 201901,
+    "variable": "mactivos_margen",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 4391,
+    "distinct": 91671
+  },
+  {
+    "month": 201901,
+    "variable": "mcomisiones",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 2929,
+    "distinct": 87959
+  },
+  {
+    "month": 201901,
+    "variable": "mcomisiones_otras",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 2924,
+    "distinct": 88133
+  },
+  {
+    "month": 201901,
+    "variable": "ccomisiones_otras",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 2919,
+    "distinct": 128
+  },
+  {
+    "month": 201901,
+    "variable": "chomebanking_transacciones",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 49712,
+    "distinct": 643
+  },
+  {
+    "month": 201901,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 116764,
+    "distinct": 3988
+  },
+  {
+    "month": 201901,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 115711,
+    "distinct": 21
+  },
+  {
+    "month": 201901,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 113118,
+    "distinct": 19
+  },
+  {
+    "month": 201901,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 124031,
+    "nulls": 2148,
+    "zeros": 113710,
+    "distinct": 5326
+  },
+  {
+    "month": 201901,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 124031,
+    "nulls": 0,
+    "zeros": 121425,
+    "distinct": 13
+  },
+  {
+    "month": 201901,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 124031,
+    "nulls": 377,
+    "zeros": 121687,
+    "distinct": 1592
+  },
+  {
+    "month": 201902,
+    "variable": "mrentabilidad",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 325,
+    "distinct": 108945
+  },
+  {
+    "month": 201902,
+    "variable": "mrentabilidad_annual",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 287,
+    "distinct": 122752
+  },
+  {
+    "month": 201902,
+    "variable": "mpasivos_margen",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 1560,
+    "distinct": 98806
+  },
+  {
+    "month": 201902,
+    "variable": "mactivos_margen",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 4827,
+    "distinct": 89441
+  },
+  {
+    "month": 201902,
+    "variable": "mcomisiones",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 3367,
+    "distinct": 82274
+  },
+  {
+    "month": 201902,
+    "variable": "mcomisiones_otras",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 3367,
+    "distinct": 82380
+  },
+  {
+    "month": 201902,
+    "variable": "ccomisiones_otras",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 3360,
+    "distinct": 129
+  },
+  {
+    "month": 201902,
+    "variable": "chomebanking_transacciones",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 41035,
+    "distinct": 614
+  },
+  {
+    "month": 201902,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 107110,
+    "distinct": 11452
+  },
+  {
+    "month": 201902,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 106542,
+    "distinct": 20
+  },
+  {
+    "month": 201902,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 115878,
+    "distinct": 18
+  },
+  {
+    "month": 201902,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 125124,
+    "nulls": 1328,
+    "zeros": 116363,
+    "distinct": 4916
+  },
+  {
+    "month": 201902,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 125124,
+    "nulls": 0,
+    "zeros": 122498,
+    "distinct": 13
+  },
+  {
+    "month": 201902,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 125124,
+    "nulls": 268,
+    "zeros": 122670,
+    "distinct": 1701
+  },
+  {
+    "month": 201903,
+    "variable": "mrentabilidad",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 305,
+    "distinct": 110739
+  },
+  {
+    "month": 201903,
+    "variable": "mrentabilidad_annual",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 272,
+    "distinct": 123449
+  },
+  {
+    "month": 201903,
+    "variable": "mpasivos_margen",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 1540,
+    "distinct": 102695
+  },
+  {
+    "month": 201903,
+    "variable": "mactivos_margen",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 4975,
+    "distinct": 93073
+  },
+  {
+    "month": 201903,
+    "variable": "mcomisiones",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 3361,
+    "distinct": 84270
+  },
+  {
+    "month": 201903,
+    "variable": "mcomisiones_otras",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 3361,
+    "distinct": 84325
+  },
+  {
+    "month": 201903,
+    "variable": "ccomisiones_otras",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 3360,
+    "distinct": 133
+  },
+  {
+    "month": 201903,
+    "variable": "chomebanking_transacciones",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 45278,
+    "distinct": 596
+  },
+  {
+    "month": 201903,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 120619,
+    "distinct": 3206
+  },
+  {
+    "month": 201903,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 119850,
+    "distinct": 19
+  },
+  {
+    "month": 201903,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 116529,
+    "distinct": 18
+  },
+  {
+    "month": 201903,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 125732,
+    "nulls": 1912,
+    "zeros": 116934,
+    "distinct": 4935
+  },
+  {
+    "month": 201903,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 125732,
+    "nulls": 0,
+    "zeros": 122845,
+    "distinct": 13
+  },
+  {
+    "month": 201903,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 125732,
+    "nulls": 344,
+    "zeros": 123007,
+    "distinct": 1845
+  },
+  {
+    "month": 201904,
+    "variable": "mrentabilidad",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 284,
+    "distinct": 111819
+  },
+  {
+    "month": 201904,
+    "variable": "mrentabilidad_annual",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 247,
+    "distinct": 124076
+  },
+  {
+    "month": 201904,
+    "variable": "mpasivos_margen",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 1528,
+    "distinct": 105130
+  },
+  {
+    "month": 201904,
+    "variable": "mactivos_margen",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 5157,
+    "distinct": 92616
+  },
+  {
+    "month": 201904,
+    "variable": "mcomisiones",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 3358,
+    "distinct": 85717
+  },
+  {
+    "month": 201904,
+    "variable": "mcomisiones_otras",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 3358,
+    "distinct": 85829
+  },
+  {
+    "month": 201904,
+    "variable": "ccomisiones_otras",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 3357,
+    "distinct": 136
+  },
+  {
+    "month": 201904,
+    "variable": "chomebanking_transacciones",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 51595,
+    "distinct": 490
+  },
+  {
+    "month": 201904,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 121419,
+    "distinct": 3037
+  },
+  {
+    "month": 201904,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 120476,
+    "distinct": 20
+  },
+  {
+    "month": 201904,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 114681,
+    "distinct": 18
+  },
+  {
+    "month": 201904,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 126246,
+    "nulls": 2468,
+    "zeros": 115187,
+    "distinct": 6176
+  },
+  {
+    "month": 201904,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 126246,
+    "nulls": 0,
+    "zeros": 122926,
+    "distinct": 14
+  },
+  {
+    "month": 201904,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 126246,
+    "nulls": 412,
+    "zeros": 123154,
+    "distinct": 2136
+  },
+  {
+    "month": 201905,
+    "variable": "mrentabilidad",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "mrentabilidad_annual",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "mpasivos_margen",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "mactivos_margen",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "mcomisiones",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "mcomisiones_otras",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "ccomisiones_otras",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 126876,
+    "distinct": 1
+  },
+  {
+    "month": 201905,
+    "variable": "chomebanking_transacciones",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 60694,
+    "distinct": 232
+  },
+  {
+    "month": 201905,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 121975,
+    "distinct": 3097
+  },
+  {
+    "month": 201905,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 121103,
+    "distinct": 21
+  },
+  {
+    "month": 201905,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 113212,
+    "distinct": 19
+  },
+  {
+    "month": 201905,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 126876,
+    "nulls": 2355,
+    "zeros": 113738,
+    "distinct": 7542
+  },
+  {
+    "month": 201905,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 126876,
+    "nulls": 0,
+    "zeros": 122248,
+    "distinct": 14
+  },
+  {
+    "month": 201905,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 126876,
+    "nulls": 365,
+    "zeros": 122462,
+    "distinct": 2950
+  },
+  {
+    "month": 201906,
+    "variable": "mrentabilidad",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 318,
+    "distinct": 113942
+  },
+  {
+    "month": 201906,
+    "variable": "mrentabilidad_annual",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 276,
+    "distinct": 126363
+  },
+  {
+    "month": 201906,
+    "variable": "mpasivos_margen",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 1513,
+    "distinct": 108792
+  },
+  {
+    "month": 201906,
+    "variable": "mactivos_margen",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 4921,
+    "distinct": 96373
+  },
+  {
+    "month": 201906,
+    "variable": "mcomisiones",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 3733,
+    "distinct": 84810
+  },
+  {
+    "month": 201906,
+    "variable": "mcomisiones_otras",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 3733,
+    "distinct": 84822
+  },
+  {
+    "month": 201906,
+    "variable": "ccomisiones_otras",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 3730,
+    "distinct": 135
+  },
+  {
+    "month": 201906,
+    "variable": "chomebanking_transacciones",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 62102,
+    "distinct": 141
+  },
+  {
+    "month": 201906,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 123089,
+    "distinct": 3380
+  },
+  {
+    "month": 201906,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 121785,
+    "distinct": 22
+  },
+  {
+    "month": 201906,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 114006,
+    "distinct": 19
+  },
+  {
+    "month": 201906,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 128474,
+    "nulls": 3343,
+    "zeros": 114891,
+    "distinct": 6972
+  },
+  {
+    "month": 201906,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 128474,
+    "nulls": 0,
+    "zeros": 123984,
+    "distinct": 15
+  },
+  {
+    "month": 201906,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 128474,
+    "nulls": 494,
+    "zeros": 124363,
+    "distinct": 2659
+  },
+  {
+    "month": 201907,
+    "variable": "mrentabilidad",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 327,
+    "distinct": 114889
+  },
+  {
+    "month": 201907,
+    "variable": "mrentabilidad_annual",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 294,
+    "distinct": 127841
+  },
+  {
+    "month": 201907,
+    "variable": "mpasivos_margen",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 1422,
+    "distinct": 105411
+  },
+  {
+    "month": 201907,
+    "variable": "mactivos_margen",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 5716,
+    "distinct": 99107
+  },
+  {
+    "month": 201907,
+    "variable": "mcomisiones",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 3499,
+    "distinct": 90471
+  },
+  {
+    "month": 201907,
+    "variable": "mcomisiones_otras",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 3499,
+    "distinct": 90557
+  },
+  {
+    "month": 201907,
+    "variable": "ccomisiones_otras",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 3498,
+    "distinct": 136
+  },
+  {
+    "month": 201907,
+    "variable": "chomebanking_transacciones",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 57181,
+    "distinct": 92
+  },
+  {
+    "month": 201907,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 124827,
+    "distinct": 3223
+  },
+  {
+    "month": 201907,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 123219,
+    "distinct": 25
+  },
+  {
+    "month": 201907,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 116602,
+    "distinct": 25
+  },
+  {
+    "month": 201907,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 129957,
+    "nulls": 4878,
+    "zeros": 117808,
+    "distinct": 5123
+  },
+  {
+    "month": 201907,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 129957,
+    "nulls": 0,
+    "zeros": 125747,
+    "distinct": 16
+  },
+  {
+    "month": 201907,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 129957,
+    "nulls": 663,
+    "zeros": 126253,
+    "distinct": 2017
+  },
+  {
+    "month": 201908,
+    "variable": "mrentabilidad",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 355,
+    "distinct": 117107
+  },
+  {
+    "month": 201908,
+    "variable": "mrentabilidad_annual",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 308,
+    "distinct": 129782
+  },
+  {
+    "month": 201908,
+    "variable": "mpasivos_margen",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 1824,
+    "distinct": 105111
+  },
+  {
+    "month": 201908,
+    "variable": "mactivos_margen",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 5790,
+    "distinct": 102369
+  },
+  {
+    "month": 201908,
+    "variable": "mcomisiones",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 3749,
+    "distinct": 92492
+  },
+  {
+    "month": 201908,
+    "variable": "mcomisiones_otras",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 3749,
+    "distinct": 92592
+  },
+  {
+    "month": 201908,
+    "variable": "ccomisiones_otras",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 3747,
+    "distinct": 139
+  },
+  {
+    "month": 201908,
+    "variable": "chomebanking_transacciones",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 58578,
+    "distinct": 87
+  },
+  {
+    "month": 201908,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 127353,
+    "distinct": 2912
+  },
+  {
+    "month": 201908,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 126455,
+    "distinct": 26
+  },
+  {
+    "month": 201908,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 121909,
+    "distinct": 25
+  },
+  {
+    "month": 201908,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 131887,
+    "nulls": 3417,
+    "zeros": 122468,
+    "distinct": 4418
+  },
+  {
+    "month": 201908,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 131887,
+    "nulls": 0,
+    "zeros": 129123,
+    "distinct": 15
+  },
+  {
+    "month": 201908,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 131887,
+    "nulls": 624,
+    "zeros": 129374,
+    "distinct": 1562
+  },
+  {
+    "month": 201909,
+    "variable": "mrentabilidad",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 382,
+    "distinct": 117449
+  },
+  {
+    "month": 201909,
+    "variable": "mrentabilidad_annual",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 335,
+    "distinct": 131360
+  },
+  {
+    "month": 201909,
+    "variable": "mpasivos_margen",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 1425,
+    "distinct": 106232
+  },
+  {
+    "month": 201909,
+    "variable": "mactivos_margen",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 5672,
+    "distinct": 103676
+  },
+  {
+    "month": 201909,
+    "variable": "mcomisiones",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 4585,
+    "distinct": 96503
+  },
+  {
+    "month": 201909,
+    "variable": "mcomisiones_otras",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 4585,
+    "distinct": 96568
+  },
+  {
+    "month": 201909,
+    "variable": "ccomisiones_otras",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 4581,
+    "distinct": 132
+  },
+  {
+    "month": 201909,
+    "variable": "chomebanking_transacciones",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 60225,
+    "distinct": 82
+  },
+  {
+    "month": 201909,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 128853,
+    "distinct": 3002
+  },
+  {
+    "month": 201909,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 128114,
+    "distinct": 28
+  },
+  {
+    "month": 201909,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 124432,
+    "distinct": 22
+  },
+  {
+    "month": 201909,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 133538,
+    "nulls": 2443,
+    "zeros": 124819,
+    "distinct": 4687
+  },
+  {
+    "month": 201909,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 133538,
+    "nulls": 0,
+    "zeros": 130969,
+    "distinct": 17
+  },
+  {
+    "month": 201909,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 133538,
+    "nulls": 425,
+    "zeros": 131127,
+    "distinct": 1683
+  },
+  {
+    "month": 201910,
+    "variable": "mrentabilidad",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mrentabilidad_annual",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mpasivos_margen",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mactivos_margen",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mcomisiones",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mcomisiones_otras",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "ccomisiones_otras",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "chomebanking_transacciones",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mcajeros_propios_descuentos",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "ccajeros_propios_descuentos",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "ctarjeta_visa_descuentos",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mtarjeta_visa_descuentos",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "ctarjeta_master_descuentos",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  },
+  {
+    "month": 201910,
+    "variable": "mtarjeta_master_descuentos",
+    "rows": 135754,
+    "nulls": 0,
+    "zeros": 135754,
+    "distinct": 1
+  }
+]

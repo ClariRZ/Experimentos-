@@ -13,10 +13,10 @@ Estado: **PARCIAL; NO APROBADO PARA ENTRENAR**. No se entrenaron modelos ni se e
 | Procedencia de las 14 fuentes | PASÓ identificación | `preflight/octubre/fuentes_octubre.json`; reglas de Ezequiel, no confirmación de la cátedra |
 | Implementación RR4 y controles sintéticos v7 | PASÓ | 16 pruebas unitarias locales |
 | Paridad con generador C3 real | PASÓ | 256 combinaciones, `preflight/c3_paridad.json`; se cargaron el generador original y sus funciones puras sin cambiar fórmulas |
-| Dataset exacto | PENDIENTE bloqueante | Candidatos crudos locales tienen otro hash; no fueron usados en sustitución |
-| Inferencia intacta y perturbaciones | PENDIENTE | Script preparado, rama de inferencia real no ejecutada ni validada extremo a extremo |
-| Cobertura real por mes B0/R3/T4/RR4 | PENDIENTE | Módulo de procedencia RR4 probado sintéticamente; CLI real RR4 preparado, no ejecutado; auditoría real de las otras familias todavía por integrar |
-| Esquema RR4 depurado en train | PENDIENTE | No se inventó lista efectiva; contrato conserva null |
+| Dataset exacto | PASÓ | Recuperado del respaldo privado v1–v6; SHA256 completo coincide con v7. Copia local junto al prompt, excluida de Git |
+| Inferencia intacta y perturbaciones | PASÓ ejecución | 50 predicciones por semilla y 10 ensembles intactos exactos; tres escenarios completos en `preflight/octubre_real/` |
+| Cobertura real por mes B0/R3/T4/RR4 | PARCIAL | Disponibilidad por columna B0/R3/T4 y atribución RR4 ejecutadas en seis meses; falta atribución completa de causas de B0/R3/T4 |
+| Esquema RR4 depurado en train | PASÓ | 956 columnas: 652 B0 + 304 nuevas; 83 excluidas; lista y aliases en `preflight/matrices_reales/rr4_schema.json` |
 | Recursos de entrenamiento | PENDIENTE | Disco/RAM del host registrados; no se equiparan a pico de entrenamiento |
 | Conteos 21/23 y 15/29 | PENDIENTE | No homologados; no se usan como evidencia confirmada |
 | Porcentajes C3 0,8%/1,8% | PENDIENTE | No localizados en fuente de importancia suficiente; no se certifican |
@@ -49,4 +49,26 @@ El último comando sin dataset ejecuta integridad e importancias, NO inferencia.
 
 La extracción de importancias alcanzó unos 167 MiB de RSS; es sólo ese proceso, no generación de matrices ni entrenamiento. Antes de aprobar: medir filas, dtype, RAM pico y disco con cada constructor real, reservar espacio para temporales y recuperación, fijar umbrales cuantitativos y comprobar viabilidad del techo propuesto de seis horas. No hay umbrales aprobados todavía.
 
-El contrato permanece DRAFT y `training_authorized=false`. No está habilitado para ejecución. El pipeline de competencia 2 sigue como línea independiente definida en el prompt, no implementada en este preflight. La siguiente acción dependiente es localizar/recuperar el dataset exacto; no corresponde pedir aprobación de entrenamiento todavía.
+El contrato permanece DRAFT y `training_authorized=false`. No está habilitado para ejecución. El pipeline de competencia 2 sigue como línea independiente definida en el prompt, no implementada en este preflight. El dataset exacto ya fue recuperado. Se completaron el diagnóstico real de octubre y la auditoría RR4; no corresponde pedir aprobación de entrenamiento todavía.
+
+## Recuperación local del dataset
+
+Se encontró dentro de `respaldo_v1_v6.tar.gz`, no en el historial Git. Se verificaron sus 740.919.315 bytes contra el SHA256 requerido y se copió a `../prompts/cierre_consolidado/datos_privados/`, excluido de Git. No fue necesario encender la VM. La búsqueda inicial había omitido el contenido de este respaldo; ese faltante queda resuelto.
+
+## Ejecución real con la base recuperada
+
+La población de train auditada contiene 381.596 filas. Se validaron claves únicas/no nulas y clases conocidas en enero–octubre. Se midió disponibilidad por columna para B0/R3/T4 en abril, mayo, junio, agosto, septiembre y octubre. RR4 tiene 2.322 registros de cobertura (129 fuentes × seis meses × tres operaciones), sin categoría inesperada. Esto no sustituye la atribución completa de causas todavía pendiente para B0/R3/T4.
+
+Se preservaron las nueve máscaras y los ceros de julio/octubre. `anomalias_sin_tratamiento.json` documenta las 14 fuentes en enero–octubre. Ninguna de las perturbaciones alimentó entrenamiento.
+
+| Escenario de octubre v7, K=3.583 | B0 | R3 − B0 | T4 − B0 |
+|---|---:|---:|---:|
+| Intacto | 272.167.500 | +7.700.000 | +11.000.000 |
+| Sólo contemporáneas en NA | 272.167.500 | +9.900.000 | +9.900.000 |
+| Fuentes de octubre en NA y derivadas recalculadas | 276.567.500 | +1.100.000 | 0 |
+
+Son unidades económicas del concurso y ensembles de v7. Las ventajas son sensibles a estas entradas; esto no demuestra error en los ceros ni causalidad. No cambia brazos, saneamiento ni regla de cierre de v8.
+
+El diagnóstico tardó 209,4 segundos y alcanzó 3,09 GiB RSS. La auditoría de matrices tardó 44,0 segundos y alcanzó 5,84 GiB RSS; la matriz RR4 de entrenamiento float32 equivale a 1.459.223.104 bytes sin contar otras estructuras. No son mediciones de entrenamiento ni garantizan el plazo de 144 ajustes.
+
+Estado al cierre de esta ejecución local: **DRAFT, entrenamiento no iniciado**. Quedan atribución completa de causas B0/R3/T4, comprobaciones históricas no homologadas, límites operativos y validación del ejecutor de entrenamiento. No se encendió la VM. No se presenta esta ejecución parcial como preflight aprobado.

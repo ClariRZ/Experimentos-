@@ -1,0 +1,7 @@
+{
+  "seconds": 43.97167235799134,
+  "peak_rss_kib": 6123968,
+  "rr4_train_matrix_bytes": 1459223104,
+  "fits": 0,
+  "note": "Feature audit, not training peak. Coverage_columns reports availability, not full cause attribution."
+}
