@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+data/
+preparado/
+
+# Artefactos con identificadores: conservar localmente, nunca publicar.
+*_predictions.parquet
+referencia_regenerada/
+*.parquet

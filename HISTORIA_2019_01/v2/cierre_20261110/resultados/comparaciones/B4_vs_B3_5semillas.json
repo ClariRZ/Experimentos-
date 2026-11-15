@@ -1,0 +1,24 @@
+{
+  "candidate": "B4",
+  "control": "B3",
+  "recipe": "f8fadecd019dcb8c0a4bc83cf46143ba5627634a9c1a86503fad767eaa5f29d3",
+  "n_seeds": 5,
+  "delta_gain_mean": 2912207.396301848,
+  "delta_gain_std": 3340612.9775489634,
+  "wins_gain": 4,
+  "delta_auc_mean": 0.0006097969871674547,
+  "wins_auc": 5,
+  "verdict": "INDICIO",
+  "confirmed": false,
+  "replicas": 1000,
+  "semilla": 20261110,
+  "delta_gain_ci90": [
+    -883426.8490754545,
+    7447030.23488256
+  ],
+  "delta_auc_ci90": [
+    -0.0008148854970485176,
+    0.002068102132844202
+  ],
+  "method": "paired_client_resampling_reoptimize_smoothed_cut"
+}

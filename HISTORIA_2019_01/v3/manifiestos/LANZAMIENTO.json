@@ -1,0 +1,23 @@
+{
+  "state_observed": "EJECUTANDO",
+  "vm": "clari-c1-fundados",
+  "pid": 6158,
+  "vm_path": "/home/clarirz/HISTORIA_2019_01/v3",
+  "observed_utc": "2026-11-11T10:13:16Z",
+  "control_reused_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "control_validation": "Hashes, receta, claves y predicciones exactamente reproducidas; AUC y ganancia coinciden.",
+  "arm_started": "A",
+  "git_implementation_commit": "1d04858",
+  "v2_closure_commit": "69d23ac",
+  "octubre_abierto": false,
+  "local_sync_session": 29190,
+  "sync_scope": "Commits por hito de agregados JSON, sin datos individuales/modelos",
+  "sync_limit": "Requiere equipo y sesion local activos. No sustituye backup de artefactos pesados.",
+  "push_authorized": false
+}

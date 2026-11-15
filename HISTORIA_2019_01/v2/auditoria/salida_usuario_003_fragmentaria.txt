@@ -1,0 +1,1032 @@
+      "gain_mean": 2339.279328724742,
+      "gain_fraction_mean": 0.004244577997591104
+    },
+    {
+      "feature": "tcuentas",
+      "gain_mean": 3.586994981765747,
+      "gain_fraction_mean": 6.507648981544569e-06
+    },
+    {
+      "feature": "ccuenta_corriente",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente_adicional",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente",
+      "gain_mean": 13609.55072146058,
+      "gain_fraction_mean": 0.02469584193948298
+    },
+    {
+      "feature": "ccaja_ahorro",
+      "gain_mean": 1625.5166625201703,
+      "gain_fraction_mean": 0.0029495138856167635
+    },
+    {
+      "feature": "mcaja_ahorro",
+      "gain_mean": 53366.61253591776,
+      "gain_fraction_mean": 0.09682984237260674
+    },
+    {
+      "feature": "mcaja_ahorro_adicional",
+      "gain_mean": 1.9327494621276855,
+      "gain_fraction_mean": 3.5038382252976388e-06
+    },
+    {
+      "feature": "mcaja_ahorro_dolares",
+      "gain_mean": 432.93150507211686,
+      "gain_fraction_mean": 0.0007855203320656416
+    },
+    {
+      "feature": "cdescubierto_preacordado",
+      "gain_mean": 16288.79477288723,
+      "gain_fraction_mean": 0.029556767663418006
+    },
+    {
+      "feature": "mcuentas_saldo",
+      "gain_mean": 9895.70072130561,
+      "gain_fraction_mean": 0.01795572514060713
+    },
+    {
+      "feature": "ctarjeta_debito",
+      "gain_mean": 107.28595443367958,
+      "gain_fraction_mean": 0.00019468217482430104
+    },
+    {
+      "feature": "ctarjeta_debito_transacciones",
+      "gain_mean": 300.4011581659317,
+      "gain_fraction_mean": 0.0005450416639297302
+    },
+    {
+      "feature": "mautoservicio",
+      "gain_mean": 944.4540593922138,
+      "gain_fraction_mean": 0.0017139614224260657
+    },
+    {
+      "feature": "ctarjeta_visa",
+      "gain_mean": 5007.529419505596,
+      "gain_fraction_mean": 0.009082986598232578
+    },
+    {
+      "feature": "ctarjeta_visa_transacciones",
+      "gain_mean": 13442.090908682347,
+      "gain_fraction_mean": 0.024389837482443385
+    },
+    {
+      "feature": "mtarjeta_visa_consumo",
+      "gain_mean": 18459.414343076944,
+      "gain_fraction_mean": 0.03349400524698789
+    },
+    {
+      "feature": "ctarjeta_master",
+      "gain_mean": 63.01897983551025,
+      "gain_fraction_mean": 0.0001143909327192568
+    },
+    {
+      "feature": "ctarjeta_master_transacciones",
+      "gain_mean": 113.93082443475723,
+      "gain_fraction_mean": 0.00020672032060980636
+    },
+    {
+      "feature": "mtarjeta_master_consumo",
+      "gain_mean": 643.0750854074955,
+      "gain_fraction_mean": 0.0011668545484318036
+    },
+    {
+      "feature": "cprestamos_personales",
+      "gain_mean": 890.15095256567,
+      "gain_fraction_mean": 0.0016147971633599894
+    },
+    {
+      "feature": "mprestamos_personales",
+      "gain_mean": 7455.97978938818,
+      "gain_fraction_mean": 0.013528634300025596
+    },
+    {
+      "feature": "cprestamos_prendarios",
+      "gain_mean": 1.3640029668807983,
+      "gain_fraction_mean": 2.4729493337170576e-06
+    },
+    {
+      "feature": "mprestamos_prendarios",
+      "gain_mean": 157.0577576160431,
+      "gain_fraction_mean": 0.0002849626435380218
+    },
+    {
+      "feature": "cprestamos_hipotecarios",
+      "gain_mean": 19.704940509796142,
+      "gain_fraction_mean": 3.5740459381386467e-05
+    },
+    {
+      "feature": "mprestamos_hipotecarios",
+      "gain_mean": 91.13118252754211,
+      "gain_fraction_mean": 0.00016534081448266007
+    },
+    {
+      "feature": "cplazo_fijo",
+      "gain_mean": 244.67526450157166,
+      "gain_fraction_mean": 0.0004439257898614257
+    },
+    {
+      "feature": "mplazo_fijo_dolares",
+      "gain_mean": 355.27229685783385,
+      "gain_fraction_mean": 0.000644653274227403
+    },
+    {
+      "feature": "mplazo_fijo_pesos",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cinversion1",
+      "gain_mean": 69.75492300987244,
+      "gain_fraction_mean": 0.00012656602210891167
+    },
+    {
+      "feature": "minversion1_pesos",
+      "gain_mean": 126.05837526321412,
+      "gain_fraction_mean": 0.00022871725275092547
+    },
+    {
+      "feature": "minversion1_dolares",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cinversion2",
+      "gain_mean": 8.26220998764038,
+      "gain_fraction_mean": 1.4997606763804703e-05
+    },
+    {
+      "feature": "minversion2",
+      "gain_mean": 174.02218387126922,
+      "gain_fraction_mean": 0.00031577994503813187
+    },
+    {
+      "feature": "cseguro_vida",
+      "gain_mean": 45.0125648021698,
+      "gain_fraction_mean": 8.166647524600104e-05
+    },
+    {
+      "feature": "cseguro_auto",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cseguro_vivienda",
+      "gain_mean": 6.322324967384338,
+      "gain_fraction_mean": 1.1473425993691445e-05
+    },
+    {
+      "feature": "cseguro_accidentes_personales",
+      "gain_mean": 54.748001569509505,
+      "gain_fraction_mean": 9.930264653769134e-05
+    },
+    {
+      "feature": "ccaja_seguridad",
+      "gain_mean": 1234.4598593950273,
+      "gain_fraction_mean": 0.0022398319584610677
+    },
+    {
+      "feature": "cpayroll_trx",
+      "gain_mean": 5093.635097038746,
+      "gain_fraction_mean": 0.009243494935847267
+    },
+    {
+      "feature": "mpayroll",
+      "gain_mean": 6437.182075613737,
+      "gain_fraction_mean": 0.01168022781389613
+    },
+    {
+      "feature": "mpayroll2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cpayroll2_trx",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "ccuenta_debitos_automaticos",
+      "gain_mean": 61.84103315472603,
+      "gain_fraction_mean": 0.00011223876816657845
+    },
+    {
+      "feature": "mcuenta_debitos_automaticos",
+      "gain_mean": 1520.08102132082,
+      "gain_fraction_mean": 0.002758183360164917
+    },
+    {
+      "feature": "ctarjeta_visa_debitos_automaticos",
+      "gain_mean": 263.831529289484,
+      "gain_fraction_mean": 0.0004787143434200166
+    },
+    {
+      "feature": "mttarjeta_visa_debitos_automaticos",
+      "gain_mean": 516.5846744060516,
+      "gain_fraction_mean": 0.0009373459585810186
+    },
+    {
+      "feature": "ctarjeta_master_debitos_automaticos",
+      "gain_mean": 7.043668007850647,
+      "gain_fraction_mean": 1.2773779476913475e-05
+    },
+    {
+      "feature": "mttarjeta_master_debitos_automaticos",
+      "gain_mean": 25.162532019615174,
+      "gain_fraction_mean": 4.566489793107433e-05
+    },
+    {
+      "feature": "cpagodeservicios",
+      "gain_mean": 3.7153759717941286,
+      "gain_fraction_mean": 6.74168007559521e-06
+    },
+    {
+      "feature": "mpagodeservicios",
+      "gain_mean": 178.04175786375998,
+      "gain_fraction_mean": 0.00032306795321710157
+    },
+    {
+      "feature": "cpagomiscuentas",
+      "gain_mean": 151.33516564369202,
+      "gain_fraction_mean": 0.00027458216975326645
+    },
+    {
+      "feature": "mpagomiscuentas",
+      "gain_mean": 769.5456245183944,
+      "gain_fraction_mean": 0.0013964405205287498
+    },
+    {
+      "feature": "ccajeros_propios_descuentos",
+      "gain_mean": 0.9833280086517334,
+      "gain_fraction_mean": 1.7850577321703566e-06
+    },
+    {
+      "feature": "mcajeros_propios_descuentos",
+      "gain_mean": 0.5561250209808349,
+      "gain_fraction_mean": 1.009909306594957e-06
+    },
+    {
+      "feature": "ctarjeta_visa_descuentos",
+      "gain_mean": 5.975312042236328,
+      "gain_fraction_mean": 1.083901591150464e-05
+    },
+    {
+      "feature": "mtarjeta_visa_descuentos",
+      "gain_mean": 22.57252950668335,
+      "gain_fraction_mean": 4.096682136098823e-05
+    },
+    {
+      "feature": "ctarjeta_master_descuentos",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mtarjeta_master_descuentos",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "ccomisiones_mantenimiento",
+      "gain_mean": 398.5303640961647,
+      "gain_fraction_mean": 0.0007232576378170732
+    },
+    {
+      "feature": "mcomisiones_mantenimiento",
+      "gain_mean": 946.2211358308792,
+      "gain_fraction_mean": 0.0017168608777040108
+    },
+    {
+      "feature": "ccomisiones_otras",
+      "gain_mean": 282.66141204237937,
+      "gain_fraction_mean": 0.0005130008431194178
+    },
+    {
+      "feature": "mcomisiones_otras",
+      "gain_mean": 672.0923253417016,
+      "gain_fraction_mean": 0.0012196078555007065
+    },
+    {
+      "feature": "cforex",
+      "gain_mean": 10.106107091903686,
+      "gain_fraction_mean": 1.8351305275769156e-05
+    },
+    {
+      "feature": "cforex_buy",
+      "gain_mean": 2.817293483018875,
+      "gain_fraction_mean": 5.110331306278085e-06
+    },
+    {
+      "feature": "mforex_buy",
+      "gain_mean": 122.48765606880188,
+      "gain_fraction_mean": 0.00022226605144137985
+    },
+    {
+      "feature": "cforex_sell",
+      "gain_mean": 1.5864290237426757,
+      "gain_fraction_mean": 2.8745695717515666e-06
+    },
+    {
+      "feature": "mforex_sell",
+      "gain_mean": 34.39889991283417,
+      "gain_fraction_mean": 6.243001626125147e-05
+    },
+    {
+      "feature": "ctransferencias_recibidas",
+      "gain_mean": 5.5865349769592285,
+      "gain_fraction_mean": 1.012805078029431e-05
+    },
+    {
+      "feature": "mtransferencias_recibidas",
+      "gain_mean": 27.75619888305664,
+      "gain_fraction_mean": 5.036539444165868e-05
+    },
+    {
+      "feature": "ctransferencias_emitidas",
+      "gain_mean": 63.88256104588508,
+      "gain_fraction_mean": 0.00011593563313906519
+    },
+    {
+      "feature": "mtransferencias_emitidas",
+      "gain_mean": 386.2413373887539,
+      "gain_fraction_mean": 0.0007008230247790286
+    },
+    {
+      "feature": "cextraccion_autoservicio",
+      "gain_mean": 121.91668910980225,
+      "gain_fraction_mean": 0.00022119375615207228
+    },
+    {
+      "feature": "mextraccion_autoservicio",
+      "gain_mean": 192.9155959010124,
+      "gain_fraction_mean": 0.00034997790766386986
+    },
+    {
+      "feature": "ccheques_depositados",
+      "gain_mean": 0.43284950256347654,
+      "gain_fraction_mean": 7.860977068323879e-07
+    },
+    {
+      "feature": "mcheques_depositados",
+      "gain_mean": 16.967764979600908,
+      "gain_fraction_mean": 3.0773230155201685e-05
+    },
+    {
+      "feature": "ccheques_emitidos",
+      "gain_mean": 1.5280504941940307,
+      "gain_fraction_mean": 2.7679914991419227e-06
+    },
+    {
+      "feature": "mcheques_emitidos",
+      "gain_mean": 6.866052520275116,
+      "gain_fraction_mean": 1.2460181280408725e-05
+    },
+    {
+      "feature": "ccheques_depositados_rechazados",
+      "gain_mean": 27.771481418609618,
+      "gain_fraction_mean": 5.0367841090238385e-05
+    },
+    {
+      "feature": "mcheques_depositados_rechazados",
+      "gain_mean": 86.9789686203003,
+      "gain_fraction_mean": 0.00015786369855110528
+    },
+    {
+      "feature": "ccheques_emitidos_rechazados",
+      "gain_mean": 62.36719188690186,
+      "gain_fraction_mean": 0.00011316679173150896
+    },
+    {
+      "feature": "mcheques_emitidos_rechazados",
+      "gain_mean": 243.05711648464202,
+      "gain_fraction_mean": 0.00044102385472584595
+    },
+    {
+      "feature": "tcallcenter",
+      "gain_mean": 75.77656329870224,
+      "gain_fraction_mean": 0.00013745993703589157
+    },
+    {
+      "feature": "ccallcenter_transacciones",
+      "gain_mean": 210.02770029306413,
+      "gain_fraction_mean": 0.0003811307887932105
+    },
+    {
+      "feature": "thomebanking",
+      "gain_mean": 143.61043204069136,
+      "gain_fraction_mean": 0.0002605707701090796
+    },
+    {
+      "feature": "chomebanking_transacciones",
+      "gain_mean": 195.4579580783844,
+      "gain_fraction_mean": 0.00035468912038782465
+    },
+    {
+      "feature": "ccajas_transacciones",
+      "gain_mean": 40.67393399477005,
+      "gain_fraction_mean": 7.378336302807335e-05
+    },
+    {
+      "feature": "ccajas_consultas",
+      "gain_mean": 31.803951925039293,
+      "gain_fraction_mean": 5.7720087298402525e-05
+    },
+    {
+      "feature": "ccajas_depositos",
+      "gain_mean": 135.269673705101,
+      "gain_fraction_mean": 0.0002454837298825492
+    },
+    {
+      "feature": "ccajas_extracciones",
+      "gain_mean": 6.587097990512848,
+      "gain_fraction_mean": 1.1954273499692065e-05
+    },
+    {
+      "feature": "ccajas_otras",
+      "gain_mean": 21.14371113181114,
+      "gain_fraction_mean": 3.836895380429617e-05
+    },
+    {
+      "feature": "catm_trx",
+      "gain_mean": 62.01166299581528,
+      "gain_fraction_mean": 0.00011250202565373519
+    },
+    {
+      "feature": "matm",
+      "gain_mean": 103.25641449093818,
+      "gain_fraction_mean": 0.00018730382988254725
+    },
+    {
+      "feature": "catm_trx_other",
+      "gain_mean": 22.47493842840195,
+      "gain_fraction_mean": 4.0784583578199926e-05
+    },
+    {
+      "feature": "matm_other",
+      "gain_mean": 64.27879184484482,
+      "gain_fraction_mean": 0.00011666522620541587
+    },
+    {
+      "feature": "ctrx_quarter",
+      "gain_mean": 46140.88025488555,
+      "gain_fraction_mean": 0.08371610220699419
+    },
+    {
+      "feature": "tmobile_app",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cmobile_app_trx",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "Master_delinquency",
+      "gain_mean": 243.57468841671943,
+      "gain_fraction_mean": 0.0004421561248578512
+    },
+    {
+      "feature": "Master_status",
+      "gain_mean": 812.7097869515419,
+      "gain_fraction_mean": 0.0014753001105550188
+    },
+    {
+      "feature": "Master_mfinanciacion_limite",
+      "gain_mean": 646.9146454483271,
+      "gain_fraction_mean": 0.0011739058544273354
+    },
+    {
+      "feature": "Master_Fvencimiento",
+      "gain_mean": 954.5080643951893,
+      "gain_fraction_mean": 0.0017320386830503333
+    },
+    {
+      "feature": "Master_Finiciomora",
+      "gain_mean": 1335.3206501722336,
+      "gain_fraction_mean": 0.0024228470058247245
+    },
+    {
+      "feature": "Master_msaldototal",
+      "gain_mean": 809.5195971786976,
+      "gain_fraction_mean": 0.001468915774882256
+    },
+    {
+      "feature": "Master_msaldopesos",
+      "gain_mean": 478.2472874343395,
+      "gain_fraction_mean": 0.0008678444040169034
+    },
+    {
+      "feature": "Master_msaldodolares",
+      "gain_mean": 7.32291995882988,
+      "gain_fraction_mean": 1.3282081935174638e-05
+    },
+    {
+      "feature": "Master_mconsumospesos",
+      "gain_mean": 164.10402557849883,
+      "gain_fraction_mean": 0.00029774265793423334
+    },
+    {
+      "feature": "Master_mconsumosdolares",
+      "gain_mean": 7.043613529205322,
+      "gain_fraction_mean": 1.277613200436789e-05
+    },
+    {
+      "feature": "Master_mlimitecompra",
+      "gain_mean": 542.3608598291873,
+      "gain_fraction_mean": 0.0009841258995905318
+    },
+    {
+      "feature": "Master_madelantopesos",
+      "gain_mean": 1.8750710487365723,
+      "gain_fraction_mean": 3.4003557249886242e-06
+    },
+    {
+      "feature": "Master_madelantodolares",
+      "gain_mean": 0.9860950469970703,
+      "gain_fraction_mean": 1.7884690563922532e-06
+    },
+    {
+      "feature": "Master_fultimo_cierre",
+      "gain_mean": 223.05226081609726,
+      "gain_fraction_mean": 0.0004047404042854712
+    },
+    {
+      "feature": "Master_mpagado",
+      "gain_mean": 13.658425933122635,
+      "gain_fraction_mean": 2.4781210038014456e-05
+    },
+    {
+      "feature": "Master_mpagospesos",
+      "gain_mean": 1016.4876662075519,
+      "gain_fraction_mean": 0.0018443865735466567
+    },
+    {
+      "feature": "Master_mpagosdolares",
+      "gain_mean": 19.840790492296218,
+      "gain_fraction_mean": 3.600423980560844e-05
+    },
+    {
+      "feature": "Master_fechaalta",
+      "gain_mean": 858.4254161775112,
+      "gain_fraction_mean": 0.0015576223739829451
+    },
+    {
+      "feature": "Master_mconsumototal",
+      "gain_mean": 69.72772079706192,
+      "gain_fraction_mean": 0.0001265334607304717
+    },
+    {
+      "feature": "Master_cconsumos",
+      "gain_mean": 87.76093982458114,
+      "gain_fraction_mean": 0.000159248438744325
+    },
+    {
+      "feature": "Master_cadelantosefectivo",
+      "gain_mean": 1.0359905004501342,
+      "gain_fraction_mean": 1.876413160556114e-06
+    },
+    {
+      "feature": "Master_mpagominimo",
+      "gain_mean": 517.3126309692859,
+      "gain_fraction_mean": 0.0009386960150997266
+    },
+    {
+      "feature": "Visa_delinquency",
+      "gain_mean": 2274.4527576565742,
+      "gain_fraction_mean": 0.004127085690743012
+    },
+    {
+      "feature": "Visa_status",
+      "gain_mean": 20022.079904663562,
+      "gain_fraction_mean": 0.03633854581913527
+    },
+    {
+      "feature": "Visa_mfinanciacion_limite",
+      "gain_mean": 1217.7401813745498,
+      "gain_fraction_mean": 0.002210729531796756
+    },
+    {
+      "feature": "Visa_Fvencimiento",
+      "gain_mean": 1381.1663394987584,
+      "gain_fraction_mean": 0.0025062052861054523
+    },
+    {
+      "feature": "Visa_Finiciomora",
+      "gain_mean": 10140.424585276842,
+      "gain_fraction_mean": 0.018399251052863407
+    },
+    {
+      "feature": "Visa_msaldototal",
+      "gain_mean": 2642.5113085925577,
+      "gain_fraction_mean": 0.004795158784277464
+    },
+    {
+      "feature": "Visa_msaldopesos",
+      "gain_mean": 1563.8878633379936,
+      "gain_fraction_mean": 0.002837738670466382
+    },
+    {
+      "feature": "Visa_msaldodolares",
+      "gain_mean": 46.878932636976245,
+      "gain_fraction_mean": 8.50676355234173e-05
+    },
+    {
+      "feature": "Visa_mconsumospesos",
+      "gain_mean": 693.9797871977091,
+      "gain_fraction_mean": 0.0012592526680436722
+    },
+    {
+      "feature": "Visa_mconsumosdolares",
+      "gain_mean": 363.51905009746554,
+      "gain_fraction_mean": 0.0006596060173010832
+    },
+    {
+      "feature": "Visa_mlimitecompra",
+      "gain_mean": 632.2450473964215,
+      "gain_fraction_mean": 0.0011473148835054302
+    },
+    {
+      "feature": "Visa_madelantopesos",
+      "gain_mean": 2.5152094841003416,
+      "gain_fraction_mean": 4.568227945526761e-06
+    },
+    {
+      "feature": "Visa_madelantodolares",
+      "gain_mean": 0.3529239892959595,
+      "gain_fraction_mean": 6.404836906783271e-07
+    },
+    {
+      "feature": "Visa_fultimo_cierre",
+      "gain_mean": 237.62160552740096,
+      "gain_fraction_mean": 0.0004311191003845825
+    },
+    {
+      "feature": "Visa_mpagado",
+      "gain_mean": 107.45265433788299,
+      "gain_fraction_mean": 0.00019497389001518
+    },
+    {
+      "feature": "Visa_mpagospesos",
+      "gain_mean": 8506.89442949295,
+      "gain_fraction_mean": 0.015435815596624602
+    },
+    {
+      "feature": "Visa_mpagosdolares",
+      "gain_mean": 55.0795827627182,
+      "gain_fraction_mean": 9.995235017953849e-05
+    },
+    {
+      "feature": "Visa_fechaalta",
+      "gain_mean": 1359.8621897161006,
+      "gain_fraction_mean": 0.0024675704683300393
+    },
+    {
+      "feature": "Visa_mconsumototal",
+      "gain_mean": 323.23852654099466,
+      "gain_fraction_mean": 0.000586593066190425
+    },
+    {
+      "feature": "Visa_cconsumos",
+      "gain_mean": 613.3903050541878,
+      "gain_fraction_mean": 0.0011132622839769382
+    },
+    {
+      "feature": "Visa_cadelantosefectivo",
+      "gain_mean": 1.1033275127410889,
+      "gain_fraction_mean": 1.9998648945474552e-06
+    },
+    {
+      "feature": "Visa_mpagominimo",
+      "gain_mean": 2677.8503917455673,
+      "gain_fraction_mean": 0.004858107339940417
+    },
+    {
+      "feature": "active_quarter__lag1",
+      "gain_mean": 10.395454049110413,
+      "gain_fraction_mean": 1.884811766606231e-05
+    },
+    {
+      "feature": "active_quarter__delta1",
+      "gain_mean": 0.3311569929122925,
+      "gain_fraction_mean": 6.002406063985512e-07
+    },
+    {
+      "feature": "active_quarter__lag2",
+      "gain_mean": 8.019606041908265,
+      "gain_fraction_mean": 1.4553696718319994e-05
+    },
+    {
+      "feature": "active_quarter__delta2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cliente_vip__lag1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cliente_vip__delta1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cliente_vip__lag2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cliente_vip__delta2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "internet__lag1",
+      "gain_mean": 119.13173065185546,
+      "gain_fraction_mean": 0.00021615725663722625
+    },
+    {
+      "feature": "internet__delta1",
+      "gain_mean": 8.20067002773285,
+      "gain_fraction_mean": 1.488623677622635e-05
+    },
+    {
+      "feature": "internet__lag2",
+      "gain_mean": 100.8319406658411,
+      "gain_fraction_mean": 0.00018296972965848142
+    },
+    {
+      "feature": "internet__delta2",
+      "gain_mean": 33.686392068862915,
+      "gain_fraction_mean": 6.11171130833886e-05
+    },
+    {
+      "feature": "cliente_edad__lag1",
+      "gain_mean": 868.241376298666,
+      "gain_fraction_mean": 0.0015754184005272037
+    },
+    {
+      "feature": "cliente_edad__delta1",
+      "gain_mean": 12.395919036865234,
+      "gain_fraction_mean": 2.2487798368777823e-05
+    },
+    {
+      "feature": "cliente_edad__lag2",
+      "gain_mean": 1034.3649280548095,
+      "gain_fraction_mean": 0.0018768722637074737
+    },
+    {
+      "feature": "cliente_edad__delta2",
+      "gain_mean": 17.24661750793457,
+      "gain_fraction_mean": 3.128901100095014e-05
+    },
+    {
+      "feature": "cliente_antiguedad__lag1",
+      "gain_mean": 703.6532317280769,
+      "gain_fraction_mean": 0.0012766899547066537
+    },
+    {
+      "feature": "cliente_antiguedad__delta1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "cliente_antiguedad__lag2",
+      "gain_mean": 673.8332204043866,
+      "gain_fraction_mean": 0.001222598570088549
+    },
+    {
+      "feature": "cliente_antiguedad__delta2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mrentabilidad__lag1",
+      "gain_mean": 979.9109791815281,
+      "gain_fraction_mean": 0.0017780149959353802
+    },
+    {
+      "feature": "mrentabilidad__delta1",
+      "gain_mean": 445.360328489542,
+      "gain_fraction_mean": 0.0008081030561808622
+    },
+    {
+      "feature": "mrentabilidad__lag2",
+      "gain_mean": 1407.0843969941138,
+      "gain_fraction_mean": 0.002553318376540867
+    },
+    {
+      "feature": "mrentabilidad__delta2",
+      "gain_mean": 1954.351776587963,
+      "gain_fraction_mean": 0.0035460195119511014
+    },
+    {
+      "feature": "mrentabilidad_annual__lag1",
+      "gain_mean": 1508.0332971692085,
+      "gain_fraction_mean": 0.002736212262425258
+    },
+    {
+      "feature": "mrentabilidad_annual__delta1",
+      "gain_mean": 940.5749175608158,
+      "gain_fraction_mean": 0.0017066703490947453
+    },
+    {
+      "feature": "mrentabilidad_annual__lag2",
+      "gain_mean": 2575.7151245832442,
+      "gain_fraction_mean": 0.004673598768371696
+    },
+    {
+      "feature": "mrentabilidad_annual__delta2",
+      "gain_mean": 1833.7580349206924,
+      "gain_fraction_mean": 0.003327347045522638
+    },
+    {
+      "feature": "mcomisiones__lag1",
+      "gain_mean": 869.4982524335385,
+      "gain_fraction_mean": 0.0015777701273918493
+    },
+    {
+      "feature": "mcomisiones__delta1",
+      "gain_mean": 376.055859375,
+      "gain_fraction_mean": 0.0006823587339722642
+    },
+    {
+      "feature": "mcomisiones__lag2",
+      "gain_mean": 899.0815226852894,
+      "gain_fraction_mean": 0.0016314932715259505
+    },
+    {
+      "feature": "mcomisiones__delta2",
+      "gain_mean": 770.3841563105583,
+      "gain_fraction_mean": 0.0013979910815473788
+    },
+    {
+      "feature": "mactivos_margen__lag1",
+      "gain_mean": 1097.5604468345641,
+      "gain_fraction_mean": 0.001991529226186254
+    },
+    {
+      "feature": "mactivos_margen__delta1",
+      "gain_mean": 591.3728026986122,
+      "gain_fraction_mean": 0.0010731118029310743
+    },
+    {
+      "feature": "mactivos_margen__lag2",
+      "gain_mean": 2317.3116695821286,
+      "gain_fraction_mean": 0.004204760867917422
+    },
+    {
+      "feature": "mactivos_margen__delta2",
+      "gain_mean": 1547.0903748810292,
+      "gain_fraction_mean": 0.0028072470113660207
+    },
+    {
+      "feature": "mpasivos_margen__lag1",
+      "gain_mean": 998.6767579555511,
+      "gain_fraction_mean": 0.0018120997040808593
+    },
+    {
+      "feature": "mpasivos_margen__delta1",
+      "gain_mean": 647.06406006217,
+      "gain_fraction_mean": 0.0011741379735186173
+    },
+    {
+      "feature": "mpasivos_margen__lag2",
+      "gain_mean": 1665.1119597703218,
+      "gain_fraction_mean": 0.0030215357384348663
+    },
+    {
+      "feature": "mpasivos_margen__delta2",
+      "gain_mean": 1080.6055577993393,
+      "gain_fraction_mean": 0.001960797284840837
+    },
+    {
+      "feature": "cproductos__lag1",
+      "gain_mean": 437.0757733225822,
+      "gain_fraction_mean": 0.0007930693869218112
+    },
+    {
+      "feature": "cproductos__delta1",
+      "gain_mean": 1048.4452346146106,
+      "gain_fraction_mean": 0.0019026298829470125
+    },
+    {
+      "feature": "cproductos__lag2",
+      "gain_mean": 282.0214916050434,
+      "gain_fraction_mean": 0.0005117389367014217
+    },
+    {
+      "feature": "cproductos__delta2",
+      "gain_mean": 5514.069423156977,
+      "gain_fraction_mean": 0.010004632160358934
+    },
+    {
+      "feature": "tcuentas__lag1",
+      "gain_mean": 15.528057050704955,
+      "gain_fraction_mean": 2.8174042774816497e-05
+    },
+    {
+      "feature": "tcuentas__delta1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "tcuentas__lag2",
+      "gain_mean": 1.9301295042037965,
+      "gain_fraction_mean": 3.5057458160683415e-06
+    },
+    {
+      "feature": "tcuentas__delta2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "ccuenta_corriente__lag1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "ccuenta_corriente__delta1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "ccuenta_corriente__lag2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "ccuenta_corriente__delta2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente_adicional__lag1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente_adicional__delta1",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente_adicional__lag2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente_adicional__delta2",
+      "gain_mean": 0.0,
+      "gain_fraction_mean": 0.0
+    },
+    {
+      "feature": "mcuenta_corriente__lag1",
+      "gain_mean": 1928.922800040245,
+      "gain_fraction_mean": 0.0034994924480971135
+    },
+    {
+      "feature": "mcuenta_corriente__delta1",
+      "gain_mean": 1046.6846136808394,
+      "gain_fraction_mean": 0.0018991300579973853
+    },
+    {
+      "feature": "mcuenta_corriente__lag2",
+    "reference_mean": 0.9131711789687239,
+    "candidate_std": 0.0007409464945815293,
+    "reference_std": 0.0010390935550463113,
+    "candidate_median": 0.9142786306646562,
+    "reference_median": 0.9130901666478817,
+    "delta_mean": 0.000950074750177049,
+    "delta_median": 0.0008782241994926832,
+    "delta_std": 0.0011940281545406218,
+    "wins": 16,
+    "losses": 4,
+    "ties": 0,
+    "delta_ensemble": 0.0009691223996047826,
+    "accepted": true
+  },
+  "versus_reference": {
+    "n_seeds": 20,
+    "candidate_mean": 0.914121253718901,
+    "reference_mean": 0.9131711789687239,
+    "candidate_std": 0.0007409464945815293,
+    "reference_std": 0.0010390935550463113,
+    "candidate_median": 0.9142786306646562,
+    "reference_median": 0.9130901666478817,
+    "delta_mean": 0.000950074750177049,
+    "delta_median": 0.0008782241994926832,
+    "delta_std": 0.0011940281545406218,
+    "wins": 16,
+    "losses": 4,
+    "ties": 0,
+    "delta_ensemble": 0.0009691223996047826,
+    "accepted": true
+  },
+  "reference": "000",

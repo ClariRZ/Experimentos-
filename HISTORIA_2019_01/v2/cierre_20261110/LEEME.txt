@@ -1,0 +1,12 @@
+CIERRE VERIFICADO V2 — 10 noviembre 2026
+
+Estado: FIN_SIN_FAMILIAS_PROMOVIBLES. Fin normal por las reglas registradas.
+M1/M2/M3/M4/Z/K/T1: NO APORTA en 5 semillas frente a B4.
+R y C3: no identificables; motivos en auditoria/familias_cobertura.json.
+No hubo confirmación de 20 semillas, combinaciones ni reoptimización final.
+B4 vs B0: indicio, delta medio +4.913.353; no superioridad confirmada.
+Octubre permanece cerrado en esta corrida.
+
+Snapshot agregado recuperado de la VM. Los archivos originales congelados de v2 no se sobrescribieron.
+Modelos y predicciones individuales permanecen en VM; esta copia NO es respaldo de esos artefactos.
+El manifiesto registra hashes y los JSON por semilla identifican sus modelos/predicciones.

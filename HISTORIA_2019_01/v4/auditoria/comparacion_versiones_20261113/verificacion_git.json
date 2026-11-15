@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-13",
+  "local_head_before_audit": "bf7cd963854eb49d59394c0f286e54ac788deb76",
+  "github_main_verified": "06fd6357c46b348f593dd456da0eaf6d9d8c69a3",
+  "pending_commits_before_audit": 13,
+  "working_tree_before_audit": "clean",
+  "counts_before_audit": {
+    "v2": {
+      "tracked_local": 162,
+      "tracked_github": 162
+    },
+    "v3": {
+      "tracked_local": 128,
+      "tracked_github": 13
+    },
+    "v4": {
+      "tracked_local": 68,
+      "tracked_github": 0
+    }
+  },
+  "json_parse_errors": [],
+  "connectivity_check": "pass; five unreachable/dangling blobs, no missing commit objects reported",
+  "private_prediction_or_dataset_files_tracked": false,
+  "push_performed": false
+}

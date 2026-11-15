@@ -1,0 +1,82 @@
+REPRODUCCIÓN DEL EXPERIMENTO B0–B5
+
+PUBLICACIÓN
+Repositorio: https://github.com/ClariRZ/Segunda_competencia
+Carpeta: experimento_historicas_B0_B5
+Esta publicación incorpora código, configuración, dependencias fijadas, auditoría,
+ensayos, seis modelos finales, curvas y resultados agregados. No contiene la base
+bancaria ni las predicciones con identificadores de clientes.
+
+COPIAS COMPLETAS ORIGINALES
+Computadora:
+/home/clara-m-rodr-guez/Documents/Codex/2026-11-07/nec/outputs/experimento_historicas
+VM clari-c1-fundados:
+/home/clara-m-rodr-guez/experimento_historicas_20261107
+Proyecto: proj-uba-261002122233861. Zona: northamerica-northeast2-b.
+El bundle original permanece fuera de GitHub porque su historial incluye predicciones.
+El commit del protocolo anterior al entrenamiento está en auditoria/commit_codigo.txt;
+las huellas del código ejecutado están en auditoria/codigo_vm_local.json.
+
+INSUMO
+competencia_02_crudo.parquet, sin modificar.
+Original local: /home/clara-m-rodr-guez/Escritorio/competencia_02_crudo.parquet
+En la carpeta original de la VM: data/competencia_02_crudo.parquet
+SHA-256: 84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22
+No se necesita Google Drive ni el PDF para ejecutar los modelos. El PDF se usó como
+antecedente conceptual; su análisis y huella están incluidos.
+
+ENTORNO
+Ubuntu 24.04.5 LTS x86_64, Python 3.12.3 con venv, libgomp1 y ocho hilos.
+Versiones de Python y sistema/CPU: auditoria/entorno_vm.txt.
+Paquetes exactos: requirements_vm.txt. Semillas y búsquedas: config.json y src/entrenar.py.
+Reservar al menos 16 GiB de RAM y 20 GiB de disco. El entrenamiento original tomó
+aproximadamente 113,5 minutos con ocho CPU, más preparación y verificaciones.
+
+COMANDO COMPLETO
+Desde esta carpeta, usando una carpeta de destino que todavía no exista:
+
+python3 reproducir.py --data '/ruta/competencia_02_crudo.parquet' --out '/ruta/nueva_corrida' --python python3.12
+
+Para revisar insumos sin instalar ni entrenar:
+python3 reproducir.py --data '/ruta/competencia_02_crudo.parquet' --out '/ruta/nueva_corrida' --python python3.12 --check-only
+
+El comando completo verifica la base y el paquete, crea el entorno, ejecuta pruebas,
+audita, construye variables, ejecuta 120 ensayos, congela modelos/políticas y evalúa
+octubre. Verifica independientemente etiquetas, AUC, contactos y ganancias.
+Luego regenera las predicciones originales desde los modelos congelados, verifica
+las seis matrices contra sus SHA-256 originales y compara las dos corridas.
+Sólo genera el informe con las conclusiones archivadas si la comparación coincide.
+Los comandos se guardan en comandos.json y el registro en logs/reproduccion.log.
+
+VERIFICAR SIN REPETIR ENTRENAMIENTO
+En un entorno con las dependencias instaladas, preparar las matrices en una carpeta
+local y regenerar predicciones de referencia sin subirlas a GitHub:
+
+python src/preparar.py --data '/ruta/competencia_02_crudo.parquet' --out '/ruta/preparado'
+python src/regenerar_referencia.py --reference resultados --prep '/ruta/preparado' --out referencia_regenerada
+python src/verificar_resultados.py --data '/ruta/competencia_02_crudo.parquet' --results referencia_regenerada --out '/ruta/verificacion.json'
+
+referencia_regenerada se crea junto a config.json y está ignorada por Git. Debe ser
+una carpeta nueva. El regenerador valida modelos, decisiones, manifiesto y matrices.
+Para comparar una corrida nueva:
+python src/comparar_reproduccion.py --reference referencia_regenerada --new '/ruta/nueva_corrida/resultados' --out '/ruta/comparacion.json'
+
+REANUDACIÓN
+Conservar la nueva carpeta y sus matrices. Desde ella:
+.venv/bin/python src/entrenar.py --prep preparado --out resultados --config config.json --mode train
+.venv/bin/python src/entrenar.py --prep preparado --out resultados --config config.json --mode evaluate
+Si existe FROZEN.json, no entrenar nuevamente; continuar con evaluación y las
+verificaciones posteriores indicadas en comandos.json. Si ya existe
+referencia_regenerada, conservarla y verificarla en lugar de recrearla.
+
+ALCANCE DE LAS COMPROBACIONES
+Se ejecutó el experimento completo una vez y se verificaron sus resultados de forma
+independiente. Para esta publicación se verifica además la regeneración de las
+predicciones originales. No se repite la optimización de 120 ensayos para publicar.
+El comparador detecta cambios deliberados en una ganancia y compara 93 controles.
+Exige igualdad de métricas económicas, cortes, árboles e hiperparámetros y tolerancia
+absoluta 1e-12 para AUC/probabilidades. Registra por separado identidad byte a byte de
+modelos. Excluye tiempos, RAM, fechas e identificadores internos de SQLite.
+Versiones y semillas no garantizan igualdad entre distintas CPU o compilaciones:
+si aparece una diferencia, se informa y se detiene antes de reutilizar conclusiones.
+Reproducir octubre no lo convierte en una evaluación independiente nueva.

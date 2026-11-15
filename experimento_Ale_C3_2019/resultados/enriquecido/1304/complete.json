@@ -1,0 +1,36 @@
+{
+  "representation": "enriquecido",
+  "seed": 1304,
+  "features": 765,
+  "trees": 249,
+  "params": {
+    "objective": "binary",
+    "metric": "auc",
+    "verbosity": -1,
+    "num_threads": 8,
+    "seed": 1304,
+    "bagging_seed": 1304,
+    "feature_fraction_seed": 1304,
+    "data_random_seed": 1304,
+    "bagging_freq": 1,
+    "feature_pre_filter": false,
+    "deterministic": true,
+    "force_col_wise": true,
+    "max_bin": 255,
+    "num_leaves": 68,
+    "learning_rate": 0.024632314448291677,
+    "min_data_in_leaf": 2269,
+    "feature_fraction": 0.7676852329808079,
+    "bagging_fraction": 0.9790093636677641
+  },
+  "auc_validation": 0.9308814452075966,
+  "policy": {
+    "validation_k": 2998,
+    "fraction": 0.022750901157275658,
+    "validation_gain": 206855000,
+    "validation_n": 131775
+  },
+  "seconds": 70.57023000717163,
+  "model_sha256": "6d7e542250e3d5e9599884c2bd843d60fdd1db7c905a67dc5e8221842383f6ad",
+  "scores_sha256": "bfaadbe41a8e40d8344df0fac0586b4438ac9c8b74b24b304c239d19a6e1201f"
+}

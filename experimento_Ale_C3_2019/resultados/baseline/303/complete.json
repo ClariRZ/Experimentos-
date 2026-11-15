@@ -1,0 +1,36 @@
+{
+  "representation": "baseline",
+  "seed": 303,
+  "features": 722,
+  "trees": 298,
+  "params": {
+    "objective": "binary",
+    "metric": "auc",
+    "verbosity": -1,
+    "num_threads": 8,
+    "seed": 303,
+    "bagging_seed": 303,
+    "feature_fraction_seed": 303,
+    "data_random_seed": 303,
+    "bagging_freq": 1,
+    "feature_pre_filter": false,
+    "deterministic": true,
+    "force_col_wise": true,
+    "max_bin": 255,
+    "num_leaves": 72,
+    "learning_rate": 0.023909163041496328,
+    "min_data_in_leaf": 2355,
+    "feature_fraction": 0.9699959173166512,
+    "bagging_fraction": 0.7642973603748348
+  },
+  "auc_validation": 0.9316653922166412,
+  "policy": {
+    "validation_k": 4589,
+    "fraction": 0.03482451147789793,
+    "validation_gain": 207102500,
+    "validation_n": 131775
+  },
+  "seconds": 84.55889391899109,
+  "model_sha256": "5eb3ebb0f0293b30f3ac79ab190ab4f5a4c682df3c9f6d848e4c13cb1d421739",
+  "scores_sha256": "a7d8033a6a69ecca647a09e4c72fe26bba424168c8a27a304109b5b152d20bc3"
+}

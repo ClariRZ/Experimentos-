@@ -1,0 +1,44 @@
+{
+  "identity": "a164b7d56120e575994365e677e7db438bcdc0cef3e955895cc1c6aa3e640107",
+  "candidate": "B",
+  "control": "A",
+  "n_seeds": 5,
+  "delta_gain": [
+    -4845359.820089936,
+    -140674.66266867518,
+    575548.4757621288,
+    1757113.9430284798,
+    5459279.110444784
+  ],
+  "delta_gain_mean": 561181.4092953563,
+  "delta_gain_median": 575548.4757621288,
+  "delta_gain_std": 3712987.75040537,
+  "wins_gain": 3,
+  "delta_auc": [
+    -0.0002912456874217817,
+    -0.0012817333818198051,
+    -0.00016917854198528204,
+    -0.0014196082934773147,
+    0.0006798331890786047
+  ],
+  "delta_auc_mean": -0.0004963865431251158,
+  "delta_auc_median": -0.0002912456874217817,
+  "delta_auc_std": 0.0008662777791339701,
+  "wins_auc": 1,
+  "delta_ensemble": 241961.51924037933,
+  "bootstrap": {
+    "replicas_validas": 1000,
+    "seed": 20261110,
+    "ci90": [
+      -2165090.392303838,
+      3156592.516241893
+    ],
+    "method": "paired_clients_with_multiplicity_reoptimized_full_window"
+  },
+  "diagnostic_same_control_cut": {
+    "k": 3620,
+    "delta_point_gain": 1100000.0
+  },
+  "verdict": "INDICIO_ECONOMICO",
+  "confirmed": false
+}

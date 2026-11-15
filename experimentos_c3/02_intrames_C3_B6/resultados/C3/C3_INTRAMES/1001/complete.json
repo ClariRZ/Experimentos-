@@ -1,0 +1,21 @@
+{
+  "arm": "C3_INTRAMES",
+  "seed": 1001,
+  "auc": 0.8925839623908988,
+  "cuts": {
+    "10500": {
+      "ganancia": 356950000,
+      "aciertos": 587
+    },
+    "11000": {
+      "ganancia": 364100000,
+      "aciertos": 606
+    },
+    "11500": {
+      "ganancia": 372350000,
+      "aciertos": 626
+    }
+  },
+  "seconds": 152.3615164756775,
+  "model_sha256": "e8bbc371c89efdd4bde36c7a88ee322c218e88edf8180e6e02d7c6339f5a8bfc"
+}

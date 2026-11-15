@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "models": 40,
+  "trials": 40,
+  "freeze_sha256": "6dfb614e0e9bdaa31741647b7d19bcc98802f510e8fae2fca6325ba76aef56e5",
+  "finished_unix": 1794135911.4774644,
+  "test": "201910 already observed; exploratory"
+}

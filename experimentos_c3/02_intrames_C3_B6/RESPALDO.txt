@@ -1,0 +1,5 @@
+Respaldo privado autorizado por la usuaria el 2026-11-08.
+URI: gs://clarirz_buckito2026/experimentos_clara/corridas/c3_b6_intrames_20261107/respaldo_privado_c3_b6.tar.gz
+SHA256: 1fab0e7e3a7965e21779ce9713fdc2d91e1e020ac659249fc8e2f29874f573ac
+Tamaño: 165852912 bytes. 331 archivos.
+Incluye modelos, predicciones, metadatos individuales, configuración y código de entrenamiento. Mantener privado. Los datos crudos y matrices completas no se duplican; se reconstruyen desde los insumos privados identificados por hash en el protocolo. El informe final y su generador actualizado se conservan en Git.

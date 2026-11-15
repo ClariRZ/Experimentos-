@@ -1,0 +1,8 @@
+{
+ "experiments":["B0","B1","B2","B3","B4","B5"],
+ "train_months":[201903,201904,201905,201906],
+ "validation_month":201908,"test_month":201910,
+ "threads":8,"seed":20261107,"trials":20,"startup_trials":5,
+ "max_rounds":2000,"early_stopping":100,
+ "search_space":{"num_leaves":[16,128],"learning_rate":[0.02,0.15],"min_data_in_leaf":[200,5000],"feature_fraction":[0.5,1.0],"bagging_fraction":[0.6,1.0]}
+}

@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+resultados/**/seed_*.npz
+resultados/**/*.sqlite*
+resultados/**/*.lock
+resultados/**/*.tmp
+logs/
+
+# Paquetes de traslado, entornos, datos individuales y modelos pesados
+*.tar.gz
+*.zip
+.venv/
+datos/
+*.parquet
+*.npz
+*.pkl
+*.joblib
+*.sqlite*
+resultados/**/seed_*.txt
+resultados/**/modelo*.txt
+resultados/**/model*.txt
+resultados/**/pred*.csv
+resultados/**/pred*.csv.gz

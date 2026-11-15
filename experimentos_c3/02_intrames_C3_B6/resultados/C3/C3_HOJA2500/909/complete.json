@@ -1,0 +1,21 @@
+{
+  "arm": "C3_HOJA2500",
+  "seed": 909,
+  "auc": 0.8958574182667643,
+  "cuts": {
+    "10500": {
+      "ganancia": 348150000,
+      "aciertos": 579
+    },
+    "11000": {
+      "ganancia": 352000000,
+      "aciertos": 595
+    },
+    "11500": {
+      "ganancia": 353650000,
+      "aciertos": 609
+    }
+  },
+  "seconds": 174.0018970966339,
+  "model_sha256": "4fed4ddedd3edabeff6cfa08bedcf8e776a5a7e5c3161de5c242e354b8004ce3"
+}

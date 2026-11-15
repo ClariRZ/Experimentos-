@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "status": "frozen_before_new_training",
+  "C3": {
+    "arms": [
+      "C3_CONTROL",
+      "C3_HOJA2500",
+      "C3_INTRAMES"
+    ],
+    "train_months": [
+      202103,
+      202104
+    ],
+    "evaluation_month": 202106,
+    "seeds": [
+      17,
+      101,
+      202,
+      303,
+      404,
+      505,
+      606,
+      707,
+      808,
+      909,
+      1001,
+      1102,
+      1203,
+      1304,
+      1405,
+      1506,
+      1607,
+      1708,
+      1809,
+      1910
+    ],
+    "rounds": 300,
+    "target": "BAJA+2",
+    "modified_min_data_in_leaf": 2500,
+    "new_features": 4
+  },
+  "B6": {
+    "arms": [
+      "B5_CONTROL",
+      "B6_FIJO",
+      "B6_BO"
+    ],
+    "parent": "B5_original_1254_features",
+    "new_features": 7,
+    "fixed_parameters_and_rounds": "B5 complete.json",
+    "optimization_trials": 20,
+    "selection": "AUC August2019 combined BAJA+1/BAJA+2",
+    "test": "October2019 already observed; exploratory extension"
+  },
+  "economics": {
+    "main_cut": 11000,
+    "secondary_cuts": [
+      10500,
+      11500
+    ],
+    "positive_net": 1072500,
+    "other_contact": -27500
+  },
+  "ratios": {
+    "numerators": "negative finite values preserved",
+    "denominators": "strictly positive finite; zero/negative/missing -> NaN",
+    "card_totals": "sum observed brands; both missing -> NaN",
+    "cast": "float32",
+    "source": "adapted from existing intra_mes function; not reconstruction of ratios_personales winner"
+  },
+  "restrictions": [
+    "no new public submit",
+    "no selection by October or August2021 private gain",
+    "no redefinition of existing B0-B5",
+    "no causal claim across 2019 and 2021"
+  ]
+}

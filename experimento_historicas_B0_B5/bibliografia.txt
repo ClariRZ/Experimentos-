@@ -1,0 +1,22 @@
+FUENTES UTILIZADAS
+
+1. Pautas específicas de Ale, proporcionadas por la usuaria en esta conversación.
+   Train marzo-junio 2019 completo; validación agosto; test octubre; BO y early
+   stopping por AUC; ganancia económica en test. No hay URL pública verificada.
+
+2. Repositorio ClariRZ/dmeyf2026, material de la edición 2026.
+   Commit verificado por GitHub API: 85ca6ad39f6ed1d6f926c174840119552ca73f44.
+   Función de ganancia verificada en:
+   https://github.com/ClariRZ/dmeyf2026/blob/85ca6ad39f6ed1d6f926c174840119552ca73f44/zero2hero/zero2hero_01.ipynb
+   +1.072.500 para BAJA+2 contactado, -27.500 para otros contactos.
+   Los ejemplos de otros meses y sus cortes no se trasladan al experimento.
+
+3. PDF local «Data Mining en Economía y Finanzas (EyF)», 890 páginas.
+   Secciones consultadas: pp. 438-439, 474-475, 779-780 y 853-856.
+   Material de referencia indicado por la usuaria como documento de Marcelo Volta.
+   Es una compilación de transcripciones, código y anotaciones; no se atribuyen
+   automáticamente todas sus afirmaciones a un único autor. Sin datos editoriales
+   completos verificados. El código de ventanas del PDF está incompleto.
+
+No se incorporan referencias bibliográficas no verificadas ni se presentan resultados
+reportados en el PDF como resultados de las corridas actuales.

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-11",
+  "tests_passed": 21,
+  "data": "synthetic_only",
+  "real_data_audit_executed": false,
+  "training_executed": false,
+  "dictionary_review_completed": true,
+  "live_schema_verified": false,
+  "authorized_fix": "cmobile_app_trx texto a Float64 estricto, preservando nulos"
+}

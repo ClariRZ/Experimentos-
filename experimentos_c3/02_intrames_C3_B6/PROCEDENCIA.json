@@ -1,0 +1,11 @@
+{
+  "parent_c3_run": "c1c3final04b",
+  "source_repository_commit": "1d88507e875c62c0f872a922f0c92ab6d2666b0a",
+  "parent_b0_b5_commit": "cd1724de6be205dbd67649d2a4490b8ec4709f9b",
+  "c3_generator_hashes_verified_against_original_plan": true,
+  "user_choices": [
+    "third experimental arm",
+    "intramonth ratios"
+  ],
+  "prior_ratios_personales_not_replicated": true
+}

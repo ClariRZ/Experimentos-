@@ -1,0 +1,8 @@
+{
+  "models": {
+    "B6_FIJO": "3ef97acc99b64f21fa77d2ecd19d52c86104add5a2926996888f9e1dabc32802",
+    "B6_BO": "0e8b2b50bb2207f6ce72eadbc36b05caabced2a2ac4d531ace5bca1188d69d19"
+  },
+  "config_sha256": "d9fe282f08e3a5ee93f691c78eedbd6858b70a2d449f99d2bf8128346a6290e1",
+  "note": "October2019 already observed in previous experiment; exploratory extension"
+}

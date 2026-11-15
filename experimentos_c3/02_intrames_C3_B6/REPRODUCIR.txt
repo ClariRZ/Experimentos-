@@ -1,0 +1,30 @@
+Este paquete ejecuta un experimento nuevo. Ver PROTOCOLO.txt y config/protocolo.json.
+Requiere los insumos privados de C3 y la preparación/resultados originales B0–B5.
+No entrenar sobre otra versión de datos: preparar.py comprueba SHA256.
+
+En VM:
+bash run_vm.sh > corrida.log 2>&1
+El script usa el entorno existente /home/clara-m-rodr-guez/experimento_historicas_20261107/.venv,
+congela pip freeze, prepara matrices y ejecuta B6 y después los tres brazos C3.
+Los argumentos de preparar.py y entrenar.py permiten adaptar las rutas.
+C3 usa el parquet original disponible en el bucket privado; B6 usa competencia_02.
+Las funciones FE originales de C3 están vendorizadas y sus hashes coinciden con su plan.
+
+Resultados privados: resultados/*/*/scores.npy, test_scores.npy, validation_scores.npy,
+ensemble_scores.npy. Nunca publicar esos archivos ni los datos/matrices.
+Resultados publicables: configuraciones, modelos, importancias, resúmenes JSON,
+curvas de ganancia agregadas, métricas por seed, scripts y dependencias.
+
+Reanudar: volver a ejecutar run_vm.sh con los mismos insumos/configuración;
+se preservan brazos/semillas completados y trials guardados. No alterar protocolo
+ni fuentes con una corrida iniciada. Fallas o correcciones deben quedar registradas.
+La verificación del control B5 exige que su curva de octubre coincida exactamente.
+
+No se requieren credenciales en este paquete; autenticar acceso al bucket por
+los mecanismos propios de la cuenta. No guardar tokens en el repositorio.
+
+CIERRE VERIFICADO 2026-11-08
+Los tres brazos C3 completaron 20 semillas cada uno y B6 terminó.
+Ejecutar src/verificar_final.py y src/diagnostico_ranking.py con --root y --parent-prep según sus argumentos. Generar informe con src/informe.py --root RUTA_DEL_EXPERIMENTO.
+Ver verificacion_final.json y modelos_sha256.json para comprobaciones y hashes.
+Modelos y scores: respaldo privado descrito en RESPALDO.txt. Código, configuración, dependencias, importancias, resultados y guion: en este paquete Git. Reproducir requiere acceso autorizado a los datos privados y al experimento B0–B5 precedente.

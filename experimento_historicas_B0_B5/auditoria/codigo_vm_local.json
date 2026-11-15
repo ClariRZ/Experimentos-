@@ -1,0 +1,9 @@
+{
+  "identicos_vm_y_local": true,
+  "sin_cambios_desde_commit_protocolo": true,
+  "sha256": {
+    "entrenar.py": "7ff43f422a077be6fe6a516c961876ec07f3bce7321d0c0f2f81f75db8e00b98",
+    "preparar.py": "eae3e0bb27c4a6c0404eb4e67e0b8126c3ef718b612a32ea31a11ae013694c55",
+    "historicas.py": "6ba825c0902e2e12af208b6cae6a52722fc635438ca42afacf1018b239492532"
+  }
+}

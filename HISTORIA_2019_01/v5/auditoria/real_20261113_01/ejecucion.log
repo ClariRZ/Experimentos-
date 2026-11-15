@@ -1,0 +1,50 @@
+{
+  "status": "AUDITORIA_COMPLETA_SIN_ENTRENAR",
+  "fits": 0,
+  "october_used": false,
+  "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "n_train": 507328,
+  "n_valid": 131887,
+  "train_keys_sha256": "45cf1bdf931a992b054ce8e2c5af4b741e5adc2da78d7d39f09372ee10fc8559",
+  "valid_ids_sha256": "7b34734736c167a91ea89a3405490cdfd896f62ec4cb81a248fe874b8a4485a7",
+  "arms": {
+    "B0": {
+      "columns": 652,
+      "columns_sha256": "3cd7b9143cd85d4d0cbf75043f893544f317fa732053e5d931a9220d045274c7",
+      "excluded": 16
+    },
+    "L": {
+      "columns": 400,
+      "columns_sha256": "f865eb199fb91dd1548e22e4e5d4f29610cf8a231c24214f8c6d9e11eca6f617",
+      "excluded": 252
+    },
+    "P": {
+      "columns": 778,
+      "columns_sha256": "cbc880280e9ff05d3c1913e32b17452d73c89422c8e1601f554d48105d3fcbb2",
+      "excluded": 3
+    },
+    "MIN": {
+      "columns": 778,
+      "columns_sha256": "52faa4ecb4600016709cdcb645e23d6cdc3f4f143d20172ec61438d599e33ebd",
+      "excluded": 3
+    },
+    "MAX": {
+      "columns": 778,
+      "columns_sha256": "738a6d18a7cc40374f9465524b3d7cbddea7ffba224591cf611bb7791ef623c3",
+      "excluded": 3
+    },
+    "RANGO": {
+      "columns": 778,
+      "columns_sha256": "a5baba1e7f9ffe1a34914682767befd07b88ad7e3b8380d179ee6e79d2c4678f",
+      "excluded": 3
+    },
+    "F1": {
+      "columns": 1156,
+      "columns_sha256": "aaaa269641424a15e7bb9884e95b0da3fdc6a83fd2db31c1cd59e9aa1379b163",
+      "excluded": 12
+    }
+  },
+  "seconds": 114.74197363853455,
+  "peak_rss_bytes": 19466293248
+}
+

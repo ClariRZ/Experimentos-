@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETADO_VM_APAGADA",
+  "prior_run": "completa_20261111_03",
+  "evaluation_run": "octubre_20261113_01",
+  "arms": [
+    "B0",
+    "F1",
+    "F3",
+    "F4a",
+    "F4b"
+  ],
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "new_training": false,
+  "october_cut_optimization": false,
+  "contact_policy": "Por brazo: floor(proporcion del ensemble de agosto * N octubre), igual para todas sus semillas y ensemble",
+  "sanitization": "Sin cambios: nueve mascaras originales",
+  "primary_metric": "Ganancia puntual al corte fijado",
+  "secondary": "AUC BAJA+2, diferencias pareadas entre semillas y ganancia del ensemble",
+  "prior_october_exposure": "Resultados grupales PAQ_P3 conocidos; no test completamente independiente",
+  "runtime_cap_seconds": 2700,
+  "shutdown": "Control externo Cloud Shell, finally stop VM",
+  "evaluator_sha256": "0b8f4f781ea6a2393fc75002f9383ff1549dbd5bc6d059e58f205be79d9b011e"
+}

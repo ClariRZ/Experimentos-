@@ -1,0 +1,62 @@
+{
+  "status": "CALIBRACION_COMPLETA",
+  "fits": 5,
+  "october_used": false,
+  "timings": [
+    {
+      "construction_seconds": 8.97074679899999,
+      "training_200_seconds": 45.888532716,
+      "first_100_seconds": 22.212967258999996,
+      "second_100_seconds": 23.659239978000002,
+      "rounds_completed": 200,
+      "arm": "B0",
+      "columns": 652,
+      "load_seconds": 1.9982318670000012
+    },
+    {
+      "construction_seconds": 17.301954453000008,
+      "training_200_seconds": 76.07235250400001,
+      "first_100_seconds": 38.874801425000015,
+      "second_100_seconds": 37.170321555999976,
+      "rounds_completed": 200,
+      "arm": "F1",
+      "columns": 1156,
+      "load_seconds": 3.4969653050000034
+    },
+    {
+      "construction_seconds": 15.086702512999977,
+      "training_200_seconds": 69.12085541299996,
+      "first_100_seconds": 34.059866556999964,
+      "second_100_seconds": 35.03307195900004,
+      "rounds_completed": 200,
+      "arm": "F3",
+      "columns": 1030,
+      "load_seconds": 2.8234139099999993
+    },
+    {
+      "construction_seconds": 12.149707029000012,
+      "training_200_seconds": 54.831929050999975,
+      "first_100_seconds": 27.445775356000013,
+      "second_100_seconds": 27.361533331999965,
+      "rounds_completed": 200,
+      "arm": "F4a",
+      "columns": 778,
+      "load_seconds": 2.265766300999985
+    },
+    {
+      "construction_seconds": 37.78722426499996,
+      "training_200_seconds": 146.84132650700002,
+      "first_100_seconds": 72.591621277,
+      "second_100_seconds": 74.21101111200005,
+      "rounds_completed": 200,
+      "arm": "F4b",
+      "columns": 1786,
+      "load_seconds": 5.213228038000011
+    }
+  ],
+  "projection_75_fits_1500_rounds_seconds": 54931.7127262632,
+  "remaining_seconds": 6466.020576000214,
+  "fits_budget": 75,
+  "assumption": "Pilot hyperparameters; no early stopping discount; 20% margin; runtime estimate, not guaranteed upper bound",
+  "decision": "REQUIRES_REVISED_BUDGET"
+}

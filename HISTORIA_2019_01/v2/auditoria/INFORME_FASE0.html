@@ -1,0 +1,97 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Auditoría fase 0 — Historia 2019 v2</title><style>body{max-width:1000px;margin:40px auto;padding:24px;font:17px/1.6 system-ui;color:#193348}pre{white-space:pre-wrap;font:inherit}h1{line-height:1.2}</style><h1>Historia 2019 · Auditoría fase 0</h1><pre>AUDITORÍA FASE 0 — HISTORIA 2019 v2
+Fecha: 2026-11-10. Estado: AUDITORÍA LOCAL REALIZADA; AUDITORÍA REMOTA BLOQUEADA POR PERMISOS. No habilita entrenamientos.
+
+1. Ubicación y acciones
+Se creó HISTORIA_2019_01/v2 dentro del repositorio local Segunda_competencia, con prompts, auditoria, scripts, configuraciones y resultados. Prompt copiado íntegro; SHA256 bd48c6a1a152b4e1e8308c37a944392a33341f5d230f967daeeb1aaf4bf4aa97. No se cambiaron los experimentos anteriores, datos o modelos. No se realizaron entrenamientos, commits ni publicaciones. Sólo se calcularon agregados de calidad e historia.
+VM clari-c1-fundados, proyecto proj-uba-261002122233861, zona northamerica-northeast2-b: estaba TERMINATED; encendida con aprobación explícita. IP observada 34.130.27.97. SSH funciona para clara-m-rodr-guez, pero /home/clarirz/HISTORIA_2019_01 devuelve Permission denied. No se cambiaron permisos ni se elevó privilegio. La usuaria pidió dejar la VM encendida.
+
+2. Datos y calidad: verificados directamente
+Fuente: /home/clara-m-rodr-guez/Escritorio/competencia_02_crudo.parquet.
+SHA256: 84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22.
+4.707.495 registros, enero 2019 a agosto 2021; cero duplicados cliente-mes en todo el archivo. Se auditaron 152 variables y 1.286.487 registros de enero a octubre 2019. No se leyeron etiquetas ni métricas de modelos de octubre. Su calidad y cobertura se relevaron según sección 2.5 del prompt; no se usaron para seleccionar modelos.
+El archivo local no queda certificado como idéntico al dataset saneado utilizado en HISTORIA_2019_01: falta cotejar hashes y transformaciones remotas.
+Por variable y mes se guardaron faltantes, ceros, observaciones válidas, cardinalidad, proporción del valor dominante, mediana y percentiles 1/99. Los indicadores de cambios son alarmas, no prueba automática de rotura.
+Hallazgos:
+- tmobile_app y cmobile_app_trx: 100% NA enero–junio; disponibles desde julio. No elegibles para nuevas transformaciones en train marzo–junio.
+- mrentabilidad, mrentabilidad_annual, mcomisiones, mactivos_margen, mpasivos_margen, ccomisiones_otras y mcomisiones_otras: 100% ceros en mayo (y en octubre). Sospecha fuerte de bloque roto; no reinterpretar como ausencia de producto.
+- ctarjeta_visa_debitos_automaticos y mttarjeta_visa_debitos_automaticos: 100% ceros en abril. Se conservó el nombre exacto del esquema, incluido el espacio inicial cuando exista.
+- Master_fultimo_cierre y Visa_fultimo_cierre: pico de ceros en julio; requiere revisión semántica, no corrección automática.
+No se imputó ni saneó ningún valor. Los ceros sospechosos aún cuentan como observados en la tabla de cobertura; por eso esa tabla es un techo de disponibilidad, no certificación de calidad.
+
+3. Cobertura calendario: verificada directamente
+Porcentaje de clientes presentes con registro del mismo cliente en t-k:
+Familia | Marzo | Abril | Mayo | Junio | Agosto | Octubre
+lag1 | 98,96 | 99,05 | 98,88 | 98,30 | 98,09 | 97,96
+lag2 | 97,57 | 98,02 | 97,94 | 97,19 | 96,47 | 96,28
+lag3 | 0 | 96,64 | 96,92 | 96,27 | 94,82 | 94,43
+lag4 | 0 | 0 | 95,55 | 95,26 | 93,75 | 92,86
+lag5 | 0 | 0 | 0 | 93,91 | 92,85 | 91,27
+lag6 | 0 | 0 | 0 | 0 | 91,88 | 90,23
+Ventana 3 completa: 97,57 / 98,02 / 97,94 / 97,19% en train.
+Hay 118 de 152 variables que superan 90% de datos no nulos en cada mes de train para lag1, lag2, delta actual-menos-lag1/2 y ventana 3. Es un filtro de disponibilidad previo a excluir categorías de aritmética y revisar roturas, no una shortlist definitiva.
+R2: lag3–6 y tendencias 4–6 NO IDENTIFICABLES en el universo marzo–junio. Ventana3/tendencia3 y lag1–2 son potencialmente identificables en el subconjunto elegible. B5/B6 sólo podrían estudiarse abril–junio con controles reconstruidos sobre las mismas filas. Lag4 exige mayo–junio; lag5 sólo junio; lag6 no tiene train elegible. No se autoriza cambiar el calendario principal.
+
+4. C3: evidencia documental local recuperada
+Fuente: Segunda_competencia/experimentos_c3/00_auditoria, config/c3_plan_original.json y work/radiografia_c3/catalogo_features.csv.
+La auditoría anterior reporta 20 boosters de 300 árboles, 2.062 variables, orden/nombres y hashes comprobados, y reconstrucción byte a byte del envío. Esta fase cotejó el catálogo de 1.910 derivadas con el esquema congelado; no regeneró matrices ni volvió a comprobar los 20 boosters.
+Bloques: 152 RAW, 466 historia numérica, 27 ratios, 70 tarjetas, 97 historia de relaciones, 384 recencia, 768 transiciones numéricas, 98 categóricas.
+Receta C3: train marzo–junio 2021; target BAJA+2 vs resto; learning_rate .03, num_leaves 64, min_data_in_leaf 100, feature_fraction .8, bagging_fraction .8, bagging_freq 1; 300 rondas. Difiere del target de train de v2.
+Semillas C3: 17,101,202,303,404,505,606,707,808,909,1001,1102,1203,1304,1405,1506,1607,1708,1809,1910. NO asumir que sean las semillas de HISTORIA_2019_01; falta recuperar config_frozen remota.
+Ganancias documentadas en el informe C3: pública 96.057.500; privada 308.742.500; total 404.800.000 a 11.000 contactos. Son documentación de submissions, no recálculo con etiquetas privadas. C3 declara PUBLIC_INFORMED. No prueba que una familia particular causara la mejora.
+Gain agregado reportado: RAW 49,83%; historia numérica 30,79%; ratios 7,70%; tarjetas 5,80%. Importancia predictiva no equivale a aporte económico causal. No trasladar toda la receta ni elegir variables usando las etiquetas de agosto.
+Catálogo guardado: catalogo_c3_documentado.csv, con fórmulas, fuentes y advertencias originales. Su cobertura proviene de 2021; no equivale a cobertura en 2019. Falta auditar el código efectivo de cada familia y comprobar compatibilidad tras saneamiento.
+Ensayo local posterior C3/B6: agregar ratios intrames no mejoró la ganancia de C3 a 11.000 en ese ensayo exploratorio. No confundirlo con la ganancia privada original ni con una prueba independiente.
+
+5. HISTORIA_2019_01: lo documentado y lo pendiente
+Fuente disponible: ../README.md, reconstruido de RESUMEN_HISTORIA_2019.txt. No es una nueva lectura de artefactos remotos.
+000: 760 variables, AUC ensemble agosto 0,914136.
+001: 784, 0,913923; descartada.
+002: 763, 0,913935; descartada.
+003: 764, 0,915105; seleccionada.
+004: 796, 0,913303; descartada.
+005/006: sin resultados individuales en resumen; posible omisión por reglas del runner, no falla confirmada.
+007: 764, 0,914407; descartada frente a 003.
+No declarar auditoría de integridad completada hasta leer config_frozen.json, audit.json, families.json, feature_manifest.json, run_manifest si existe, resultados, FINAL.json, código, logs y estudios Optuna.
+La copia historia.py del 3 de noviembre tiene otro diseño y NO se certifica como código ejecutado el 5 de noviembre. No usarla para afirmar fórmulas finales, semillas o selección.
+
+6. Ganancia de agosto y divergencias con v2
+Según la bitácora: 000 $205.562.500 a 3.565 contactos; 003 $210.045.000 a 4.482; 007 $207.900.000 a 3.680. Diferencia 003–000 $4.482.500 (2,18%). Es ganancia observada en distintos cortes, NO el máximo suavizado requerido por R5 ni una confirmación independiente.
+La bitácora usó suavizado centrado de 1.001 posiciones; v2 requiere 2.001 provisionalmente. La decisión anterior era por AUC: delta medio &gt;=0,0001, &gt;=12/20 semillas y ensemble no inferior. v2 exige ganancia, &gt;=80% de semillas, variabilidad pareada y bootstrap de clientes. Por eso no se asigna APORTA a 003 con la evidencia actual.
+Validación VM documentada: BAJA+2 positiva; entrenamiento ambas bajas. Otros experimentos locales usan ambas bajas en AUC de agosto. Es una diferencia material a resolver con la fuente de Alejandro antes de comparar AUC.
+Función económica verificada en notebook local zero2hero/zero2hero_01.ipynb del repositorio DMEyF2026/dmeyf2026: +1.072.500 por BAJA+2 contactado y -27.500 por otro contacto; equivalente 1.100.000*aciertos-27.500*contactos. No trasladar automáticamente el umbral .025 de ese ejemplo: v2 fija política por curva suavizada de agosto.
+No se recalcularon ganancias VM ni bootstrap: faltan predicciones y etiquetas verificadas de agosto. No hace falta reentrenar para ese recálculo cuando estén accesibles.
+
+7. Instrucciones de Alejandro y octubre
+La tabla temporal del prompt y los registros locales coinciden en marzo–junio / agosto / octubre, sin sampling, LightGBM y BO/early stopping por AUC. La fuente directa de esas instrucciones sigue pendiente: bibliografia.txt las atribuye a un mensaje previo de la usuaria, sin URL pública verificada. El análisis previo del material informa delta_k=x_t-x_(t-k), pero esto sigue siendo evidencia secundaria hasta cotejar el código fuente atribuido a Alejandro. No resolver la definición por suposición.
+HISTORIA_2019_01 documenta test_gain/test_auc null. No se ha comprobado el FINAL remoto en esta fase.
+En cambio, experimento_historicas_B0_B5/auditoria/ejecucion.json marca october_model_results_opened=true y experimento_Ale_C3_2019/README.md advierte exposición previa a octubre. Por ello octubre ya no es globalmente un holdout intacto. Se mantiene sellado para nuevas decisiones y no se abrieron ahora predicciones/curvas/etiquetas de octubre. La evaluación futura debe declarar esa exposición histórica y consultar cómo obtener confirmación independiente.
+
+8. Shortlist propuesta: procedimiento, no lista definitiva
+Aplicar elegibilidad tras revisar roturas y disponibilidad por variable. Para la escalera, todas las RAW elegibles; no sustituirlas por un top20. Para M/Z/R/K/T/C3, congelar las mismas 20 variables antes de comparar familias.
+Propuesta a aprobar: ranking por mediana de percentiles de gain de modelos entrenados sólo marzo–mayo, estabilidad entre semillas y permutation importance en junio; excluir variables que fallen cobertura/calidad, controlar redundancia mediante correlación en train y desempatar por nombre. Las ponderaciones y umbrales deben fijarse antes de producir el ranking. No usar importancias o rankings escogidos en agosto. La comparación histórica por variable requerida por el prompt implica nuevos entrenamientos: queda diseñada y pendiente, no se ejecuta durante esta auditoría.
+Falta verificar cómo VM obtuvo leaders_selected y cuál fue el saneamiento. No congelar una lista ficticia.
+
+9. Experimentos y prioridad (propuesta incompleta; sin ejecución)
+B0: RAW elegibles; control inicial. Prioridad 1.
+B1: +lag1 vs B0; cobertura potencial 98–99% por filas; columnas elegibles por resolver. Prioridad 1.
+B2: +delta1 vs B1; mismas condiciones y fórmula oficial pendiente. Prioridad 1.
+B3: +lag2 vs B2; cobertura potencial 97–98%. Prioridad 1.
+B4: +delta2 vs B3; verificar equivalencia baseline oficial y VM000. Prioridad 1.
+B5–B12: NO IDENTIFICABLES en universo completo. Prioridad suspendida; análisis restringidos separados.
+M1/M2/M3/M4: +mean/min/max/std3 por separado contra B4, hasta 20 columnas cada una, ventana completa; cobertura específica tras saneamiento. Prioridad 2.
+Z: racha cero3 contra B4; hasta 20 columnas; verificar diferencia entre conteo y racha, faltantes y ceros sospechosos. Prioridad 2.
+R: ratios personales3 contra B4; hasta 20 columnas; denominador y signos restringen cobertura adicionalmente. Prioridad 2; reauditar primero 003 sin entrenar.
+K: rangos monetarios contra B4; definición y universo mensual pendientes. Prioridad 2.
+T1: tendencia3 contra B4; hasta 20 columnas, ventana completa. Prioridad 3: con meses equiespaciados y ventana completa la pendiente es delta2/2; mide representación redundante, no información temporal nueva.
+T2–T4: NO IDENTIFICABLES en universo completo.
+C3: sólo familias con hipótesis y evidencia auditables; cantidad pendiente, no trasladar ganancias 2021.
+005: combinaciones sólo tras APORTA confirmado; 006: selección canaritos vs gain/estabilidad con mismas candidatas; 007: HP originales vs reoptimizados con mismas variables. Pendientes de aprobación y resultados previos.
+Costo: auditoría sin entrenamiento realizada; costo por nueva corrida NO estimado confiablemente sin logs y entorno remotos. El resumen registra 003 ~26 minutos, 004 ~28, 007 ~51 para paquetes completos; no son tiempos transferibles a una nueva familia. Presupuesto provisional de screening: 13 configuraciones (B0–B4 + 8 familias) x 5 semillas =65 ajustes, más Optuna B4; sujeto a cobertura y reglas aprobadas.
+Conteo provisional: 12 contrastes primarios (4 escalera + 8 familias) y 5 contrastes secundarios únicos adicionales contra B0/B4 =17. NO es conteo final R6: faltan C3, screening por variable, universos restringidos, ratios individuales condicionales, combinaciones, canaritos y reoptimización. No se debe iniciar el screening sin congelar el conteo completo.
+
+10. Reutilización y pendientes
+Reutilizables ahora: inventario, fuentes, catálogos, hashes y agregados locales; antecedentes de corridas como evidencia documental. No hay aún una corrida certificada como reutilizable bajo TODAS las reglas v2. Posible reuso de modelos/predicciones VM sujeto a hashes, filas, semillas, HP, target, saneamiento y evaluación económica homologada.
+Orden recomendado: obtener lectura remota; auditar saneamiento y targets; recuperar semillas/HP/predicciones agosto; recalcular ganancia suavizada 2.001 y bootstrap sin entrenar; resolver fuentes de Alejandro; congelar elegibilidad y número de comparaciones; presentar propuesta final y pedir aprobación antes de Optuna o entrenamiento.
+Consultas para Alejandro: meses previos a enero sólo como historia; definición de delta2; target de AUC de agosto; posible julio como segunda validación; aceptación de RAW y escalera; tratamiento de bloques rotos; cómo reportar octubre previamente expuesto; equivalencia de baseline saneado y restricciones por cobertura.
+Bloqueo actual: la cuenta SSH disponible carece de lectura sobre la carpeta original de clarirz. Se necesita acceso de lectura autorizado o una exportación de artefactos por esa cuenta. No se alteró ACL, propietario ni contenido. Fase 0 NO cerrada y entrenamiento NO autorizado.
+</pre></html>

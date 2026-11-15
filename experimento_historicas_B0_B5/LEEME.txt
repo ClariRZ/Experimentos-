@@ -1,0 +1,68 @@
+EXPERIMENTO DE VARIABLES HISTÓRICAS — 2019 / edición 2026
+
+Estado final: COMPLETO. Se ejecutaron B0–B5 en clari-c1-fundados, con 20 evaluaciones por modelo (120 en total), y se evaluó octubre después de congelar modelos y políticas. Las seis verificaciones independientes finales pasaron.
+
+PARA REPRODUCIR DESDE CERO: leer REPRODUCIR.txt y ejecutar reproducir.py.
+Esta carpeta publica los resultados agregados y el informe en Segunda_competencia. La copia local original y su bundle conservan el historial anterior a esta publicación y las predicciones individuales.
+
+ABRIR PRIMERO: informe.html (autónomo, funciona sin conexión).
+Resultados: resultados/resultados.csv.
+Guion: guion_video.txt. Bibliografía: bibliografia.txt.
+Análisis del PDF: analisis_del_material.txt y marcelo_usar_adaptar_excluir.csv.
+Conclusiones: conclusiones.txt. Auditoría final: auditoria/verificacion_final.json.
+
+No se ejecutaron las comparaciones independientes opcionales ni repeticiones de semillas; se decidió antes de abrir octubre. No se produjo ni publicó un video, conforme al alcance solicitado.
+Datos: competencia_02_crudo.parquet (archivo original inalterado).
+Ganancia: +1.072.500 BAJA+2 contactado; -27.500 otros contactos; cero no contactados.
+Train: marzo-junio 2019, completo; validación agosto; test octubre.
+Target de entrenamiento y AUC: BAJA+1 o BAJA+2 versus CONTINUA.
+
+B0 originales; B1 +lags1/2; B2 +deltas1/2; B3 +media3;
+B4 +pendiente3; B5 +ratios1/2.
+B1 agrega historia; B2-B5 son representaciones de los mismos tres meses, no historia adicional.
+B2 es la referencia de Ale. Medias/pendientes incluyen el actual y requieren >=2 valores.
+La pendiente con tres meses completos equivale a delta2/2: su aporte posible
+incluye facilidad de representación y tratamiento de ventanas incompletas,
+no necesariamente información independiente.
+
+El identificador y foto_mes se excluyen como predictores y se conservan como claves.
+Estados, indicadores y tipos se tratan como categorías, con codificación aprendida
+solo del entrenamiento. Códigos desconocidos se convierten en faltantes.
+Fechas de tarjetas: originales y lags, sin medias/deltas/ratios.
+Los dos campos mobile almacenados como texto se convierten a números con validación.
+No se eliminan préstamos ni se aplican correcciones de inflación heredadas.
+
+La política maximiza ganancia en agosto incluyendo cero contactos; empate -> menos
+contactos. Se transfiere la proporción a octubre, redondeando al entero más próximo.
+Ranking por probabilidad descendente; empates por número de cliente ascendente.
+Comparación secundaria: proporción de contactos elegida por B2 para todos los modelos.
+Esta política reutiliza agosto para decidir contactos; debe reconocerse su limitación.
+
+EJECUCIÓN (en entorno con requirements_vm.txt, generado en la VM):
+python -m unittest discover -s src -p 'test_*.py'
+python src/auditar.py --data RUTA_PARQUET --out auditoria
+python src/preparar.py --data RUTA_PARQUET --out preparado
+python src/entrenar.py --prep preparado --out piloto --config config_piloto.json --mode pilot
+python src/entrenar.py --prep preparado --out resultados --config config.json --mode train
+python src/entrenar.py --prep preparado --out resultados --config config.json --mode evaluate
+
+No mezclar carpetas de piloto y entrenamiento final. Configuración final se fija tras
+el benchmark de recursos, antes de optimizar. La evaluación verifica hashes de modelos,
+decisiones y manifiesto. No volver a optimizar después de evaluar octubre.
+No cargar archivos sampler.pkl de terceros; solo checkpoints producidos por este código.
+
+La RAM reportada es el pico acumulado del proceso, no una medida aislada por modelo.
+Tiempos por experimento corresponden a la invocación y pueden subestimar el total si
+se reanuda; el tiempo por trial se guarda en trials.csv para reconstruir el costo.
+
+VERIFICAR Y REGENERAR INFORME:
+python src/regenerar_referencia.py --reference resultados --prep preparado --out referencia_regenerada
+python src/verificar_resultados.py --data RUTA_PARQUET --results referencia_regenerada --out auditoria/verificacion_final.json
+python src/cobertura.py --prep preparado --out auditoria/cobertura_familias.csv
+python src/informe.py --results resultados --out .
+
+Para repetir entrenamiento, usar una carpeta de resultados nueva: la incluida está congelada. El informe incorpora conclusiones revisadas de esta ejecución; para un nuevo experimento se deben revisar nuevamente.
+
+La carpeta de GitHub incluye los seis modelos finales, curvas, estudios y ensayos. Las predicciones individuales permanecen en la copia local/VM y se regeneran con src/regenerar_referencia.py. Los modelos de cada ensayo y checkpoints de reanudación permanecen en la carpeta exclusiva de la VM. No incluye el Parquet original, matrices ni entornos de Python; se regeneran desde el archivo identificado. No contiene credenciales.
+
+Las decisiones del protocolo y el código principal de entrenamiento corresponden al commit registrado en auditoria/commit_codigo.txt; los documentos y verificadores finales se agregaron después sin cambiar el entrenamiento.

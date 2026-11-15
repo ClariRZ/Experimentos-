@@ -1,0 +1,7 @@
+B obtiene la mayor ganancia con su política fijada en agosto: $284.845.000, $2.200.000 más que A. A igual presupuesto de A, su diferencia es $3.300.000. Sin embargo, la versión enriquecida gana sólo 6 de 20 comparaciones pareadas a ese presupuesto y su diferencia media es $-2.200.000. El resultado favorable de la semilla principal no es una mejora consistente. C y D no superan a sus modelos individuales con sus políticas propias. C mejora ligeramente el ranking al igualar contactos, pero pierde ganancia con su corte elegido en agosto. No se justifica adoptar automáticamente las variables o los ensembles por esta corrida. Falta aislar variables de reoptimización y validar temporalmente fuera de los períodos observados.
+
+Variables y reoptimización con una semilla: diferencia $2.200.000 con políticas propias elegidas en agosto; $3.300.000 al presupuesto común de A.
+Ensemble del baseline: diferencia $-5.472.500 con políticas propias elegidas en agosto; $1.100.000 al presupuesto común de A.
+Ensemble de la representación enriquecida: diferencia $-2.695.000 con políticas propias elegidas en agosto; $-7.700.000 al presupuesto común de A.
+Variables y reoptimización con ensemble: diferencia $4.977.500 con políticas propias elegidas en agosto; $-5.500.000 al presupuesto común de A.
+Paquete completo frente al baseline de una semilla: diferencia $-495.000 con políticas propias elegidas en agosto; $-4.400.000 al presupuesto común de A.

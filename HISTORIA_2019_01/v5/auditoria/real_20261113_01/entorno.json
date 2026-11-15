@@ -1,0 +1,14 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-1014-gcp-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.3.5",
+    "polars": "2.1.0",
+    "lightgbm": "4.7.0",
+    "optuna": "5.0.0",
+    "scikit-learn": "1.8.0"
+  },
+  "cpu_count": 8,
+  "memory": "MemTotal:       65839308 kB\nMemFree:        63919636 kB\nMemAvailable:   64757136 kB\nBuffers:           27596 kB\nCached:          1386288 kB\nSwapCached:            0 kB\nActive:           751208 kB\nInactive:         839872 kB\nActive(anon):     186920 kB\nInactive(anon):        0 kB\nActive(file):     564288 kB\nInactive(file):   839872 kB\nUnevictable:       27288 kB\nMlocked:           27288 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              8360 kB\nWriteback:             0 kB\nAnonPages:        204752 kB\nMapped:           192688 kB\nShmem:              1000 kB\nKReclaimable:      24496 kB\nSlab:              95008 kB\nSReclaimable:      24496 kB\nSUnreclaim:        70512 kB\nKernelStack:        3872 kB\nPageTables:         4020 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    32919652 kB\nCommitted_AS:    1436896 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       12460 kB\nVmallocChunk:          0 kB\nPercpu:             4160 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:         4775936 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       78592 kB\nDirectMap2M:     4112384 kB\nDirectMap1G:    65011712 kB\n",
+  "disk_free_bytes": 26824916992
+}

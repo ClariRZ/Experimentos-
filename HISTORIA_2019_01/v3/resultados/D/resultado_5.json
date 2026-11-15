@@ -1,0 +1,95 @@
+{
+  "name": "D",
+  "n_seeds": 5,
+  "n_features": 590,
+  "auc_ensemble": 0.9139290947253806,
+  "gain_ensemble": {
+    "gain_smoothed": 205875733.38330835,
+    "n_send": 3573,
+    "fraction": 0.027091373675949867,
+    "gain_at_n": 206442500.0,
+    "window": 2001
+  },
+  "seeds": [
+    {
+      "seed": 101,
+      "recipe": "63adbeafe3147116fdd3f72135bcef8c94adb492542fd1c07a4ed2a66717be2e",
+      "source": "entrenamiento_v3",
+      "model_sha256": "fe4b3b9a69a55d274e153e869428cc3d081320723c49f2b11a81a746adcd6906",
+      "scores_sha256": "75fd73042fd202dd7d050acb371291481272b52f63b9ec7f223bdaeb6fd0a7c4",
+      "auc": 0.913215476866433,
+      "gain": {
+        "gain_smoothed": 205693169.66516742,
+        "n_send": 3737,
+        "fraction": 0.028334862420102056,
+        "gain_at_n": 207432500.0,
+        "window": 2001
+      },
+      "seconds": 73.29256749153137
+    },
+    {
+      "seed": 211,
+      "recipe": "63adbeafe3147116fdd3f72135bcef8c94adb492542fd1c07a4ed2a66717be2e",
+      "source": "entrenamiento_v3",
+      "model_sha256": "55be088bcaedae1612a625548b2aff5aaab0c7bd181d37e58813d68ecd4fa15c",
+      "scores_sha256": "f79e80f0bd18b9ecb658f9cbb133029d54843ae089a3003551de42aca9743a98",
+      "auc": 0.9140961608394138,
+      "gain": {
+        "gain_smoothed": 204407747.37631184,
+        "n_send": 3629,
+        "fraction": 0.0275159795885872,
+        "gain_at_n": 203802500.0,
+        "window": 2001
+      },
+      "seconds": 68.31308770179749
+    },
+    {
+      "seed": 307,
+      "recipe": "63adbeafe3147116fdd3f72135bcef8c94adb492542fd1c07a4ed2a66717be2e",
+      "source": "entrenamiento_v3",
+      "model_sha256": "a95798a0f2886929846b11bda2102c74b7f3312a5314b8bfa4c2d5134f29a559",
+      "scores_sha256": "8fefb03a6281fc181454f7290c2e9a3bc23facfb0beaf85354654670d0683534",
+      "auc": 0.9127398544976637,
+      "gain": {
+        "gain_smoothed": 202827562.46876562,
+        "n_send": 3849,
+        "fraction": 0.029184074245376723,
+        "gain_at_n": 204352500.0,
+        "window": 2001
+      },
+      "seconds": 69.43610215187073
+    },
+    {
+      "seed": 401,
+      "recipe": "63adbeafe3147116fdd3f72135bcef8c94adb492542fd1c07a4ed2a66717be2e",
+      "source": "entrenamiento_v3",
+      "model_sha256": "0f42e967faa195e4554e4e7aa15b9ccc4fa6222899d2f0f77b5fcf99ed03e1a5",
+      "scores_sha256": "ad7d4007b7e079bbc8cb457c083b0fb212a27f560ebc9d6d23bc94895b0675be",
+      "auc": 0.9125803732759433,
+      "gain": {
+        "gain_smoothed": 202723252.12393802,
+        "n_send": 3839,
+        "fraction": 0.0291082517609772,
+        "gain_at_n": 202427500.0,
+        "window": 2001
+      },
+      "seconds": 69.77529978752136
+    },
+    {
+      "seed": 503,
+      "recipe": "63adbeafe3147116fdd3f72135bcef8c94adb492542fd1c07a4ed2a66717be2e",
+      "source": "entrenamiento_v3",
+      "model_sha256": "9cbdd2ae336e8c586c2fc2b44e4008bd34090c13e94cd3b0b1d8c46c45e2ffb3",
+      "scores_sha256": "258d8fc9a43f2b7333febe4f609e29f4179dbc87acb0981c91403d1f8a7a483c",
+      "auc": 0.9137236504739848,
+      "gain": {
+        "gain_smoothed": 204711333.08345827,
+        "n_send": 3659,
+        "fraction": 0.02774344704178577,
+        "gain_at_n": 206277500.0,
+        "window": 2001
+      },
+      "seconds": 68.52787756919861
+    }
+  ]
+}

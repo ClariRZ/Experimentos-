@@ -1,0 +1,205 @@
+{
+  "run_id": "09382df1077960e303a7a60e32e19a9ef76b96abaa850e0b8b496ebcbac1cc0e",
+  "start": "2026-11-04T23:28:52-03:00",
+  "start_utc": "2026-11-05T02:28:52.461196+00:00",
+  "start_unix": 1793845732.4611957,
+  "deadline_unix": 1793932132.4611957,
+  "identity": {
+    "config": {
+      "data": "/home/clarirz/HISTORIA_2019_01/datos/analistasr_competencia_2026.csv.gz",
+      "csv_separator": ",",
+      "expected_raw_features": 152,
+      "sanitization_reviewed": true,
+      "broken_variables": {
+        "ctarjeta_visa_debitos_automaticos": [
+          201904
+        ],
+        "mttarjeta_visa_debitos_automaticos": [
+          201904
+        ],
+        "mrentabilidad": [
+          201905
+        ],
+        "mrentabilidad_annual": [
+          201905
+        ],
+        "mcomisiones": [
+          201905
+        ],
+        "mactivos_margen": [
+          201905
+        ],
+        "mpasivos_margen": [
+          201905
+        ],
+        "mcomisiones_otras": [
+          201905
+        ],
+        "ccomisiones_otras": [
+          201905
+        ]
+      },
+      "exclude_features": [],
+      "core_candidates": [
+        "ctrx_quarter",
+        "mpayroll",
+        "mcaja_ahorro",
+        "mcuentas_saldo",
+        "mpasivos_margen",
+        "Visa_msaldototal",
+        "Visa_mpagominimo",
+        "mtarjeta_visa_consumo",
+        "cpayroll_trx",
+        "ctarjeta_visa_transacciones"
+      ],
+      "zero_columns": [
+        "ctrx_quarter",
+        "mpayroll",
+        "mcaja_ahorro"
+      ],
+      "ratio_columns": [
+        "ctrx_quarter",
+        "mpayroll",
+        "mcuentas_saldo",
+        "Visa_msaldototal"
+      ],
+      "monetary_columns": [
+        "mpayroll",
+        "mcaja_ahorro",
+        "mcuentas_saldo",
+        "mpasivos_margen",
+        "Visa_msaldototal",
+        "Visa_mpagominimo",
+        "mtarjeta_visa_consumo"
+      ],
+      "top_core": 6,
+      "ratio_epsilon": 1e-12,
+      "optimize_b0_if_missing": true,
+      "baseline_hyperparams_file": null,
+      "bo_trials": 50,
+      "bo_seed": 2026,
+      "max_rounds": 3000,
+      "early_stopping_rounds": 150,
+      "threads": 4,
+      "seeds": [
+        101,
+        211,
+        307,
+        401,
+        503,
+        601,
+        701,
+        809,
+        907,
+        1009,
+        1103,
+        1201,
+        1301,
+        1409,
+        1511,
+        1601,
+        1709,
+        1801,
+        1901,
+        2003
+      ],
+      "min_delta_auc_keep": 0.0001,
+      "min_wins_keep": 12,
+      "enable_rank_package": true,
+      "enable_canaries": true,
+      "canary_seed": 991,
+      "canary_count": 40,
+      "canary_quantile": 0.95,
+      "enable_final_bo": true,
+      "gain_pos": 1072500.0,
+      "gain_neg": -27500.0,
+      "plateau_window": 1001,
+      "max_hours": 24,
+      "search_space": {
+        "num_leaves": {
+          "type": "int",
+          "low": 16,
+          "high": 128
+        },
+        "learning_rate": {
+          "type": "float",
+          "low": 0.01,
+          "high": 0.1,
+          "log": true
+        },
+        "min_data_in_leaf": {
+          "type": "int",
+          "low": 100,
+          "high": 2000,
+          "log": true
+        },
+        "feature_fraction": {
+          "type": "float",
+          "low": 0.5,
+          "high": 1.0
+        },
+        "bagging_fraction": {
+          "type": "float",
+          "low": 0.5,
+          "high": 1.0
+        }
+      },
+      "sanitization_basis": {
+        "audit": "/home/clarirz/HISTORIA_2019_01/revision_historia_01/audit_variables_by_month.csv",
+        "criterion": "100% de ceros en nueve pares variable-mes; valores heterogéneos antes/después según auditoría compartida.",
+        "decision": "Tratar esas observaciones como NA antes de construir historia; misma regla para B0 y variantes.",
+        "official_confirmation": false,
+        "new_masks": {
+          "ctarjeta_visa_debitos_automaticos": [
+            201904
+          ],
+          "mttarjeta_visa_debitos_automaticos": [
+            201904
+          ],
+          "mrentabilidad": [
+            201905
+          ],
+          "mrentabilidad_annual": [
+            201905
+          ],
+          "mcomisiones": [
+            201905
+          ],
+          "mactivos_margen": [
+            201905
+          ],
+          "mpasivos_margen": [
+            201905
+          ],
+          "mcomisiones_otras": [
+            201905
+          ],
+          "ccomisiones_otras": [
+            201905
+          ]
+        },
+        "mobile": "Conservar los nulos originales; no imputar ceros ni datos futuros."
+      },
+      "review_acknowledgement": "flag --sanitization-reviewed; responsabilidad de quien ejecuta",
+      "mode": "full"
+    },
+    "input_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+    "external_hyperparams_sha256": null,
+    "source_sha256": {
+      "historia.py": "33864f8bae02b7fa7c8288ba33a0e7158f817f4c01c7acdba3f43d21821122a8",
+      "historia_features.py": "c35998bd3a59e52b72dc0527661f843585f84397c95fe23f545b18d331da72e0",
+      "historia_metrics.py": "bb19462cbed663a7daf3f0e16c58d98df8adeb916cf9f93d938f82c05bd5710d",
+      "requirements.txt": "372e90104e99385567ba255a947095ad668aa4b401fe75b6465887bac0015d53"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "polars": "2.1.0",
+      "lightgbm": "4.7.0",
+      "optuna": "5.0.0",
+      "pyarrow": "26.0.1"
+    }
+  }
+}

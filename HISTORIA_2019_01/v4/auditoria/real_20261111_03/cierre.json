@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-11",
+  "vm_verified_status": "TERMINATED",
+  "tests_local_passed": 21,
+  "tests_vm_passed": 21,
+  "audit_exit_code": 0,
+  "audit_wall_seconds": 52.72,
+  "audit_peak_memory_kib": 21603000,
+  "download_sha256": "fb3fbbeccd918bd903292a1322a397bf35cdfa8096008e665fc7c2e2829cc43a",
+  "report_sha256": "edbb83cd6e4241f050006b0ccebf536d9705f8eda1384d6938e5c4cb80ab1eef",
+  "local_and_vm_auditor_sha256": "16f3b96ac6c52cbdda878f37d3452c427c7226604cc88d31e723b8d2cff1794f",
+  "training_executed": false,
+  "october_outcomes_used": false,
+  "git_push": "NO_REALIZADO"
+}

@@ -1,0 +1,13 @@
+{
+  "added": [
+    "intrames_tc_ticket_consumo",
+    "intrames_tc_uso_limite",
+    "intrames_tc_pago_sobre_minimo",
+    "intrames_tc_consumo_sobre_limite",
+    "intrames_ticket_transferencias_emitidas",
+    "intrames_ticket_atm",
+    "intrames_ticket_pagomiscuentas"
+  ],
+  "rows": 774279,
+  "data_sha256": "84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22"
+}

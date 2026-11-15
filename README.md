@@ -1,3 +1,9 @@
+# Repositorio central de experimentos
+
+**Entrada principal:** [índice de Historia v1–v8, C3 y antecedentes](INDICE_EXPERIMENTOS.md).
+
+Se consolidó el material publicable de `ClariRZ/Segunda_competencia`, preservando las versiones discrepantes y documentando los artefactos privados. [Alcance y comprobación](informes/consolidacion_repos_2026-11-15/README.md). Los apartados que siguen conservan documentación histórica y no sustituyen el índice actual.
+
 # Experimentos — Historia 2019
 
 Repositorio de evidencias y reproducción del experimento `experimento_2026-11-13`, originalmente conservado en `ClariRZ/Segunda_competencia`.

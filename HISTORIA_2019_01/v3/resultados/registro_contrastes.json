@@ -1,0 +1,41 @@
+[
+  {
+    "candidate": "A",
+    "control": "C0",
+    "revisions": [
+      5,
+      20
+    ]
+  },
+  {
+    "candidate": "B",
+    "control": "A",
+    "revisions": [
+      5,
+      20
+    ]
+  },
+  {
+    "candidate": "B",
+    "control": "C0",
+    "revisions": [
+      5,
+      20
+    ]
+  },
+  {
+    "candidate": "C",
+    "control": "C0",
+    "revisions": [
+      5
+    ]
+  },
+  {
+    "candidate": "D",
+    "control": "C0",
+    "revisions": [
+      5,
+      20
+    ]
+  }
+]

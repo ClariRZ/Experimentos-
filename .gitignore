@@ -6,3 +6,7 @@ ejecuciones/
 *.npz
 *.parquet
 *.csv.gz
+
+# Artefactos privados del origen, respaldados fuera de Git
+/experimento_historicas_B0_B5/resultados/*/model.txt
+/experimento_historicas_B0_B5/resultados/studies.sqlite

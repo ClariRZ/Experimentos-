@@ -1,0 +1,9 @@
+{
+  "started": 1794431718.4173067,
+  "deadline": 1794438918.4173067,
+  "run": "calibracion_20261111_02",
+  "remote_returncode": 0,
+  "aggregate_downloaded_to_cloudshell": true,
+  "vm_final_status": "TERMINATED",
+  "finished": 1794432392.530893
+}

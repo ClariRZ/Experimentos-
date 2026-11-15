@@ -1,0 +1,431 @@
+{
+  "version": "v5_etapa1",
+  "status": "PREPARACION_AUDITORIA; ENTRENAMIENTO_NO_AUTORIZADO",
+  "training_authorized": false,
+  "scope": "Rama corta exploratoria. Rama larga, confirmacion, canaritos, combinaciones y octubre fuera de este presupuesto.",
+  "data": {
+    "sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+    "train_months": [
+      201903,
+      201904,
+      201905,
+      201906
+    ],
+    "validation_month": 201908,
+    "history_start": 201901,
+    "test_month": 201910,
+    "test_locked_in_initial_stage": true,
+    "excluded_months": [
+      201911,
+      201912
+    ],
+    "sampling": false,
+    "train_positive": [
+      "BAJA+1",
+      "BAJA+2"
+    ],
+    "validation_auc_positive": [
+      "BAJA+2"
+    ],
+    "broken_masks": {
+      "201904": [
+        "ctarjeta_visa_debitos_automaticos",
+        "mttarjeta_visa_debitos_automaticos"
+      ],
+      "201905": [
+        "mrentabilidad",
+        "mrentabilidad_annual",
+        "mcomisiones",
+        "mactivos_margen",
+        "mpasivos_margen",
+        "mcomisiones_otras",
+        "ccomisiones_otras"
+      ]
+    },
+    "history_sources": [
+      "mrentabilidad",
+      "mrentabilidad_annual",
+      "mcomisiones",
+      "mactivos_margen",
+      "mpasivos_margen",
+      "cproductos",
+      "ccuenta_corriente",
+      "mcuenta_corriente_adicional",
+      "mcuenta_corriente",
+      "ccaja_ahorro",
+      "mcaja_ahorro",
+      "mcaja_ahorro_adicional",
+      "mcaja_ahorro_dolares",
+      "mcuentas_saldo",
+      "ctarjeta_debito",
+      "ctarjeta_debito_transacciones",
+      "mautoservicio",
+      "ctarjeta_visa",
+      "ctarjeta_visa_transacciones",
+      "mtarjeta_visa_consumo",
+      "ctarjeta_master",
+      "ctarjeta_master_transacciones",
+      "mtarjeta_master_consumo",
+      "cprestamos_personales",
+      "mprestamos_personales",
+      "cprestamos_prendarios",
+      "mprestamos_prendarios",
+      "cprestamos_hipotecarios",
+      "mprestamos_hipotecarios",
+      "cplazo_fijo",
+      "mplazo_fijo_dolares",
+      "mplazo_fijo_pesos",
+      "cinversion1",
+      "minversion1_pesos",
+      "minversion1_dolares",
+      "cinversion2",
+      "minversion2",
+      "cseguro_vida",
+      "cseguro_auto",
+      "cseguro_vivienda",
+      "cseguro_accidentes_personales",
+      "cpayroll_trx",
+      "mpayroll",
+      "mpayroll2",
+      "cpayroll2_trx",
+      "ccuenta_debitos_automaticos",
+      "mcuenta_debitos_automaticos",
+      "ctarjeta_visa_debitos_automaticos",
+      "mttarjeta_visa_debitos_automaticos",
+      "ctarjeta_master_debitos_automaticos",
+      "mttarjeta_master_debitos_automaticos",
+      "cpagodeservicios",
+      "mpagodeservicios",
+      "cpagomiscuentas",
+      "mpagomiscuentas",
+      "ccajeros_propios_descuentos",
+      "mcajeros_propios_descuentos",
+      "ctarjeta_visa_descuentos",
+      "mtarjeta_visa_descuentos",
+      "ctarjeta_master_descuentos",
+      "mtarjeta_master_descuentos",
+      "ccomisiones_mantenimiento",
+      "mcomisiones_mantenimiento",
+      "ccomisiones_otras",
+      "mcomisiones_otras",
+      "cforex",
+      "cforex_buy",
+      "mforex_buy",
+      "cforex_sell",
+      "mforex_sell",
+      "ctransferencias_recibidas",
+      "mtransferencias_recibidas",
+      "ctransferencias_emitidas",
+      "mtransferencias_emitidas",
+      "cextraccion_autoservicio",
+      "mextraccion_autoservicio",
+      "ccheques_depositados",
+      "mcheques_depositados",
+      "ccheques_emitidos",
+      "mcheques_emitidos",
+      "ccheques_depositados_rechazados",
+      "mcheques_depositados_rechazados",
+      "ccheques_emitidos_rechazados",
+      "mcheques_emitidos_rechazados",
+      "ccallcenter_transacciones",
+      "chomebanking_transacciones",
+      "ccajas_transacciones",
+      "ccajas_consultas",
+      "ccajas_depositos",
+      "ccajas_extracciones",
+      "ccajas_otras",
+      "catm_trx",
+      "matm",
+      "catm_trx_other",
+      "matm_other",
+      "ctrx_quarter",
+      "cmobile_app_trx",
+      "Master_mfinanciacion_limite",
+      "Master_msaldototal",
+      "Master_msaldopesos",
+      "Master_msaldodolares",
+      "Master_mconsumospesos",
+      "Master_mconsumosdolares",
+      "Master_mlimitecompra",
+      "Master_madelantopesos",
+      "Master_madelantodolares",
+      "Master_mpagado",
+      "Master_mpagospesos",
+      "Master_mpagosdolares",
+      "Master_mconsumototal",
+      "Master_cconsumos",
+      "Master_cadelantosefectivo",
+      "Master_mpagominimo",
+      "Visa_mfinanciacion_limite",
+      "Visa_msaldototal",
+      "Visa_msaldopesos",
+      "Visa_msaldodolares",
+      "Visa_mconsumospesos",
+      "Visa_mconsumosdolares",
+      "Visa_mlimitecompra",
+      "Visa_madelantopesos",
+      "Visa_madelantodolares",
+      "Visa_mpagado",
+      "Visa_mpagospesos",
+      "Visa_mpagosdolares",
+      "Visa_mconsumototal",
+      "Visa_cconsumos",
+      "Visa_cadelantosefectivo",
+      "Visa_mpagominimo"
+    ]
+  },
+  "feature_policy": {
+    "automatic_coverage_threshold": null,
+    "coverage_report_by_train_month": true,
+    "history_exact_calendar": true,
+    "window_observations": 3,
+    "window_includes_current": true,
+    "require_complete_nonnull_window": true,
+    "missing_values": "preserve_NA_no_zero_imputation",
+    "negative_values": "retain_unless_documented_invalid",
+    "nonfinite_values": "to_NA_with_counts",
+    "mobile_count_cast": "Float64_strict_preserve_null",
+    "remove_all_missing_in_train": true,
+    "remove_constant_in_train": "only if all rows identical including missingness; retain single finite value plus NA as potentially informative",
+    "duplicates": "exact full training rows including null pattern; baseline first, then lexical name; report alias; no validation-based decisions",
+    "ids_and_target_not_features": [
+      "numero_de_cliente",
+      "foto_mes",
+      "clase_ternaria"
+    ],
+    "baseline_freeze": "build once on March-June and reuse identical retained columns in all R1 arms",
+    "family_filter": "using train only; no minimum coverage percentage; each family compared to same baseline",
+    "source_missingness_reason": "documented break, absent client-month, original NA of unknown cause; product absence only if supported by dictionary/data, never infer automatically",
+    "final_column_counts": "compute and record before first fit; audit count 666 is provisional, not final"
+  },
+  "recipes": {
+    "baseline": "raw + lag1 + lag2 + delta1 + delta2 on reviewed sources",
+    "F1": [
+      "mean_W3",
+      "min_W3",
+      "max_W3",
+      "range_W3"
+    ],
+    "F3": {
+      "formula": "(current-reference)/abs(reference)",
+      "references": [
+        "mean_W3",
+        "lag1",
+        "lag2"
+      ],
+      "zero_denominator": "NA",
+      "incomplete_window": "NA"
+    },
+    "F4a": "within-month average rank / nonnull count; zeros and negatives included, NA preserved",
+    "F4b_extra": [
+      "rank_lag1",
+      "rank_lag2",
+      "rank_delta1",
+      "rank_delta2",
+      "rank_mean_W3",
+      "rank_min_W3",
+      "rank_max_W3",
+      "rank_range_W3"
+    ],
+    "slope_W3_excluded_R1": "delta2/2 on complete equispaced triples"
+  },
+  "arms": [
+    {
+      "id": "B0",
+      "comparators": []
+    },
+    {
+      "id": "L",
+      "comparators": [
+        "B0"
+      ]
+    },
+    {
+      "id": "P",
+      "comparators": [
+        "B0"
+      ]
+    },
+    {
+      "id": "MIN",
+      "comparators": [
+        "B0"
+      ]
+    },
+    {
+      "id": "MAX",
+      "comparators": [
+        "B0"
+      ]
+    },
+    {
+      "id": "RANGO",
+      "comparators": [
+        "B0"
+      ]
+    },
+    {
+      "id": "F1",
+      "comparators": [
+        "B0"
+      ]
+    }
+  ],
+  "hyperparameter_search": {
+    "optimizer": "Optuna_TPE",
+    "objective": "maximize_validation_AUC_BAJA2",
+    "trials_per_arm": 10,
+    "startup_trials": 5,
+    "sampler_seed": 20261111,
+    "model_seed": 101,
+    "same_space_all_arms": true,
+    "range": {
+      "num_leaves": {
+        "type": "int",
+        "low": 16,
+        "high": 128,
+        "log": true
+      },
+      "learning_rate": {
+        "type": "float",
+        "low": 0.01,
+        "high": 0.1,
+        "log": true
+      },
+      "min_data_in_leaf": {
+        "type": "int",
+        "low": 100,
+        "high": 2000,
+        "log": true
+      },
+      "feature_fraction": {
+        "type": "float",
+        "low": 0.3,
+        "high": 1.0
+      },
+      "bagging_fraction": {
+        "type": "float",
+        "low": 0.5,
+        "high": 1.0
+      }
+    },
+    "fixed": {
+      "bagging_freq": 1,
+      "num_threads": 4,
+      "deterministic": true,
+      "force_col_wise": true,
+      "objective": "binary",
+      "metric": "auc"
+    },
+    "max_rounds": 1500,
+    "early_stopping_rounds": 100,
+    "tie_break": "earliest_trial",
+    "failed_trials": "record_and_pause_no_silent_budget_extension",
+    "interpretation": "representation with its own equally budgeted tuning; not pure fixed-hyperparameter feature effect"
+  },
+  "evaluation": {
+    "seeds": [
+      211,
+      307,
+      401,
+      503,
+      601
+    ],
+    "refit": "freeze each arms best hyperparameters and best iteration; refit all five seeds at fixed iteration without additional early stopping",
+    "primary": "August ensemble smoothed gain; individual paired gain stability",
+    "secondary": [
+      "paired gain differences",
+      "mean and median",
+      "sample SD",
+      "wins out of 5",
+      "ensemble AUC and gain"
+    ],
+    "economic_rule": {
+      "positive": "BAJA+2",
+      "net_hit": 1072500,
+      "net_other": -27500,
+      "tie_break": "score descending then client id ascending",
+      "augmentation_cut": "full centered moving average width 2001 on August cumulative gain; earliest maximum; no edge padding",
+      "october_future_policy": "freeze August ensemble contact proportion per arm; floor(proportion*N_october); no cut search in October"
+    },
+    "promotion_rule": "ensemble gain delta > 0 AND mean individual gain delta > 0 AND gain wins >=4/5 versus B0",
+    "gain_role": "diagnostic reported even if it contradicts AUC; no posthoc selection by whichever metric wins",
+    "evidence_label": "exploratory; 4/5 rule allocates compute and is not statistical significance",
+    "confirmation": "Separate stage, not authorized by this configuration"
+  },
+  "budget": {
+    "pilot_fits": 0,
+    "pilot_arms": [],
+    "pilot_rounds": 100,
+    "pilot_fixed_parameters": {
+      "num_leaves": 63,
+      "learning_rate": 0.05,
+      "min_data_in_leaf": 1000,
+      "feature_fraction": 0.7,
+      "bagging_fraction": 0.8
+    },
+    "pilot_is_training": false,
+    "pilot_predictions_not_for_selection": true,
+    "optuna_fits": 70,
+    "seed_refits": 35,
+    "max_total_fits": 105,
+    "parallel_models": 1,
+    "threads_per_model": 4,
+    "hard_vm_run_cap_minutes": 360,
+    "hard_cap_includes_preparation_and_pilot": true,
+    "time_estimate_hours": null,
+    "currency_cost_estimate": null,
+    "resource_guards": {
+      "minimum_free_disk_gib": 10,
+      "max_worker_memory_gib": 48
+    },
+    "stopping": "Runner checks deadline periodically; external supervisor and VM shutdown must be configured before launch",
+    "pilot_budget_gate": "Proposed six-hour cap; requires prelaunch resource audit and execution authorization",
+    "max_total_boosting_rounds_bound": 157500
+  },
+  "future_long_history_branch": {
+    "status": "NOT_IN_INITIAL_BUDGET",
+    "train_months": [
+      201906
+    ],
+    "validation_month": 201908,
+    "windows": [
+      3,
+      4,
+      6
+    ],
+    "same_rows": true,
+    "control": "baseline refit on June, same source and preprocessing policy",
+    "common_source_formula_pairs": "recompute under revised missingness policy; old 451 count pertains only to 90-percent audit",
+    "packages": [
+      "F1",
+      "slope",
+      "F3"
+    ],
+    "optimize_each_arm_equally": true
+  },
+  "git": {
+    "local_commit": true,
+    "push_authorized_for_this_stage": true,
+    "exclude": [
+      "raw data",
+      "customer-level predictions",
+      "model files",
+      "credentials"
+    ],
+    "save": [
+      "protocol",
+      "source and alias manifests",
+      "code",
+      "aggregate trials and metrics",
+      "logs",
+      "resource usage",
+      "seed and file hashes"
+    ]
+  },
+  "implementation_status": "Etapa1 implementada y probada en sintético; supervisor y auditoría real pendientes",
+  "authorization": {
+    "status": "PREPARACION_AUTORIZADA; ENTRENAMIENTO_PENDIENTE",
+    "scope": "Etapa 1 only; no October evaluation, long history, canaries or combinations"
+  }
+}

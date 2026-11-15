@@ -1,0 +1,15 @@
+{
+  "source_files": 902,
+  "source_public_destinations_sha256_verified": 895,
+  "source_private_files_in_local_backup": 7,
+  "source_archive_members_verified": 902,
+  "json_parse_errors_in_imported_material": [],
+  "source_unchanged": true,
+  "history_bundle": {
+    "bytes": 13190149,
+    "sha256": "50a1a1fcff250ba432faaf781fa29772558b088dcf4c9fdbaa4500c91a21d1a7"
+  },
+  "new_training": false,
+  "vm_started": false,
+  "private_backup_independent_disk": false
+}

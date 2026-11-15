@@ -1,0 +1,24 @@
+{
+  "fuente": "salida_usuario_003_fragmentaria.txt",
+  "integridad": "Fragmento incompleto: empieza dentro de importancia, tiene salto interno y termina sin cerrar objeto. No es JSON completo.",
+  "gain_mean_por_feature": "Importancia interna LightGBM, no ganancia económica.",
+  "versus_reference_visible": {
+    "reference": "000",
+    "n_seeds": 20,
+    "candidate_mean": 0.914121253718901,
+    "reference_mean": 0.9131711789687239,
+    "delta_mean": 0.000950074750177049,
+    "delta_std": 0.0011940281545406218,
+    "wins": 16,
+    "losses": 4,
+    "delta_ensemble": 0.0009691223996047826,
+    "accepted": true
+  },
+  "interpretacion": "Aceptada bajo regla antigua de AUC; no certifica APORTA R5. 16/20 satisface patrón AUC de INDICIO, sujeto a integridad y comparabilidad. Falta evidencia económica y bootstrap.",
+  "pendientes": [
+    "core_frozen completo o resumen de líderes",
+    "b0_hyperparams",
+    "recipe 003",
+    "métricas económicas de agosto"
+  ]
+}

@@ -1,0 +1,30 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.028s
+
+OK
+data/competencia_02_crudo.parquet: OK
+{
+  "filas_2019": 1563565,
+  "clientes_2019": 146623,
+  "duplicados": 0,
+  "train_rows": 506871,
+  "valid_rows": 131775,
+  "test_rows": 135633,
+  "test_labels_inspected": false,
+  "clase_reconstruida_horizonte": 201912
+}
+columnas 1 / 152
+columnas 21 / 152
+columnas 41 / 152
+columnas 61 / 152
+columnas 81 / 152
+columnas 101 / 152
+columnas 121 / 152
+columnas 141 / 152
+PREPARACION_COMPLETA {'original': 152, 'lags': 304, 'deltas': 266, 'medias': 133, 'pendientes': 133, 'ratios': 266}
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 21:11:19,768] A new study created in RDB with name: B0
+B0 trial 0 auc 0.9217680433075903 trees 49 seconds 5.2
+[I 2026-11-07 21:11:25,064] Trial 0 finished with value: 0.9217680433075903 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.9217680433075903.

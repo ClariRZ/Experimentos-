@@ -1,0 +1,263 @@
+resultados_historia_01$ python3 - <<'PY'
+import json
+from pathlib import Path
+
+p = Path.home() / "HISTORIA_2019_01/resultados_historia_01"
+
+def resumir(x):
+    if isinstance(x, dict):
+        return {k: resumir(v) for k, v in x.items()
+                if "importance" not in k.lower()}
+    if isinstance(x, list):
+        return x if len(x) <= 20 else f"Lista de {len(x)} elementos omitida"
+    return x
+
+for nombre in [
+    "core_frozen.json",
+    "b0_hyperparams.json",
+    "iteraciones/003/recipe.json",
+    "iteraciones/003/result.json",
+]:
+    print("\nARCHIVO:", nombre)
+    print(json.dumps(resumir(json.loads((p / nombre).read_text())),
+                     indent=2, ensure_ascii=False))
+PY
+
+ARCHIVO: core_frozen.json
+{
+  "rule": "Top core_candidates por Gain normalizado medio de RAW+lag/delta1/2 en modelos B0; sólo train03–06",
+  "rows": [
+    {
+      "variable": "ctrx_quarter",
+      "family_gain_fraction": 0.13531581004633794
+    },
+    {
+      "variable": "mcaja_ahorro",
+      "family_gain_fraction": 0.1216780321898264
+    },
+    {
+      "variable": "mcuentas_saldo",
+      "family_gain_fraction": 0.03795238594316022
+    },
+    {
+      "variable": "mtarjeta_visa_consumo",
+      "family_gain_fraction": 0.036440588317005126
+    },
+    {
+      "variable": "ctarjeta_visa_transacciones",
+      "family_gain_fraction": 0.026662441578036496
+    },
+    {
+      "variable": "mpayroll",
+      "family_gain_fraction": 0.02398722164012452
+    },
+    {
+      "variable": "cpayroll_trx",
+      "family_gain_fraction": 0.012567238982694209
+    },
+    {
+      "variable": "Visa_mpagominimo",
+      "family_gain_fraction": 0.012455221065491781
+    },
+    {
+      "variable": "mpasivos_margen",
+      "family_gain_fraction": 0.01173279059247346
+    },
+    {
+      "variable": "Visa_msaldototal",
+      "family_gain_fraction": 0.010001272409938547
+    }
+  ],
+  "selected": [
+    "ctrx_quarter",
+    "mcaja_ahorro",
+    "mcuentas_saldo",
+    "mtarjeta_visa_consumo",
+    "ctarjeta_visa_transacciones",
+    "mpayroll"
+  ],
+  "warning": "Importancia de entrenamiento, no prueba de causalidad ni garantía de utilidad fuera de tiempo."
+}
+
+ARCHIVO: b0_hyperparams.json
+{
+  "params": {
+    "num_leaves": 59,
+    "learning_rate": 0.020246288652702664,
+    "min_data_in_leaf": 1881,
+    "feature_fraction": 0.5378213929999206,
+    "bagging_fraction": 0.6104837785450524
+  },
+  "rounds": 304
+}
+
+ARCHIVO: iteraciones/003/recipe.json
+{
+  "recipe": "978a750971ec37a15719325572feb4784c6fcb4810cbce742a452f4dd3c7898b",
+  "start": "2026-11-05T02:08:17-03:00",
+  "start_unix": 1793855297.973015,
+  "hypothesis": "Valor/mean3 con ventana completa no negativa; los negativos quedan NA.",
+  "features": "Lista de 764 elementos omitida",
+  "hyperparams": {
+    "params": {
+      "num_leaves": 59,
+      "learning_rate": 0.020246288652702664,
+      "min_data_in_leaf": 1881,
+      "feature_fraction": 0.5378213929999206,
+      "bagging_fraction": 0.6104837785450524
+    },
+    "rounds": 304
+  },
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809,
+    907,
+    1009,
+    1103,
+    1201,
+    1301,
+    1409,
+    1511,
+    1601,
+    1709,
+    1801,
+    1901,
+    2003
+  ]
+}
+
+ARCHIVO: iteraciones/003/result.json
+{
+  "iteration": "003",
+  "name": "ratios_personales",
+  "hypothesis": "Valor/mean3 con ventana completa no negativa; los negativos quedan NA.",
+  "recipe": "978a750971ec37a15719325572feb4784c6fcb4810cbce742a452f4dd3c7898b",
+  "status": "completed",
+  "decision": "mantenido",
+  "start": "2026-11-05T02:08:17-03:00",
+  "end": "2026-11-05T02:34:48-03:00",
+  "minutes": 26.514321692784627,
+  "features": "Lista de 764 elementos omitida",
+  "n_features": 764,
+  "hyperparams": {
+    "params": {
+      "num_leaves": 59,
+      "learning_rate": 0.020246288652702664,
+      "min_data_in_leaf": 1881,
+      "feature_fraction": 0.5378213929999206,
+      "bagging_fraction": 0.6104837785450524
+    },
+    "rounds": 304
+  },
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809,
+    907,
+    1009,
+    1103,
+    1201,
+    1301,
+    1409,
+    1511,
+    1601,
+    1709,
+    1801,
+    1901,
+    2003
+  ],
+  "seed_aucs": [
+    0.9146509779903439,
+    0.914253728116345,
+    0.9142431163557925,
+    0.914756670274807,
+    0.9127460074757264,
+    0.9144075313018581,
+    0.914173640159949,
+    0.9144661051010881,
+    0.9149655454494543,
+    0.9148967993881048,
+    0.914137998254766,
+    0.9135756529209987,
+    0.9129136406845118,
+    0.914860391905006,
+    0.9148084034935873,
+    0.9130356511204728,
+    0.9143035332129674,
+    0.9134569741667075,
+    0.9129464400272489,
+    0.9148262669782852
+  ],
+  "auc_mean": 0.914121253718901,
+  "auc_std": 0.0007409464945815293,
+  "auc_ensemble": 0.9151052208869505,
+  "plateau": {
+    "gain_smoothed": 208270274.7252747,
+    "n_send": 4482,
+    "gain_at_n": 210045000.0,
+    "window": 1001,
+    "method": "centered_full_window_mean_on_cumulative_gain"
+  },
+  "exports": {
+    "201908": {
+      "file": "pred_201908.csv",
+      "sha256": "52e833b5611af3ef24d120fd6004020bbe95be34891e83f39ef3088c36f4365b",
+      "rows": 131887
+    },
+    "201910": {
+      "file": "pred_201910.csv",
+      "sha256": "f0f212bd562013f8236672b802bc7c0bba146312739f64866f17ccda757869ca",
+      "rows": 135754
+    }
+  },
+  "test_metric": null,
+  "test_status": "SOLO_PREDICCIONES_EVALUACION_EXTERNA_PENDIENTE",
+  "versus_baseline": {
+    "n_seeds": 20,
+    "candidate_mean": 0.914121253718901,
+    "reference_mean": 0.9131711789687239,
+    "candidate_std": 0.0007409464945815293,
+    "reference_std": 0.0010390935550463113,
+    "candidate_median": 0.9142786306646562,
+    "reference_median": 0.9130901666478817,
+    "delta_mean": 0.000950074750177049,
+    "delta_median": 0.0008782241994926832,
+    "delta_std": 0.0011940281545406218,
+    "wins": 16,
+    "losses": 4,
+    "ties": 0,
+    "delta_ensemble": 0.0009691223996047826,
+    "accepted": true
+  },
+  "versus_reference": {
+    "n_seeds": 20,
+    "candidate_mean": 0.914121253718901,
+    "reference_mean": 0.9131711789687239,
+    "candidate_std": 0.0007409464945815293,
+    "reference_std": 0.0010390935550463113,
+    "candidate_median": 0.9142786306646562,
+    "reference_median": 0.9130901666478817,
+    "delta_mean": 0.000950074750177049,
+    "delta_median": 0.0008782241994926832,
+    "delta_std": 0.0011940281545406218,
+    "wins": 16,
+    "losses": 4,
+    "ties": 0,
+    "delta_ensemble": 0.0009691223996047826,
+    "accepted": true
+  },
+  "reference": "000",
+  "reason": "Cumple regla vs B0: True; vs referencia 000: True. Regla de AUC/semillas/ensamble, sin p-valor ni uso de octubre."
+}
+clarirz@clari-c1-fundados:~/HISTORIA_2019_01/resultados_historia_01$ 

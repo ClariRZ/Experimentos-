@@ -1,0 +1,932 @@
+{
+  "selected": [
+    "ctrx_quarter",
+    "mpayroll",
+    "cpayroll_trx",
+    "mcaja_ahorro",
+    "mprestamos_personales",
+    "cdescubierto_preacordado",
+    "mtarjeta_master_consumo",
+    "mprestamos_hipotecarios",
+    "cproductos",
+    "mcuenta_corriente",
+    "Visa_mpagominimo",
+    "ctarjeta_visa_transacciones",
+    "mcuentas_saldo",
+    "mextraccion_autoservicio",
+    "cliente_edad",
+    "Visa_msaldototal",
+    "Visa_msaldopesos",
+    "cliente_antiguedad",
+    "mplazo_fijo_dolares",
+    "mtransferencias_emitidas"
+  ],
+  "records": [
+    {
+      "variable": "cliente_edad",
+      "gain": 0.00577744404681609,
+      "stability": 1.0,
+      "pi_junio": 0.0006824663471397541,
+      "lag1_delta_auc_junio": 0.0006998280978791627,
+      "delta1_delta_auc_junio": 0.00017592436033098124,
+      "score_percentiles": 0.6602040816326531
+    },
+    {
+      "variable": "cliente_antiguedad",
+      "gain": 0.0035729148955504467,
+      "stability": 1.0,
+      "pi_junio": 0.00046204118421866447,
+      "lag1_delta_auc_junio": 0.0012512598334132319,
+      "delta1_delta_auc_junio": -0.0008449184180787661,
+      "score_percentiles": 0.6255102040816326
+    },
+    {
+      "variable": "cproductos",
+      "gain": 0.008516235116593303,
+      "stability": 1.0,
+      "pi_junio": 0.00186028912673053,
+      "lag1_delta_auc_junio": 0.0014033981258133599,
+      "delta1_delta_auc_junio": -0.00033192529020709127,
+      "score_percentiles": 0.7153061224489796
+    },
+    {
+      "variable": "ccuenta_corriente",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0019613346501528017,
+      "delta1_delta_auc_junio": -0.0012411338219737722,
+      "score_percentiles": 0.3142857142857143
+    },
+    {
+      "variable": "mcuenta_corriente_adicional",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0017812257658894604,
+      "delta1_delta_auc_junio": -0.0010255906036408247,
+      "score_percentiles": 0.3224489795918367
+    },
+    {
+      "variable": "mcuenta_corriente",
+      "gain": 0.050964966180724304,
+      "stability": 1.0,
+      "pi_junio": 0.0012309474568240608,
+      "lag1_delta_auc_junio": 0.0020069754672762397,
+      "delta1_delta_auc_junio": -0.0013417702813581789,
+      "score_percentiles": 0.7112244897959183
+    },
+    {
+      "variable": "ccaja_ahorro",
+      "gain": 0.0093655707649086,
+      "stability": 1.0,
+      "pi_junio": -0.0001168716075262699,
+      "lag1_delta_auc_junio": 0.0020432413413582484,
+      "delta1_delta_auc_junio": -0.0010990745992383033,
+      "score_percentiles": 0.5581632653061225
+    },
+    {
+      "variable": "mcaja_ahorro",
+      "gain": 0.17249234049471104,
+      "stability": 1.0,
+      "pi_junio": 0.004069623879564999,
+      "lag1_delta_auc_junio": 0.0013427627645985485,
+      "delta1_delta_auc_junio": 0.00030492706368079325,
+      "score_percentiles": 0.7928571428571429
+    },
+    {
+      "variable": "mcaja_ahorro_adicional",
+      "gain": 3.518705772488487e-05,
+      "stability": 0.8,
+      "pi_junio": -6.81326332618859e-06,
+      "lag1_delta_auc_junio": 0.001738374631388151,
+      "delta1_delta_auc_junio": -0.000891182890211395,
+      "score_percentiles": 0.3765306122448979
+    },
+    {
+      "variable": "mcaja_ahorro_dolares",
+      "gain": 0.0036770969587166915,
+      "stability": 1.0,
+      "pi_junio": 0.0007277986897425981,
+      "lag1_delta_auc_junio": 0.0010781318616720492,
+      "delta1_delta_auc_junio": -0.0010935757056090845,
+      "score_percentiles": 0.5785714285714286
+    },
+    {
+      "variable": "cdescubierto_preacordado",
+      "gain": 0.06660367951668077,
+      "stability": 1.0,
+      "pi_junio": 0.0010184085120834574,
+      "lag1_delta_auc_junio": 0.0009941865562431706,
+      "delta1_delta_auc_junio": 0.0002223363637557929,
+      "score_percentiles": 0.7214285714285714
+    },
+    {
+      "variable": "mcuentas_saldo",
+      "gain": 0.029436147961081124,
+      "stability": 1.0,
+      "pi_junio": 0.0029583779486961337,
+      "lag1_delta_auc_junio": 0.00042638555321017346,
+      "delta1_delta_auc_junio": 3.89147313789584e-05,
+      "score_percentiles": 0.6785714285714286
+    },
+    {
+      "variable": "ctarjeta_debito",
+      "gain": 0.0004587767848303835,
+      "stability": 1.0,
+      "pi_junio": 4.004803994417383e-05,
+      "lag1_delta_auc_junio": 0.001032866578747904,
+      "delta1_delta_auc_junio": -0.0005200478060399805,
+      "score_percentiles": 0.5295918367346939
+    },
+    {
+      "variable": "ctarjeta_debito_transacciones",
+      "gain": 0.0005985604401802484,
+      "stability": 1.0,
+      "pi_junio": -1.304981341787581e-05,
+      "lag1_delta_auc_junio": 0.0012382167259633592,
+      "delta1_delta_auc_junio": -0.0012482220299815383,
+      "score_percentiles": 0.40102040816326523
+    },
+    {
+      "variable": "mautoservicio",
+      "gain": 0.004339867367033102,
+      "stability": 1.0,
+      "pi_junio": -0.00019908677325242152,
+      "lag1_delta_auc_junio": 0.0014662330444800142,
+      "delta1_delta_auc_junio": -0.0009659410196983798,
+      "score_percentiles": 0.48265306122448975
+    },
+    {
+      "variable": "ctarjeta_visa",
+      "gain": 0.0011247897794455727,
+      "stability": 1.0,
+      "pi_junio": -0.0004005206352487578,
+      "lag1_delta_auc_junio": 0.0018783482981253874,
+      "delta1_delta_auc_junio": -0.00012364463504532797,
+      "score_percentiles": 0.5622448979591838
+    },
+    {
+      "variable": "ctarjeta_visa_transacciones",
+      "gain": 0.03398387965898345,
+      "stability": 1.0,
+      "pi_junio": 0.004598362619926855,
+      "lag1_delta_auc_junio": 0.0019603488728804352,
+      "delta1_delta_auc_junio": -0.0015272439398941184,
+      "score_percentiles": 0.6908163265306122
+    },
+    {
+      "variable": "mtarjeta_visa_consumo",
+      "gain": 0.03334702840983874,
+      "stability": 1.0,
+      "pi_junio": 0.004919819894334654,
+      "lag1_delta_auc_junio": 0.0011036279514020642,
+      "delta1_delta_auc_junio": -0.0017983192779152946,
+      "score_percentiles": 0.5806122448979592
+    },
+    {
+      "variable": "ctarjeta_master",
+      "gain": 0.0001751559021359428,
+      "stability": 1.0,
+      "pi_junio": -9.522474332390729e-07,
+      "lag1_delta_auc_junio": 0.0016155883602263499,
+      "delta1_delta_auc_junio": -0.001089920953135759,
+      "score_percentiles": 0.45
+    },
+    {
+      "variable": "ctarjeta_master_transacciones",
+      "gain": 0.0008795586603170963,
+      "stability": 1.0,
+      "pi_junio": 2.7695647181857908e-05,
+      "lag1_delta_auc_junio": 0.0014732474868414114,
+      "delta1_delta_auc_junio": -0.001045534151998928,
+      "score_percentiles": 0.5479591836734693
+    },
+    {
+      "variable": "mtarjeta_master_consumo",
+      "gain": 0.0031753776371406537,
+      "stability": 1.0,
+      "pi_junio": 0.0007046496887564979,
+      "lag1_delta_auc_junio": 0.0014410118994314658,
+      "delta1_delta_auc_junio": 3.419373001933845e-05,
+      "score_percentiles": 0.7193877551020409
+    },
+    {
+      "variable": "cprestamos_personales",
+      "gain": 0.0033843431390985267,
+      "stability": 1.0,
+      "pi_junio": -1.4350771179172384e-06,
+      "lag1_delta_auc_junio": 0.0008922759629693688,
+      "delta1_delta_auc_junio": -5.003322605900973e-05,
+      "score_percentiles": 0.539795918367347
+    },
+    {
+      "variable": "mprestamos_personales",
+      "gain": 0.02600787755687433,
+      "stability": 1.0,
+      "pi_junio": 0.008029873423649914,
+      "lag1_delta_auc_junio": 0.0011312699508411184,
+      "delta1_delta_auc_junio": 0.0010726933217534151,
+      "score_percentiles": 0.7765306122448979
+    },
+    {
+      "variable": "cprestamos_prendarios",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0008741363199604724,
+      "delta1_delta_auc_junio": -0.0001600781583235289,
+      "score_percentiles": 0.2816326530612245
+    },
+    {
+      "variable": "mprestamos_prendarios",
+      "gain": 0.0014182714739983894,
+      "stability": 1.0,
+      "pi_junio": 0.0003265403980312609,
+      "lag1_delta_auc_junio": 0.0022104010017214293,
+      "delta1_delta_auc_junio": -0.002284059352482881,
+      "score_percentiles": 0.6112244897959183
+    },
+    {
+      "variable": "cprestamos_hipotecarios",
+      "gain": 8.623924138570456e-05,
+      "stability": 0.8,
+      "pi_junio": -4.050404575628441e-06,
+      "lag1_delta_auc_junio": 0.002210005349618571,
+      "delta1_delta_auc_junio": -0.0009885267193855407,
+      "score_percentiles": 0.42142857142857143
+    },
+    {
+      "variable": "mprestamos_hipotecarios",
+      "gain": 0.0007885693213831981,
+      "stability": 1.0,
+      "pi_junio": 0.0003676748047655165,
+      "lag1_delta_auc_junio": 0.0024277816552430442,
+      "delta1_delta_auc_junio": -0.0005622685795646509,
+      "score_percentiles": 0.7173469387755101
+    },
+    {
+      "variable": "cplazo_fijo",
+      "gain": 0.0004601795066499476,
+      "stability": 1.0,
+      "pi_junio": 1.8253644462284946e-05,
+      "lag1_delta_auc_junio": 0.0006675925104693281,
+      "delta1_delta_auc_junio": -4.9832047023801174e-05,
+      "score_percentiles": 0.5173469387755102
+    },
+    {
+      "variable": "mplazo_fijo_dolares",
+      "gain": 0.0015531529309203997,
+      "stability": 1.0,
+      "pi_junio": 0.0003809123852829277,
+      "lag1_delta_auc_junio": 0.0006100351884932298,
+      "delta1_delta_auc_junio": 0.00015298324434809274,
+      "score_percentiles": 0.6153061224489796
+    },
+    {
+      "variable": "mplazo_fijo_pesos",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.00197315056548808,
+      "delta1_delta_auc_junio": -0.001123370320724626,
+      "score_percentiles": 0.3306122448979592
+    },
+    {
+      "variable": "cinversion1",
+      "gain": 8.029932153378703e-05,
+      "stability": 1.0,
+      "pi_junio": -1.2097565984303671e-05,
+      "lag1_delta_auc_junio": 0.0008440667601631313,
+      "delta1_delta_auc_junio": -0.0005113635776863301,
+      "score_percentiles": 0.38265306122448983
+    },
+    {
+      "variable": "minversion1_pesos",
+      "gain": 0.00027998229734544375,
+      "stability": 1.0,
+      "pi_junio": 0.0001419519272503056,
+      "lag1_delta_auc_junio": 0.0010751544119507184,
+      "delta1_delta_auc_junio": -0.00010577323074989486,
+      "score_percentiles": 0.5724489795918367
+    },
+    {
+      "variable": "minversion1_dolares",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0013597422751711052,
+      "delta1_delta_auc_junio": -0.0012134381747923584,
+      "score_percentiles": 0.23877551020408166
+    },
+    {
+      "variable": "cinversion2",
+      "gain": 0.0,
+      "stability": 0.2,
+      "pi_junio": 4.5600581299876097e-07,
+      "lag1_delta_auc_junio": 0.0012549548216935769,
+      "delta1_delta_auc_junio": -0.0009747928972481112,
+      "score_percentiles": 0.28469387755102044
+    },
+    {
+      "variable": "minversion2",
+      "gain": 0.0004849908969023887,
+      "stability": 1.0,
+      "pi_junio": 8.740558483477656e-05,
+      "lag1_delta_auc_junio": 0.001924827361228565,
+      "delta1_delta_auc_junio": -0.001194446873867605,
+      "score_percentiles": 0.586734693877551
+    },
+    {
+      "variable": "cseguro_vida",
+      "gain": 0.00017937608935095973,
+      "stability": 1.0,
+      "pi_junio": 3.688282312341862e-05,
+      "lag1_delta_auc_junio": 0.0008556814964630899,
+      "delta1_delta_auc_junio": -0.00011521523346957885,
+      "score_percentiles": 0.5112244897959183
+    },
+    {
+      "variable": "cseguro_auto",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.001691473092310769,
+      "delta1_delta_auc_junio": -0.0011319941953679136,
+      "score_percentiles": 0.2938775510204082
+    },
+    {
+      "variable": "cseguro_vivienda",
+      "gain": 3.8705115604658844e-05,
+      "stability": 0.8,
+      "pi_junio": 3.996756833157811e-06,
+      "lag1_delta_auc_junio": 0.001917745859189135,
+      "delta1_delta_auc_junio": -0.0014382825705204771,
+      "score_percentiles": 0.36428571428571427
+    },
+    {
+      "variable": "cseguro_accidentes_personales",
+      "gain": 0.0001590705112634659,
+      "stability": 0.8,
+      "pi_junio": 1.6402797338055386e-05,
+      "lag1_delta_auc_junio": 0.00031585108529319506,
+      "delta1_delta_auc_junio": -0.0001144172232965257,
+      "score_percentiles": 0.3704081632653061
+    },
+    {
+      "variable": "ccaja_seguridad",
+      "gain": 0.005125542460124685,
+      "stability": 1.0,
+      "pi_junio": 0.0010501143280338132,
+      "lag1_delta_auc_junio": 0.0007088006828500637,
+      "delta1_delta_auc_junio": -0.0009263288676640835,
+      "score_percentiles": 0.576530612244898
+    },
+    {
+      "variable": "cpayroll_trx",
+      "gain": 0.013950449404223823,
+      "stability": 1.0,
+      "pi_junio": 0.003310763146785134,
+      "lag1_delta_auc_junio": 0.0019673029615311366,
+      "delta1_delta_auc_junio": 0.000579905274985304,
+      "score_percentiles": 0.8622448979591837
+    },
+    {
+      "variable": "mpayroll",
+      "gain": 0.020879672534107687,
+      "stability": 1.0,
+      "pi_junio": 0.00836037034270709,
+      "lag1_delta_auc_junio": 0.003592708858676019,
+      "delta1_delta_auc_junio": 0.0003590777539939083,
+      "score_percentiles": 0.9010204081632655
+    },
+    {
+      "variable": "mpayroll2",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0015234483620961692,
+      "delta1_delta_auc_junio": -0.001251192773734977,
+      "score_percentiles": 0.2571428571428571
+    },
+    {
+      "variable": "cpayroll2_trx",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.001213015698818154,
+      "delta1_delta_auc_junio": -0.0008894929863152434,
+      "score_percentiles": 0.2653061224489796
+    },
+    {
+      "variable": "ccuenta_debitos_automaticos",
+      "gain": 0.0005684740051966034,
+      "stability": 1.0,
+      "pi_junio": -1.4887248605988113e-05,
+      "lag1_delta_auc_junio": 0.0011956472421111863,
+      "delta1_delta_auc_junio": 0.00020723452417847898,
+      "score_percentiles": 0.5316326530612245
+    },
+    {
+      "variable": "mcuenta_debitos_automaticos",
+      "gain": 0.005425714243510893,
+      "stability": 1.0,
+      "pi_junio": 0.0014919034893738914,
+      "lag1_delta_auc_junio": 0.0015608341328078312,
+      "delta1_delta_auc_junio": -0.0014652003254328472,
+      "score_percentiles": 0.6091836734693878
+    },
+    {
+      "variable": "ctarjeta_master_debitos_automaticos",
+      "gain": 0.00013025999171205758,
+      "stability": 1.0,
+      "pi_junio": -6.272762318104697e-05,
+      "lag1_delta_auc_junio": 0.001716808238812595,
+      "delta1_delta_auc_junio": -0.0012315845237688139,
+      "score_percentiles": 0.40102040816326534
+    },
+    {
+      "variable": "mttarjeta_master_debitos_automaticos",
+      "gain": 0.000443395626082411,
+      "stability": 1.0,
+      "pi_junio": -0.00013630550232834882,
+      "lag1_delta_auc_junio": 0.0021562704293119905,
+      "delta1_delta_auc_junio": -0.0005962208947416503,
+      "score_percentiles": 0.5377551020408162
+    },
+    {
+      "variable": "cpagodeservicios",
+      "gain": 5.79529309636582e-05,
+      "stability": 1.0,
+      "pi_junio": -1.2660867283020849e-05,
+      "lag1_delta_auc_junio": 0.0016831711041239705,
+      "delta1_delta_auc_junio": -0.000920943975487809,
+      "score_percentiles": 0.44387755102040816
+    },
+    {
+      "variable": "mpagodeservicios",
+      "gain": 0.0008124189500470734,
+      "stability": 1.0,
+      "pi_junio": 1.9165656088504512e-05,
+      "lag1_delta_auc_junio": 0.0006689471159732063,
+      "delta1_delta_auc_junio": 0.0006236483032096007,
+      "score_percentiles": 0.5785714285714285
+    },
+    {
+      "variable": "cpagomiscuentas",
+      "gain": 0.0004539351191483708,
+      "stability": 1.0,
+      "pi_junio": -3.567574891216729e-05,
+      "lag1_delta_auc_junio": 0.0013117677812392037,
+      "delta1_delta_auc_junio": -0.0005079904758626963,
+      "score_percentiles": 0.46632653061224494
+    },
+    {
+      "variable": "mpagomiscuentas",
+      "gain": 0.0026763034010581087,
+      "stability": 1.0,
+      "pi_junio": 0.0011358702447799018,
+      "lag1_delta_auc_junio": 0.001396799453458275,
+      "delta1_delta_auc_junio": -0.0013829315119638919,
+      "score_percentiles": 0.5724489795918367
+    },
+    {
+      "variable": "ccajeros_propios_descuentos",
+      "gain": 0.0,
+      "stability": 0.2,
+      "pi_junio": -8.449519479647449e-07,
+      "lag1_delta_auc_junio": 0.0019105436497280914,
+      "delta1_delta_auc_junio": -0.0006737284710435221,
+      "score_percentiles": 0.3744897959183674
+    },
+    {
+      "variable": "mcajeros_propios_descuentos",
+      "gain": 0.0,
+      "stability": 0.2,
+      "pi_junio": -1.5826084103887084e-05,
+      "lag1_delta_auc_junio": 0.0015913664043860631,
+      "delta1_delta_auc_junio": -0.0012672669786488733,
+      "score_percentiles": 0.2459183673469388
+    },
+    {
+      "variable": "ctarjeta_visa_descuentos",
+      "gain": 0.000124045486698305,
+      "stability": 1.0,
+      "pi_junio": -2.7950473959648114e-05,
+      "lag1_delta_auc_junio": 0.001981814675938165,
+      "delta1_delta_auc_junio": -0.0014623972308749345,
+      "score_percentiles": 0.413265306122449
+    },
+    {
+      "variable": "mtarjeta_visa_descuentos",
+      "gain": 0.0003673311825484117,
+      "stability": 1.0,
+      "pi_junio": 0.0002899660494284362,
+      "lag1_delta_auc_junio": 0.0005277931988959539,
+      "delta1_delta_auc_junio": 3.069321480675402e-05,
+      "score_percentiles": 0.5520408163265306
+    },
+    {
+      "variable": "ctarjeta_master_descuentos",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0014818579495489148,
+      "delta1_delta_auc_junio": -0.0008878299062911044,
+      "score_percentiles": 0.3081632653061225
+    },
+    {
+      "variable": "mtarjeta_master_descuentos",
+      "gain": 4.114552408270148e-05,
+      "stability": 1.0,
+      "pi_junio": -4.7545311990027095e-05,
+      "lag1_delta_auc_junio": 0.0015701487221383426,
+      "delta1_delta_auc_junio": -0.0004072333090572311,
+      "score_percentiles": 0.4520408163265306
+    },
+    {
+      "variable": "ccomisiones_mantenimiento",
+      "gain": 0.0015302320349435228,
+      "stability": 1.0,
+      "pi_junio": -0.00018755250856650196,
+      "lag1_delta_auc_junio": 0.0004873226829777977,
+      "delta1_delta_auc_junio": 0.0002583272931563352,
+      "score_percentiles": 0.4683673469387755
+    },
+    {
+      "variable": "mcomisiones_mantenimiento",
+      "gain": 0.002725877148466671,
+      "stability": 1.0,
+      "pi_junio": -0.0002009912681190107,
+      "lag1_delta_auc_junio": 0.0014116330543216815,
+      "delta1_delta_auc_junio": -0.000461135878560226,
+      "score_percentiles": 0.5091836734693878
+    },
+    {
+      "variable": "cforex",
+      "gain": 0.0,
+      "stability": 0.4,
+      "pi_junio": 1.2271921148387932e-05,
+      "lag1_delta_auc_junio": 0.000922674115190758,
+      "delta1_delta_auc_junio": -0.0006933702508485906,
+      "score_percentiles": 0.29285714285714287
+    },
+    {
+      "variable": "cforex_buy",
+      "gain": 6.965611021768596e-05,
+      "stability": 0.6,
+      "pi_junio": -3.399925695191097e-05,
+      "lag1_delta_auc_junio": 0.0017101827425860527,
+      "delta1_delta_auc_junio": -0.0010553248650460034,
+      "score_percentiles": 0.326530612244898
+    },
+    {
+      "variable": "mforex_buy",
+      "gain": 0.0004309444037714633,
+      "stability": 1.0,
+      "pi_junio": -0.00010677241995826758,
+      "lag1_delta_auc_junio": 0.00200590251242172,
+      "delta1_delta_auc_junio": -0.0013267690312988023,
+      "score_percentiles": 0.4540816326530613
+    },
+    {
+      "variable": "cforex_sell",
+      "gain": 0.0,
+      "stability": 0.4,
+      "pi_junio": -2.0667792884787595e-05,
+      "lag1_delta_auc_junio": 0.0011342474005623382,
+      "delta1_delta_auc_junio": -0.00010462651024922831,
+      "score_percentiles": 0.31326530612244896
+    },
+    {
+      "variable": "mforex_sell",
+      "gain": 0.00019743026776558007,
+      "stability": 1.0,
+      "pi_junio": 4.860485490887356e-05,
+      "lag1_delta_auc_junio": 0.00017010358024516226,
+      "delta1_delta_auc_junio": 0.0001846287065878638,
+      "score_percentiles": 0.5153061224489796
+    },
+    {
+      "variable": "ctransferencias_recibidas",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0018932288407637055,
+      "delta1_delta_auc_junio": -0.0014938281021442679,
+      "score_percentiles": 0.27448979591836736
+    },
+    {
+      "variable": "mtransferencias_recibidas",
+      "gain": 0.0,
+      "stability": 0.0,
+      "pi_junio": 0.0,
+      "lag1_delta_auc_junio": 0.0018932288407637055,
+      "delta1_delta_auc_junio": -0.0013647113973408453,
+      "score_percentiles": 0.28877551020408165
+    },
+    {
+      "variable": "ctransferencias_emitidas",
+      "gain": 0.0003269528741315756,
+      "stability": 1.0,
+      "pi_junio": 3.912261638205905e-05,
+      "lag1_delta_auc_junio": 0.00256614588969839,
+      "delta1_delta_auc_junio": -0.0014344467569153974,
+      "score_percentiles": 0.5581632653061224
+    },
+    {
+      "variable": "mtransferencias_emitidas",
+      "gain": 0.0021721374264075067,
+      "stability": 1.0,
+      "pi_junio": 0.000262404521603421,
+      "lag1_delta_auc_junio": 0.001043562597453529,
+      "delta1_delta_auc_junio": -0.00023567453379069736,
+      "score_percentiles": 0.6153061224489795
+    },
+    {
+      "variable": "cextraccion_autoservicio",
+      "gain": 0.00038285128311336703,
+      "stability": 1.0,
+      "pi_junio": -9.415178848226624e-06,
+      "lag1_delta_auc_junio": 0.0016470192314953502,
+      "delta1_delta_auc_junio": -0.0005428682146016994,
+      "score_percentiles": 0.5193877551020408
+    },
+    {
+      "variable": "mextraccion_autoservicio",
+      "gain": 0.0006437212108168048,
+      "stability": 1.0,
+      "pi_junio": 6.526247902505222e-05,
+      "lag1_delta_auc_junio": 0.0015013589040290265,
+      "delta1_delta_auc_junio": 0.00034777819818254674,
+      "score_percentiles": 0.6785714285714286
+    },
+    {
+      "variable": "ccheques_depositados",
+      "gain": 2.823705454384534e-05,
+      "stability": 0.8,
+      "pi_junio": 2.3779361962628087e-05,
+      "lag1_delta_auc_junio": 0.0016754055933646539,
+      "delta1_delta_auc_junio": -0.0015424933107635042,
+      "score_percentiles": 0.3336734693877551
+    },
+    {
+      "variable": "mcheques_depositados",
+      "gain": 0.00016807912802580652,
+      "stability": 1.0,
+      "pi_junio": 2.7199405561617596e-05,
+      "lag1_delta_auc_junio": 0.0009436973243711622,
+      "delta1_delta_auc_junio": -0.0006374290671222749,
+      "score_percentiles": 0.4581632653061224
+    },
+    {
+      "variable": "ccheques_emitidos",
+      "gain": 0.0,
+      "stability": 0.2,
+      "pi_junio": 1.0461309830622767e-06,
+      "lag1_delta_auc_junio": 0.0010707687089829276,
+      "delta1_delta_auc_junio": -0.0005092444918486372,
+      "score_percentiles": 0.31326530612244896
+    },
+    {
+      "variable": "mcheques_emitidos",
+      "gain": 3.152629643829366e-05,
+      "stability": 0.6,
+      "pi_junio": 8.9859969065742e-06,
+      "lag1_delta_auc_junio": 0.0012334554887964977,
+      "delta1_delta_auc_junio": -0.0010553516889173498,
+      "score_percentiles": 0.30612244897959184
+    },
+    {
+      "variable": "ccheques_depositados_rechazados",
+      "gain": 0.00010853871595104581,
+      "stability": 1.0,
+      "pi_junio": 1.0488133702635238e-05,
+      "lag1_delta_auc_junio": 0.00138829628623649,
+      "delta1_delta_auc_junio": -0.001360359224212404,
+      "score_percentiles": 0.4051020408163265
+    },
+    {
+      "variable": "mcheques_depositados_rechazados",
+      "gain": 0.0004731042595075496,
+      "stability": 1.0,
+      "pi_junio": 1.667103605185183e-05,
+      "lag1_delta_auc_junio": 0.0017166338836488437,
+      "delta1_delta_auc_junio": -0.0008677254147049229,
+      "score_percentiles": 0.5744897959183672
+    },
+    {
+      "variable": "ccheques_emitidos_rechazados",
+      "gain": 6.221247595137088e-05,
+      "stability": 0.8,
+      "pi_junio": 3.147781304380093e-05,
+      "lag1_delta_auc_junio": 0.0016497083245996524,
+      "delta1_delta_auc_junio": -0.0008947772889740246,
+      "score_percentiles": 0.4336734693877551
+    },
+    {
+      "variable": "mcheques_emitidos_rechazados",
+      "gain": 0.000838492145310419,
+      "stability": 1.0,
+      "pi_junio": 0.00026335676903666005,
+      "lag1_delta_auc_junio": 0.0013609627613180297,
+      "delta1_delta_auc_junio": -0.0007425987607667661,
+      "score_percentiles": 0.6010204081632653
+    },
+    {
+      "variable": "ccallcenter_transacciones",
+      "gain": 0.0017873560305918137,
+      "stability": 1.0,
+      "pi_junio": -5.8046857628557547e-05,
+      "lag1_delta_auc_junio": 0.0018848061451559595,
+      "delta1_delta_auc_junio": -0.0008767985891933172,
+      "score_percentiles": 0.5418367346938775
+    },
+    {
+      "variable": "chomebanking_transacciones",
+      "gain": 0.001617667794998106,
+      "stability": 1.0,
+      "pi_junio": 9.542592237199443e-05,
+      "lag1_delta_auc_junio": 0.00043346034928204435,
+      "delta1_delta_auc_junio": 0.0002041900147787823,
+      "score_percentiles": 0.596938775510204
+    },
+    {
+      "variable": "ccajas_transacciones",
+      "gain": 0.0007329795708951157,
+      "stability": 1.0,
+      "pi_junio": 0.00011378686231966473,
+      "lag1_delta_auc_junio": 0.0010205208919531472,
+      "delta1_delta_auc_junio": -0.0009624069746462238,
+      "score_percentiles": 0.5193877551020408
+    },
+    {
+      "variable": "ccajas_consultas",
+      "gain": 9.041951528784423e-05,
+      "stability": 1.0,
+      "pi_junio": -2.3363591956759855e-05,
+      "lag1_delta_auc_junio": 0.001266529322186405,
+      "delta1_delta_auc_junio": -0.0011073497635534224,
+      "score_percentiles": 0.36020408163265305
+    },
+    {
+      "variable": "ccajas_depositos",
+      "gain": 0.0006162806463463829,
+      "stability": 1.0,
+      "pi_junio": 0.00010339261216674167,
+      "lag1_delta_auc_junio": 0.0015794498995332917,
+      "delta1_delta_auc_junio": -0.0009565258408502642,
+      "score_percentiles": 0.5887755102040816
+    },
+    {
+      "variable": "ccajas_extracciones",
+      "gain": 3.692127374782608e-05,
+      "stability": 0.6,
+      "pi_junio": -1.5303018612189412e-05,
+      "lag1_delta_auc_junio": 0.0018916059965461418,
+      "delta1_delta_auc_junio": -0.0011985777500572725,
+      "score_percentiles": 0.32448979591836735
+    },
+    {
+      "variable": "ccajas_otras",
+      "gain": 0.0002930710536451594,
+      "stability": 1.0,
+      "pi_junio": 3.430773147272692e-05,
+      "lag1_delta_auc_junio": 0.0014162601721318113,
+      "delta1_delta_auc_junio": -0.00021313577587855903,
+      "score_percentiles": 0.5785714285714285
+    },
+    {
+      "variable": "catm_trx",
+      "gain": 0.00017507891429408766,
+      "stability": 1.0,
+      "pi_junio": -0.00010131376213606824,
+      "lag1_delta_auc_junio": 0.0020801375764174512,
+      "delta1_delta_auc_junio": -0.00032128291924404806,
+      "score_percentiles": 0.5377551020408163
+    },
+    {
+      "variable": "matm",
+      "gain": 0.0004206477239960571,
+      "stability": 1.0,
+      "pi_junio": 2.4892552624389275e-05,
+      "lag1_delta_auc_junio": 0.0005807502269333797,
+      "delta1_delta_auc_junio": -0.00015526327341397472,
+      "score_percentiles": 0.4928571428571429
+    },
+    {
+      "variable": "catm_trx_other",
+      "gain": 0.00019291857025338982,
+      "stability": 1.0,
+      "pi_junio": 8.772747129104363e-05,
+      "lag1_delta_auc_junio": 0.0015659910220771067,
+      "delta1_delta_auc_junio": -0.001406154278595917,
+      "score_percentiles": 0.4867346938775509
+    },
+    {
+      "variable": "matm_other",
+      "gain": 0.0002132774169278591,
+      "stability": 1.0,
+      "pi_junio": -2.3497711313491543e-05,
+      "lag1_delta_auc_junio": 0.0007856846041427445,
+      "delta1_delta_auc_junio": -0.0001277755112353285,
+      "score_percentiles": 0.41938775510204085
+    },
+    {
+      "variable": "ctrx_quarter",
+      "gain": 0.12609828871514855,
+      "stability": 1.0,
+      "pi_junio": 0.0038100626883261768,
+      "lag1_delta_auc_junio": 0.0028296971318025887,
+      "delta1_delta_auc_junio": 0.0005998287054398421,
+      "score_percentiles": 0.9091836734693878
+    },
+    {
+      "variable": "Visa_mfinanciacion_limite",
+      "gain": 0.0033549698324380995,
+      "stability": 1.0,
+      "pi_junio": 3.530021471287448e-05,
+      "lag1_delta_auc_junio": 0.0010298824230587922,
+      "delta1_delta_auc_junio": -0.00040892991892094166,
+      "score_percentiles": 0.5826530612244898
+    },
+    {
+      "variable": "Visa_msaldototal",
+      "gain": 0.0061828596954053155,
+      "stability": 1.0,
+      "pi_junio": 0.0007705827645655416,
+      "lag1_delta_auc_junio": 0.0019909280862335788,
+      "delta1_delta_auc_junio": -0.001727920027524421,
+      "score_percentiles": 0.6540816326530612
+    },
+    {
+      "variable": "Visa_msaldopesos",
+      "gain": 0.003546824461833648,
+      "stability": 1.0,
+      "pi_junio": 0.00020875677887832733,
+      "lag1_delta_auc_junio": 0.0003663269052296414,
+      "delta1_delta_auc_junio": 0.0005426469176628146,
+      "score_percentiles": 0.6316326530612245
+    },
+    {
+      "variable": "Visa_msaldodolares",
+      "gain": 0.00017618102338888404,
+      "stability": 1.0,
+      "pi_junio": 7.988148891746594e-05,
+      "lag1_delta_auc_junio": 0.0010194680550023039,
+      "delta1_delta_auc_junio": -2.9915322536822053e-05,
+      "score_percentiles": 0.5459183673469388
+    },
+    {
+      "variable": "Visa_mlimitecompra",
+      "gain": 0.0015782042261490352,
+      "stability": 1.0,
+      "pi_junio": 2.8446715579888426e-05,
+      "lag1_delta_auc_junio": 0.0012565508420396831,
+      "delta1_delta_auc_junio": -0.00021900349773895655,
+      "score_percentiles": 0.6030612244897958
+    },
+    {
+      "variable": "Visa_mpagado",
+      "gain": 0.0006861432694410831,
+      "stability": 1.0,
+      "pi_junio": -0.00010713454222177621,
+      "lag1_delta_auc_junio": 0.0008871861333782372,
+      "delta1_delta_auc_junio": -0.000626659282770281,
+      "score_percentiles": 0.4091836734693878
+    },
+    {
+      "variable": "Visa_mpagominimo",
+      "gain": 0.012211604000719675,
+      "stability": 1.0,
+      "pi_junio": 0.0024995019812982244,
+      "lag1_delta_auc_junio": 0.0014116867020644852,
+      "delta1_delta_auc_junio": -0.0007613888826560888,
+      "score_percentiles": 0.6928571428571428
+    }
+  ],
+  "redundant": [],
+  "rule": "media de5 percentiles (gain mediano, estabilidad, PI junio, deltaAUC lag1 junio, deltaAUC delta1 junio); |corr|<=.98; empate nombre",
+  "train": [
+    201903,
+    201904,
+    201905
+  ],
+  "holdout": 201906,
+  "hp": {
+    "num_leaves": 31,
+    "learning_rate": 0.03,
+    "min_data_in_leaf": 1000,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8
+  },
+  "rounds": 150,
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "august_used": false
+}

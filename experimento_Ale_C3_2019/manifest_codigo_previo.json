@@ -1,0 +1,17 @@
+{
+  "PROTOCOLO.md": "e1a0c929fc844662d1ad79837dde730140515e71ce0442270381a32ade840a18",
+  "REPRODUCIR.txt": "b1be4510e3037ce2af7ac46d55d1534d61dd5715eec0025ceb1dbf41a318156a",
+  "README.md": "d6c67acbe342ab84a88b7099b98f3c2f23ee4426b9a160e523c2335ea32203d9",
+  "run_vm.sh": "4d1d33e317b1c024855bc9d0111e0e8870d552c9546efd8346f73ab20f9fd47a",
+  "variables_propuestas.csv": "1b1a27dcace7a4c06464ab8e43a58eae524b2e37c34077e4535fcf31ab71d2a3",
+  "IMPLEMENTACION.txt": "2e5d92306c23ba093a5bc89cc04f8a89a3adc5d1979040be436d8b853ea55f10",
+  "config_propuesta.json": "9468b693fad80def10211515395bb6cdf5595587e214cbac8e824e3e9504d89e",
+  "vendor/fe_relaciones.py": "d9de59fb2fe72d83a6cb77790dc8eebb16f4785688c5031d4e164ba1a8235b81",
+  "src/preparar.py": "4d1daa2a2adf5caad468794f97a0cb879a513e45a9725fd7c5f72367befa956b",
+  "src/informe.py": "59776b3d37cd5a43a6285b9ca0411353900d7dd71135e53a4b3b2386fe546e85",
+  "src/comun.py": "89fe27dacfe7a1d794f18037b79897e5ae7fb633de93ddda8a9a636acbfcf302",
+  "src/verificar.py": "6d299c6ce8b4da7a3c22d7d01101a93f8479c75ab3b83a78246b1acb31a8f7da",
+  "src/test_reglas.py": "0eb02f003b16f52703419832dab8998a0d2efdc6a3ad1405c7dc42d6e49330f3",
+  "src/ejecutar.py": "6e0fc0792a13f65c431337d6b79011f1ec9d10104434a20f57cf130c7d497225",
+  "src/estado.py": "c99d51d7faea4f5269486cb52176ac04fc6262369108126d3bfaf91c229d0928"
+}

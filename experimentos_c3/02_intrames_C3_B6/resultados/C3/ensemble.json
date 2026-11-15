@@ -1,0 +1,62 @@
+[
+  {
+    "arm": "C3_CONTROL",
+    "features": 2062,
+    "seeds": 20,
+    "auc_ensemble": 0.8982716325497523,
+    "cuts": {
+      "10500": {
+        "ganancia": 383350000,
+        "aciertos": 611
+      },
+      "11000": {
+        "ganancia": 385000000,
+        "aciertos": 625
+      },
+      "11500": {
+        "ganancia": 382250000,
+        "aciertos": 635
+      }
+    }
+  },
+  {
+    "arm": "C3_HOJA2500",
+    "features": 2062,
+    "seeds": 20,
+    "auc_ensemble": 0.8982289433879925,
+    "cuts": {
+      "10500": {
+        "ganancia": 371250000,
+        "aciertos": 600
+      },
+      "11000": {
+        "ganancia": 372900000,
+        "aciertos": 614
+      },
+      "11500": {
+        "ganancia": 375650000,
+        "aciertos": 629
+      }
+    }
+  },
+  {
+    "arm": "C3_INTRAMES",
+    "features": 2066,
+    "seeds": 20,
+    "auc_ensemble": 0.8986895405039415,
+    "cuts": {
+      "10500": {
+        "ganancia": 380050000,
+        "aciertos": 608
+      },
+      "11000": {
+        "ganancia": 378400000,
+        "aciertos": 619
+      },
+      "11500": {
+        "ganancia": 382250000,
+        "aciertos": 635
+      }
+    }
+  }
+]

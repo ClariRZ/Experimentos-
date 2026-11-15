@@ -1,0 +1,22 @@
+HISTORIA 2019 v2 — ALCANCE DEL REGISTRO EN GIT
+Fecha: 2026-11-10
+
+Este registro incorpora los archivos locales existentes: prompt, scripts, configuraciones,
+vendor, auditoría agregada, transcripciones y evidencia del lanzamiento.
+Los informes de fase 0 y el estado del lanzamiento son evidencia histórica;
+no describen necesariamente la situación actual de la ejecución.
+
+No se han sincronizado en esta operación los resultados nuevos de la VM.
+Directorio remoto esperado: /home/clarirz/HISTORIA_2019_01/v2.
+La sesión de navegador de la VM no estaba abierta al revisar este respaldo.
+No se afirma que la corrida siga activa, esté completa o haya fallado.
+
+Excluidos de Git: paquetes comprimidos de traslado, entornos, datos individuales,
+predicciones, modelos pesados, checkpoints binarios y logs.
+Los CSV incorporados contienen calidad/cobertura agregada por mes y variable,
+y el catálogo de fórmulas; no contienen registros individuales de clientes.
+
+Pendientes: recuperar resultados agregados y manifiestos recientes desde la VM;
+revisar su integridad y crear un commit adicional. Los modelos y predicciones
+requieren un respaldo de artefactos separado, no su incorporación a Git.
+La creación de un commit local no implica que se haya enviado a GitHub.

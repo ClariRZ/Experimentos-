@@ -1,0 +1,20 @@
+{
+  "run": "entrenamiento_20261113_01",
+  "status_at_observation": "FIRST_FIT_STARTED",
+  "source_commit": "6f547cef84f12ec929cd15004f188a27ffe3d741",
+  "observed_log": "FIT_START 1 seed 101 round_cap 1500",
+  "arm": "B0",
+  "preflight": "all seven matrix hashes matched before execute",
+  "vm": "clari-c1-fundados",
+  "project": "proj-uba-261002122233861",
+  "zone": "northamerica-northeast2-b",
+  "vm_max_seconds": 21600,
+  "worker_deadline_epoch": 1794605611.5711517,
+  "worker_deadline_argentina": "2026-11-13T18:33:31-03:00",
+  "max_fits": 105,
+  "october_used": false,
+  "vm_output": "/home/clarirz/HISTORIA_2019_01/v5/deployments/entrenamiento_20261113_01/resultados/entrenamiento",
+  "cloud_shell_control": "/home/clarirz/entrenamiento_20261113_01/control.json",
+  "cloud_shell_log": "/home/clarirz/entrenamiento_20261113_01_control.log",
+  "result_publication": "pending; aggregate archive recovered by controller at finish; private artifacts remain on VM"
+}

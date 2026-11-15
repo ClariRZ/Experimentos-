@@ -1,0 +1,16 @@
+{
+  "seed": 809,
+  "recipe": "63adbeafe3147116fdd3f72135bcef8c94adb492542fd1c07a4ed2a66717be2e",
+  "source": "entrenamiento_v3",
+  "model_sha256": "badbed643e2dddc43e53146604db63c3fbd56b0d660c0ed3780914c63fd50fa2",
+  "scores_sha256": "6c4ae38e9fcc8a58b2952bfb82f7398408e8d94dfc1059a2ee5d0bd6a88839ee",
+  "auc": 0.912807905867942,
+  "gain": {
+    "gain_smoothed": 204001404.2978511,
+    "n_send": 3476,
+    "fraction": 0.026355895577274486,
+    "gain_at_n": 206910000.0,
+    "window": 2001
+  },
+  "seconds": 81.03707218170166
+}

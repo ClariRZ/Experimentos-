@@ -1,0 +1,9 @@
+RESPALDO PRIVADO VERIFICADO
+Archivo: respaldo_privado_Ale_C3_2019.tar.gz
+SHA256: c9b7d283a56a0e925554d76860e0e86bc8ccd2e7ed7dff8955c899c3bc19bb45
+Tamaño: 164141990 bytes. 319 archivos.
+Copia local: /home/clara-m-rodr-guez/Documents/Codex/2026-11-07/nec/work/respaldo_privado_Ale_C3_2019.tar.gz
+Copia VM: /home/clara-m-rodr-guez/experimento_Ale_C3_2019_20261108/respaldo_privado_Ale_C3_2019.tar.gz
+Incluye modelos, predicciones, metadatos individuales, código científico y evidencia de la corrida. No incluye parquet crudo ni matrices grandes reconstruibles. Mantener privado; no agregar el archivo a Git.
+Las instrucciones y el helper de reproducción actualizados después del cierre se conservan en Git; el respaldo es una instantánea de la corrida verificada.
+No se subió este respaldo a un bucket externo.

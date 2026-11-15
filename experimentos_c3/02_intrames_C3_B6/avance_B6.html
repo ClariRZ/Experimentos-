@@ -1,0 +1,83 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Avance: B6 completado</title><style>body{font:17px/1.6 system-ui;max-width:1100px;margin:40px auto;padding:20px;color:#183243}table{border-collapse:collapse;font-size:14px}td,th{border:1px solid #ccd;padding:10px}th{background:#edf5f6}.nota{background:#fff1d7;padding:15px}</style><h1>B6: resultados completos de entrenamiento y evaluación</h1><p class="nota">Avance del ensayo: B6 terminó. Los tres brazos de C3 siguen en ejecución. La verificación independiente completa del paquete se realizará al terminar ambos bloques.</p><p>Agregar siete ratios intrames a B5 con parámetros y281 árboles fijos produjo5 aciertos BAJA+2 netos adicionales a11.000 contactos: +5,5 millones. Reoptimizar produjo1 acierto adicional respecto de B5. La curva del control B5 coincidió exactamente con la original.</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Brazo</th>
+      <th>AUC agosto</th>
+      <th>Ganancia octubre a 11000</th>
+      <th>BAJA+2</th>
+      <th>Diferencia vs B5</th>
+      <th>Contactos política agosto</th>
+      <th>Ganancia política agosto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B5_CONTROL</td>
+      <td>0.932468</td>
+      <td>214500000</td>
+      <td>470</td>
+      <td>0</td>
+      <td>3597</td>
+      <td>283882500</td>
+    </tr>
+    <tr>
+      <td>B6_FIJO</td>
+      <td>0.931930</td>
+      <td>220000000</td>
+      <td>475</td>
+      <td>5500000</td>
+      <td>4364</td>
+      <td>283690000</td>
+    </tr>
+    <tr>
+      <td>B6_BO</td>
+      <td>0.931277</td>
+      <td>215600000</td>
+      <td>471</td>
+      <td>1100000</td>
+      <td>3886</td>
+      <td>286935000</td>
+    </tr>
+  </tbody>
+</table><p>La caída del AUC no impidió mejorar la ganancia a11.000: AUC considera BAJA+1 y BAJA+2 positivas, mientras la ganancia sólo premia BAJA+2. Además, AUC evalúa todo el ranking y la ganancia este corte específico.</p><p>La política elegida en agosto cambia el orden de las variantes: no confundir mejora del ranking a presupuesto fijo con mejora de la política. B6 fijo tampoco supera a B2(222,2millones) ni B4(224,4millones) en el mismo octubre a11000.</p><p>Resultado exploratorio: una semilla y un período ya observado. No demuestra mejora generalizable ni identifica cuál ratio individual aporta. No se envió ningún modelo a la competencia.</p><p><a href="PROTOCOLO.txt">Protocolo</a> · <a href="avance_B6.csv">Tabla CSV</a></p><h2>Cambios de selección contra B5</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>serie</th>
+      <th>brazo</th>
+      <th>contactos</th>
+      <th>retenidos</th>
+      <th>entran</th>
+      <th>salen</th>
+      <th>BAJA2_entran</th>
+      <th>BAJA2_salen</th>
+      <th>delta_BAJA2</th>
+      <th>delta_ganancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B6_octubre2019</td>
+      <td>B6_FIJO</td>
+      <td>11000</td>
+      <td>10231</td>
+      <td>769</td>
+      <td>769</td>
+      <td>9</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5500000</td>
+    </tr>
+    <tr>
+      <td>B6_octubre2019</td>
+      <td>B6_BO</td>
+      <td>11000</td>
+      <td>10172</td>
+      <td>828</td>
+      <td>828</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+      <td>1100000</td>
+    </tr>
+  </tbody>
+</table><p>B6 fijo reemplazó 769 contactos: entraron 9 BAJA+2 y salieron 4. B6 reoptimizado reemplazó 828: entraron 9 y salieron 8. A igual presupuesto, cada acierto neto suma 1.100.000 pesos de diferencia. Esto explica la diferencia observada, no cuál cociente individual la causó.</p></html>

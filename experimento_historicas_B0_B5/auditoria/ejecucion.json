@@ -1,0 +1,21 @@
+{
+  "vm": "clari-c1-fundados",
+  "project": "proj-uba-261002122233861",
+  "zone": "northamerica-northeast2-b",
+  "cpu": 8,
+  "ram_gib_aprox": 62,
+  "directory": "/home/clara-m-rodr-guez/experimento_historicas_20261107",
+  "source_data": "/home/clara-m-rodr-guez/Escritorio/competencia_02_crudo.parquet",
+  "sha256": "84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22",
+  "october_model_results_opened": true,
+  "remote_data_sha256_verified": true,
+  "remote_unit_tests": "6 passed",
+  "status": "completo_y_verificado",
+  "completed_experiments": 6,
+  "completed_trials": 120,
+  "independent_verification": "6 modelos verificados",
+  "local_results_recovered": true,
+  "optional_independent_experiments_executed": false,
+  "repeat_seeds_executed": false,
+  "completed_utc": "2026-11-07T23:06:18.028331+00:00"
+}

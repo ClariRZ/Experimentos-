@@ -1,0 +1,389 @@
+[
+  {
+    "feature": "fe__rel__ticket__payroll",
+    "sources": [
+      "mpayroll",
+      "cpayroll_trx"
+    ],
+    "formula": "mpayroll/cpayroll_trx si cpayroll_trx>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__payroll2",
+    "sources": [
+      "mpayroll2",
+      "cpayroll2_trx"
+    ],
+    "formula": "mpayroll2/cpayroll2_trx si cpayroll2_trx>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__visa",
+    "sources": [
+      "mtarjeta_visa_consumo",
+      "ctarjeta_visa_transacciones"
+    ],
+    "formula": "mtarjeta_visa_consumo/ctarjeta_visa_transacciones si ctarjeta_visa_transacciones>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__master",
+    "sources": [
+      "mtarjeta_master_consumo",
+      "ctarjeta_master_transacciones"
+    ],
+    "formula": "mtarjeta_master_consumo/ctarjeta_master_transacciones si ctarjeta_master_transacciones>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__extraccion_autoservicio",
+    "sources": [
+      "mextraccion_autoservicio",
+      "cextraccion_autoservicio"
+    ],
+    "formula": "mextraccion_autoservicio/cextraccion_autoservicio si cextraccion_autoservicio>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__atm",
+    "sources": [
+      "matm",
+      "catm_trx"
+    ],
+    "formula": "matm/catm_trx si catm_trx>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__atm_other",
+    "sources": [
+      "matm_other",
+      "catm_trx_other"
+    ],
+    "formula": "matm_other/catm_trx_other si catm_trx_other>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__transferencias_recibidas",
+    "sources": [
+      "mtransferencias_recibidas",
+      "ctransferencias_recibidas"
+    ],
+    "formula": "mtransferencias_recibidas/ctransferencias_recibidas si ctransferencias_recibidas>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__transferencias_emitidas",
+    "sources": [
+      "mtransferencias_emitidas",
+      "ctransferencias_emitidas"
+    ],
+    "formula": "mtransferencias_emitidas/ctransferencias_emitidas si ctransferencias_emitidas>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__pagodeservicios",
+    "sources": [
+      "mpagodeservicios",
+      "cpagodeservicios"
+    ],
+    "formula": "mpagodeservicios/cpagodeservicios si cpagodeservicios>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__pagomiscuentas",
+    "sources": [
+      "mpagomiscuentas",
+      "cpagomiscuentas"
+    ],
+    "formula": "mpagomiscuentas/cpagomiscuentas si cpagomiscuentas>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__debitos_cuenta",
+    "sources": [
+      "mcuenta_debitos_automaticos",
+      "ccuenta_debitos_automaticos"
+    ],
+    "formula": "mcuenta_debitos_automaticos/ccuenta_debitos_automaticos si ccuenta_debitos_automaticos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__debitos_visa",
+    "sources": [
+      "mttarjeta_visa_debitos_automaticos",
+      "ctarjeta_visa_debitos_automaticos"
+    ],
+    "formula": "mttarjeta_visa_debitos_automaticos/ctarjeta_visa_debitos_automaticos si ctarjeta_visa_debitos_automaticos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__debitos_master",
+    "sources": [
+      "mttarjeta_master_debitos_automaticos",
+      "ctarjeta_master_debitos_automaticos"
+    ],
+    "formula": "mttarjeta_master_debitos_automaticos/ctarjeta_master_debitos_automaticos si ctarjeta_master_debitos_automaticos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__descuentos_debito",
+    "sources": [
+      "mcajeros_propios_descuentos",
+      "ccajeros_propios_descuentos"
+    ],
+    "formula": "mcajeros_propios_descuentos/ccajeros_propios_descuentos si ccajeros_propios_descuentos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__descuentos_visa",
+    "sources": [
+      "mtarjeta_visa_descuentos",
+      "ctarjeta_visa_descuentos"
+    ],
+    "formula": "mtarjeta_visa_descuentos/ctarjeta_visa_descuentos si ctarjeta_visa_descuentos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__descuentos_master",
+    "sources": [
+      "mtarjeta_master_descuentos",
+      "ctarjeta_master_descuentos"
+    ],
+    "formula": "mtarjeta_master_descuentos/ctarjeta_master_descuentos si ctarjeta_master_descuentos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__comisiones_mantenimiento",
+    "sources": [
+      "mcomisiones_mantenimiento",
+      "ccomisiones_mantenimiento"
+    ],
+    "formula": "mcomisiones_mantenimiento/ccomisiones_mantenimiento si ccomisiones_mantenimiento>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__comisiones_otras",
+    "sources": [
+      "mcomisiones_otras",
+      "ccomisiones_otras"
+    ],
+    "formula": "mcomisiones_otras/ccomisiones_otras si ccomisiones_otras>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__cheques_depositados",
+    "sources": [
+      "mcheques_depositados",
+      "ccheques_depositados"
+    ],
+    "formula": "mcheques_depositados/ccheques_depositados si ccheques_depositados>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__cheques_emitidos",
+    "sources": [
+      "mcheques_emitidos",
+      "ccheques_emitidos"
+    ],
+    "formula": "mcheques_emitidos/ccheques_emitidos si ccheques_emitidos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__cheques_depositados_rechazados",
+    "sources": [
+      "mcheques_depositados_rechazados",
+      "ccheques_depositados_rechazados"
+    ],
+    "formula": "mcheques_depositados_rechazados/ccheques_depositados_rechazados si ccheques_depositados_rechazados>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__cheques_emitidos_rechazados",
+    "sources": [
+      "mcheques_emitidos_rechazados",
+      "ccheques_emitidos_rechazados"
+    ],
+    "formula": "mcheques_emitidos_rechazados/ccheques_emitidos_rechazados si ccheques_emitidos_rechazados>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__forex_buy",
+    "sources": [
+      "mforex_buy",
+      "cforex_buy"
+    ],
+    "formula": "mforex_buy/cforex_buy si cforex_buy>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__forex_sell",
+    "sources": [
+      "mforex_sell",
+      "cforex_sell"
+    ],
+    "formula": "mforex_sell/cforex_sell si cforex_sell>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__visa_detalle",
+    "sources": [
+      "Visa_mconsumototal",
+      "Visa_cconsumos"
+    ],
+    "formula": "Visa_mconsumototal/Visa_cconsumos si Visa_cconsumos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__ticket__master_detalle",
+    "sources": [
+      "Master_mconsumototal",
+      "Master_cconsumos"
+    ],
+    "formula": "Master_mconsumototal/Master_cconsumos si Master_cconsumos>0",
+    "kind": "C3_TICKETS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mfinanciacion_limite_sum",
+    "sources": [
+      "Visa_mfinanciacion_limite",
+      "Master_mfinanciacion_limite"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mlimitecompra_sum",
+    "sources": [
+      "Visa_mlimitecompra",
+      "Master_mlimitecompra"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__msaldototal_sum",
+    "sources": [
+      "Visa_msaldototal",
+      "Master_msaldototal"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__msaldopesos_sum",
+    "sources": [
+      "Visa_msaldopesos",
+      "Master_msaldopesos"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__msaldodolares_sum",
+    "sources": [
+      "Visa_msaldodolares",
+      "Master_msaldodolares"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mconsumospesos_sum",
+    "sources": [
+      "Visa_mconsumospesos",
+      "Master_mconsumospesos"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mconsumosdolares_sum",
+    "sources": [
+      "Visa_mconsumosdolares",
+      "Master_mconsumosdolares"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mconsumototal_sum",
+    "sources": [
+      "Visa_mconsumototal",
+      "Master_mconsumototal"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__madelantopesos_sum",
+    "sources": [
+      "Visa_madelantopesos",
+      "Master_madelantopesos"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__madelantodolares_sum",
+    "sources": [
+      "Visa_madelantodolares",
+      "Master_madelantodolares"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mpagado_sum",
+    "sources": [
+      "Visa_mpagado",
+      "Master_mpagado"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mpagospesos_sum",
+    "sources": [
+      "Visa_mpagospesos",
+      "Master_mpagospesos"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mpagosdolares_sum",
+    "sources": [
+      "Visa_mpagosdolares",
+      "Master_mpagosdolares"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__mpagominimo_sum",
+    "sources": [
+      "Visa_mpagominimo",
+      "Master_mpagominimo"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__cconsumos_sum",
+    "sources": [
+      "Visa_cconsumos",
+      "Master_cconsumos"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  },
+  {
+    "feature": "fe__rel__tarjetas__cadelantosefectivo_sum",
+    "sources": [
+      "Visa_cadelantosefectivo",
+      "Master_cadelantosefectivo"
+    ],
+    "formula": "Visa_campo + Master_campo; soporte completo",
+    "kind": "C3_SUMAS"
+  }
+]

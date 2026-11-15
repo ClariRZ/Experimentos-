@@ -1,0 +1,10 @@
+{
+  "metric": "gain_common_A",
+  "mean_delta": -2200000.0,
+  "median_delta": -2750000.0,
+  "sd_delta": 6483176.60929952,
+  "wins": 6,
+  "ties": 0,
+  "losses": 14,
+  "note": "Same month; seeds are not independent temporal samples"
+}

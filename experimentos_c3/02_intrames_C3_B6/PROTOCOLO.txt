@@ -1,0 +1,54 @@
+EXPERIMENTO C3 / B6 — RATIOS INTRAMES
+Fecha: 7 de noviembre de 2026. Nuevas corridas; no modificar originales.
+
+Usuario confirmó: tercer brazo experimental, y ratios intrames (no ratios personales).
+No se replica el ganador documentado HISTORIA_2019_01/003: era otra transformación,
+con otras reglas y target de validación. Este ensayo busca distinguir causas.
+
+C3 (tres brazos, 20 semillas pareadas, 300 árboles):
+1. C3_CONTROL: receta original, mínimo de hoja100.
+2. C3_HOJA2500: sólo cambia mínimo de hoja2500.
+3. C3_INTRAMES: parámetros originales; sólo agrega4ratios consolidados.
+Mismos datos originales verificados por SHA, código FE original verificado por SHA,
+train202103/202104; evaluación202106, BAJA+2 vsresto, ensemble20scores.
+Junio ya fue observado: comparación exploratoria, no confirmación independiente.
+
+B6 (tres brazos):
+1. B5_CONTROL: modelo original guardado,1254features; sin reoptimizar.
+2. B6_FIJO: B5+7ratios,1261features, mismos hiperparámetros y281árboles.
+3. B6_BO: mismas1261features,20pruebas BO con el espacio y semilla originales.
+Train201903–201906 completo; validación201908, target combinadoBAJA+1/BAJA+2.
+Congelar modelos/políticas antes de evaluar201910. Octubre ya se observó en el
+experimento anterior: extensión exploratoria. No decidir fórmulas usando su gain.
+Comparar política de validación como resultado secundario de continuidad.
+
+Métrica económica principal fijada:11.000contactos; secundarios10.500/11.500.
+Ganancia=1.100.000*aciertos_BAJA+2−27.500*contactos. No optimizar corte en test.
+No comparar ganancias absolutas C3(2021) contra B6(2019).
+No enviar a bot ni usar el privado conocido para elegir estos modelos.
+
+Ratios: cada cociente usa campos de la misma fila/mes; no usa target.
+Tarjetas suman Master+Visa ignorando marca faltante; ambasfaltantes->NA.
+1. Consumo total consolidado / cantidad de consumos consolidada.
+2. Saldo total consolidado / límite de compra consolidado.
+3. Pagado consolidado / pago mínimo consolidado.
+4. Consumo total consolidado / límite de compra consolidado.
+5. Monto transferencias emitidas / cantidad transferencias emitidas.
+6. Monto ATM / cantidad operaciones ATM.
+7. Monto pagomiscuentas / cantidad pagomiscuentas.
+Denominador positivo finito obligatorio; cero,negativo,NA->NA.
+Numerador negativo finito se conserva; infinito->NA; resultadofloat32.
+Se adapta el antecedente intrames para mantener la regla den>0 de C3; no se
+presenta como reconstrucción exacta de otro experimento no identificado.
+C3ya contiene5–7: se verifica igualdad de valores y se excluyen como duplicados.
+No se agregan sumas ni indicadores de ausencia como predictores nuevos: así se
+separa el efecto del cociente del resto del paquete intrames.
+
+Limitaciones: una familia agregada no identifica cuál cociente fue útil; si mejora,
+la ablación de cada ratio es un experimento posterior. Esta versión C3 no cruza
+hoja2500 con ratios: esa interacción requiere un cuarto brazo futuro.
+La comparación BO versusfijo separa el procedimiento de ajuste, no implica efecto
+causal universal. Veinte semillas no equivalen a veinte períodos.
+
+Reproducibilidad: fuente,plan,hashes,modelos,importancias,curvas y resúmenes guardados;
+las predicciones/IDs/datasets no se publican en GitHub. Cada brazo genera checkpoint.

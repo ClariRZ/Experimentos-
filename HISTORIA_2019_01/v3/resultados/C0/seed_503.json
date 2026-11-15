@@ -1,0 +1,16 @@
+{
+  "seed": 503,
+  "recipe": "37866d3eb9734ce20885653cdad8884f422a436741e9adc3dceb1927586da0bb",
+  "source": "v2_validado_hash_receta_claves_modelo_y_prediccion_exacta",
+  "model_sha256": "b0151463d77d5e430947d6a380b2242c18e74a5a12eae3aa132c8023d6cedea0",
+  "scores_sha256": "f2df806da068c72a2b658f34b8a79941d02c987a3c52b6a190fe34fb5765ea44",
+  "auc": 0.9133070201368257,
+  "gain": {
+    "gain_smoothed": 203835895.80209896,
+    "n_send": 3719,
+    "fraction": 0.028198381948182916,
+    "gain_at_n": 205727500.0,
+    "window": 2001
+  },
+  "seconds": 1.8970510959625244
+}

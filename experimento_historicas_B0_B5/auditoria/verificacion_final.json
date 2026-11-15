@@ -1,0 +1,60 @@
+{
+  "all_passed": true,
+  "method": "Etiquetas independientes por presencia en conjuntos; ganancia bruta menos costo, orden pandas; hashes de congelaci\u00f3n y BO",
+  "checks": [
+    {
+      "experimento": "B0",
+      "verificado": true,
+      "filas_test": 135633,
+      "contactos": 4923,
+      "aciertos": 354,
+      "ganancia": 254017500,
+      "auc": 0.9241213497812847
+    },
+    {
+      "experimento": "B1",
+      "verificado": true,
+      "filas_test": 135633,
+      "contactos": 4798,
+      "aciertos": 360,
+      "ganancia": 264055000,
+      "auc": 0.9300328656337273
+    },
+    {
+      "experimento": "B2",
+      "verificado": true,
+      "filas_test": 135633,
+      "contactos": 5042,
+      "aciertos": 383,
+      "ganancia": 282645000,
+      "auc": 0.9330276394817453
+    },
+    {
+      "experimento": "B3",
+      "verificado": true,
+      "filas_test": 135633,
+      "contactos": 4711,
+      "aciertos": 377,
+      "ganancia": 285147500,
+      "auc": 0.9315959810217281
+    },
+    {
+      "experimento": "B4",
+      "verificado": true,
+      "filas_test": 135633,
+      "contactos": 3094,
+      "aciertos": 327,
+      "ganancia": 274615000,
+      "auc": 0.9322384009363158
+    },
+    {
+      "experimento": "B5",
+      "verificado": true,
+      "filas_test": 135633,
+      "contactos": 3597,
+      "aciertos": 348,
+      "ganancia": 283882500,
+      "auc": 0.9324679280967303
+    }
+  ]
+}

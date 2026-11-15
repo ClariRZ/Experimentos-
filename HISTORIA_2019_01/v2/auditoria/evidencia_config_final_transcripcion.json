@@ -1,0 +1,116 @@
+{
+  "procedencia": "Transcripción pegada por la usuaria de cat config_frozen.json y FINAL.json desde sesión SSH clarirz; extracto normalizado, no copia byte a byte ni verificación remota independiente.",
+  "fuente_remota": "/home/clarirz/HISTORIA_2019_01/resultados_historia_01/",
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809,
+    907,
+    1009,
+    1103,
+    1201,
+    1301,
+    1409,
+    1511,
+    1601,
+    1709,
+    1801,
+    1901,
+    2003
+  ],
+  "screening_seeds_segun_R4": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "ratio_columns": [
+    "ctrx_quarter",
+    "mpayroll",
+    "mcuentas_saldo",
+    "Visa_msaldototal"
+  ],
+  "zero_columns": [
+    "ctrx_quarter",
+    "mpayroll",
+    "mcaja_ahorro"
+  ],
+  "core_candidates": [
+    "ctrx_quarter",
+    "mpayroll",
+    "mcaja_ahorro",
+    "mcuentas_saldo",
+    "mpasivos_margen",
+    "Visa_msaldototal",
+    "Visa_mpagominimo",
+    "mtarjeta_visa_consumo",
+    "cpayroll_trx",
+    "ctarjeta_visa_transacciones"
+  ],
+  "top_core": 6,
+  "broken_variables": {
+    "ctarjeta_visa_debitos_automaticos": [
+      201904
+    ],
+    "mttarjeta_visa_debitos_automaticos": [
+      201904
+    ],
+    "mrentabilidad": [
+      201905
+    ],
+    "mrentabilidad_annual": [
+      201905
+    ],
+    "mcomisiones": [
+      201905
+    ],
+    "mactivos_margen": [
+      201905
+    ],
+    "mpasivos_margen": [
+      201905
+    ],
+    "mcomisiones_otras": [
+      201905
+    ],
+    "ccomisiones_otras": [
+      201905
+    ]
+  },
+  "sanitization_decision": "NA antes de construir historia, misma regla B0 y variantes; conservar nulos mobile",
+  "official_confirmation": false,
+  "bo_trials": 50,
+  "bo_seed": 2026,
+  "max_rounds": 3000,
+  "early_stopping_rounds": 150,
+  "threads": 4,
+  "plateau_window": 1001,
+  "gain_pos": 1072500,
+  "gain_neg": -27500,
+  "min_delta_auc_keep": 0.0001,
+  "min_wins_keep": 12,
+  "canary_count": 40,
+  "status": "MODELOS_CONGELADOS_TEST_EXTERNO_PENDIENTE",
+  "finished": "2026-11-05T05:52:52-03:00",
+  "run_id": "09382df1077960e303a7a60e32e19a9ef76b96abaa850e0b8b496ebcbac1cc0e",
+  "baseline_iteration": "000",
+  "selected_iteration": "003",
+  "auc_baseline": 0.9141360984873457,
+  "auc_selected": 0.9151052208869505,
+  "test_gain": null,
+  "test_auc": null,
+  "chosen_on": "AUC 201908, exclusivamente",
+  "pendientes": [
+    "Comprobar aplicación efectiva de saneamiento y coincidencia de nombres de columnas",
+    "Verificar selección de líderes: top6 de diez candidatos no equivale a shortlist20 sobre todas las elegibles",
+    "Leer resultados individuales, audit y código",
+    "Recuperar predicciones agosto para evaluar R5 sin entrenar"
+  ],
+  "implicacion_R2": "Si los nueve pares se convirtieron en NA como se declara, la cobertura cruda calculada antes sobreestima disponibilidad: revisar cobertura saneada antes de aprobar variables."
+}

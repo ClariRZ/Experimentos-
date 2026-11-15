@@ -1,0 +1,31 @@
+VIDEO — BASELINE ALE + SUBCONJUNTO C3 EN 2019
+
+Hipótesis: transferir ratios monto/operaciones y sumas Visa+Master y promediar semillas puede mejorar el ranking o estabilizarlo.
+
+Diseño: cuatro brazos; dos representaciones con 20 trials cada una y 20 semillas pareadas. Marzo–junio para entrenamiento, agosto para selección y política, octubre para evaluación. A y B son semillas predefinidas dentro de C y D.
+
+Resultados:
+
+A: $282.645.000 a 5042 contactos; $282.645.000 al presupuesto de A; $222.200.000 a 11.000.
+
+B: $284.845.000 a 4762 contactos; $285.945.000 al presupuesto de A; $220.000.000 a 11.000.
+
+C: $277.172.500 a 3561 contactos; $283.745.000 al presupuesto de A; $223.300.000 a 11.000.
+
+D: $282.150.000 a 4460 contactos; $278.245.000 al presupuesto de A; $223.300.000 a 11.000.
+
+Variables y reoptimización con una semilla: diferencia $2.200.000 con políticas propias elegidas en agosto; $3.300.000 al presupuesto común de A.
+
+Ensemble del baseline: diferencia $-5.472.500 con políticas propias elegidas en agosto; $1.100.000 al presupuesto común de A.
+
+Ensemble de la representación enriquecida: diferencia $-2.695.000 con políticas propias elegidas en agosto; $-7.700.000 al presupuesto común de A.
+
+Variables y reoptimización con ensemble: diferencia $4.977.500 con políticas propias elegidas en agosto; $-5.500.000 al presupuesto común de A.
+
+Paquete completo frente al baseline de una semilla: diferencia $-495.000 con políticas propias elegidas en agosto; $-4.400.000 al presupuesto común de A.
+
+B obtiene la mayor ganancia con su política fijada en agosto: $284.845.000, $2.200.000 más que A. A igual presupuesto de A, su diferencia es $3.300.000. Sin embargo, la versión enriquecida gana sólo 6 de 20 comparaciones pareadas a ese presupuesto y su diferencia media es $-2.200.000. El resultado favorable de la semilla principal no es una mejora consistente. C y D no superan a sus modelos individuales con sus políticas propias. C mejora ligeramente el ranking al igualar contactos, pero pierde ganancia con su corte elegido en agosto. No se justifica adoptar automáticamente las variables o los ensembles por esta corrida. Falta aislar variables de reoptimización y validar temporalmente fuera de los períodos observados.
+
+Limitaciones: octubre ya observado, un solo mes y selección de parámetros y contactos en el mismo agosto. Las semillas no son muestras temporales independientes. Variables y reoptimización cambian juntas.
+
+Conclusión: interpretar los contrastes por separado, publicar también los negativos y validar en otro período antes de adoptar. Próximo paso: ablaciones de las familias con parámetros comunes si los resultados justifican seguir.

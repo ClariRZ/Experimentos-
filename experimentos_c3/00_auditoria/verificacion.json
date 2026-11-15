@@ -1,0 +1,26 @@
+{
+  "run": "c1c3final04b",
+  "modelos": 20,
+  "features": 2062,
+  "arboles_total": 6000,
+  "variables_usadas_alguna_seed": 1374,
+  "variables_nunca_usadas": 688,
+  "variables_usadas_todas_seeds": 542,
+  "esquema_y_orden_verificados": true,
+  "modelos_checkpoint_sha_verificados": true,
+  "envio_reconstruido_byte_a_byte": true,
+  "envio_sha256": "60cc939e2a66edd2eddbbb8cc298460ee4830e3eba2828ce2020b4da1e1128b3",
+  "estabilidad": {
+    "interseccion_seed_seed_media": 0.872921052631579,
+    "interseccion_seed_seed_min": 0.8661818181818182,
+    "interseccion_seed_ensemble_media": 0.9114363636363635,
+    "seleccionados_todas_seeds": 7396,
+    "seleccionados_alguna_seed": 17034
+  },
+  "alcance": "Auditoria de artefactos; no reentrenamiento ni regeneracion de matrices originales",
+  "versions": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  }
+}

@@ -1,0 +1,21 @@
+Fuente: https://raw.githubusercontent.com/ClariRZ/dmeyf2026/85ca6ad39f6ed1d6f926c174840119552ca73f44/zero2hero/zero2hero_01.ipynb
+
+y finalmente a los  BAJA+2 les asigno 1072500
+
+dataset[foto_mes == 202106 & clase_ternaria == "BAJA+2", ganancia := 1072500]
+
+
+Para el cálculo de la ganancia del modelo aplicado a testing debo tener en cuenta lo siguiente
+* Solo envio estimulo a los registros que el modelo asigno una probabilidad mayor a 0.025
+* Si no envio estimulo, no gano ni pierdo, es decir la ganacia es cero
+* Si el registro al que envio el estímulo es un **BAJA+2**  entonces la ganancia es de +1072500
+* Si el registro al que envio el estímulo es un **BAJA+1**  entonces la ganancia es de  -27500
+* Si el registro al que envio el estímulo es un **CONTINUA** entonces la ganancia es de  -27500
+
+### La ganancia de +1072500 o -27500 la resuelvo de esta forma ifelse( clase_ternaria=="BAJA+2", 1072500, -27500)
+
+Finalmente,  que se cumplan ambas condiciones al mismo tiempo, en este caso, es multiplicarlas, o sea
+<br>
+(prob_baja2> 0.025) * ifelse( clase_ternaria=="BAJA+2", 1072500, -27500)
+<br>
+La condicion anterior toma los siguientes valores

@@ -1,0 +1,233 @@
+[
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "B0",
+    "seeds": 5,
+    "features": 152,
+    "auc_mean": 0.907475579127794,
+    "gain_mean": 198485888.30584708,
+    "auc_ensemble": 0.9080645268763926,
+    "gain_ensemble": 199947305.09745127,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/B0/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "B1",
+    "seeds": 5,
+    "features": 261,
+    "auc_mean": 0.9126111863693105,
+    "gain_mean": 198337753.87306347,
+    "auc_ensemble": 0.9132509769979279,
+    "gain_ensemble": 199602572.46376812,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/B1/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "B2",
+    "seeds": 5,
+    "features": 370,
+    "auc_mean": 0.9139992641945589,
+    "gain_mean": 200245231.38430786,
+    "auc_ensemble": 0.9146957926531458,
+    "gain_ensemble": 203289895.05247375,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/B2/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "B3",
+    "seeds": 5,
+    "features": 479,
+    "auc_mean": 0.9132384810650606,
+    "gain_mean": 200487033.48325837,
+    "auc_ensemble": 0.9138546777165079,
+    "gain_ensemble": 201652841.07946026,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/B3/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "B4",
+    "seeds": 5,
+    "features": 588,
+    "auc_mean": 0.913848278052228,
+    "gain_mean": 203399240.87956023,
+    "auc_ensemble": 0.9144364176908044,
+    "gain_ensemble": 205019811.34432784,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/B4/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "K",
+    "seeds": 5,
+    "features": 601,
+    "auc_mean": 0.9131192493933858,
+    "gain_mean": 201184637.43128437,
+    "auc_ensemble": 0.9138895823985129,
+    "gain_ensemble": 202948570.71464267,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/K/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "M1",
+    "seeds": 5,
+    "features": 608,
+    "auc_mean": 0.9129755107219897,
+    "gain_mean": 201287661.41929036,
+    "auc_ensemble": 0.9137219491897279,
+    "gain_ensemble": 202778472.013993,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/M1/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "M2",
+    "seeds": 5,
+    "features": 608,
+    "auc_mean": 0.9127412410443333,
+    "gain_mean": 202298768.11594203,
+    "auc_ensemble": 0.913415292702412,
+    "gain_ensemble": 203511571.71414292,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/M2/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "M3",
+    "seeds": 5,
+    "features": 608,
+    "auc_mean": 0.9127372969003309,
+    "gain_mean": 201183194.4027986,
+    "auc_ensemble": 0.9134856691611747,
+    "gain_ensemble": 203110629.68515742,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/M3/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "M4",
+    "seeds": 5,
+    "features": 608,
+    "auc_mean": 0.913020021989099,
+    "gain_mean": 202910414.29285356,
+    "auc_ensemble": 0.9137050214113712,
+    "gain_ensemble": 204201971.5142429,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/M4/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "T1",
+    "seeds": 5,
+    "features": 608,
+    "auc_mean": 0.9134923580437783,
+    "gain_mean": 201868555.97201398,
+    "auc_ensemble": 0.9142074248298183,
+    "gain_ensemble": 203196318.0909545,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/T1/resultado_5.json"
+  },
+  {
+    "version": "v2/cierre_20261110",
+    "arm": "Z",
+    "seeds": 5,
+    "features": 608,
+    "auc_mean": 0.9133704752041364,
+    "gain_mean": 201769976.5117441,
+    "auc_ensemble": 0.9140666435575556,
+    "gain_ensemble": 203065648.42578712,
+    "source": "HISTORIA_2019_01/v2/cierre_20261110/resultados/Z/resultado_5.json"
+  },
+  {
+    "version": "v3",
+    "arm": "A",
+    "seeds": 20,
+    "features": 601,
+    "auc_mean": 0.9134685024941536,
+    "gain_mean": 202429514.05547225,
+    "auc_ensemble": 0.9142994784854884,
+    "gain_ensemble": 203937457.52123937,
+    "source": "HISTORIA_2019_01/v3/resultados/A/resultado_20.json"
+  },
+  {
+    "version": "v3",
+    "arm": "A",
+    "seeds": 5,
+    "features": 601,
+    "auc_mean": 0.9133792991984825,
+    "gain_mean": 203271399.5502249,
+    "auc_ensemble": 0.9141101822571647,
+    "gain_ensemble": 204685482.25887057,
+    "source": "HISTORIA_2019_01/v3/resultados/A/resultado_5.json"
+  },
+  {
+    "version": "v3",
+    "arm": "B",
+    "seeds": 20,
+    "features": 653,
+    "auc_mean": 0.9126301383214988,
+    "gain_mean": 203555836.95652175,
+    "auc_ensemble": 0.913435013422424,
+    "gain_ensemble": 204889663.918041,
+    "source": "HISTORIA_2019_01/v3/resultados/B/resultado_20.json"
+  },
+  {
+    "version": "v3",
+    "arm": "B",
+    "seeds": 5,
+    "features": 653,
+    "auc_mean": 0.9128829126553574,
+    "gain_mean": 203832580.95952025,
+    "auc_ensemble": 0.9134928429097915,
+    "gain_ensemble": 204927443.77811095,
+    "source": "HISTORIA_2019_01/v3/resultados/B/resultado_5.json"
+  },
+  {
+    "version": "v3",
+    "arm": "C",
+    "seeds": 5,
+    "features": 613,
+    "auc_mean": 0.9132554542109975,
+    "gain_mean": 201564874.06296852,
+    "auc_ensemble": 0.9139671184285237,
+    "gain_ensemble": 203399482.75862068,
+    "source": "HISTORIA_2019_01/v3/resultados/C/resultado_5.json"
+  },
+  {
+    "version": "v3",
+    "arm": "C0",
+    "seeds": 20,
+    "features": 588,
+    "auc_mean": 0.9135140455192781,
+    "gain_mean": 203519373.68815592,
+    "auc_ensemble": 0.9143010947055324,
+    "gain_ensemble": 204643263.36831585,
+    "source": "HISTORIA_2019_01/v3/resultados/C0/resultado_20.json"
+  },
+  {
+    "version": "v3",
+    "arm": "C0",
+    "seeds": 5,
+    "features": 588,
+    "auc_mean": 0.913848278052228,
+    "gain_mean": 203399240.87956023,
+    "auc_ensemble": 0.9144364176908044,
+    "gain_ensemble": 205019811.34432784,
+    "source": "HISTORIA_2019_01/v3/resultados/C0/resultado_5.json"
+  },
+  {
+    "version": "v3",
+    "arm": "D",
+    "seeds": 20,
+    "features": 590,
+    "auc_mean": 0.9134027414778064,
+    "gain_mean": 202891510.61969015,
+    "auc_ensemble": 0.9142471072851119,
+    "gain_ensemble": 204186496.7516242,
+    "source": "HISTORIA_2019_01/v3/resultados/D/resultado_20.json"
+  },
+  {
+    "version": "v3",
+    "arm": "D",
+    "seeds": 5,
+    "features": 590,
+    "auc_mean": 0.9132711031906877,
+    "gain_mean": 204072612.94352823,
+    "auc_ensemble": 0.9139290947253806,
+    "gain_ensemble": 205875733.38330835,
+    "source": "HISTORIA_2019_01/v3/resultados/D/resultado_5.json"
+  }
+]

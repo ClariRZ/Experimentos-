@@ -1,0 +1,29 @@
+GUION PARA VIDEO GRUPAL — C3 Y B6 INTRAMES
+
+
+
+HIPÓTESIS. Probamos si cocientes de magnitudes de la misma foto agregan información útil sobre dos representaciones previas. No son los ratios personales históricos de otro experimento.
+
+DISEÑO. En C3 comparamos control, sólo hoja mínima2500 y sólo cuatro ratios nuevos, con veinte semillas pareadas y300 árboles. En B6 comparamos B5, B5 más siete ratios con parámetros/rondas fijos, y la misma representación reoptimizada con veinte pruebas por AUC. El presupuesto principal se fijó en11.000 contactos.
+
+RESULTADOS.
+
+C3_CONTROL: ganancia 385,000,000; 625 aciertos; diferencia contra su control +0.
+
+C3_HOJA2500: ganancia 372,900,000; 614 aciertos; diferencia contra su control -12,100,000.
+
+C3_INTRAMES: ganancia 378,400,000; 619 aciertos; diferencia contra su control -6,600,000.
+
+B5_CONTROL: ganancia 214,500,000; 470 aciertos; diferencia contra su control +0.
+
+B6_FIJO: ganancia 220,000,000; 475 aciertos; diferencia contra su control +5,500,000.
+
+B6_BO: ganancia 215,600,000; 471 aciertos; diferencia contra su control +1,100,000.
+
+C3: conservar el control como referencia. El ensemble con ratios pierde $6,6 millones y seis aciertos a 11.000 contactos; hoja mínima 2500 pierde $12,1 millones y once aciertos. Los ratios suben ligeramente el AUC, pero no la ganancia principal. Por semilla ganan 10 veces, empatan una y pierden nueve: no hay mejora uniforme. B6 fijo gana $5,5 millones y cinco aciertos frente a B5; reoptimizado gana $1,1 millones y un acierto. B6 fijo todavía queda debajo de los anteriores B2 ($222,2 millones) y B4 ($224,4 millones). No adoptar automáticamente ninguna variante: falta validar en otro período y repetir B6 con varias semillas.
+
+LIMITACIONES. C3 se evalúa en junio2021 y B6 en octubre2019: sus ganancias absolutas no son comparables. Ambos períodos ya se habían observado. Las veinte semillas de C3 no son veinte meses independientes. B6 usa una sola semilla. La ganancia del ensemble no es la media de ganancias de las semillas.
+
+CONCLUSIÓN. El efecto de agregar ratios se interpreta con el brazo de parámetros fijos; la diferencia entre fijo y BO muestra el resultado de reoptimizar. La importancia interna de un ratio no demuestra que genere ganancia. Estos resultados no prueban qué causó el éxito de un experimento anterior distinto.
+
+SIGUIENTE PASO. Ablacionar los ratios individualmente si se justifica y validar fuera de los períodos ya utilizados. Revisar la interpretación de consumo sobre límite cuando las marcas tienen distintos campos observados. No adoptar una variante sólo por haber visto este test.

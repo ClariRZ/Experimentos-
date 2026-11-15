@@ -1,0 +1,30 @@
+{
+  "provenance": "Transcripcion de JSON observado mediante Cloud Shell del propietario; paquete original respaldado en Cloud Shell y VM",
+  "status": "PAUSADO_PRESUPUESTO",
+  "fits_started": 2,
+  "october_used": false,
+  "pilots": [
+    {
+      "arm": "B0",
+      "fit_seconds": 27.45988178253174,
+      "rounds": 100,
+      "columns": 652
+    },
+    {
+      "arm": "F4b",
+      "fit_seconds": 102.35465598106384,
+      "rounds": 100,
+      "columns": 1786
+    }
+  ],
+  "projection_seconds_conservative": 138178.78557443616,
+  "remaining_seconds": 6741.594826936722,
+  "peak_rss_bytes": 28279492608,
+  "remote_tests_passed": 25,
+  "vm_final_status": "TERMINATED",
+  "controller_start": 1794426726.5986788,
+  "controller_finish": 1794427126.6096206,
+  "aggregate_cloudshell": "/home/clarirz/inicial_20261111_01_agregados.tar.gz",
+  "full_local_download_verified": false,
+  "optuna_executed": false
+}

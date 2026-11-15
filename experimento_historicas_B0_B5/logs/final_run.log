@@ -1,0 +1,271 @@
+data/competencia_02_crudo.parquet: OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.029s
+
+OK
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 21:12:34,779] A new study created in RDB with name: B0
+B0 trial 0 auc 0.9217680433075903 trees 49 seconds 7.4
+[I 2026-11-07 21:12:42,354] Trial 0 finished with value: 0.9217680433075903 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.9217680433075903.
+B0 trial 1 auc 0.9231724731333629 trees 165 seconds 8.5
+[I 2026-11-07 21:12:50,904] Trial 1 finished with value: 0.9231724731333629 and parameters: {'num_leaves': 18, 'learning_rate': 0.05421966580621235, 'min_data_in_leaf': 915, 'feature_fraction': 0.7753322778798273, 'bagging_fraction': 0.7664601054103529}. Best is trial 1 with value: 0.9231724731333629.
+B0 trial 2 auc 0.922795681336632 trees 121 seconds 8.3
+[I 2026-11-07 21:12:59,225] Trial 2 finished with value: 0.922795681336632 and parameters: {'num_leaves': 25, 'learning_rate': 0.06818657152819689, 'min_data_in_leaf': 1561, 'feature_fraction': 0.9050583056319637, 'bagging_fraction': 0.6913038415815578}. Best is trial 1 with value: 0.9231724731333629.
+B0 trial 3 auc 0.9198069731630732 trees 52 seconds 9.7
+[I 2026-11-07 21:13:08,996] Trial 3 finished with value: 0.9198069731630732 and parameters: {'num_leaves': 110, 'learning_rate': 0.09916588988171672, 'min_data_in_leaf': 533, 'feature_fraction': 0.8309016507918491, 'bagging_fraction': 0.7605400600440411}. Best is trial 1 with value: 0.9231724731333629.
+B0 trial 4 auc 0.9226198723499199 trees 364 seconds 19.0
+[I 2026-11-07 21:13:28,089] Trial 4 finished with value: 0.9226198723499199 and parameters: {'num_leaves': 33, 'learning_rate': 0.024401192169110967, 'min_data_in_leaf': 494, 'feature_fraction': 0.7805056223246737, 'bagging_fraction': 0.9537143503080556}. Best is trial 1 with value: 0.9231724731333629.
+B0 trial 5 auc 0.923546270321905 trees 175 seconds 13.3
+[I 2026-11-07 21:13:41,469] Trial 5 finished with value: 0.923546270321905 and parameters: {'num_leaves': 68, 'learning_rate': 0.030353557921424797, 'min_data_in_leaf': 790, 'feature_fraction': 0.7590293479480765, 'bagging_fraction': 0.6317007009757013}. Best is trial 5 with value: 0.923546270321905.
+B0 trial 6 auc 0.9236402691615007 trees 245 seconds 16.8
+[I 2026-11-07 21:13:58,301] Trial 6 finished with value: 0.9236402691615007 and parameters: {'num_leaves': 57, 'learning_rate': 0.021671085863301787, 'min_data_in_leaf': 653, 'feature_fraction': 0.9558402131576189, 'bagging_fraction': 0.6058495233444121}. Best is trial 6 with value: 0.9236402691615007.
+B0 trial 7 auc 0.9228768479615632 trees 96 seconds 10.1
+[I 2026-11-07 21:14:08,475] Trial 7 finished with value: 0.9228768479615632 and parameters: {'num_leaves': 82, 'learning_rate': 0.04096571194607495, 'min_data_in_leaf': 373, 'feature_fraction': 0.5333176831210894, 'bagging_fraction': 0.6380368347169909}. Best is trial 6 with value: 0.9236402691615007.
+B0 trial 8 auc 0.9223160980209425 trees 110 seconds 7.0
+[I 2026-11-07 21:14:15,497] Trial 8 finished with value: 0.9223160980209425 and parameters: {'num_leaves': 21, 'learning_rate': 0.05988750198204327, 'min_data_in_leaf': 215, 'feature_fraction': 0.9689379133282443, 'bagging_fraction': 0.6631941043968075}. Best is trial 6 with value: 0.9236402691615007.
+B0 trial 9 auc 0.9234267249258558 trees 193 seconds 13.5
+[I 2026-11-07 21:14:29,045] Trial 9 finished with value: 0.9234267249258558 and parameters: {'num_leaves': 44, 'learning_rate': 0.023960426112695176, 'min_data_in_leaf': 908, 'feature_fraction': 0.9775667561171115, 'bagging_fraction': 0.6478184549435273}. Best is trial 6 with value: 0.9236402691615007.
+B0 trial 10 auc 0.9241213497812847 trees 204 seconds 19.8
+[I 2026-11-07 21:14:48,953] Trial 10 finished with value: 0.9241213497812847 and parameters: {'num_leaves': 77, 'learning_rate': 0.023869074593634847, 'min_data_in_leaf': 2276, 'feature_fraction': 0.9697235952604188, 'bagging_fraction': 0.7634141413729137}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 11 auc 0.9221913088748094 trees 205 seconds 14.6
+[I 2026-11-07 21:15:03,574] Trial 11 finished with value: 0.9221913088748094 and parameters: {'num_leaves': 57, 'learning_rate': 0.021019118051877846, 'min_data_in_leaf': 252, 'feature_fraction': 0.9446443522753422, 'bagging_fraction': 0.6985028267767919}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 12 auc 0.9229670876121558 trees 202 seconds 21.0
+[I 2026-11-07 21:15:24,639] Trial 12 finished with value: 0.9229670876121558 and parameters: {'num_leaves': 105, 'learning_rate': 0.027195893816148755, 'min_data_in_leaf': 1891, 'feature_fraction': 0.9358204774731451, 'bagging_fraction': 0.6920600761121427}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 13 auc 0.9238713095547766 trees 265 seconds 23.4
+[I 2026-11-07 21:15:48,086] Trial 13 finished with value: 0.9238713095547766 and parameters: {'num_leaves': 82, 'learning_rate': 0.02268515635532202, 'min_data_in_leaf': 1108, 'feature_fraction': 0.9633492674071503, 'bagging_fraction': 0.7842732986733959}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 14 auc 0.9231174488007696 trees 302 seconds 22.7
+[I 2026-11-07 21:16:10,803] Trial 14 finished with value: 0.9231174488007696 and parameters: {'num_leaves': 50, 'learning_rate': 0.02018385840229746, 'min_data_in_leaf': 2010, 'feature_fraction': 0.9365887811328033, 'bagging_fraction': 0.8449135711932865}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 15 auc 0.9233788685383953 trees 156 seconds 15.2
+[I 2026-11-07 21:16:26,025] Trial 15 finished with value: 0.9233788685383953 and parameters: {'num_leaves': 70, 'learning_rate': 0.03338565456011704, 'min_data_in_leaf': 1881, 'feature_fraction': 0.8660970341782199, 'bagging_fraction': 0.8053475007130596}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 16 auc 0.923276022861629 trees 211 seconds 23.8
+[I 2026-11-07 21:16:49,879] Trial 16 finished with value: 0.923276022861629 and parameters: {'num_leaves': 116, 'learning_rate': 0.030207841826822703, 'min_data_in_leaf': 3248, 'feature_fraction': 0.9870374982661535, 'bagging_fraction': 0.8186799248064814}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 17 auc 0.9235426449345444 trees 128 seconds 12.3
+[I 2026-11-07 21:17:02,193] Trial 17 finished with value: 0.9235426449345444 and parameters: {'num_leaves': 68, 'learning_rate': 0.04095413260073334, 'min_data_in_leaf': 753, 'feature_fraction': 0.8756168091023522, 'bagging_fraction': 0.7260576803559501}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 18 auc 0.9228028875108056 trees 234 seconds 19.4
+[I 2026-11-07 21:17:21,670] Trial 18 finished with value: 0.9228028875108056 and parameters: {'num_leaves': 58, 'learning_rate': 0.0317160208392788, 'min_data_in_leaf': 4850, 'feature_fraction': 0.832748218571885, 'bagging_fraction': 0.8506146332632889}. Best is trial 10 with value: 0.9241213497812847.
+B0 trial 19 auc 0.9230960915100271 trees 278 seconds 22.6
+[I 2026-11-07 21:17:44,320] Trial 19 finished with value: 0.9230960915100271 and parameters: {'num_leaves': 85, 'learning_rate': 0.028384244407463337, 'min_data_in_leaf': 2757, 'feature_fraction': 0.7814560303913772, 'bagging_fraction': 0.7253144771565776}. Best is trial 10 with value: 0.9241213497812847.
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 21:17:50,341] A new study created in RDB with name: B1
+B1 trial 0 auc 0.9263712371426019 trees 39 seconds 15.3
+[I 2026-11-07 21:18:05,706] Trial 0 finished with value: 0.9263712371426019 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.9263712371426019.
+B1 trial 1 auc 0.9267019979885662 trees 165 seconds 18.6
+[I 2026-11-07 21:18:24,354] Trial 1 finished with value: 0.9267019979885662 and parameters: {'num_leaves': 18, 'learning_rate': 0.05421966580621235, 'min_data_in_leaf': 915, 'feature_fraction': 0.7753322778798273, 'bagging_fraction': 0.7664601054103529}. Best is trial 1 with value: 0.9267019979885662.
+B1 trial 2 auc 0.9272453855731986 trees 137 seconds 19.8
+[I 2026-11-07 21:18:44,214] Trial 2 finished with value: 0.9272453855731986 and parameters: {'num_leaves': 25, 'learning_rate': 0.06818657152819689, 'min_data_in_leaf': 1561, 'feature_fraction': 0.9050583056319637, 'bagging_fraction': 0.6913038415815578}. Best is trial 2 with value: 0.9272453855731986.
+B1 trial 3 auc 0.9236758667699072 trees 49 seconds 22.0
+[I 2026-11-07 21:19:06,249] Trial 3 finished with value: 0.9236758667699072 and parameters: {'num_leaves': 110, 'learning_rate': 0.09916588988171672, 'min_data_in_leaf': 533, 'feature_fraction': 0.8309016507918491, 'bagging_fraction': 0.7605400600440411}. Best is trial 2 with value: 0.9272453855731986.
+B1 trial 4 auc 0.9268373479071951 trees 246 seconds 32.7
+[I 2026-11-07 21:19:38,974] Trial 4 finished with value: 0.9268373479071951 and parameters: {'num_leaves': 33, 'learning_rate': 0.024401192169110967, 'min_data_in_leaf': 494, 'feature_fraction': 0.7805056223246737, 'bagging_fraction': 0.9537143503080556}. Best is trial 2 with value: 0.9272453855731986.
+B1 trial 5 auc 0.9267925339142244 trees 92 seconds 19.0
+[I 2026-11-07 21:19:58,087] Trial 5 finished with value: 0.9267925339142244 and parameters: {'num_leaves': 35, 'learning_rate': 0.07941109318205639, 'min_data_in_leaf': 3451, 'feature_fraction': 0.9595068276438383, 'bagging_fraction': 0.614441110643976}. Best is trial 2 with value: 0.9272453855731986.
+B1 trial 6 auc 0.9272339519042733 trees 310 seconds 41.7
+[I 2026-11-07 21:20:39,882] Trial 6 finished with value: 0.9272339519042733 and parameters: {'num_leaves': 47, 'learning_rate': 0.022618135785186816, 'min_data_in_leaf': 780, 'feature_fraction': 0.967874862047363, 'bagging_fraction': 0.6062031054371141}. Best is trial 2 with value: 0.9272453855731986.
+B1 trial 7 auc 0.9278677639131949 trees 228 seconds 32.7
+[I 2026-11-07 21:21:12,619] Trial 7 finished with value: 0.9278677639131949 and parameters: {'num_leaves': 35, 'learning_rate': 0.04011797940823255, 'min_data_in_leaf': 1871, 'feature_fraction': 0.5614897184918584, 'bagging_fraction': 0.8322506890082647}. Best is trial 7 with value: 0.9278677639131949.
+B1 trial 8 auc 0.9282694523726873 trees 223 seconds 40.5
+[I 2026-11-07 21:21:53,210] Trial 8 finished with value: 0.9282694523726873 and parameters: {'num_leaves': 61, 'learning_rate': 0.033986473673961994, 'min_data_in_leaf': 4305, 'feature_fraction': 0.6262938724805368, 'bagging_fraction': 0.9817010255179983}. Best is trial 8 with value: 0.9282694523726873.
+B1 trial 9 auc 0.9300328656337273 trees 111 seconds 34.2
+[I 2026-11-07 21:22:27,435] Trial 9 finished with value: 0.9300328656337273 and parameters: {'num_leaves': 99, 'learning_rate': 0.054355484475060424, 'min_data_in_leaf': 3286, 'feature_fraction': 0.7365505316113695, 'bagging_fraction': 0.9490275251715596}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 10 auc 0.9282701373096667 trees 166 seconds 39.7
+[I 2026-11-07 21:23:07,237] Trial 10 finished with value: 0.9282701373096667 and parameters: {'num_leaves': 124, 'learning_rate': 0.027736966418231517, 'min_data_in_leaf': 743, 'feature_fraction': 0.6450313986396209, 'bagging_fraction': 0.9775323702041395}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 11 auc 0.9286875538336573 trees 215 seconds 42.8
+[I 2026-11-07 21:23:50,130] Trial 11 finished with value: 0.9286875538336573 and parameters: {'num_leaves': 87, 'learning_rate': 0.022041454567591493, 'min_data_in_leaf': 1083, 'feature_fraction': 0.6925821823416725, 'bagging_fraction': 0.9847098283677134}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 12 auc 0.9286706056256098 trees 142 seconds 41.0
+[I 2026-11-07 21:24:31,171] Trial 12 finished with value: 0.9286706056256098 and parameters: {'num_leaves': 120, 'learning_rate': 0.0478490506263544, 'min_data_in_leaf': 3544, 'feature_fraction': 0.7953962486598825, 'bagging_fraction': 0.8978321893988118}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 13 auc 0.926972325092677 trees 119 seconds 28.1
+[I 2026-11-07 21:24:59,374] Trial 13 finished with value: 0.926972325092677 and parameters: {'num_leaves': 69, 'learning_rate': 0.08602480880685243, 'min_data_in_leaf': 4884, 'feature_fraction': 0.6459565319147311, 'bagging_fraction': 0.9440087815557195}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 14 auc 0.9286377796226547 trees 246 seconds 45.5
+[I 2026-11-07 21:25:44,899] Trial 14 finished with value: 0.9286377796226547 and parameters: {'num_leaves': 60, 'learning_rate': 0.02065729727171908, 'min_data_in_leaf': 2093, 'feature_fraction': 0.7888002701839678, 'bagging_fraction': 0.9611243918631068}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 15 auc 0.9281650297479918 trees 113 seconds 29.2
+[I 2026-11-07 21:26:14,178] Trial 15 finished with value: 0.9281650297479918 and parameters: {'num_leaves': 81, 'learning_rate': 0.06492607069417568, 'min_data_in_leaf': 1939, 'feature_fraction': 0.6900196759407676, 'bagging_fraction': 0.9369923721613825}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 16 auc 0.9268500399487104 trees 35 seconds 22.6
+[I 2026-11-07 21:26:36,866] Trial 16 finished with value: 0.9268500399487104 and parameters: {'num_leaves': 113, 'learning_rate': 0.13687576667467663, 'min_data_in_leaf': 3082, 'feature_fraction': 0.7136599441186041, 'bagging_fraction': 0.9733613118066823}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 17 auc 0.9279033678931082 trees 118 seconds 36.4
+[I 2026-11-07 21:27:13,329] Trial 17 finished with value: 0.9279033678931082 and parameters: {'num_leaves': 115, 'learning_rate': 0.04539774641758823, 'min_data_in_leaf': 969, 'feature_fraction': 0.8150714509401162, 'bagging_fraction': 0.9847395597091247}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 18 auc 0.927116630164092 trees 33 seconds 23.1
+[I 2026-11-07 21:27:36,444] Trial 18 finished with value: 0.927116630164092 and parameters: {'num_leaves': 95, 'learning_rate': 0.1297054499956097, 'min_data_in_leaf': 3680, 'feature_fraction': 0.833843337299036, 'bagging_fraction': 0.9733445913015014}. Best is trial 9 with value: 0.9300328656337273.
+B1 trial 19 auc 0.9248053437776432 trees 91 seconds 21.5
+[I 2026-11-07 21:27:58,004] Trial 19 finished with value: 0.9248053437776432 and parameters: {'num_leaves': 72, 'learning_rate': 0.060228196632993, 'min_data_in_leaf': 409, 'feature_fraction': 0.690875757900217, 'bagging_fraction': 0.9887522749156921}. Best is trial 9 with value: 0.9300328656337273.
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 21:28:08,006] A new study created in RDB with name: B2
+B2 trial 0 auc 0.928685253719708 trees 36 seconds 22.5
+[I 2026-11-07 21:28:30,595] Trial 0 finished with value: 0.928685253719708 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.928685253719708.
+B2 trial 1 auc 0.9287985900823954 trees 114 seconds 21.4
+[I 2026-11-07 21:28:52,048] Trial 1 finished with value: 0.9287985900823954 and parameters: {'num_leaves': 18, 'learning_rate': 0.05421966580621235, 'min_data_in_leaf': 915, 'feature_fraction': 0.7753322778798273, 'bagging_fraction': 0.7664601054103529}. Best is trial 1 with value: 0.9287985900823954.
+B2 trial 2 auc 0.9280868449882358 trees 109 seconds 25.8
+[I 2026-11-07 21:29:17,870] Trial 2 finished with value: 0.9280868449882358 and parameters: {'num_leaves': 25, 'learning_rate': 0.06818657152819689, 'min_data_in_leaf': 1561, 'feature_fraction': 0.9050583056319637, 'bagging_fraction': 0.6913038415815578}. Best is trial 1 with value: 0.9287985900823954.
+B2 trial 3 auc 0.925049471245855 trees 31 seconds 30.2
+[I 2026-11-07 21:29:48,111] Trial 3 finished with value: 0.925049471245855 and parameters: {'num_leaves': 110, 'learning_rate': 0.09916588988171672, 'min_data_in_leaf': 533, 'feature_fraction': 0.8309016507918491, 'bagging_fraction': 0.7605400600440411}. Best is trial 1 with value: 0.9287985900823954.
+B2 trial 4 auc 0.9294074767567752 trees 247 seconds 48.6
+[I 2026-11-07 21:30:36,798] Trial 4 finished with value: 0.9294074767567752 and parameters: {'num_leaves': 33, 'learning_rate': 0.024401192169110967, 'min_data_in_leaf': 494, 'feature_fraction': 0.7805056223246737, 'bagging_fraction': 0.9537143503080556}. Best is trial 4 with value: 0.9294074767567752.
+B2 trial 5 auc 0.9298476746032747 trees 246 seconds 57.9
+[I 2026-11-07 21:31:34,720] Trial 5 finished with value: 0.9298476746032747 and parameters: {'num_leaves': 31, 'learning_rate': 0.021097365751146843, 'min_data_in_leaf': 839, 'feature_fraction': 0.9843025680495096, 'bagging_fraction': 0.9372830113171866}. Best is trial 5 with value: 0.9298476746032747.
+B2 trial 6 auc 0.9308178639413914 trees 306 seconds 61.4
+[I 2026-11-07 21:32:36,193] Trial 6 finished with value: 0.9308178639413914 and parameters: {'num_leaves': 47, 'learning_rate': 0.021578056596624793, 'min_data_in_leaf': 665, 'feature_fraction': 0.9692377535394938, 'bagging_fraction': 0.609593589115641}. Best is trial 6 with value: 0.9308178639413914.
+B2 trial 7 auc 0.9302023986862564 trees 222 seconds 48.6
+[I 2026-11-07 21:33:24,817] Trial 7 finished with value: 0.9302023986862564 and parameters: {'num_leaves': 67, 'learning_rate': 0.023486134909009967, 'min_data_in_leaf': 455, 'feature_fraction': 0.7749206202921842, 'bagging_fraction': 0.6290970937931063}. Best is trial 6 with value: 0.9308178639413914.
+B2 trial 8 auc 0.9263145498467379 trees 163 seconds 26.6
+[I 2026-11-07 21:33:51,524] Trial 8 finished with value: 0.9263145498467379 and parameters: {'num_leaves': 20, 'learning_rate': 0.059886519483889324, 'min_data_in_leaf': 215, 'feature_fraction': 0.9691178154044111, 'bagging_fraction': 0.6632608446838649}. Best is trial 6 with value: 0.9308178639413914.
+B2 trial 9 auc 0.9311837349754932 trees 256 seconds 55.7
+[I 2026-11-07 21:34:47,261] Trial 9 finished with value: 0.9311837349754932 and parameters: {'num_leaves': 44, 'learning_rate': 0.023960426112695176, 'min_data_in_leaf': 908, 'feature_fraction': 0.9775667561171115, 'bagging_fraction': 0.6478184549435273}. Best is trial 9 with value: 0.9311837349754932.
+B2 trial 10 auc 0.9330276394817452 trees 298 seconds 94.0
+[I 2026-11-07 21:36:21,376] Trial 10 finished with value: 0.9330276394817452 and parameters: {'num_leaves': 72, 'learning_rate': 0.023909163041496328, 'min_data_in_leaf': 2355, 'feature_fraction': 0.9699959173166512, 'bagging_fraction': 0.7642973603748348}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 11 auc 0.9317860876696651 trees 285 seconds 77.5
+[I 2026-11-07 21:37:38,889] Trial 11 finished with value: 0.9317860876696651 and parameters: {'num_leaves': 48, 'learning_rate': 0.02883490631966, 'min_data_in_leaf': 3954, 'feature_fraction': 0.9428812648866848, 'bagging_fraction': 0.8486227503707411}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 12 auc 0.9315856018371755 trees 242 seconds 77.9
+[I 2026-11-07 21:38:56,819] Trial 12 finished with value: 0.9315856018371755 and parameters: {'num_leaves': 82, 'learning_rate': 0.02309079342435878, 'min_data_in_leaf': 2656, 'feature_fraction': 0.9039329597669974, 'bagging_fraction': 0.7088758552534921}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 13 auc 0.9316938728519691 trees 186 seconds 59.2
+[I 2026-11-07 21:39:56,060] Trial 13 finished with value: 0.9316938728519691 and parameters: {'num_leaves': 52, 'learning_rate': 0.03961348755277703, 'min_data_in_leaf': 3532, 'feature_fraction': 0.9360913214658928, 'bagging_fraction': 0.8249252367792541}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 14 auc 0.9300024416888301 trees 164 seconds 46.9
+[I 2026-11-07 21:40:43,070] Trial 14 finished with value: 0.9300024416888301 and parameters: {'num_leaves': 50, 'learning_rate': 0.041858748588336804, 'min_data_in_leaf': 1240, 'feature_fraction': 0.8709132335881201, 'bagging_fraction': 0.8447388460627039}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 15 auc 0.9315777107260226 trees 225 seconds 63.2
+[I 2026-11-07 21:41:46,297] Trial 15 finished with value: 0.9315777107260226 and parameters: {'num_leaves': 46, 'learning_rate': 0.02211416327414373, 'min_data_in_leaf': 2505, 'feature_fraction': 0.8581970251591575, 'bagging_fraction': 0.9760951082797915}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 16 auc 0.9318768019975132 trees 241 seconds 84.0
+[I 2026-11-07 21:43:10,349] Trial 16 finished with value: 0.9318768019975132 and parameters: {'num_leaves': 68, 'learning_rate': 0.023559161985735478, 'min_data_in_leaf': 1800, 'feature_fraction': 0.9998981651948802, 'bagging_fraction': 0.9075242375364843}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 17 auc 0.9310923643824462 trees 162 seconds 75.3
+[I 2026-11-07 21:44:25,757] Trial 17 finished with value: 0.9310923643824462 and parameters: {'num_leaves': 105, 'learning_rate': 0.027539584549021383, 'min_data_in_leaf': 1084, 'feature_fraction': 0.9512761824120766, 'bagging_fraction': 0.935748173460547}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 18 auc 0.9322484679170358 trees 173 seconds 68.9
+[I 2026-11-07 21:45:34,759] Trial 18 finished with value: 0.9322484679170358 and parameters: {'num_leaves': 92, 'learning_rate': 0.032256691113850273, 'min_data_in_leaf': 1947, 'feature_fraction': 0.9972028790128398, 'bagging_fraction': 0.6643091287745856}. Best is trial 10 with value: 0.9330276394817452.
+B2 trial 19 auc 0.9319323137503756 trees 131 seconds 52.1
+[I 2026-11-07 21:46:26,905] Trial 19 finished with value: 0.9319323137503756 and parameters: {'num_leaves': 84, 'learning_rate': 0.030794188421422532, 'min_data_in_leaf': 1146, 'feature_fraction': 0.9005861322571475, 'bagging_fraction': 0.7339983242088266}. Best is trial 10 with value: 0.9330276394817452.
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 21:46:39,426] A new study created in RDB with name: B3
+B3 trial 0 auc 0.9298034531604349 trees 44 seconds 29.3
+[I 2026-11-07 21:47:08,776] Trial 0 finished with value: 0.9298034531604349 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.9298034531604349.
+B3 trial 1 auc 0.9291561431143898 trees 99 seconds 23.9
+[I 2026-11-07 21:47:32,747] Trial 1 finished with value: 0.9291561431143898 and parameters: {'num_leaves': 18, 'learning_rate': 0.05421966580621235, 'min_data_in_leaf': 915, 'feature_fraction': 0.7753322778798273, 'bagging_fraction': 0.7664601054103529}. Best is trial 0 with value: 0.9298034531604349.
+B3 trial 2 auc 0.9288660770822597 trees 112 seconds 30.7
+[I 2026-11-07 21:48:03,546] Trial 2 finished with value: 0.9288660770822597 and parameters: {'num_leaves': 25, 'learning_rate': 0.06818657152819689, 'min_data_in_leaf': 1561, 'feature_fraction': 0.9050583056319637, 'bagging_fraction': 0.6913038415815578}. Best is trial 0 with value: 0.9298034531604349.
+B3 trial 3 auc 0.9263884147248936 trees 43 seconds 39.3
+[I 2026-11-07 21:48:42,931] Trial 3 finished with value: 0.9263884147248936 and parameters: {'num_leaves': 110, 'learning_rate': 0.09916588988171672, 'min_data_in_leaf': 533, 'feature_fraction': 0.8309016507918491, 'bagging_fraction': 0.7605400600440411}. Best is trial 0 with value: 0.9298034531604349.
+B3 trial 4 auc 0.9296318493682008 trees 266 seconds 60.9
+[I 2026-11-07 21:49:43,869] Trial 4 finished with value: 0.9296318493682008 and parameters: {'num_leaves': 33, 'learning_rate': 0.024401192169110967, 'min_data_in_leaf': 494, 'feature_fraction': 0.7805056223246737, 'bagging_fraction': 0.9537143503080556}. Best is trial 0 with value: 0.9298034531604349.
+B3 trial 5 auc 0.9299197204162434 trees 58 seconds 34.3
+[I 2026-11-07 21:50:18,267] Trial 5 finished with value: 0.9299197204162434 and parameters: {'num_leaves': 56, 'learning_rate': 0.10845935728459298, 'min_data_in_leaf': 3801, 'feature_fraction': 0.6992477756476009, 'bagging_fraction': 0.8723063607856257}. Best is trial 5 with value: 0.9299197204162434.
+B3 trial 6 auc 0.9281691935276756 trees 70 seconds 34.2
+[I 2026-11-07 21:50:52,486] Trial 6 finished with value: 0.9281691935276756 and parameters: {'num_leaves': 60, 'learning_rate': 0.09050280451483345, 'min_data_in_leaf': 3993, 'feature_fraction': 0.5315513690153111, 'bagging_fraction': 0.6615332098582501}. Best is trial 5 with value: 0.9299197204162434.
+B3 trial 7 auc 0.931236229819893 trees 331 seconds 96.0
+[I 2026-11-07 21:52:28,584] Trial 7 finished with value: 0.931236229819893 and parameters: {'num_leaves': 54, 'learning_rate': 0.024861082042686004, 'min_data_in_leaf': 4816, 'feature_fraction': 0.539427976738397, 'bagging_fraction': 0.927712416010262}. Best is trial 7 with value: 0.931236229819893.
+B3 trial 8 auc 0.9307115075643867 trees 184 seconds 68.3
+[I 2026-11-07 21:53:36,992] Trial 8 finished with value: 0.9307115075643867 and parameters: {'num_leaves': 68, 'learning_rate': 0.032661778793474344, 'min_data_in_leaf': 4379, 'feature_fraction': 0.6255305077297155, 'bagging_fraction': 0.9852561783474398}. Best is trial 7 with value: 0.931236229819893.
+B3 trial 9 auc 0.9294902585586762 trees 328 seconds 71.0
+[I 2026-11-07 21:54:48,025] Trial 9 finished with value: 0.9294902585586762 and parameters: {'num_leaves': 23, 'learning_rate': 0.025165517495539063, 'min_data_in_leaf': 1320, 'feature_fraction': 0.5799865252799437, 'bagging_fraction': 0.9154657841265939}. Best is trial 7 with value: 0.931236229819893.
+B3 trial 10 auc 0.9313313787164633 trees 89 seconds 36.6
+[I 2026-11-07 21:55:24,672] Trial 10 finished with value: 0.9313313787164633 and parameters: {'num_leaves': 49, 'learning_rate': 0.056546035026811596, 'min_data_in_leaf': 1272, 'feature_fraction': 0.5134482837316404, 'bagging_fraction': 0.8637597226921475}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 11 auc 0.9300489664313725 trees 118 seconds 45.5
+[I 2026-11-07 21:56:10,286] Trial 11 finished with value: 0.9300489664313725 and parameters: {'num_leaves': 63, 'learning_rate': 0.034965342504026366, 'min_data_in_leaf': 891, 'feature_fraction': 0.5127334573604573, 'bagging_fraction': 0.8944893403416436}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 12 auc 0.929172594344908 trees 75 seconds 32.1
+[I 2026-11-07 21:56:42,483] Trial 12 finished with value: 0.929172594344908 and parameters: {'num_leaves': 34, 'learning_rate': 0.0859397463240331, 'min_data_in_leaf': 3130, 'feature_fraction': 0.5160722191939633, 'bagging_fraction': 0.8679889917600588}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 13 auc 0.9306700131264508 trees 351 seconds 90.7
+[I 2026-11-07 21:58:13,252] Trial 13 finished with value: 0.9306700131264508 and parameters: {'num_leaves': 47, 'learning_rate': 0.022735471074392152, 'min_data_in_leaf': 4653, 'feature_fraction': 0.5295420466254015, 'bagging_fraction': 0.8221066415512457}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 14 auc 0.9309771261249835 trees 120 seconds 60.5
+[I 2026-11-07 21:59:13,880] Trial 14 finished with value: 0.9309771261249835 and parameters: {'num_leaves': 116, 'learning_rate': 0.04334823649505834, 'min_data_in_leaf': 1619, 'feature_fraction': 0.622854603735356, 'bagging_fraction': 0.8402141295636858}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 15 auc 0.9266512807945595 trees 55 seconds 34.7
+[I 2026-11-07 21:59:48,628] Trial 15 finished with value: 0.9266512807945595 and parameters: {'num_leaves': 77, 'learning_rate': 0.07806304393054693, 'min_data_in_leaf': 498, 'feature_fraction': 0.5693759916476762, 'bagging_fraction': 0.8985826102243437}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 16 auc 0.931088140073448 trees 149 seconds 49.4
+[I 2026-11-07 22:00:38,059] Trial 16 finished with value: 0.931088140073448 and parameters: {'num_leaves': 54, 'learning_rate': 0.03183178733940685, 'min_data_in_leaf': 1460, 'feature_fraction': 0.6626415158072939, 'bagging_fraction': 0.9271034659276}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 17 auc 0.9294857443461192 trees 94 seconds 39.6
+[I 2026-11-07 22:01:17,715] Trial 17 finished with value: 0.9294857443461192 and parameters: {'num_leaves': 40, 'learning_rate': 0.05729672755246744, 'min_data_in_leaf': 3756, 'feature_fraction': 0.5258161203357905, 'bagging_fraction': 0.9526965960217523}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 18 auc 0.92951618103403 trees 105 seconds 51.6
+[I 2026-11-07 22:02:09,373] Trial 18 finished with value: 0.92951618103403 and parameters: {'num_leaves': 89, 'learning_rate': 0.056141990286353326, 'min_data_in_leaf': 1590, 'feature_fraction': 0.5205065145146577, 'bagging_fraction': 0.9522624220123816}. Best is trial 10 with value: 0.9313313787164633.
+B3 trial 19 auc 0.9315959810217279 trees 223 seconds 75.6
+[I 2026-11-07 22:03:25,075] Trial 19 finished with value: 0.9315959810217279 and parameters: {'num_leaves': 75, 'learning_rate': 0.03297182082527873, 'min_data_in_leaf': 2524, 'feature_fraction': 0.6042401251961981, 'bagging_fraction': 0.8509066179590914}. Best is trial 19 with value: 0.9315959810217279.
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 22:03:39,256] A new study created in RDB with name: B4
+B4 trial 0 auc 0.9286679678218008 trees 57 seconds 36.0
+[I 2026-11-07 22:04:15,376] Trial 0 finished with value: 0.9286679678218008 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.9286679678218008.
+B4 trial 1 auc 0.929120746208447 trees 117 seconds 31.0
+[I 2026-11-07 22:04:46,444] Trial 1 finished with value: 0.929120746208447 and parameters: {'num_leaves': 18, 'learning_rate': 0.05421966580621235, 'min_data_in_leaf': 915, 'feature_fraction': 0.7753322778798273, 'bagging_fraction': 0.7664601054103529}. Best is trial 1 with value: 0.929120746208447.
+B4 trial 2 auc 0.9280861696085166 trees 88 seconds 33.2
+[I 2026-11-07 22:05:19,723] Trial 2 finished with value: 0.9280861696085166 and parameters: {'num_leaves': 25, 'learning_rate': 0.06818657152819689, 'min_data_in_leaf': 1561, 'feature_fraction': 0.9050583056319637, 'bagging_fraction': 0.6913038415815578}. Best is trial 1 with value: 0.929120746208447.
+B4 trial 3 auc 0.9254374960090475 trees 26 seconds 40.9
+[I 2026-11-07 22:06:00,667] Trial 3 finished with value: 0.9254374960090475 and parameters: {'num_leaves': 110, 'learning_rate': 0.09916588988171672, 'min_data_in_leaf': 533, 'feature_fraction': 0.8309016507918491, 'bagging_fraction': 0.7605400600440411}. Best is trial 1 with value: 0.929120746208447.
+B4 trial 4 auc 0.9297759919661925 trees 188 seconds 59.6
+[I 2026-11-07 22:07:00,304] Trial 4 finished with value: 0.9297759919661925 and parameters: {'num_leaves': 33, 'learning_rate': 0.024401192169110967, 'min_data_in_leaf': 494, 'feature_fraction': 0.7805056223246737, 'bagging_fraction': 0.9537143503080556}. Best is trial 4 with value: 0.9297759919661925.
+B4 trial 5 auc 0.9298906153732506 trees 298 seconds 93.9
+[I 2026-11-07 22:08:34,239] Trial 5 finished with value: 0.9298906153732506 and parameters: {'num_leaves': 31, 'learning_rate': 0.021097365751146843, 'min_data_in_leaf': 839, 'feature_fraction': 0.9843025680495096, 'bagging_fraction': 0.9372830113171866}. Best is trial 5 with value: 0.9298906153732506.
+B4 trial 6 auc 0.930318025605633 trees 255 seconds 75.3
+[I 2026-11-07 22:09:49,595] Trial 6 finished with value: 0.930318025605633 and parameters: {'num_leaves': 47, 'learning_rate': 0.021578056596624793, 'min_data_in_leaf': 665, 'feature_fraction': 0.9692377535394938, 'bagging_fraction': 0.609593589115641}. Best is trial 6 with value: 0.930318025605633.
+B4 trial 7 auc 0.9295965544063666 trees 179 seconds 58.1
+[I 2026-11-07 22:10:47,787] Trial 7 finished with value: 0.9295965544063666 and parameters: {'num_leaves': 67, 'learning_rate': 0.023486134909009967, 'min_data_in_leaf': 455, 'feature_fraction': 0.7749206202921842, 'bagging_fraction': 0.6290970937931063}. Best is trial 6 with value: 0.930318025605633.
+B4 trial 8 auc 0.9262445365444334 trees 118 seconds 32.0
+[I 2026-11-07 22:11:19,894] Trial 8 finished with value: 0.9262445365444334 and parameters: {'num_leaves': 20, 'learning_rate': 0.059886519483889324, 'min_data_in_leaf': 215, 'feature_fraction': 0.9691178154044111, 'bagging_fraction': 0.6632608446838649}. Best is trial 6 with value: 0.930318025605633.
+B4 trial 9 auc 0.9317527869894545 trees 228 seconds 71.6
+[I 2026-11-07 22:12:31,530] Trial 9 finished with value: 0.9317527869894545 and parameters: {'num_leaves': 44, 'learning_rate': 0.023960426112695176, 'min_data_in_leaf': 908, 'feature_fraction': 0.9775667561171115, 'bagging_fraction': 0.6478184549435273}. Best is trial 9 with value: 0.9317527869894545.
+B4 trial 10 auc 0.9322384009363158 trees 250 seconds 113.7
+[I 2026-11-07 22:14:25,345] Trial 10 finished with value: 0.9322384009363158 and parameters: {'num_leaves': 72, 'learning_rate': 0.023909163041496328, 'min_data_in_leaf': 2355, 'feature_fraction': 0.9699959173166512, 'bagging_fraction': 0.7642973603748348}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 11 auc 0.9313577663118124 trees 254 seconds 103.5
+[I 2026-11-07 22:16:08,919] Trial 11 finished with value: 0.9313577663118124 and parameters: {'num_leaves': 48, 'learning_rate': 0.02883490631966, 'min_data_in_leaf': 3954, 'feature_fraction': 0.9428812648866848, 'bagging_fraction': 0.8486227503707411}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 12 auc 0.9319598960032468 trees 265 seconds 123.9
+[I 2026-11-07 22:18:12,836] Trial 12 finished with value: 0.9319598960032468 and parameters: {'num_leaves': 91, 'learning_rate': 0.02829951820091416, 'min_data_in_leaf': 1979, 'feature_fraction': 0.9428619231115225, 'bagging_fraction': 0.6860987129983268}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 13 auc 0.9318660978661149 trees 126 seconds 73.2
+[I 2026-11-07 22:19:26,088] Trial 13 finished with value: 0.9318660978661149 and parameters: {'num_leaves': 82, 'learning_rate': 0.039120531426966254, 'min_data_in_leaf': 2602, 'feature_fraction': 0.9360843334170413, 'bagging_fraction': 0.6964225858029967}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 14 auc 0.9318966078263538 trees 150 seconds 93.5
+[I 2026-11-07 22:20:59,657] Trial 14 finished with value: 0.9318966078263538 and parameters: {'num_leaves': 120, 'learning_rate': 0.03065011704540283, 'min_data_in_leaf': 1711, 'feature_fraction': 0.833650828259301, 'bagging_fraction': 0.7830645495050907}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 15 auc 0.9316269306159349 trees 305 seconds 100.8
+[I 2026-11-07 22:22:40,549] Trial 15 finished with value: 0.9316269306159349 and parameters: {'num_leaves': 59, 'learning_rate': 0.02086714850528566, 'min_data_in_leaf': 3310, 'feature_fraction': 0.7562138720897442, 'bagging_fraction': 0.7674221108164585}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 16 auc 0.9312066564711514 trees 220 seconds 85.3
+[I 2026-11-07 22:24:05,908] Trial 16 finished with value: 0.9312066564711514 and parameters: {'num_leaves': 74, 'learning_rate': 0.03759076754149954, 'min_data_in_leaf': 3686, 'feature_fraction': 0.809079485531756, 'bagging_fraction': 0.658200642288728}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 17 auc 0.9319688989423337 trees 245 seconds 112.5
+[I 2026-11-07 22:25:58,432] Trial 17 finished with value: 0.9319688989423337 and parameters: {'num_leaves': 95, 'learning_rate': 0.021981570704746545, 'min_data_in_leaf': 859, 'feature_fraction': 0.9259357984661633, 'bagging_fraction': 0.7422858232464635}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 18 auc 0.9315736457046939 trees 137 seconds 81.2
+[I 2026-11-07 22:27:19,684] Trial 18 finished with value: 0.9315736457046939 and parameters: {'num_leaves': 83, 'learning_rate': 0.032889472141385094, 'min_data_in_leaf': 1107, 'feature_fraction': 0.9949430786211408, 'bagging_fraction': 0.807652955682907}. Best is trial 10 with value: 0.9322384009363158.
+B4 trial 19 auc 0.9307233904245402 trees 250 seconds 99.7
+[I 2026-11-07 22:28:59,431] Trial 19 finished with value: 0.9307233904245402 and parameters: {'num_leaves': 55, 'learning_rate': 0.020939305059658263, 'min_data_in_leaf': 1321, 'feature_fraction': 0.9950205116239934, 'bagging_fraction': 0.7744199688591573}. Best is trial 10 with value: 0.9322384009363158.
+/home/clara-m-rodr-guez/experimento_historicas_20261107/.venv/lib/python3.12/site-packages/lightgbm/basic.py:2515: UserWarning: Overriding the parameters from Reference Dataset.
+  _log_warning("Overriding the parameters from Reference Dataset.")
+[I 2026-11-07 22:29:17,150] A new study created in RDB with name: B5
+B5 trial 0 auc 0.929433781522536 trees 40 seconds 42.0
+[I 2026-11-07 22:29:59,203] Trial 0 finished with value: 0.929433781522536 and parameters: {'num_leaves': 51, 'learning_rate': 0.1136969719907129, 'min_data_in_leaf': 1722, 'feature_fraction': 0.7292047268033406, 'bagging_fraction': 0.8903225536120093}. Best is trial 0 with value: 0.929433781522536.
+B5 trial 1 auc 0.9288128304000594 trees 171 seconds 45.7
+[I 2026-11-07 22:30:44,918] Trial 1 finished with value: 0.9288128304000594 and parameters: {'num_leaves': 18, 'learning_rate': 0.05421966580621235, 'min_data_in_leaf': 915, 'feature_fraction': 0.7753322778798273, 'bagging_fraction': 0.7664601054103529}. Best is trial 0 with value: 0.929433781522536.
+B5 trial 2 auc 0.929093848892555 trees 101 seconds 43.1
+[I 2026-11-07 22:31:28,047] Trial 2 finished with value: 0.929093848892555 and parameters: {'num_leaves': 25, 'learning_rate': 0.06818657152819689, 'min_data_in_leaf': 1561, 'feature_fraction': 0.9050583056319637, 'bagging_fraction': 0.6913038415815578}. Best is trial 0 with value: 0.929433781522536.
+B5 trial 3 auc 0.923989055000159 trees 36 seconds 55.5
+[I 2026-11-07 22:32:23,645] Trial 3 finished with value: 0.923989055000159 and parameters: {'num_leaves': 110, 'learning_rate': 0.09916588988171672, 'min_data_in_leaf': 533, 'feature_fraction': 0.8309016507918491, 'bagging_fraction': 0.7605400600440411}. Best is trial 0 with value: 0.929433781522536.
+B5 trial 4 auc 0.9290898061715 trees 207 seconds 75.4
+[I 2026-11-07 22:33:39,115] Trial 4 finished with value: 0.9290898061715 and parameters: {'num_leaves': 33, 'learning_rate': 0.024401192169110967, 'min_data_in_leaf': 494, 'feature_fraction': 0.7805056223246737, 'bagging_fraction': 0.9537143503080556}. Best is trial 0 with value: 0.929433781522536.
+B5 trial 5 auc 0.9294915742748273 trees 61 seconds 51.7
+[I 2026-11-07 22:34:30,896] Trial 5 finished with value: 0.9294915742748273 and parameters: {'num_leaves': 56, 'learning_rate': 0.10845935728459298, 'min_data_in_leaf': 3801, 'feature_fraction': 0.6992477756476009, 'bagging_fraction': 0.8723063607856257}. Best is trial 5 with value: 0.9294915742748273.
+B5 trial 6 auc 0.9282621538116653 trees 111 seconds 59.5
+[I 2026-11-07 22:35:30,456] Trial 6 finished with value: 0.9282621538116653 and parameters: {'num_leaves': 60, 'learning_rate': 0.09050280451483345, 'min_data_in_leaf': 3993, 'feature_fraction': 0.5315513690153111, 'bagging_fraction': 0.6615332098582501}. Best is trial 5 with value: 0.9294915742748273.
+B5 trial 7 auc 0.9307176496969272 trees 287 seconds 122.0
+[I 2026-11-07 22:37:32,480] Trial 7 finished with value: 0.9307176496969272 and parameters: {'num_leaves': 54, 'learning_rate': 0.024861082042686004, 'min_data_in_leaf': 4816, 'feature_fraction': 0.539427976738397, 'bagging_fraction': 0.927712416010262}. Best is trial 7 with value: 0.9307176496969272.
+B5 trial 8 auc 0.9314317395055836 trees 176 seconds 95.9
+[I 2026-11-07 22:39:08,450] Trial 8 finished with value: 0.9314317395055836 and parameters: {'num_leaves': 68, 'learning_rate': 0.032661778793474344, 'min_data_in_leaf': 4379, 'feature_fraction': 0.6255305077297155, 'bagging_fraction': 0.9852561783474398}. Best is trial 8 with value: 0.9314317395055836.
+B5 trial 9 auc 0.9316400463626514 trees 416 seconds 209.4
+[I 2026-11-07 22:42:37,899] Trial 9 finished with value: 0.9316400463626514 and parameters: {'num_leaves': 123, 'learning_rate': 0.020849360283860006, 'min_data_in_leaf': 4096, 'feature_fraction': 0.8390667812520375, 'bagging_fraction': 0.776604573496956}. Best is trial 9 with value: 0.9316400463626514.
+B5 trial 10 auc 0.9324011833774065 trees 235 seconds 150.5
+[I 2026-11-07 22:45:08,437] Trial 10 finished with value: 0.9324011833774065 and parameters: {'num_leaves': 82, 'learning_rate': 0.023856620838310326, 'min_data_in_leaf': 2878, 'feature_fraction': 0.9660847109351167, 'bagging_fraction': 0.779758247328532}. Best is trial 10 with value: 0.9324011833774065.
+B5 trial 11 auc 0.9311097840819957 trees 242 seconds 154.3
+[I 2026-11-07 22:47:42,816] Trial 11 finished with value: 0.9311097840819957 and parameters: {'num_leaves': 126, 'learning_rate': 0.028062740317158247, 'min_data_in_leaf': 3411, 'feature_fraction': 0.8685364548095615, 'bagging_fraction': 0.7482747885253915}. Best is trial 10 with value: 0.9324011833774065.
+B5 trial 12 auc 0.9319625879648634 trees 272 seconds 132.3
+[I 2026-11-07 22:49:55,167] Trial 12 finished with value: 0.9319625879648634 and parameters: {'num_leaves': 75, 'learning_rate': 0.025448283574500997, 'min_data_in_leaf': 2873, 'feature_fraction': 0.7204150759053123, 'bagging_fraction': 0.803604344054577}. Best is trial 10 with value: 0.9324011833774065.
+B5 trial 13 auc 0.9324679280967304 trees 281 seconds 158.1
+[I 2026-11-07 22:52:33,346] Trial 13 finished with value: 0.9324679280967304 and parameters: {'num_leaves': 117, 'learning_rate': 0.020075574263441705, 'min_data_in_leaf': 2400, 'feature_fraction': 0.6588945690001901, 'bagging_fraction': 0.8197756042652335}. Best is trial 13 with value: 0.9324679280967304.
+B5 trial 14 auc 0.9320094535830188 trees 295 seconds 136.7
+[I 2026-11-07 22:54:50,118] Trial 14 finished with value: 0.9320094535830188 and parameters: {'num_leaves': 53, 'learning_rate': 0.020183681122761643, 'min_data_in_leaf': 2324, 'feature_fraction': 0.8745145857155866, 'bagging_fraction': 0.8588453247978667}. Best is trial 13 with value: 0.9324679280967304.
+B5 trial 15 auc 0.9309111874012679 trees 158 seconds 106.2
+[I 2026-11-07 22:56:36,386] Trial 15 finished with value: 0.9309111874012679 and parameters: {'num_leaves': 113, 'learning_rate': 0.033961568354041266, 'min_data_in_leaf': 1115, 'feature_fraction': 0.6793189740636757, 'bagging_fraction': 0.8649997293929028}. Best is trial 13 with value: 0.9324679280967304.
+B5 trial 16 auc 0.9309748291967876 trees 293 seconds 183.7
+[I 2026-11-07 22:59:40,183] Trial 16 finished with value: 0.9309748291967876 and parameters: {'num_leaves': 112, 'learning_rate': 0.023314252143912192, 'min_data_in_leaf': 1314, 'feature_fraction': 0.9148643013745951, 'bagging_fraction': 0.7182611820773084}. Best is trial 13 with value: 0.9324679280967304.
+B5 trial 17 auc 0.9324174147909408 trees 250 seconds 144.6
+[I 2026-11-07 23:02:04,820] Trial 17 finished with value: 0.9324174147909408 and parameters: {'num_leaves': 108, 'learning_rate': 0.02071768253944506, 'min_data_in_leaf': 2386, 'feature_fraction': 0.6252912016989756, 'bagging_fraction': 0.896613609022724}. Best is trial 13 with value: 0.9324679280967304.
+B5 trial 18 auc 0.9316814515994922 trees 192 seconds 117.4
+[I 2026-11-07 23:04:02,287] Trial 18 finished with value: 0.9316814515994922 and parameters: {'num_leaves': 100, 'learning_rate': 0.027968806140236335, 'min_data_in_leaf': 1733, 'feature_fraction': 0.6620809462705562, 'bagging_fraction': 0.9527150958567061}. Best is trial 13 with value: 0.9324679280967304.
+B5 trial 19 auc 0.9323369522175092 trees 213 seconds 119.6
+[I 2026-11-07 23:06:01,972] Trial 19 finished with value: 0.9323369522175092 and parameters: {'num_leaves': 101, 'learning_rate': 0.02659116001947862, 'min_data_in_leaf': 2836, 'feature_fraction': 0.5540957794704138, 'bagging_fraction': 0.7723861381323572}. Best is trial 13 with value: 0.9324679280967304.
+experimento  variables  auc_agosto  ganancia_octubre  contactos  aciertos_BAJA2  ganancia_presupuesto_comun_B2  contactos_comunes  maximo_retrospectivo  k_maximo_retrospectivo    segundos  arboles  trials  pico_ram_mib_proceso  delta_anterior  delta_B0  delta_B2
+         B0        152    0.924121         254017500       4923             354                      254045000               5042             262130000                    3708  312.055821      204      20           1228.304688             NaN         0 -28627500
+         B1        456    0.930033         264055000       4798             360                      267245000               5042             271975000                    5670  613.430827      111      20           3200.859375      10037500.0  10037500 -18590000
+         B2        722    0.933028         282645000       5042             383                      282645000               5042             289520000                    4552 1109.374251      298      20           5342.613281      18590000.0  28627500         0
+         B3        855    0.931596         285147500       4711             377                      282645000               5042             286302500                    4669 1017.769886      223      20           6234.601562       2502500.0  31130000   2502500
+         B4        988    0.932238         274615000       3094             327                      283745000               5042             287897500                    5691 1534.247350      250      20           7116.015625     -10532500.0  20597500  -8030000
+         B5       1254    0.932468         283882500       3597             348                      274945000               5042             284762500                    3605 2222.803428      281      20           8837.289062       9267500.0  29865000   1237500

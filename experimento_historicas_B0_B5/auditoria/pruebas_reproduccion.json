@@ -1,0 +1,6 @@
+{
+  "reference_comparison_passed": true,
+  "altered_gain_rejected": true,
+  "checks_per_comparison": 93,
+  "full_second_training_executed": false
+}

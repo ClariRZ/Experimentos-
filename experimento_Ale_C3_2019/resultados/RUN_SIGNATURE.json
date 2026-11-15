@@ -1,0 +1,9 @@
+{
+  "config": "12d8fc98c4907cbd085718affb894a6996dead282837211202ecdad509b05aec",
+  "manifest": "1b1a27dcace7a4c06464ab8e43a58eae524b2e37c34077e4535fcf31ab71d2a3",
+  "sources": {
+    "src/comun.py": "89fe27dacfe7a1d794f18037b79897e5ae7fb633de93ddda8a9a636acbfcf302",
+    "src/ejecutar.py": "437be64b45ceb2205fdbd363b360d49dce2cb3c5f1ad0fca9a296932da2586dd",
+    "src/preparar.py": "4d1daa2a2adf5caad468794f97a0cb879a513e45a9725fd7c5f72367befa956b"
+  }
+}

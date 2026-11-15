@@ -1,0 +1,7 @@
+2026-11-08. Preflight aprobado: 774279 filas, 722 columnas B2 + 43 nuevas; igualdad exacta de fórmulas con C3. Nuevas sumas requieren ambas marcas finitas.
+Se ejecutan de nuevo 20 trials en cada representación. El control histórico B2 se verifica contra sus scores de agosto y, sólo después del congelamiento, contra su curva octubre.
+La política nueva usa floor, tal como se fijó en el protocolo; B2 histórico redondeaba al entero más próximo. Puede cambiar un contacto. No presentar esa diferencia como cambio del modelo. La política histórica se conserva como referencia, no como promesa del nuevo A.
+
+Corrección técnica previa al primer trial: declarar explícitamente nombres y categorías también en el Dataset de validación, como en el runner B2 original. Primer intento falló con LightGBMError antes de completar trials. Se conserva firma/log del intento en incidente_pretrial; se inicia firma corregida. No hubo inspección nueva del test.
+
+Corrección de cardinalidad antes del test: la lista publicada contenía 19 semillas pese al diseño de 20. Se agrega 1809, siguiente valor de la secuencia preexistente, sin cambiar ninguna de las 19 anteriores ni elegir a partir de métricas. Se interrumpe y reanuda la corrida con checkpoints preservados; se archiva la firma anterior. Se agrega assert de exactamente20 semillas únicas al runner y verificador. No había FROZEN ni evaluación nueva de octubre al corregir.

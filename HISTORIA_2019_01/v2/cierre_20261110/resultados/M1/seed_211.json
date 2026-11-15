@@ -1,0 +1,15 @@
+{
+  "seed": 211,
+  "recipe": "a944955f95e168933294fe5c9029a4402d43e9e8212ae985d29ff73571ae7d21",
+  "model_sha256": "8f31525d836b5e87fe75d3ce13e8cb66696dd2cce03857605aa270f23bccfa26",
+  "scores_sha256": "49f39d15209758c5c8376628fb28ce30536cb31bb62d31efc6ec5b6d7da4f88d",
+  "auc": 0.9121458227446111,
+  "gain": {
+    "gain_smoothed": 201559800.09995002,
+    "n_send": 3376,
+    "gain_at_n": 203060000.0,
+    "window": 2001,
+    "method": "centered_full_window_mean_on_cumulative_gain"
+  },
+  "seconds": 67.80114936828613
+}

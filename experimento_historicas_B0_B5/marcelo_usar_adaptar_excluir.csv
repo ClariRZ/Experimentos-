@@ -1,0 +1,12 @@
+elemento,decision,motivo,paginas_pdf
+Lags 1 y 2,Adaptar,Cliente y mes calendario exacto; no fila anterior si hay huecos,855-856
+Deltas 1 y 2,Usar,Actual menos lag correspondiente; incluidos en B2,855-856
+Promedios móviles,Adaptar,Tres meses incluyendo actual; mínimo dos valores válidos,"475, 853-856"
+Pendiente,Adaptar,Tres meses calendario; redundante con delta2/2 con ventana completa,853-856
+Ratios históricos,Adaptar,Definición explícita x/lag; ceros y faltantes controlados; fórmula original no verificable,475
+Ventanas de seis meses y lags 6/12,Excluir del diseño principal,Historia insuficiente en entrenamiento bajo restricción de 2019,475
+Ganancia anterior,Excluir,Usar +1072500 y -27500 de edición 2026,4-5
+zLightGBM y undersampling,Excluir,Ale pide LightGBM optimizado y entrenamiento completo,882-890
+Corte de 11000 contactos,Excluir,Elegir proporción en agosto y congelar antes de octubre,"879, 886"
+Quitar préstamos personales,No trasladar,Problema de otro contexto; mantener columnas en todas las configuraciones,884-885
+Resultados reportados,Sólo antecedente,No son evidencia del nuevo experimento,474-475

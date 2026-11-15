@@ -1,0 +1,44 @@
+{
+  "identity": "ffa3878cbac25cfa264ca147f370c384b00e06fe73346f1948feea6ff48ec7a7",
+  "candidate": "A",
+  "control": "C0",
+  "n_seeds": 5,
+  "delta_gain": [
+    8604985.007496238,
+    -1299536.4817591012,
+    -3158679.4102948606,
+    -389246.62668666244,
+    -4396729.135432303
+  ],
+  "delta_gain_mean": -127841.32933533788,
+  "delta_gain_median": -1299536.4817591012,
+  "delta_gain_std": 5126227.674006335,
+  "wins_gain": 1,
+  "delta_auc": [
+    -0.00017920194173237647,
+    -0.0006573337047804939,
+    -0.0016974705447441174,
+    0.000656568126864765,
+    -0.0004674562043355257
+  ],
+  "delta_auc_mean": -0.00046897885374554973,
+  "delta_auc_median": -0.0004674562043355257,
+  "delta_auc_std": 0.000850808199231623,
+  "wins_auc": 1,
+  "delta_ensemble": -334329.0854572654,
+  "bootstrap": {
+    "replicas_validas": 1000,
+    "seed": 20261110,
+    "ci90": [
+      -2486494.7526236996,
+      1797351.7616191863
+    ],
+    "method": "paired_clients_with_multiplicity_reoptimized_full_window"
+  },
+  "diagnostic_same_control_cut": {
+    "k": 3533,
+    "delta_point_gain": 0.0
+  },
+  "verdict": "NO_APORTA",
+  "confirmed": false
+}

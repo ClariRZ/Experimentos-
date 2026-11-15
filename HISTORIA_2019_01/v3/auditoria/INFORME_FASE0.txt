@@ -1,0 +1,41 @@
+HISTORIA 2019 V3 — AUDITORIA Y PLAN APROBADO
+Fecha: 2026-11-11
+
+Autorizacion: usuaria aprobo B4, cuatro brazos, confirmaciones/combinaciones y limite 6 horas.
+Reoptimizacion y diagnostico junio fuera del presupuesto; octubre cerrado.
+
+V2 termino por reglas, sin familias promovibles. Snapshot agregado: ../v2/cierre_20261110.
+C0 propuesto y aprobado: B4 adaptado, 588 columnas, 271 rondas, HP comunes.
+No se afirma equivalencia al baseline oficial de 760 ni superioridad confirmada.
+
+A: ranking actual, 601 columnas; control C0.
+B: ranking actual e historia, 653 columnas; controles A y C0.
+C: perdida/retorno de actividad y caidas, 613 columnas; control C0.
+D: existencia de registros anteriores, 590 columnas; control C0.
+
+Las 13 fuentes monetarias de shortlist pasan cobertura >=90% por mes train para las cinco columnas.
+Tres columnas de debitos Visa excluidas por rotura abril. Agregado de servicios usa cuenta y Master.
+Cobertura completa, numeradores, denominadores, soporte, fuentes y exclusiones: preflight.json.
+NA agregado distingue definido/indefinido; causas por fila no exportadas, derivan de formula y sanitizacion.
+
+Train marzo-junio: 507328 filas. Agosto: 131887 filas. Enero/febrero aportan historia.
+Dataset SHA256 459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872
+Hash verificado en VM. Solo filas enero-agosto cargadas en v3.
+Beneficio neto +1072500 para BAJA+2 y -27500 otros, conforme protocolo previo; no se descuenta dos veces.
+Sanitizacion heredada con confirmacion oficial pendiente, documentada en v2.
+
+Cinco semillas iniciales; veinte totales para estados de interes; bootstrap 1000 pareado.
+Orden de combinacion: ranking, actividad, disponibilidad. Maximo 9 contrastes unicos en este presupuesto.
+Estimacion 1-4h derivada de ~65-70s por semilla B4 v2, mas comparaciones y preparacion.
+Limite de ejecucion 6h. Tarifa monetaria no verificada. No se apaga VM automaticamente.
+Presupuesto persistente; reanudacion identica no reinicia reloj. Checkpoints atomicos y bloqueo de instancia.
+
+13 pruebas sinteticas PASARON en VM el 2026-11-11. Ningun entrenamiento real usado como prueba.
+Antes de reutilizar control: hashes de modelos/scores/receta, claves, AUC, ganancia y prediccion exacta sobre matriz v3.
+Proveniencia de rondas: Optuna B4 v2, mejor trial47 de50; ya uso agosto.
+Junio intervino en shortlist, agosto en seleccion repetida; no son tests independientes.
+Exposicion previa de octubre en otras corridas: no resuelta globalmente. v3 no lo carga.
+BOF y autorizacion especifica pendientes antes de cualquier test final.
+
+Git: codigo, prompts, configuraciones, auditoria y resultados agregados. Pesados e individuales excluidos.
+Push pendiente de respuesta explicita. Copia VM no equivale a backup externo de modelos.

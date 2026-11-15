@@ -1,0 +1,44 @@
+variable,familia,fuente_1,fuente_2,formula
+fe__rel__ticket__payroll,ticket,mpayroll,cpayroll_trx,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__payroll2,ticket,mpayroll2,cpayroll2_trx,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__visa,ticket,mtarjeta_visa_consumo,ctarjeta_visa_transacciones,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__master,ticket,mtarjeta_master_consumo,ctarjeta_master_transacciones,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__extraccion_autoservicio,ticket,mextraccion_autoservicio,cextraccion_autoservicio,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__atm,ticket,matm,catm_trx,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__atm_other,ticket,matm_other,catm_trx_other,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__transferencias_recibidas,ticket,mtransferencias_recibidas,ctransferencias_recibidas,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__transferencias_emitidas,ticket,mtransferencias_emitidas,ctransferencias_emitidas,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__pagodeservicios,ticket,mpagodeservicios,cpagodeservicios,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__pagomiscuentas,ticket,mpagomiscuentas,cpagomiscuentas,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__debitos_cuenta,ticket,mcuenta_debitos_automaticos,ccuenta_debitos_automaticos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__debitos_visa,ticket,mttarjeta_visa_debitos_automaticos,ctarjeta_visa_debitos_automaticos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__debitos_master,ticket,mttarjeta_master_debitos_automaticos,ctarjeta_master_debitos_automaticos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__descuentos_debito,ticket,mcajeros_propios_descuentos,ccajeros_propios_descuentos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__descuentos_visa,ticket,mtarjeta_visa_descuentos,ctarjeta_visa_descuentos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__descuentos_master,ticket,mtarjeta_master_descuentos,ctarjeta_master_descuentos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__comisiones_mantenimiento,ticket,mcomisiones_mantenimiento,ccomisiones_mantenimiento,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__comisiones_otras,ticket,mcomisiones_otras,ccomisiones_otras,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__cheques_depositados,ticket,mcheques_depositados,ccheques_depositados,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__cheques_emitidos,ticket,mcheques_emitidos,ccheques_emitidos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__cheques_depositados_rechazados,ticket,mcheques_depositados_rechazados,ccheques_depositados_rechazados,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__cheques_emitidos_rechazados,ticket,mcheques_emitidos_rechazados,ccheques_emitidos_rechazados,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__forex_buy,ticket,mforex_buy,cforex_buy,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__forex_sell,ticket,mforex_sell,cforex_sell,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__visa_detalle,ticket,Visa_mconsumototal,Visa_cconsumos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__ticket__master_detalle,ticket,Master_mconsumototal,Master_cconsumos,numerador finito / denominador finito > 0; conservar numerador negativo
+fe__rel__tarjetas__mfinanciacion_limite_sum,suma_tarjetas,Visa_mfinanciacion_limite,Master_mfinanciacion_limite,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mlimitecompra_sum,suma_tarjetas,Visa_mlimitecompra,Master_mlimitecompra,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__msaldototal_sum,suma_tarjetas,Visa_msaldototal,Master_msaldototal,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__msaldopesos_sum,suma_tarjetas,Visa_msaldopesos,Master_msaldopesos,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__msaldodolares_sum,suma_tarjetas,Visa_msaldodolares,Master_msaldodolares,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mconsumospesos_sum,suma_tarjetas,Visa_mconsumospesos,Master_mconsumospesos,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mconsumosdolares_sum,suma_tarjetas,Visa_mconsumosdolares,Master_mconsumosdolares,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mconsumototal_sum,suma_tarjetas,Visa_mconsumototal,Master_mconsumototal,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__madelantopesos_sum,suma_tarjetas,Visa_madelantopesos,Master_madelantopesos,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__madelantodolares_sum,suma_tarjetas,Visa_madelantodolares,Master_madelantodolares,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mpagado_sum,suma_tarjetas,Visa_mpagado,Master_mpagado,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mpagospesos_sum,suma_tarjetas,Visa_mpagospesos,Master_mpagospesos,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mpagosdolares_sum,suma_tarjetas,Visa_mpagosdolares,Master_mpagosdolares,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__mpagominimo_sum,suma_tarjetas,Visa_mpagominimo,Master_mpagominimo,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__cconsumos_sum,suma_tarjetas,Visa_cconsumos,Master_cconsumos,sumar solo si ambas marcas son finitas; de lo contrario NA
+fe__rel__tarjetas__cadelantosefectivo_sum,suma_tarjetas,Visa_cadelantosefectivo,Master_cadelantosefectivo,sumar solo si ambas marcas son finitas; de lo contrario NA

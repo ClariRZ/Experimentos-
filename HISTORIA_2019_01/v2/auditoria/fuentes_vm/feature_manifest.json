@@ -1,0 +1,739 @@
+[
+  {
+    "feature": "hist__resumen_3m__ctrx_quarter__mean3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctrx_quarter"
+    ],
+    "formula": "(x_t + x_t-1 + x_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctrx_quarter__min3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctrx_quarter"
+    ],
+    "formula": "min(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctrx_quarter__max3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctrx_quarter"
+    ],
+    "formula": "max(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctrx_quarter__std3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctrx_quarter"
+    ],
+    "formula": "sqrt(sum((x_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcaja_ahorro__mean3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "(x_t + x_t-1 + x_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcaja_ahorro__min3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "min(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcaja_ahorro__max3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "max(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcaja_ahorro__std3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "sqrt(sum((x_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcuentas_saldo__mean3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "(x_t + x_t-1 + x_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcuentas_saldo__min3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "min(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcuentas_saldo__max3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "max(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mcuentas_saldo__std3",
+    "family": "resumen_3m",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "sqrt(sum((x_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mtarjeta_visa_consumo__mean3",
+    "family": "resumen_3m",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "(x_t + x_t-1 + x_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mtarjeta_visa_consumo__min3",
+    "family": "resumen_3m",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "min(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mtarjeta_visa_consumo__max3",
+    "family": "resumen_3m",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "max(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mtarjeta_visa_consumo__std3",
+    "family": "resumen_3m",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "sqrt(sum((x_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctarjeta_visa_transacciones__mean3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctarjeta_visa_transacciones"
+    ],
+    "formula": "(x_t + x_t-1 + x_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctarjeta_visa_transacciones__min3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctarjeta_visa_transacciones"
+    ],
+    "formula": "min(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctarjeta_visa_transacciones__max3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctarjeta_visa_transacciones"
+    ],
+    "formula": "max(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__ctarjeta_visa_transacciones__std3",
+    "family": "resumen_3m",
+    "sources": [
+      "ctarjeta_visa_transacciones"
+    ],
+    "formula": "sqrt(sum((x_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mpayroll__mean3",
+    "family": "resumen_3m",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "(x_t + x_t-1 + x_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mpayroll__min3",
+    "family": "resumen_3m",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "min(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mpayroll__max3",
+    "family": "resumen_3m",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "max(x_t, x_t-1, x_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__resumen_3m__mpayroll__std3",
+    "family": "resumen_3m",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "sqrt(sum((x_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres valores finitos en t, t-1, t-2.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__inactividad__ctrx_quarter__zero_streak3",
+    "family": "inactividad",
+    "sources": [
+      "ctrx_quarter"
+    ],
+    "formula": "ceros consecutivos desde t hacia atrás: 0, 1, 2 o 3",
+    "window_months": 3,
+    "missing_policy": "NA si cualquier foto/valor de la ventana de tres meses falta.",
+    "notes": "Racha observada censurada a tres fotos; cero no equivale universalmente a inactividad."
+  },
+  {
+    "feature": "hist__inactividad__mpayroll__zero_streak3",
+    "family": "inactividad",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "ceros consecutivos desde t hacia atrás: 0, 1, 2 o 3",
+    "window_months": 3,
+    "missing_policy": "NA si cualquier foto/valor de la ventana de tres meses falta.",
+    "notes": "Racha observada censurada a tres fotos; cero no equivale universalmente a inactividad."
+  },
+  {
+    "feature": "hist__inactividad__mcaja_ahorro__zero_streak3",
+    "family": "inactividad",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "ceros consecutivos desde t hacia atrás: 0, 1, 2 o 3",
+    "window_months": 3,
+    "missing_policy": "NA si cualquier foto/valor de la ventana de tres meses falta.",
+    "notes": "Racha observada censurada a tres fotos; cero no equivale universalmente a inactividad."
+  },
+  {
+    "feature": "hist__ratios_personales__ctrx_quarter__ratio3",
+    "family": "ratios_personales",
+    "sources": [
+      "ctrx_quarter"
+    ],
+    "formula": "x_t / mean3; mean3 > 1e-12; x_t,x_t-1,x_t-2 >= 0",
+    "window_months": 3,
+    "missing_policy": "NA ante ventana incompleta, negativos o media insuficiente; sin epsilon añadido al cociente.",
+    "notes": "Representación relativa de valores no negativos; no interpreta saldos negativos como flujos."
+  },
+  {
+    "feature": "hist__ratios_personales__mpayroll__ratio3",
+    "family": "ratios_personales",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "x_t / mean3; mean3 > 1e-12; x_t,x_t-1,x_t-2 >= 0",
+    "window_months": 3,
+    "missing_policy": "NA ante ventana incompleta, negativos o media insuficiente; sin epsilon añadido al cociente.",
+    "notes": "Representación relativa de valores no negativos; no interpreta saldos negativos como flujos."
+  },
+  {
+    "feature": "hist__ratios_personales__mcuentas_saldo__ratio3",
+    "family": "ratios_personales",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "x_t / mean3; mean3 > 1e-12; x_t,x_t-1,x_t-2 >= 0",
+    "window_months": 3,
+    "missing_policy": "NA ante ventana incompleta, negativos o media insuficiente; sin epsilon añadido al cociente.",
+    "notes": "Representación relativa de valores no negativos; no interpreta saldos negativos como flujos."
+  },
+  {
+    "feature": "hist__ratios_personales__Visa_msaldototal__ratio3",
+    "family": "ratios_personales",
+    "sources": [
+      "Visa_msaldototal"
+    ],
+    "formula": "x_t / mean3; mean3 > 1e-12; x_t,x_t-1,x_t-2 >= 0",
+    "window_months": 3,
+    "missing_policy": "NA ante ventana incompleta, negativos o media insuficiente; sin epsilon añadido al cociente.",
+    "notes": "Representación relativa de valores no negativos; no interpreta saldos negativos como flujos."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "0 si x=0; +rank_promedio(x)/n_pos si x>0; -rank_promedio(abs(x))/n_neg si x<0; dentro del mes",
+    "window_months": 1,
+    "missing_policy": "NA permanece NA; grupos por signo, empates con rango promedio.",
+    "notes": "Usa la cohorte mensual completa sin target; puede cambiar por composición poblacional. No inmuniza contra drift."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__lag1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "rank(t-1) por mes calendario",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__delta1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "rank(t) - rank(t-1)",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__lag2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "rank(t-2) por mes calendario",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__delta2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "rank(t) - rank(t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__mean3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "(rank_t + rank_t-1 + rank_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__min3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "min(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__max3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "max(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcaja_ahorro__rank__std3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcaja_ahorro"
+    ],
+    "formula": "sqrt(sum((rank_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "0 si x=0; +rank_promedio(x)/n_pos si x>0; -rank_promedio(abs(x))/n_neg si x<0; dentro del mes",
+    "window_months": 1,
+    "missing_policy": "NA permanece NA; grupos por signo, empates con rango promedio.",
+    "notes": "Usa la cohorte mensual completa sin target; puede cambiar por composición poblacional. No inmuniza contra drift."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__lag1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "rank(t-1) por mes calendario",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__delta1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "rank(t) - rank(t-1)",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__lag2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "rank(t-2) por mes calendario",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__delta2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "rank(t) - rank(t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__mean3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "(rank_t + rank_t-1 + rank_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__min3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "min(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__max3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "max(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mcuentas_saldo__rank__std3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mcuentas_saldo"
+    ],
+    "formula": "sqrt(sum((rank_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "0 si x=0; +rank_promedio(x)/n_pos si x>0; -rank_promedio(abs(x))/n_neg si x<0; dentro del mes",
+    "window_months": 1,
+    "missing_policy": "NA permanece NA; grupos por signo, empates con rango promedio.",
+    "notes": "Usa la cohorte mensual completa sin target; puede cambiar por composición poblacional. No inmuniza contra drift."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__lag1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "rank(t-1) por mes calendario",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__delta1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "rank(t) - rank(t-1)",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__lag2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "rank(t-2) por mes calendario",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__delta2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "rank(t) - rank(t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__mean3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "(rank_t + rank_t-1 + rank_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__min3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "min(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__max3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "max(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mtarjeta_visa_consumo__rank__std3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mtarjeta_visa_consumo"
+    ],
+    "formula": "sqrt(sum((rank_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "0 si x=0; +rank_promedio(x)/n_pos si x>0; -rank_promedio(abs(x))/n_neg si x<0; dentro del mes",
+    "window_months": 1,
+    "missing_policy": "NA permanece NA; grupos por signo, empates con rango promedio.",
+    "notes": "Usa la cohorte mensual completa sin target; puede cambiar por composición poblacional. No inmuniza contra drift."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__lag1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "rank(t-1) por mes calendario",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__delta1",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "rank(t) - rank(t-1)",
+    "window_months": 2,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__lag2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "rank(t-2) por mes calendario",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__delta2",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "rank(t) - rank(t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si falta el mes o el valor requerido.",
+    "notes": ""
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__mean3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "(rank_t + rank_t-1 + rank_t-2) / 3",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__min3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "min(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__max3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "max(rank_t, rank_t-1, rank_t-2)",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  },
+  {
+    "feature": "hist__rangos_monetarios__mpayroll__rank__std3",
+    "family": "rangos_monetarios",
+    "sources": [
+      "mpayroll"
+    ],
+    "formula": "sqrt(sum((rank_i - mean3)^2) / 3); ddof=0",
+    "window_months": 3,
+    "missing_policy": "NA si no hay tres rangos mensuales observados.",
+    "notes": "El paquete incluye rango actual y derivados: no aísla exclusivamente el efecto de añadir historia."
+  }
+]

@@ -1,0 +1,19 @@
+CONCLUSIONES SOBRE LOS RESULTADOS OBSERVADOS
+
+La hipótesis recibe apoyo parcial: incorporar historia mejoró la ganancia respecto de B0 en las cinco configuraciones, pero agregar familias no produjo una mejora monótona. B1 ganó 10.037.500 pesos adicionales sobre B0 y B2 otros 18.590.000 sobre B1. B2, la referencia de Ale, obtuvo 282.645.000 pesos y la mayor AUC de agosto (0,933028).
+
+B3, que agrega medias, fue la mejor configuración observada con la política individual fijada en agosto: 285.147.500 pesos, 4.711 contactos y 377 aciertos. Superó a B2 en 2.502.500 pesos (0,89 %) y a B0 en 31.130.000. No se afirma significancia estadística ni estabilidad fuera de octubre.
+
+El presupuesto de contactos cambia la interpretación. B3 contactó 331 clientes menos que B2 y obtuvo seis aciertos menos: ahorró 9.102.500 pesos de costo de contactos y perdió 6.600.000 de beneficio bruto, con saldo positivo de 2.502.500. Al fijar 5.042 contactos para todos, B2 y B3 empatan en 282.645.000 pesos. Por lo tanto, la ventaja principal de B3 no demuestra un mejor ranking económico a ese presupuesto común.
+
+B4, que agrega pendientes, mejoró el AUC frente a B3, pero perdió 10.532.500 pesos con su política individual, que eligió sólo 3.094 contactos. Con presupuesto común fue la mejor observada: 283.745.000 pesos, apenas 1.100.000 por encima de B2/B3, equivalente a un acierto adicional. Las pendientes de tres meses completos son delta2/2; este resultado no demuestra que agreguen información nueva ni que sean inútiles.
+
+B5, que agrega ratios, recuperó 9.267.500 pesos frente a B4 y quedó en 283.882.500, superando a B2 por 1.237.500, pero por debajo de B3. Con presupuesto común obtuvo 274.945.000, por debajo de B2, B3 y B4. Su cobertura de valores es menor (36,09 % en entrenamiento; 37,40 % en validación), en parte por los denominadores cero. Esta diferencia no permite atribuir causalmente su resultado a los faltantes.
+
+AUC y ganancia no ordenaron igual los modelos. B2 tuvo la mayor AUC y B3 la mayor ganancia con políticas individuales; B4 ganó con contactos comunes. AUC considera BAJA+1 y BAJA+2 juntas en todo el ranking, mientras que la ganancia premia sólo BAJA+2 en el segmento contactado. Además, la cantidad de contactos depende de una decisión aprendida en agosto.
+
+Costo: las seis búsquedas sumaron aproximadamente 113,5 minutos de entrenamiento y selección en la VM de ocho CPU, sin incluir transferencia ni preparación. B0 demandó 5,2 minutos y B5 37,0 minutos. El pico acumulado de memoria del proceso llegó a aproximadamente 8,63 GiB. No hay evidencia de que el modelo con más columnas justifique siempre su mayor costo.
+
+Se completaron las seis configuraciones con 20 evaluaciones cada una. Se usó una semilla y un mes de test; no se ejecutaron las comparaciones independientes opcionales ni repeticiones de semillas. Cada conjunto fue optimizado por separado: se compara el procedimiento completo, no el efecto aislado de una transformación con parámetros fijos. La validación se reutilizó para AUC y selección de contactos. La elección posterior de la mayor ganancia observada no constituye una nueva evaluación independiente.
+
+Próximos experimentos: comparar cada familia adicional directamente contra B2, repetir semillas sin seleccionar la mejor, separar ajuste de hiperparámetros y política de contactos, y reservar nuevos meses para evaluar estabilidad temporal. Octubre no debe reutilizarse para ajustar esas decisiones y luego presentarse como test nuevo.

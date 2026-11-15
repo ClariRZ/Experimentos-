@@ -1,0 +1,5 @@
+{
+  "estado": "FIN_SIN_FAMILIAS_PROMOVIBLES",
+  "octubre_abierto": false,
+  "reason": "Regla de etapa2: ninguna familia APORTA/INDICIO; no combinar ni reoptimizar a posteriori"
+}

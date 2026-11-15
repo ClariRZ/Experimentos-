@@ -1,0 +1,45 @@
+RADIOGRAFÍA C3 — REPRODUCCIÓN DE ESTA AUDITORÍA
+
+Directorio de trabajo utilizado:
+/home/clara-m-rodr-guez/Documents/Codex/2026-11-07/nec
+
+Desde ese directorio:
+work/venv/bin/python outputs/radiografia_C3/auditar.py
+work/venv/bin/python outputs/radiografia_C3/generar_informe.py
+
+Dependencias efectivamente usadas: LightGBM 4.7.0, NumPy 2.5.4, pandas 3.1.1.
+Esto reproduce una auditoría de modelos guardados, no el entrenamiento de C3.
+El entorno de entrenamiento original está identificado en PLAN_FINAL.json.
+
+Insumos privados descargados en work/radiografia_c3:
+Desde gs://clarirz_buckito2026/experimentos_clara/corridas/c1c3final04b/
+- PLAN_FINAL.json, ENTREGA.json, LISTO.json, EJECUCION_RAM.json
+- C3_ENSEMBLE_ZULIP.zip
+- bank_agosto/catalogo_features.csv, guardado como catalogo_features.csv
+- modelos/modelo_<seed>.txt y modelos/seed_<seed>.npz, las 20 semillas del plan.
+Usar gcloud storage cp con una cuenta autorizada para recuperar los mismos
+objetos si cambia de máquina. No se necesitan claves almacenadas en este paquete.
+Hashes de modelos, checkpoints, catálogo y manifiestos: insumos_sha256.json.
+El ZIP se verifica por el SHA del CSV contenido, contra ENTREGA.json.
+
+Insumos del experimento B0–B5:
+outputs/experimento_historicas/manifest.json
+outputs/experimento_historicas/resultados/B0...B5/importance.csv
+outputs/experimento_historicas/resultados/B0...B5/curva_octubre.csv
+Son artefactos de la corrida original local cd1724de6be205dbd67649d2a4490b8ec4709f9b.
+La copia publicada está en ClariRZ/Segunda_competencia/experimento_historicas_B0_B5.
+
+Si el directorio de trabajo cambia, auditar.py admite --root /ruta/al/directorio
+que contenga work/radiografia_c3 y outputs/experimento_historicas.
+
+Los archivos de resultados de esta carpeta son agregados. Las predicciones y
+el ZIP con IDs permanecen en work: no publicar esos insumos en GitHub.
+No se subió esta radiografía a GitHub ni se modificó C3.
+
+Límites:
+- Reconstrucción exacta del envío desde checkpoints, no predicción regenerada
+  desde las matrices ni reentrenamiento desde el parquet.
+- Ganancias C3 públicas y privadas tomadas de registros; no recalculadas con
+  etiquetas privadas. No usar ese resultado ya conocido como nuevo holdout.
+- Cortes de B0–B5 calculados después del experimento: análisis descriptivo.
+- Importancias internas no prueban aporte causal ni ganancia marginal.

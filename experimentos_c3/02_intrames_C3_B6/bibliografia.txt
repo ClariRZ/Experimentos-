@@ -1,0 +1,17 @@
+FUENTES DEL ENSAYO
+
+1. Pautas de Ale compartidas por la usuaria: entrenamiento 2019, optimización por AUC en validación, ganancia en test y estructura hipótesis/diseño/resultados/conclusiones.
+2. Receta original y generadores de C3, revisión fijada:
+https://github.com/ClariRZ/Experimentos-cloud/tree/1d88507e875c62c0f872a922f0c92ab6d2666b0a/experimentos_20261006_m1_fe_masiva
+3. Antecedente de transformaciones intrames (adaptado: denominador estrictamente positivo; sólo cocientes, sin añadir totales/indicadores):
+https://github.com/ClariRZ/Experimentos-cloud/blob/1d88507e875c62c0f872a922f0c92ab6d2666b0a/segunda_competencia_experimento_variables_historicas/exp/features.py
+4. Experimento original B0–B5:
+https://github.com/ClariRZ/Segunda_competencia/tree/255cf1fdab9a34a5ac95165c0ac5e76da2e21d12/experimento_historicas_B0_B5
+5. Evidencia original de confirmación S3, archivos agregados por_seed.csv y ensemble.json:
+gs://clarirz_buckito2026/experimentos_clara/corridas/c1m1femasiva03_s3/C3_HIST_MAS_TARJETAS/
+6. El antecedente ratios_personales es otro ensayo y no constituye evidencia previa de eficacia de estas siete fórmulas:
+https://github.com/ClariRZ/Segunda_competencia/tree/82e390f/HISTORIA_2019_01
+
+El PDF de Marcelo no se usa como autoridad para alterar el target, los cortes,
+los meses ni la ganancia en esta extensión. No se atribuyen resultados de aquel
+material a estos datos ni al ensayo de ratios intrames.

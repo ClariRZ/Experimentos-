@@ -1,0 +1,386 @@
+{
+  "numerical_reproduction_passed": true,
+  "probability_auc_atol": 1e-12,
+  "model_files_byte_identical": {
+    "B0": true,
+    "B1": true,
+    "B2": true,
+    "B3": true,
+    "B4": true,
+    "B5": true
+  },
+  "checks": [
+    {
+      "check": "resultados/experimento",
+      "passed": true
+    },
+    {
+      "check": "resultados/variables",
+      "passed": true
+    },
+    {
+      "check": "resultados/auc_agosto",
+      "passed": true
+    },
+    {
+      "check": "resultados/ganancia_octubre",
+      "passed": true
+    },
+    {
+      "check": "resultados/contactos",
+      "passed": true
+    },
+    {
+      "check": "resultados/aciertos_BAJA2",
+      "passed": true
+    },
+    {
+      "check": "resultados/ganancia_presupuesto_comun_B2",
+      "passed": true
+    },
+    {
+      "check": "resultados/contactos_comunes",
+      "passed": true
+    },
+    {
+      "check": "resultados/maximo_retrospectivo",
+      "passed": true
+    },
+    {
+      "check": "resultados/k_maximo_retrospectivo",
+      "passed": true
+    },
+    {
+      "check": "resultados/arboles",
+      "passed": true
+    },
+    {
+      "check": "resultados/trials",
+      "passed": true
+    },
+    {
+      "check": "resultados/delta_anterior",
+      "passed": true
+    },
+    {
+      "check": "resultados/delta_B0",
+      "passed": true
+    },
+    {
+      "check": "resultados/delta_B2",
+      "passed": true
+    },
+    {
+      "check": "B0/validation_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B0/validation_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B0/test_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B0/test_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/number",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/state",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/value",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/user_attrs_best_iteration",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/params_bagging_fraction",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/params_feature_fraction",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/params_learning_rate",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/params_min_data_in_leaf",
+      "passed": true
+    },
+    {
+      "check": "B0/trials/params_num_leaves",
+      "passed": true
+    },
+    {
+      "check": "B1/validation_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B1/validation_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B1/test_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B1/test_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/number",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/state",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/value",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/user_attrs_best_iteration",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/params_bagging_fraction",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/params_feature_fraction",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/params_learning_rate",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/params_min_data_in_leaf",
+      "passed": true
+    },
+    {
+      "check": "B1/trials/params_num_leaves",
+      "passed": true
+    },
+    {
+      "check": "B2/validation_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B2/validation_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B2/test_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B2/test_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/number",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/state",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/value",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/user_attrs_best_iteration",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/params_bagging_fraction",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/params_feature_fraction",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/params_learning_rate",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/params_min_data_in_leaf",
+      "passed": true
+    },
+    {
+      "check": "B2/trials/params_num_leaves",
+      "passed": true
+    },
+    {
+      "check": "B3/validation_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B3/validation_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B3/test_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B3/test_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/number",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/state",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/value",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/user_attrs_best_iteration",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/params_bagging_fraction",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/params_feature_fraction",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/params_learning_rate",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/params_min_data_in_leaf",
+      "passed": true
+    },
+    {
+      "check": "B3/trials/params_num_leaves",
+      "passed": true
+    },
+    {
+      "check": "B4/validation_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B4/validation_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B4/test_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B4/test_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/number",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/state",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/value",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/user_attrs_best_iteration",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/params_bagging_fraction",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/params_feature_fraction",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/params_learning_rate",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/params_min_data_in_leaf",
+      "passed": true
+    },
+    {
+      "check": "B4/trials/params_num_leaves",
+      "passed": true
+    },
+    {
+      "check": "B5/validation_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B5/validation_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B5/test_predictions.parquet/ids",
+      "passed": true
+    },
+    {
+      "check": "B5/test_predictions.parquet/prob",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/number",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/state",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/value",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/user_attrs_best_iteration",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/params_bagging_fraction",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/params_feature_fraction",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/params_learning_rate",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/params_min_data_in_leaf",
+      "passed": true
+    },
+    {
+      "check": "B5/trials/params_num_leaves",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "recipe": "5a0e497e237787f0ea006df291790d6f30395c99603c18fc3324c4a0f7b245e4",
+  "hyperparams": {
+    "params": {
+      "num_leaves": 101,
+      "learning_rate": 0.01851163982884762,
+      "min_data_in_leaf": 1641,
+      "feature_fraction": 0.7059591736850012,
+      "bagging_fraction": 0.7850016883407354
+    },
+    "rounds": 271
+  },
+  "best_trial": 47,
+  "auc_val": 0.9147726481694536,
+  "metric": "AUC 201908; BAJA+2 positiva"
+}

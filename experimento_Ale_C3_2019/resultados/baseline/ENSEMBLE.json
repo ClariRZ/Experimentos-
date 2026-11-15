@@ -1,0 +1,11 @@
+{
+  "n_seeds": 20,
+  "auc_validation": 0.9326580156301472,
+  "policy": {
+    "validation_k": 3460,
+    "fraction": 0.02625687725289319,
+    "validation_gain": 206250000,
+    "validation_n": 131775
+  },
+  "scores_sha256": "1d33e85674a86c5fd01e80e113188676bb96946cde3c941a72f19848509ea981"
+}

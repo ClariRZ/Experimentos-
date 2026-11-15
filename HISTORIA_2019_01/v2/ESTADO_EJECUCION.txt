@@ -1,0 +1,14 @@
+AVISO: este archivo describe la última verificación al lanzamiento, no el estado actual de la VM.
+Consultar REGISTRO_GIT.txt para el alcance del respaldo local.
+
+HISTORIA 2019 v2 — REGISTRO HISTÓRICO DEL LANZAMIENTO
+
+Directorio remoto: /home/clarirz/HISTORIA_2019_01/v2
+PID etapa inicial:1989; PID cadena:2174.
+Verificados4/50 trials de Optuna B4. B4 adaptado por cobertura:588 columnas (152 RAW+4x109 históricas).
+Los módulos posteriores se encadenan si termina la etapa anterior y se cumplen R2/R5. No afirmar que todo terminó.
+Octubre sellado. Evaluación final bloqueada hasta verificar referencia oficial; el baseline adaptado no equivale automáticamente al original760.
+Fuente real de VM: enero2019–septiembre2021; no mezclar con parquet local que termina agosto2021.
+Pruebas sintéticas de calendario, faltantes, ganancia, bootstrap idéntico, checkpoints, familias, canarios y bloqueo de test aprobadas.
+
+Autorización de usuaria: «corré dale». VM permanece encendida como indicó.

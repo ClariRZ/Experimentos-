@@ -1,0 +1,8 @@
+modelo,arboles_guardados,objective,metric,learning_rate,num_leaves,min_data_in_leaf,feature_fraction,bagging_fraction,bagging_freq,max_bin,max_depth,lambda_l1,lambda_l2,min_gain_to_split,min_sum_hessian_in_leaf,num_threads,deterministic,feature_pre_filter,zero_as_missing,scale_pos_weight,is_unbalance
+C3,300,binary,binary_logloss,0.03,64,100,0.8,0.8,1,255,-1,0,0,0,0.001,6,1,1,0,1,0
+B0,204,binary,auc,0.0238691,77,2276,0.969724,0.763414,1,255,-1,0,0,0,0.001,8,1,0,0,1,0
+B1,111,binary,auc,0.0543555,99,3286,0.736551,0.949028,1,255,-1,0,0,0,0.001,8,1,0,0,1,0
+B2,298,binary,auc,0.0239092,72,2355,0.969996,0.764297,1,255,-1,0,0,0,0.001,8,1,0,0,1,0
+B3,223,binary,auc,0.0329718,75,2524,0.60424,0.850907,1,255,-1,0,0,0,0.001,8,1,0,0,1,0
+B4,250,binary,auc,0.0239092,72,2355,0.969996,0.764297,1,255,-1,0,0,0,0.001,8,1,0,0,1,0
+B5,281,binary,auc,0.0200756,117,2400,0.658895,0.819776,1,255,-1,0,0,0,0.001,8,1,0,0,1,0

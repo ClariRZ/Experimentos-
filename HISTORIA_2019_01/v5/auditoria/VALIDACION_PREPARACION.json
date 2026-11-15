@@ -1,0 +1,15 @@
+{
+  "status": "PREPARADO_SIN_ENTRENAR",
+  "tests": {
+    "passed": 13,
+    "skipped": 0,
+    "dataset": "sintetico",
+    "supervisor": "Success, failure, timeout and overwrite protection tested"
+  },
+  "training_fits": 0,
+  "real_dataset_audit": "passed; real_20261113_01/FINAL.json",
+  "supervisor_vm": "Verified worker success, aggregate recovery and automatic STOP",
+  "cap_minutes_proposed": 360,
+  "vm_last_observed_status": "TERMINATED",
+  "training_authorization": "2026-11-13; etapa1_autorizada_20261113.json"
+}

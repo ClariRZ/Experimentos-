@@ -1,0 +1,7 @@
+{
+  "same_train_and_validation_rows": true,
+  "same_B0_and_F1_ordered_column_hashes": true,
+  "full_matrix_v4_equality_on_real_data": "not_checked",
+  "synthetic_matrix_parity": "passed",
+  "training_fits": 0
+}

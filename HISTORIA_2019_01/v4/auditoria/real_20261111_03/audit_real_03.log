@@ -1,0 +1,27 @@
+.....................                                                    [100%]
+21 passed in 5.15s
+AUDITADO auditoria/real_20261111_03/audit_summary.json
+	Command being timed: "timeout 20m ../historia_2019_v1/.venv/bin/python scripts/01_full_audit.py --dataset ../datos/analistasr_competencia_2026.csv.gz --prior-config ../resultados_historia_01/config_frozen.json --output auditoria/real_20261111_03"
+	User time (seconds): 192.26
+	System time (seconds): 33.21
+	Percent of CPU this job got: 427%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:52.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21603000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 17
+	Minor (reclaiming a frame) page faults: 10111797
+	Voluntary context switches: 72915
+	Involuntary context switches: 71527
+	Swaps: 0
+	File system inputs: 1451152
+	File system outputs: 1664
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+AUDITORIA_COMPLETA

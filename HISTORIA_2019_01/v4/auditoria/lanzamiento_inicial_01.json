@@ -1,0 +1,14 @@
+{
+  "run": "inicial_20261111_01",
+  "code_commit": "d1f8cd7",
+  "code_bundle_sha256": "d39d64abdec3b61dab568f637f5685c4f30c86c4a856974e3a56a0145feaec54",
+  "vm": "clari-c1-fundados",
+  "owner": "clarirz",
+  "remote_tests_passed": 25,
+  "remote_tests_seconds": 12.22,
+  "observed_status": "PREPARANDO",
+  "observed_status_epoch": 1794426792.3192132,
+  "october_used": false,
+  "shutdown_controller": "Cloud Shell control_v4_inicial.py",
+  "private_outputs": "VM only; excluded from Git"
+}

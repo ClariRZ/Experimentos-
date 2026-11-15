@@ -1,0 +1,4664 @@
+{
+  "status": "AUDITORIA_SIN_ENTRENAMIENTO",
+  "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "months_loaded": [
+    201901,
+    201902,
+    201903,
+    201904,
+    201905,
+    201906,
+    201907,
+    201908
+  ],
+  "octubre_abierto": false,
+  "control_proposed": "B4 adaptado v2; no confirmado con 20 semillas",
+  "control_columns": 588,
+  "hyperparams": {
+    "params": {
+      "num_leaves": 101,
+      "learning_rate": 0.01851163982884762,
+      "min_data_in_leaf": 1641,
+      "feature_fraction": 0.7059591736850012,
+      "bagging_fraction": 0.7850016883407354
+    },
+    "rounds": 271
+  },
+  "control_recipe_sha256": "8279b17d21a966d3435b4620ad47782a1b552dadd4e63dcd9a287792c2ed37eb",
+  "monetary_candidates": [
+    "mpayroll",
+    "mcaja_ahorro",
+    "mprestamos_personales",
+    "mtarjeta_master_consumo",
+    "mprestamos_hipotecarios",
+    "mcuenta_corriente",
+    "Visa_mpagominimo",
+    "mcuentas_saldo",
+    "mextraccion_autoservicio",
+    "Visa_msaldototal",
+    "Visa_msaldopesos",
+    "mplazo_fijo_dolares",
+    "mtransferencias_emitidas"
+  ],
+  "rank_sources": [
+    "mpayroll",
+    "mcaja_ahorro",
+    "mprestamos_personales",
+    "mtarjeta_master_consumo",
+    "mprestamos_hipotecarios",
+    "mcuenta_corriente",
+    "Visa_mpagominimo",
+    "mcuentas_saldo",
+    "mextraccion_autoservicio",
+    "Visa_msaldototal",
+    "Visa_msaldopesos",
+    "mplazo_fijo_dolares",
+    "mtransferencias_emitidas"
+  ],
+  "excluded_rank_sources": {},
+  "activity_sources_missing": [],
+  "services_for_sum": [
+    "ccuenta_debitos_automaticos__apago1",
+    "ctarjeta_master_debitos_automaticos__apago1"
+  ],
+  "arm_new_columns": {
+    "A": [
+      "mpayroll__rank",
+      "mcaja_ahorro__rank",
+      "mprestamos_personales__rank",
+      "mtarjeta_master_consumo__rank",
+      "mprestamos_hipotecarios__rank",
+      "mcuenta_corriente__rank",
+      "Visa_mpagominimo__rank",
+      "mcuentas_saldo__rank",
+      "mextraccion_autoservicio__rank",
+      "Visa_msaldototal__rank",
+      "Visa_msaldopesos__rank",
+      "mplazo_fijo_dolares__rank",
+      "mtransferencias_emitidas__rank"
+    ],
+    "B": [
+      "mpayroll__rank",
+      "mcaja_ahorro__rank",
+      "mprestamos_personales__rank",
+      "mtarjeta_master_consumo__rank",
+      "mprestamos_hipotecarios__rank",
+      "mcuenta_corriente__rank",
+      "Visa_mpagominimo__rank",
+      "mcuentas_saldo__rank",
+      "mextraccion_autoservicio__rank",
+      "Visa_msaldototal__rank",
+      "Visa_msaldopesos__rank",
+      "mplazo_fijo_dolares__rank",
+      "mtransferencias_emitidas__rank",
+      "mpayroll__rank__lag1",
+      "mpayroll__rank__delta1",
+      "mpayroll__rank__lag2",
+      "mpayroll__rank__delta2",
+      "mcaja_ahorro__rank__lag1",
+      "mcaja_ahorro__rank__delta1",
+      "mcaja_ahorro__rank__lag2",
+      "mcaja_ahorro__rank__delta2",
+      "mprestamos_personales__rank__lag1",
+      "mprestamos_personales__rank__delta1",
+      "mprestamos_personales__rank__lag2",
+      "mprestamos_personales__rank__delta2",
+      "mtarjeta_master_consumo__rank__lag1",
+      "mtarjeta_master_consumo__rank__delta1",
+      "mtarjeta_master_consumo__rank__lag2",
+      "mtarjeta_master_consumo__rank__delta2",
+      "mprestamos_hipotecarios__rank__lag1",
+      "mprestamos_hipotecarios__rank__delta1",
+      "mprestamos_hipotecarios__rank__lag2",
+      "mprestamos_hipotecarios__rank__delta2",
+      "mcuenta_corriente__rank__lag1",
+      "mcuenta_corriente__rank__delta1",
+      "mcuenta_corriente__rank__lag2",
+      "mcuenta_corriente__rank__delta2",
+      "Visa_mpagominimo__rank__lag1",
+      "Visa_mpagominimo__rank__delta1",
+      "Visa_mpagominimo__rank__lag2",
+      "Visa_mpagominimo__rank__delta2",
+      "mcuentas_saldo__rank__lag1",
+      "mcuentas_saldo__rank__delta1",
+      "mcuentas_saldo__rank__lag2",
+      "mcuentas_saldo__rank__delta2",
+      "mextraccion_autoservicio__rank__lag1",
+      "mextraccion_autoservicio__rank__delta1",
+      "mextraccion_autoservicio__rank__lag2",
+      "mextraccion_autoservicio__rank__delta2",
+      "Visa_msaldototal__rank__lag1",
+      "Visa_msaldototal__rank__delta1",
+      "Visa_msaldototal__rank__lag2",
+      "Visa_msaldototal__rank__delta2",
+      "Visa_msaldopesos__rank__lag1",
+      "Visa_msaldopesos__rank__delta1",
+      "Visa_msaldopesos__rank__lag2",
+      "Visa_msaldopesos__rank__delta2",
+      "mplazo_fijo_dolares__rank__lag1",
+      "mplazo_fijo_dolares__rank__delta1",
+      "mplazo_fijo_dolares__rank__lag2",
+      "mplazo_fijo_dolares__rank__delta2",
+      "mtransferencias_emitidas__rank__lag1",
+      "mtransferencias_emitidas__rank__delta1",
+      "mtransferencias_emitidas__rank__lag2",
+      "mtransferencias_emitidas__rank__delta2"
+    ],
+    "C": [
+      "cpayroll_trx__apago1",
+      "cpayroll_trx__prendio1",
+      "cpayroll_trx__caidas3",
+      "ctrx_quarter__apago1",
+      "ctrx_quarter__prendio1",
+      "ctrx_quarter__caidas3",
+      "ctarjeta_visa_transacciones__apago1",
+      "ctarjeta_visa_transacciones__prendio1",
+      "ctarjeta_visa_transacciones__caidas3",
+      "ctarjeta_master_transacciones__apago1",
+      "ctarjeta_master_transacciones__prendio1",
+      "ctarjeta_master_transacciones__caidas3",
+      "ctarjeta_debito_transacciones__apago1",
+      "ctarjeta_debito_transacciones__prendio1",
+      "ctarjeta_debito_transacciones__caidas3",
+      "chomebanking_transacciones__apago1",
+      "chomebanking_transacciones__prendio1",
+      "chomebanking_transacciones__caidas3",
+      "ccuenta_debitos_automaticos__apago1",
+      "ccuenta_debitos_automaticos__prendio1",
+      "ccuenta_debitos_automaticos__caidas3",
+      "ctarjeta_master_debitos_automaticos__apago1",
+      "ctarjeta_master_debitos_automaticos__prendio1",
+      "ctarjeta_master_debitos_automaticos__caidas3",
+      "servicios_apagados"
+    ],
+    "D": [
+      "registro_lag1_disponible",
+      "registro_lag2_disponible"
+    ]
+  },
+  "excluded_columns": {
+    "ctarjeta_visa_debitos_automaticos__apago1": "Cobertura <90% en al menos un mes train",
+    "ctarjeta_visa_debitos_automaticos__prendio1": "Cobertura <90% en al menos un mes train",
+    "ctarjeta_visa_debitos_automaticos__caidas3": "Cobertura <90% en al menos un mes train"
+  },
+  "coverage": {
+    "mpayroll__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 60408,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 60674,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 61033,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 62411,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 64464,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mpayroll__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 59240,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 60357,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 60618,
+        "undefined": 1403,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 60999,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 63459,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mpayroll__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 60520,
+        "undefined": 1305,
+        "min": -0.9999831318855286,
+        "max": 0.999917209148407
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 61144,
+        "undefined": 1210,
+        "min": -1.5580055713653564,
+        "max": 0.9989122152328491
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 61514,
+        "undefined": 1403,
+        "min": -1.0,
+        "max": 1.1573247909545898
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 62105,
+        "undefined": 2175,
+        "min": -1.3009109497070312,
+        "max": 0.9998397827148438
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 64295,
+        "undefined": 2518,
+        "min": -1.0,
+        "max": 0.9998759031295776
+      }
+    },
+    "mpayroll__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 58958,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 59179,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 60289,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 60577,
+        "undefined": 3577,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 62321,
+        "undefined": 4665,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mpayroll__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 60007,
+        "undefined": 3050,
+        "min": -0.9999492168426514,
+        "max": 0.9994537234306335
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 60630,
+        "undefined": 2510,
+        "min": -1.1365629434585571,
+        "max": 0.9989122152328491
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 61303,
+        "undefined": 2610,
+        "min": -0.9999503493309021,
+        "max": 0.9997869729995728
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 61776,
+        "undefined": 3577,
+        "min": -1.0,
+        "max": 1.172888994216919
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 63455,
+        "undefined": 4665,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mcaja_ahorro__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 116034,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 116508,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 117997,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 119143,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 123002,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mcaja_ahorro__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 115256,
+        "undefined": 1305,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 115700,
+        "undefined": 1210,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 116128,
+        "undefined": 1403,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 117716,
+        "undefined": 2175,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 120877,
+        "undefined": 2518,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mcaja_ahorro__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 117988,
+        "undefined": 1305,
+        "min": -0.9974406361579895,
+        "max": 1.1081817150115967
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 118536,
+        "undefined": 1210,
+        "min": -1.8007533550262451,
+        "max": 1.1854605674743652
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 119213,
+        "undefined": 1403,
+        "min": -1.240652084350586,
+        "max": 1.2382889986038208
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 120091,
+        "undefined": 2175,
+        "min": -0.9923633337020874,
+        "max": 1.1353508234024048
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 123451,
+        "undefined": 2518,
+        "min": -0.9958245754241943,
+        "max": 1.65346097946167
+      }
+    },
+    "mcaja_ahorro__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 114503,
+        "undefined": 3050,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 114914,
+        "undefined": 2510,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 115319,
+        "undefined": 2610,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 115840,
+        "undefined": 3577,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 118518,
+        "undefined": 4665,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mcaja_ahorro__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 117310,
+        "undefined": 3050,
+        "min": -1.034199833869934,
+        "max": 1.2840478420257568
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 118131,
+        "undefined": 2510,
+        "min": -1.8191735744476318,
+        "max": 1.3138545751571655
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 118769,
+        "undefined": 2610,
+        "min": -1.2263033390045166,
+        "max": 1.1755616664886475
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 119262,
+        "undefined": 3577,
+        "min": -0.9927577972412109,
+        "max": 1.822800636291504
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 121895,
+        "undefined": 4665,
+        "min": -0.9974818825721741,
+        "max": 1.0435115098953247
+      }
+    },
+    "mprestamos_personales__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 42276,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 42066,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 41543,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 41191,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 40521,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_personales__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 42265,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 42090,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 41854,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 41407,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 40767,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_personales__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 42874,
+        "undefined": 1305,
+        "min": -0.998232364654541,
+        "max": 0.9994795918464661
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 42674,
+        "undefined": 1210,
+        "min": -0.9974690079689026,
+        "max": 0.9987162947654724
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 42438,
+        "undefined": 1403,
+        "min": -0.9995008111000061,
+        "max": 0.9984593987464905
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 41883,
+        "undefined": 2175,
+        "min": -0.9969670176506042,
+        "max": 0.9988346695899963
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 41304,
+        "undefined": 2518,
+        "min": -0.9815905690193176,
+        "max": 0.9997532367706299
+      }
+    },
+    "mprestamos_personales__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 41968,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 42008,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 41820,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 41641,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 40872,
+        "undefined": 4665,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_personales__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 43134,
+        "undefined": 3050,
+        "min": -0.9983253479003906,
+        "max": 0.9999290108680725
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 43102,
+        "undefined": 2510,
+        "min": -0.997501790523529,
+        "max": 0.99942946434021
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 42892,
+        "undefined": 2610,
+        "min": -0.9995269179344177,
+        "max": 0.9984593987464905
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 42619,
+        "undefined": 3577,
+        "min": -0.9983121752738953,
+        "max": 0.9987375736236572
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 41865,
+        "undefined": 4665,
+        "min": -0.9924012422561646,
+        "max": 0.9998272657394409
+      }
+    },
+    "mtarjeta_master_consumo__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 48698,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 49038,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 48114,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 48067,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 48095,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mtarjeta_master_consumo__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 48752,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 48642,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 48985,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 48073,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 48982,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mtarjeta_master_consumo__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 51873,
+        "undefined": 1305,
+        "min": -0.9997541308403015,
+        "max": 0.9997740983963013
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 52016,
+        "undefined": 1210,
+        "min": -0.9997740983963013,
+        "max": 0.9998368620872498
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 51863,
+        "undefined": 1403,
+        "min": -0.9997552633285522,
+        "max": 0.9997921586036682
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 51144,
+        "undefined": 2175,
+        "min": -0.9995011687278748,
+        "max": 0.9997711777687073
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 51730,
+        "undefined": 2518,
+        "min": -0.9993881583213806,
+        "max": 0.9995009899139404
+      }
+    },
+    "mtarjeta_master_consumo__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 48812,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 48628,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 48523,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 48890,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 47937,
+        "undefined": 4665,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mtarjeta_master_consumo__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 52618,
+        "undefined": 3050,
+        "min": -0.9977743625640869,
+        "max": 0.9997740983963013
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 53032,
+        "undefined": 2510,
+        "min": -0.9998360872268677,
+        "max": 0.9998572468757629
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 52650,
+        "undefined": 2610,
+        "min": -0.9998767971992493,
+        "max": 0.9997921586036682
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 52621,
+        "undefined": 3577,
+        "min": -0.99961256980896,
+        "max": 0.9997711777687073
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 52142,
+        "undefined": 4665,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_hipotecarios__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 1856,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 1855,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 1860,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 1866,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 1874,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_hipotecarios__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1855,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 1853,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 1853,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1860,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1874,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_hipotecarios__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1728,
+        "undefined": 1305,
+        "min": -0.9536637663841248,
+        "max": 0.8572198152542114
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 1855,
+        "undefined": 1210,
+        "min": -0.975215494632721,
+        "max": 0.9676550030708313
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 1859,
+        "undefined": 1403,
+        "min": -0.5854447484016418,
+        "max": 0.9935483932495117
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1862,
+        "undefined": 2175,
+        "min": -0.1478494554758072,
+        "max": 0.9346194863319397
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1875,
+        "undefined": 2518,
+        "min": -0.8992537260055542,
+        "max": 0.9653148055076599
+      }
+    },
+    "mprestamos_hipotecarios__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 1843,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 1852,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 1851,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 1853,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 1863,
+        "undefined": 4665,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mprestamos_hipotecarios__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 1855,
+        "undefined": 3050,
+        "min": -0.9550865888595581,
+        "max": 0.9924569129943848
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 1857,
+        "undefined": 2510,
+        "min": -0.9746767282485962,
+        "max": 0.9676550030708313
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 1860,
+        "undefined": 2610,
+        "min": -0.975215494632721,
+        "max": 0.9935483932495117
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 1862,
+        "undefined": 3577,
+        "min": -0.5854447484016418,
+        "max": 0.9935691356658936
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 1867,
+        "undefined": 4665,
+        "min": -0.8981779217720032,
+        "max": 0.9653148055076599
+      }
+    },
+    "mcuenta_corriente__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 68880,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 70107,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 72010,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 70964,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 70242,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mcuenta_corriente__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 66787,
+        "undefined": 1305,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 68310,
+        "undefined": 1210,
+        "min": -0.9999659061431885,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 69481,
+        "undefined": 1403,
+        "min": -0.9999833106994629,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 71537,
+        "undefined": 2175,
+        "min": -0.9999188184738159,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 65015,
+        "undefined": 2518,
+        "min": -0.999981701374054,
+        "max": 1.0
+      }
+    },
+    "mcuenta_corriente__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 77246,
+        "undefined": 1305,
+        "min": -1.9274928569793701,
+        "max": 1.8987600803375244
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 78662,
+        "undefined": 1210,
+        "min": -1.8981927633285522,
+        "max": 1.9175536632537842
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 79296,
+        "undefined": 1403,
+        "min": -1.989345669746399,
+        "max": 1.9555375576019287
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 79836,
+        "undefined": 2175,
+        "min": -1.9211344718933105,
+        "max": 1.9915542602539062
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 77417,
+        "undefined": 2518,
+        "min": -1.943498134613037,
+        "max": 1.9980871677398682
+      }
+    },
+    "mcuenta_corriente__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 66185,
+        "undefined": 3050,
+        "min": -0.9999825358390808,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 66230,
+        "undefined": 2510,
+        "min": -0.9998948574066162,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 67708,
+        "undefined": 2610,
+        "min": -0.9999659061431885,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 69026,
+        "undefined": 3577,
+        "min": -0.9999331831932068,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 70005,
+        "undefined": 4665,
+        "min": -0.999884307384491,
+        "max": 1.0
+      }
+    },
+    "mcuenta_corriente__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 78837,
+        "undefined": 3050,
+        "min": -1.9598724842071533,
+        "max": 1.9919754266738892
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 79372,
+        "undefined": 2510,
+        "min": -1.976142168045044,
+        "max": 1.8896219730377197
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 80815,
+        "undefined": 2610,
+        "min": -1.9924840927124023,
+        "max": 1.951944351196289
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 80605,
+        "undefined": 3577,
+        "min": -1.9690017700195312,
+        "max": 1.9898841381072998
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 81207,
+        "undefined": 4665,
+        "min": -1.9921507835388184,
+        "max": 1.9633090496063232
+      }
+    },
+    "Visa_mpagominimo__rank": {
+      "201903": {
+        "defined": 121163,
+        "total": 125732,
+        "coverage": 0.9636608023414882,
+        "nonzero": 103582,
+        "undefined": 4569,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 121584,
+        "total": 126246,
+        "coverage": 0.963072097333777,
+        "nonzero": 103599,
+        "undefined": 4662,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 122102,
+        "total": 126876,
+        "coverage": 0.962372710362874,
+        "nonzero": 103818,
+        "undefined": 4774,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 123299,
+        "total": 128474,
+        "coverage": 0.9597194763142737,
+        "nonzero": 101865,
+        "undefined": 5175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 126848,
+        "total": 131887,
+        "coverage": 0.96179305011108,
+        "nonzero": 107911,
+        "undefined": 5039,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "Visa_mpagominimo__rank__lag1": {
+      "201903": {
+        "defined": 120242,
+        "total": 125732,
+        "coverage": 0.9563356981516241,
+        "nonzero": 102599,
+        "undefined": 5490,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 120640,
+        "total": 126246,
+        "coverage": 0.9555946327012341,
+        "nonzero": 103279,
+        "undefined": 5606,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 121017,
+        "total": 126876,
+        "coverage": 0.9538210536271635,
+        "nonzero": 103275,
+        "undefined": 5859,
+        "min": 0.0,
+        "max": 0.9999806880950928
+      },
+      "201906": {
+        "defined": 121657,
+        "total": 128474,
+        "coverage": 0.9469386801998848,
+        "nonzero": 103585,
+        "undefined": 6817,
+        "min": 0.0,
+        "max": 0.9999614953994751
+      },
+      "201908": {
+        "defined": 124570,
+        "total": 131887,
+        "coverage": 0.9445206881648684,
+        "nonzero": 105870,
+        "undefined": 7317,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "Visa_mpagominimo__rank__delta1": {
+      "201903": {
+        "defined": 119809,
+        "total": 125732,
+        "coverage": 0.9528918652371712,
+        "nonzero": 106459,
+        "undefined": 5923,
+        "min": -0.9999902844429016,
+        "max": 0.9960997104644775
+      },
+      "201904": {
+        "defined": 120264,
+        "total": 126246,
+        "coverage": 0.9526163205170857,
+        "nonzero": 106859,
+        "undefined": 5982,
+        "min": -0.9999903440475464,
+        "max": 0.9911437630653381
+      },
+      "201905": {
+        "defined": 120663,
+        "total": 126876,
+        "coverage": 0.9510309278350515,
+        "nonzero": 107255,
+        "undefined": 6213,
+        "min": -0.9999806880950928,
+        "max": 0.9996050596237183
+      },
+      "201906": {
+        "defined": 121187,
+        "total": 128474,
+        "coverage": 0.9432803524448526,
+        "nonzero": 107679,
+        "undefined": 7287,
+        "min": -0.9999614953994751,
+        "max": 0.9934914112091064
+      },
+      "201908": {
+        "defined": 124326,
+        "total": 131887,
+        "coverage": 0.94267061954552,
+        "nonzero": 110919,
+        "undefined": 7561,
+        "min": -0.9999622702598572,
+        "max": 0.9997034668922424
+      }
+    },
+    "Visa_mpagominimo__rank__lag2": {
+      "201903": {
+        "defined": 118796,
+        "total": 125732,
+        "coverage": 0.944835045970795,
+        "nonzero": 101260,
+        "undefined": 6936,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 119693,
+        "total": 126246,
+        "coverage": 0.9480934049395624,
+        "nonzero": 102252,
+        "undefined": 6553,
+        "min": 0.0,
+        "max": 0.9999708533287048
+      },
+      "201905": {
+        "defined": 120041,
+        "total": 126876,
+        "coverage": 0.9461285034206627,
+        "nonzero": 102900,
+        "undefined": 6835,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 120555,
+        "total": 128474,
+        "coverage": 0.9383610691657456,
+        "nonzero": 102973,
+        "undefined": 7919,
+        "min": 0.0,
+        "max": 0.9999806880950928
+      },
+      "201908": {
+        "defined": 122342,
+        "total": 131887,
+        "coverage": 0.9276274386406544,
+        "nonzero": 101378,
+        "undefined": 9545,
+        "min": 0.0,
+        "max": 0.9999803900718689
+      }
+    },
+    "Visa_mpagominimo__rank__delta2": {
+      "201903": {
+        "defined": 118087,
+        "total": 125732,
+        "coverage": 0.9391960678268062,
+        "nonzero": 105847,
+        "undefined": 7645,
+        "min": -0.999970555305481,
+        "max": 0.9996041655540466
+      },
+      "201904": {
+        "defined": 119009,
+        "total": 126246,
+        "coverage": 0.9426754114981861,
+        "nonzero": 106556,
+        "undefined": 7237,
+        "min": -0.999893069267273,
+        "max": 0.9911437630653381
+      },
+      "201905": {
+        "defined": 119449,
+        "total": 126876,
+        "coverage": 0.9414625303445884,
+        "nonzero": 106954,
+        "undefined": 7427,
+        "min": -0.9998262524604797,
+        "max": 0.9996436238288879
+      },
+      "201906": {
+        "defined": 119826,
+        "total": 128474,
+        "coverage": 0.9326867693074085,
+        "nonzero": 107309,
+        "undefined": 8648,
+        "min": -0.9999613761901855,
+        "max": 0.9963284730911255
+      },
+      "201908": {
+        "defined": 121930,
+        "total": 131887,
+        "coverage": 0.9245035522833941,
+        "nonzero": 109494,
+        "undefined": 9957,
+        "min": -0.999891996383667,
+        "max": 0.9998053908348083
+      }
+    },
+    "mcuentas_saldo__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 124993,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 125521,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 125949,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 127698,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 130952,
+        "undefined": 0,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mcuentas_saldo__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 123696,
+        "undefined": 1305,
+        "min": -0.9999637603759766,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 124317,
+        "undefined": 1210,
+        "min": -0.9999644756317139,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 124761,
+        "undefined": 1403,
+        "min": -0.999966025352478,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 125491,
+        "undefined": 2175,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 128532,
+        "undefined": 2518,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "mcuentas_saldo__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 123850,
+        "undefined": 1305,
+        "min": -1.9842568635940552,
+        "max": 1.9132983684539795
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 124478,
+        "undefined": 1210,
+        "min": -1.9178509712219238,
+        "max": 1.9919227361679077
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 124927,
+        "undefined": 1403,
+        "min": -1.9579267501831055,
+        "max": 1.9790780544281006
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 125754,
+        "undefined": 2175,
+        "min": -1.879531979560852,
+        "max": 1.9317755699157715
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 128776,
+        "undefined": 2518,
+        "min": -1.9871717691421509,
+        "max": 1.9378793239593506
+      }
+    },
+    "mcuentas_saldo__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 122006,
+        "undefined": 3050,
+        "min": -0.9999631643295288,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 123018,
+        "undefined": 2510,
+        "min": -0.9996012449264526,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 123557,
+        "undefined": 2610,
+        "min": -0.9999644756317139,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 124193,
+        "undefined": 3577,
+        "min": -0.9997279644012451,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 126482,
+        "undefined": 4665,
+        "min": -0.9996437430381775,
+        "max": 1.0
+      }
+    },
+    "mcuentas_saldo__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 122188,
+        "undefined": 3050,
+        "min": -1.9978444576263428,
+        "max": 1.9833210706710815
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 123236,
+        "undefined": 2510,
+        "min": -1.9705712795257568,
+        "max": 1.965411901473999
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 123772,
+        "undefined": 2610,
+        "min": -1.958329439163208,
+        "max": 1.9965685606002808
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 124416,
+        "undefined": 3577,
+        "min": -1.97561514377594,
+        "max": 1.942824125289917
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 126724,
+        "undefined": 4665,
+        "min": -1.9873669147491455,
+        "max": 1.8917618989944458
+      }
+    },
+    "mextraccion_autoservicio__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 68962,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 69118,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 69744,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 69259,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 72123,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mextraccion_autoservicio__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 67763,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 68861,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 69025,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 69665,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 70549,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mextraccion_autoservicio__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 75846,
+        "undefined": 1305,
+        "min": -0.998467206954956,
+        "max": 0.9992169737815857
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 76411,
+        "undefined": 1210,
+        "min": -0.9994997382164001,
+        "max": 0.9984591603279114
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 76689,
+        "undefined": 1403,
+        "min": -0.9995948672294617,
+        "max": 0.9997060894966125
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 76536,
+        "undefined": 2175,
+        "min": -0.9985805153846741,
+        "max": 0.9986283183097839
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 78659,
+        "undefined": 2518,
+        "min": -0.9988885521888733,
+        "max": 0.9984471201896667
+      }
+    },
+    "mextraccion_autoservicio__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 66027,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 67653,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 68740,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 68928,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 69093,
+        "undefined": 4665,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mextraccion_autoservicio__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 75421,
+        "undefined": 3050,
+        "min": -0.9999244809150696,
+        "max": 0.9994489550590515
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 76380,
+        "undefined": 2510,
+        "min": -0.9998378753662109,
+        "max": 0.999247670173645
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 76932,
+        "undefined": 2610,
+        "min": -0.9994344711303711,
+        "max": 0.9995555281639099
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 76562,
+        "undefined": 3577,
+        "min": -0.9998408555984497,
+        "max": 0.9999206066131592
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 78008,
+        "undefined": 4665,
+        "min": -0.9996534585952759,
+        "max": 0.9998613595962524
+      }
+    },
+    "Visa_msaldototal__rank": {
+      "201903": {
+        "defined": 121163,
+        "total": 125732,
+        "coverage": 0.9636608023414882,
+        "nonzero": 109223,
+        "undefined": 4569,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 121584,
+        "total": 126246,
+        "coverage": 0.963072097333777,
+        "nonzero": 109686,
+        "undefined": 4662,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 122102,
+        "total": 126876,
+        "coverage": 0.962372710362874,
+        "nonzero": 110012,
+        "undefined": 4774,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 123299,
+        "total": 128474,
+        "coverage": 0.9597194763142737,
+        "nonzero": 111003,
+        "undefined": 5175,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 126848,
+        "total": 131887,
+        "coverage": 0.96179305011108,
+        "nonzero": 114023,
+        "undefined": 5039,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "Visa_msaldototal__rank__lag1": {
+      "201903": {
+        "defined": 120242,
+        "total": 125732,
+        "coverage": 0.9563356981516241,
+        "nonzero": 108547,
+        "undefined": 5490,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 120640,
+        "total": 126246,
+        "coverage": 0.9555946327012341,
+        "nonzero": 108882,
+        "undefined": 5606,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 121017,
+        "total": 126876,
+        "coverage": 0.9538210536271635,
+        "nonzero": 109303,
+        "undefined": 5859,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 121657,
+        "total": 128474,
+        "coverage": 0.9469386801998848,
+        "nonzero": 109739,
+        "undefined": 6817,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 124570,
+        "total": 131887,
+        "coverage": 0.9445206881648684,
+        "nonzero": 112637,
+        "undefined": 7317,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "Visa_msaldototal__rank__delta1": {
+      "201903": {
+        "defined": 119809,
+        "total": 125732,
+        "coverage": 0.9528918652371712,
+        "nonzero": 109435,
+        "undefined": 5923,
+        "min": -1.9922456741333008,
+        "max": 1.9517430067062378
+      },
+      "201904": {
+        "defined": 120264,
+        "total": 126246,
+        "coverage": 0.9526163205170857,
+        "nonzero": 109902,
+        "undefined": 5982,
+        "min": -1.9942378997802734,
+        "max": 1.9661250114440918
+      },
+      "201905": {
+        "defined": 120663,
+        "total": 126876,
+        "coverage": 0.9510309278350515,
+        "nonzero": 110247,
+        "undefined": 6213,
+        "min": -1.9889755249023438,
+        "max": 1.9639540910720825
+      },
+      "201906": {
+        "defined": 121187,
+        "total": 128474,
+        "coverage": 0.9432803524448526,
+        "nonzero": 110732,
+        "undefined": 7287,
+        "min": -1.9914929866790771,
+        "max": 1.9753097295761108
+      },
+      "201908": {
+        "defined": 124326,
+        "total": 131887,
+        "coverage": 0.94267061954552,
+        "nonzero": 113729,
+        "undefined": 7561,
+        "min": -1.9712202548980713,
+        "max": 1.970571756362915
+      }
+    },
+    "Visa_msaldototal__rank__lag2": {
+      "201903": {
+        "defined": 118796,
+        "total": 125732,
+        "coverage": 0.944835045970795,
+        "nonzero": 107606,
+        "undefined": 6936,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 119693,
+        "total": 126246,
+        "coverage": 0.9480934049395624,
+        "nonzero": 108146,
+        "undefined": 6553,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 120041,
+        "total": 126876,
+        "coverage": 0.9461285034206627,
+        "nonzero": 108448,
+        "undefined": 6835,
+        "min": -1.0,
+        "max": 0.999990701675415
+      },
+      "201906": {
+        "defined": 120555,
+        "total": 128474,
+        "coverage": 0.9383610691657456,
+        "nonzero": 108961,
+        "undefined": 7919,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 122342,
+        "total": 131887,
+        "coverage": 0.9276274386406544,
+        "nonzero": 110414,
+        "undefined": 9545,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "Visa_msaldototal__rank__delta2": {
+      "201903": {
+        "defined": 118087,
+        "total": 125732,
+        "coverage": 0.9391960678268062,
+        "nonzero": 108522,
+        "undefined": 7645,
+        "min": -1.957986831665039,
+        "max": 1.9867327213287354
+      },
+      "201904": {
+        "defined": 119009,
+        "total": 126246,
+        "coverage": 0.9426754114981861,
+        "nonzero": 109284,
+        "undefined": 7237,
+        "min": -1.9924262762069702,
+        "max": 1.9757122993469238
+      },
+      "201905": {
+        "defined": 119449,
+        "total": 126876,
+        "coverage": 0.9414625303445884,
+        "nonzero": 109666,
+        "undefined": 7427,
+        "min": -1.9894466400146484,
+        "max": 1.9767708778381348
+      },
+      "201906": {
+        "defined": 119826,
+        "total": 128474,
+        "coverage": 0.9326867693074085,
+        "nonzero": 110040,
+        "undefined": 8648,
+        "min": -1.9978535175323486,
+        "max": 1.9816014766693115
+      },
+      "201908": {
+        "defined": 121930,
+        "total": 131887,
+        "coverage": 0.9245035522833941,
+        "nonzero": 112130,
+        "undefined": 9957,
+        "min": -1.974116325378418,
+        "max": 1.9574315547943115
+      }
+    },
+    "Visa_msaldopesos__rank": {
+      "201903": {
+        "defined": 121163,
+        "total": 125732,
+        "coverage": 0.9636608023414882,
+        "nonzero": 108987,
+        "undefined": 4569,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 121584,
+        "total": 126246,
+        "coverage": 0.963072097333777,
+        "nonzero": 109475,
+        "undefined": 4662,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 122102,
+        "total": 126876,
+        "coverage": 0.962372710362874,
+        "nonzero": 109798,
+        "undefined": 4774,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 123299,
+        "total": 128474,
+        "coverage": 0.9597194763142737,
+        "nonzero": 110790,
+        "undefined": 5175,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 126848,
+        "total": 131887,
+        "coverage": 0.96179305011108,
+        "nonzero": 113809,
+        "undefined": 5039,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "Visa_msaldopesos__rank__lag1": {
+      "201903": {
+        "defined": 120242,
+        "total": 125732,
+        "coverage": 0.9563356981516241,
+        "nonzero": 108296,
+        "undefined": 5490,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 120640,
+        "total": 126246,
+        "coverage": 0.9555946327012341,
+        "nonzero": 108647,
+        "undefined": 5606,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 121017,
+        "total": 126876,
+        "coverage": 0.9538210536271635,
+        "nonzero": 109096,
+        "undefined": 5859,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 121657,
+        "total": 128474,
+        "coverage": 0.9469386801998848,
+        "nonzero": 109527,
+        "undefined": 6817,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 124570,
+        "total": 131887,
+        "coverage": 0.9445206881648684,
+        "nonzero": 112441,
+        "undefined": 7317,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "Visa_msaldopesos__rank__delta1": {
+      "201903": {
+        "defined": 119809,
+        "total": 125732,
+        "coverage": 0.9528918652371712,
+        "nonzero": 109226,
+        "undefined": 5923,
+        "min": -1.9800150394439697,
+        "max": 1.9890081882476807
+      },
+      "201904": {
+        "defined": 120264,
+        "total": 126246,
+        "coverage": 0.9526163205170857,
+        "nonzero": 109696,
+        "undefined": 5982,
+        "min": -1.994217038154602,
+        "max": 1.9584159851074219
+      },
+      "201905": {
+        "defined": 120663,
+        "total": 126876,
+        "coverage": 0.9510309278350515,
+        "nonzero": 110058,
+        "undefined": 6213,
+        "min": -1.9922446012496948,
+        "max": 1.9613733291625977
+      },
+      "201906": {
+        "defined": 121187,
+        "total": 128474,
+        "coverage": 0.9432803524448526,
+        "nonzero": 110542,
+        "undefined": 7287,
+        "min": -1.9859728813171387,
+        "max": 1.9556928873062134
+      },
+      "201908": {
+        "defined": 124326,
+        "total": 131887,
+        "coverage": 0.94267061954552,
+        "nonzero": 113545,
+        "undefined": 7561,
+        "min": -1.9681618213653564,
+        "max": 1.9842767715454102
+      }
+    },
+    "Visa_msaldopesos__rank__lag2": {
+      "201903": {
+        "defined": 118796,
+        "total": 125732,
+        "coverage": 0.944835045970795,
+        "nonzero": 107358,
+        "undefined": 6936,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 119693,
+        "total": 126246,
+        "coverage": 0.9480934049395624,
+        "nonzero": 107895,
+        "undefined": 6553,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 120041,
+        "total": 126876,
+        "coverage": 0.9461285034206627,
+        "nonzero": 108215,
+        "undefined": 6835,
+        "min": -1.0,
+        "max": 0.999990701675415
+      },
+      "201906": {
+        "defined": 120555,
+        "total": 128474,
+        "coverage": 0.9383610691657456,
+        "nonzero": 108755,
+        "undefined": 7919,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 122342,
+        "total": 131887,
+        "coverage": 0.9276274386406544,
+        "nonzero": 110202,
+        "undefined": 9545,
+        "min": -1.0,
+        "max": 1.0
+      }
+    },
+    "Visa_msaldopesos__rank__delta2": {
+      "201903": {
+        "defined": 118087,
+        "total": 125732,
+        "coverage": 0.9391960678268062,
+        "nonzero": 108325,
+        "undefined": 7645,
+        "min": -1.9495478868484497,
+        "max": 1.9903621673583984
+      },
+      "201904": {
+        "defined": 119009,
+        "total": 126246,
+        "coverage": 0.9426754114981861,
+        "nonzero": 109080,
+        "undefined": 7237,
+        "min": -1.9956400394439697,
+        "max": 1.9881629943847656
+      },
+      "201905": {
+        "defined": 119449,
+        "total": 126876,
+        "coverage": 0.9414625303445884,
+        "nonzero": 109474,
+        "undefined": 7427,
+        "min": -1.9925593137741089,
+        "max": 1.9284820556640625
+      },
+      "201906": {
+        "defined": 119826,
+        "total": 128474,
+        "coverage": 0.9326867693074085,
+        "nonzero": 109845,
+        "undefined": 8648,
+        "min": -1.997873306274414,
+        "max": 1.9901361465454102
+      },
+      "201908": {
+        "defined": 121930,
+        "total": 131887,
+        "coverage": 0.9245035522833941,
+        "nonzero": 111944,
+        "undefined": 9957,
+        "min": -1.9729008674621582,
+        "max": 1.9597970247268677
+      }
+    },
+    "mplazo_fijo_dolares__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 14350,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 14186,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 14317,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 14766,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 15988,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mplazo_fijo_dolares__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 14238,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 14339,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 14172,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 14308,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 15549,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mplazo_fijo_dolares__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 16600,
+        "undefined": 1305,
+        "min": -0.9990172386169434,
+        "max": 0.9976306557655334
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 16707,
+        "undefined": 1210,
+        "min": -0.9997212290763855,
+        "max": 0.9995770454406738
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 16486,
+        "undefined": 1403,
+        "min": -0.9984491467475891,
+        "max": 0.9983236789703369
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 16645,
+        "undefined": 2175,
+        "min": -0.9975553750991821,
+        "max": 0.9990518689155579
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 18566,
+        "undefined": 2518,
+        "min": -0.9983285069465637,
+        "max": 0.9994370937347412
+      }
+    },
+    "mplazo_fijo_dolares__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 14510,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 14227,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 14319,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 14159,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 14748,
+        "undefined": 4665,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mplazo_fijo_dolares__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 17562,
+        "undefined": 3050,
+        "min": -0.9997248649597168,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 17445,
+        "undefined": 2510,
+        "min": -0.9995788335800171,
+        "max": 0.9995770454406738
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 17482,
+        "undefined": 2610,
+        "min": -0.9997212290763855,
+        "max": 0.9995809197425842
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 17539,
+        "undefined": 3577,
+        "min": -0.9988721013069153,
+        "max": 0.9990518689155579
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 18672,
+        "undefined": 4665,
+        "min": -0.9991195797920227,
+        "max": 0.9942144155502319
+      }
+    },
+    "mtransferencias_emitidas__rank": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 51891,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 51638,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 53891,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 51878,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 48182,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mtransferencias_emitidas__rank__lag1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 52763,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 51798,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 51572,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 53827,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 51512,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mtransferencias_emitidas__rank__delta1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 62804,
+        "undefined": 1305,
+        "min": -0.9998674988746643,
+        "max": 0.9996916651725769
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 61442,
+        "undefined": 1210,
+        "min": -0.9995760321617126,
+        "max": 0.9998838305473328
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 62193,
+        "undefined": 1403,
+        "min": -0.9998063445091248,
+        "max": 0.9999814629554749
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 64634,
+        "undefined": 2175,
+        "min": -0.9997773170471191,
+        "max": 0.9999421834945679
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 60092,
+        "undefined": 2518,
+        "min": -0.9996704459190369,
+        "max": 0.999605655670166
+      }
+    },
+    "mtransferencias_emitidas__rank__lag2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 51931,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 52673,
+        "undefined": 2510,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 51714,
+        "undefined": 2610,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 51514,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 51730,
+        "undefined": 4665,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "mtransferencias_emitidas__rank__delta2": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 62895,
+        "undefined": 3050,
+        "min": -0.9997695684432983,
+        "max": 0.9998651146888733
+      },
+      "201904": {
+        "defined": 123736,
+        "total": 126246,
+        "coverage": 0.9801181819622008,
+        "nonzero": 63202,
+        "undefined": 2510,
+        "min": -0.9998674988746643,
+        "max": 0.999128520488739
+      },
+      "201905": {
+        "defined": 124266,
+        "total": 126876,
+        "coverage": 0.979428733566632,
+        "nonzero": 62691,
+        "undefined": 2610,
+        "min": -0.9999614357948303,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 63540,
+        "undefined": 3577,
+        "min": -0.999941885471344,
+        "max": 0.9999807476997375
+      },
+      "201908": {
+        "defined": 127222,
+        "total": 131887,
+        "coverage": 0.9646288110276221,
+        "nonzero": 60384,
+        "undefined": 4665,
+        "min": -0.9994217157363892,
+        "max": 0.999605655670166
+      }
+    },
+    "ccuenta_debitos_automaticos__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 2146,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 2152,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 2119,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 2118,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 2296,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_visa_debitos_automaticos__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1498,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 0,
+        "total": 126246,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 126246,
+        "min": null,
+        "max": null
+      },
+      "201905": {
+        "defined": 0,
+        "total": 126876,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 126876,
+        "min": null,
+        "max": null
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1405,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1322,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_master_debitos_automaticos__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1085,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 656,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 1392,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1095,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1172,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "cpayroll_trx__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1006,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 1242,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 1347,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1085,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1454,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "cpayroll_trx__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1280,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 787,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 896,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1106,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 836,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "cpayroll_trx__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 12943,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 9458,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 9548,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 7056,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 15207,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ctrx_quarter__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 174,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 186,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 186,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 171,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 155,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctrx_quarter__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 99,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 111,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 124,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 106,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 126,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctrx_quarter__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 72465,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 56261,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 48723,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 52146,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 56885,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ctarjeta_visa_transacciones__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1776,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 1546,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 1609,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1567,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1645,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_visa_transacciones__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1354,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 1562,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 1389,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1588,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1438,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_visa_transacciones__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 47046,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 33237,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 55434,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 41724,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 56856,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ctarjeta_master_transacciones__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 3451,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 3182,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 4001,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 3393,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 3979,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_master_transacciones__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 3121,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 3374,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 2878,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 3071,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 2748,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_master_transacciones__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 18889,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 15769,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 21703,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 17649,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 21876,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ctarjeta_debito_transacciones__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 7689,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 7666,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 7592,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 7850,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 7884,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_debito_transacciones__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 7413,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 7383,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 7221,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 7256,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 7013,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_debito_transacciones__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 39373,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 39452,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 39702,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 42191,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 46623,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "chomebanking_transacciones__apago1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 9767,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 11102,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 14170,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 7452,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 5716,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "chomebanking_transacciones__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 5607,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 4904,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 5224,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 6811,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 5347,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "chomebanking_transacciones__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 49192,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 59705,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 51294,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 31620,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 32146,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ccuenta_debitos_automaticos__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 2963,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 2158,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 2036,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 2451,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 2157,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ccuenta_debitos_automaticos__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 7606,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 8682,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 7770,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 8124,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 9041,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ctarjeta_visa_debitos_automaticos__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1333,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 0,
+        "total": 126246,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 126246,
+        "min": null,
+        "max": null
+      },
+      "201905": {
+        "defined": 0,
+        "total": 126876,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 126876,
+        "min": null,
+        "max": null
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1550,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 1410,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_visa_debitos_automaticos__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 14586,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 0,
+        "total": 126246,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 126246,
+        "min": null,
+        "max": null
+      },
+      "201905": {
+        "defined": 0,
+        "total": 126876,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 126876,
+        "min": null,
+        "max": null
+      },
+      "201906": {
+        "defined": 0,
+        "total": 128474,
+        "coverage": 0.0,
+        "nonzero": 0,
+        "undefined": 128474,
+        "min": null,
+        "max": null
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 17291,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "ctarjeta_master_debitos_automaticos__prendio1": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 1028,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 1123,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 664,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 1324,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 842,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "ctarjeta_master_debitos_automaticos__caidas3": {
+      "201903": {
+        "defined": 122682,
+        "total": 125732,
+        "coverage": 0.97574205452868,
+        "nonzero": 3611,
+        "undefined": 3050,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 123735,
+        "total": 126246,
+        "coverage": 0.9801102609191579,
+        "nonzero": 2237,
+        "undefined": 2511,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 124265,
+        "total": 126876,
+        "coverage": 0.9794208518553549,
+        "nonzero": 5695,
+        "undefined": 2611,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 124897,
+        "total": 128474,
+        "coverage": 0.972157790681383,
+        "nonzero": 3726,
+        "undefined": 3577,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 127219,
+        "total": 131887,
+        "coverage": 0.9646060642823022,
+        "nonzero": 5410,
+        "undefined": 4668,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "servicios_apagados": {
+      "201903": {
+        "defined": 124427,
+        "total": 125732,
+        "coverage": 0.9896207807081729,
+        "nonzero": 3193,
+        "undefined": 1305,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201904": {
+        "defined": 125036,
+        "total": 126246,
+        "coverage": 0.990415537918033,
+        "nonzero": 2786,
+        "undefined": 1210,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201905": {
+        "defined": 125473,
+        "total": 126876,
+        "coverage": 0.9889419590781551,
+        "nonzero": 3472,
+        "undefined": 1403,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201906": {
+        "defined": 126299,
+        "total": 128474,
+        "coverage": 0.9830705045378831,
+        "nonzero": 3182,
+        "undefined": 2175,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "201908": {
+        "defined": 129369,
+        "total": 131887,
+        "coverage": 0.9809078984281999,
+        "nonzero": 3440,
+        "undefined": 2518,
+        "min": 0.0,
+        "max": 2.0
+      }
+    },
+    "registro_lag1_disponible": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 124427,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 125036,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 125473,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 126299,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 129369,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "registro_lag2_disponible": {
+      "201903": {
+        "defined": 125732,
+        "total": 125732,
+        "coverage": 1.0,
+        "nonzero": 122682,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201904": {
+        "defined": 126246,
+        "total": 126246,
+        "coverage": 1.0,
+        "nonzero": 123736,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201905": {
+        "defined": 126876,
+        "total": 126876,
+        "coverage": 1.0,
+        "nonzero": 124266,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201906": {
+        "defined": 128474,
+        "total": 128474,
+        "coverage": 1.0,
+        "nonzero": 124897,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "201908": {
+        "defined": 131887,
+        "total": 131887,
+        "coverage": 1.0,
+        "nonzero": 127222,
+        "undefined": 0,
+        "min": 0.0,
+        "max": 1.0
+      }
+    }
+  },
+  "partitions": {
+    "201903": 125732,
+    "201904": 126246,
+    "201905": 126876,
+    "201906": 128474,
+    "201908": 131887
+  },
+  "warnings": [
+    "BOF pendiente: 588 no equivale automaticamente a 760",
+    "Shortlist ya uso junio; agosto fue utilizado por Optuna y comparaciones v2",
+    "Motivos de NA: dato fuente faltante/roto, mes ausente o conteo negativo; cobertura agrega todos estos motivos"
+  ],
+  "code_sha256": "edcd2279644a1573c769478bf76d2bf8e4183fdea3a37cffb3a2c9e901c6b949"
+}

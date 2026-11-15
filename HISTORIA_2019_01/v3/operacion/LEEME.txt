@@ -1,0 +1,10 @@
+SINCRONIZACION LOCAL POR HITOS
+
+El runner exporta agregados al cerrar screening, confirmacion, combinaciones y cierre/error.
+El sincronizador local revisa cada 60 segundos y crea commits solo de JSON agregados.
+Esta activo en la sesion 29190; limite 6h10m. Requiere que el equipo y la sesion permanezcan activos.
+Estado local: work/sincronizacion_v3_estado.json en el espacio de esta conversacion.
+No hay notificaciones programadas ni garantia de supervision fuera de esta sesion.
+Push desactivado mientras no exista autorizacion explicita. No se copian credenciales a la VM.
+Modelos y predicciones permanecen en artefactos/ de la VM, excluidos de Git.
+Si falla la sincronizacion, se conserva la corrida VM; su respaldo en Git queda pendiente y el estado local informa ERROR_SINCRONIZACION.

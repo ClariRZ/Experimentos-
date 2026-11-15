@@ -1,0 +1,13 @@
+{
+  "best_params": {
+    "num_leaves": 68,
+    "learning_rate": 0.024632314448291677,
+    "min_data_in_leaf": 2269,
+    "feature_fraction": 0.7676852329808079,
+    "bagging_fraction": 0.9790093636677641
+  },
+  "trees": 249,
+  "best_trial": 18,
+  "auc": 0.932108409454893,
+  "completed_trials": 20
+}

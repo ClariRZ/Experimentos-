@@ -1,0 +1,79 @@
+{
+  "status": "PREDECLARADO_ANTES_DE_ENTRENAR",
+  "primary_B": [
+    [
+      "B1",
+      "B0"
+    ],
+    [
+      "B2",
+      "B1"
+    ],
+    [
+      "B3",
+      "B2"
+    ],
+    [
+      "B4",
+      "B3"
+    ]
+  ],
+  "secondary_B": [
+    [
+      "B2",
+      "B0"
+    ],
+    [
+      "B3",
+      "B0"
+    ],
+    [
+      "B4",
+      "B0"
+    ],
+    [
+      "B1",
+      "B4"
+    ],
+    [
+      "B2",
+      "B4"
+    ]
+  ],
+  "families_vs_B4": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "Z",
+    "R",
+    "K",
+    "T1",
+    "C3_TICKETS",
+    "C3_SUMAS"
+  ],
+  "ratios_individuales_condicionales_max": 20,
+  "combinaciones_incrementales_max": 10,
+  "reoptimizacion_contrastes": 2,
+  "canaritos_contrastes": 3,
+  "total_max_comparaciones_agosto": 55,
+  "repeticiones_confirmacion": "5 y20 semillas son revisiones del mismo contraste; informar ambas, no pruebas independientes",
+  "no_identificables": [
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "B12",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "universos_restringidos": "No incluidos en esta corrida principal; controles separados requieren otro registro",
+  "shortlist": "20 fuentes usando sólo marzo–junio; método y familias congelados antes del screening",
+  "octubre": "Candidata congelada y baseline únicamente al final, nunca para decidir",
+  "implementacion_actual": "Escalera activa; módulos posteriores preparados y pendientes de pruebas. Test bloqueado hasta verificar equivalencia de baseline oficial.",
+  "final_candidata_vs_baseline": 1
+}

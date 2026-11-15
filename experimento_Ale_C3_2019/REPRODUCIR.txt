@@ -1,0 +1,50 @@
+REPRODUCCIÓN A/B/C/D — 2019
+
+No ejecutar run_vm.sh dentro de la carpeta publicada con resultados de referencia.
+Para una reproducción nueva, desde esta carpeta:
+
+python3 src/reproducir.py --parent /ruta/experimento_historicas_20261107 --out /ruta/NUEVA_CORRIDA --python /ruta/entorno/bin/python
+
+--out debe NO existir. El programa copia sólo código, configuración y documentación,
+prepara variables, optimiza dos representaciones, entrena40 modelos, congela decisiones,
+evalúa octubre, verifica y genera el informe. No copia resultados publicados como checkpoints.
+
+INSUMOS
+--parent debe ser una corrida privada B0–B5 completa: preparado/, resultados/B2/ y
+el parquet data/competencia_02_crudo.parquet. Puede usarse --data para otra ruta del parquet.
+El paquete hermano experimento_historicas_B0_B5 contiene su propio reproducir.py para
+regenerar esos insumos desde el parquet original. No basta apuntar a una copia pública
+que no tenga matrices ni predicciones individuales.
+Parquet SHA256: 84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22.
+Usar Python3.12.3 y las versiones de requirements_vm.txt; el entorno utilizado quedó
+registrado en entorno.json. El script admite el Python de un entorno ya preparado.
+
+VERIFICACIONES
+preparar.py valida el hash del parquet, el esquema, el orden de filas y la igualdad
+exacta de las43 fórmulas contra el código C3 vendorizado. Se mantienen los datos privados.
+ejecutar.py exige20 semillas únicas y conserva la firma de configuración/manifiesto/código.
+Entrenar no lee las etiquetas de octubre. Evaluar exige FROZEN.json y valida los artefactos.
+verificar.py recalcula políticas, ganancias, ensembles y compara con las predicciones B2.
+A reproduce exactamente el B2 histórico en esta corrida, incluyendo su ganancia282.645.000.
+
+REANUDACIÓN
+En la carpeta NUEVA_CORRIDA ya creada, usar el mismo Python:
+python src/ejecutar.py --parent /ruta/parent --mode train
+python src/ejecutar.py --parent /ruta/parent --mode evaluate
+python src/verificar.py --root . --parent /ruta/parent
+python src/informe.py --root .
+Se conservan trials/modelos completos. No modificar la firma durante una corrida.
+run_vm.sh y finalizar_vm.sh son los lanzadores usados en la VM original y conservan
+sus rutas originales; no son el punto de entrada para clonar los resultados públicos.
+
+HUELLAS Y CORRECCIONES
+manifest_codigo_previo.json corresponde a una versión inicial. La firma efectiva final
+está en resultados/RUN_SIGNATURE.json y FROZEN.json. IMPLEMENTACION.txt y el historial
+Git registran las categorías de validación corregidas antes del primer trial y la semilla20
+agregada antes del congelamiento/test. Se preservaron los checkpoints válidos.
+
+RESPALDO
+Los modelos, scores y metadatos individuales están en un respaldo privado de la corrida
+verificada. Ver RESPALDO.txt para ubicación y SHA256. El respaldo no incluye el parquet
+crudo ni las grandes matrices reconstruibles. Las instrucciones y helper de reproducción
+más recientes están en Git. No subir datos, IDs ni predicciones individuales al repositorio.

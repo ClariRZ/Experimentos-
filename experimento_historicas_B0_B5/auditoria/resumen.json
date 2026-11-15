@@ -1,0 +1,10 @@
+{
+  "filas_2019": 1563565,
+  "clientes_2019": 146623,
+  "duplicados": 0,
+  "train_rows": 506871,
+  "valid_rows": 131775,
+  "test_rows": 135633,
+  "test_labels_inspected": false,
+  "clase_reconstruida_horizonte": 201912
+}

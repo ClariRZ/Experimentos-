@@ -1,0 +1,84 @@
+{
+  "status": "PROTOCOLO_PREVIO_NO_EJECUTADO",
+  "data_sha256": "84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22",
+  "train_months": [
+    201903,
+    201904,
+    201905,
+    201906
+  ],
+  "validation_month": 201908,
+  "test_month": 201910,
+  "train_and_auc_positive": [
+    "BAJA+1",
+    "BAJA+2"
+  ],
+  "gain_positive": "BAJA+2",
+  "gain_per_hit": 1100000,
+  "cost_per_contact": 27500,
+  "baseline": "B2 originales + lag1 lag2 delta1 delta2",
+  "feature_manifest": "variables_propuestas.csv",
+  "feature_count_proposed": 43,
+  "seeds": [
+    20261107,
+    17,
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909,
+    1001,
+    1102,
+    1203,
+    1304,
+    1405,
+    1506,
+    1607,
+    1708,
+    1809
+  ],
+  "single_seed": 20261107,
+  "bo_trials_per_representation": 20,
+  "bo_startup_trials": 5,
+  "search_space": {
+    "num_leaves": [
+      16,
+      128
+    ],
+    "learning_rate": [
+      0.02,
+      0.15
+    ],
+    "min_data_in_leaf": [
+      200,
+      5000
+    ],
+    "feature_fraction": [
+      0.5,
+      1.0
+    ],
+    "bagging_fraction": [
+      0.6,
+      1.0
+    ]
+  },
+  "max_rounds": 2000,
+  "early_stopping": 100,
+  "bagging_freq": 1,
+  "main_policy": "argmax validation gain including zero contacts; smallest k on ties; transfer fraction with floor(n_test*k_val/n_val)",
+  "secondary_contacts": [
+    11000
+  ],
+  "arms": {
+    "A": "B2; first prespecified seed",
+    "B": "B2 + manifest; first prespecified seed",
+    "C": "mean predictions of 20 B2 seeds including A",
+    "D": "mean predictions of 20 enriched seeds including B"
+  },
+  "source_sha256": "d9de59fb2fe72d83a6cb77790dc8eebb16f4785688c5031d4e164ba1a8235b81",
+  "seed_list_correction": "2026-11-08: add omitted 20th seed 1809 before freezing or evaluating October; keep preceding 19 seeds unchanged."
+}

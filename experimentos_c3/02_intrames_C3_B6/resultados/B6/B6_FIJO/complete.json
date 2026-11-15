@@ -1,0 +1,21 @@
+{
+  "arm": "B6_FIJO",
+  "features": 1261,
+  "auc": 0.9319297141756074,
+  "policy": {
+    "fraction": 0.032176057674065645,
+    "validation_k": 4240,
+    "validation_gain": 212300000
+  },
+  "best_params": {
+    "num_leaves": 117,
+    "learning_rate": 0.020075574263441705,
+    "min_data_in_leaf": 2400,
+    "feature_fraction": 0.6588945690001901,
+    "bagging_fraction": 0.8197756042652335
+  },
+  "trees": 281,
+  "trials": 0,
+  "seconds": 123.77911877632141,
+  "model_sha256": "3ef97acc99b64f21fa77d2ecd19d52c86104add5a2926996888f9e1dabc32802"
+}

@@ -1,0 +1,8 @@
+1. Pautas de Ale aportadas por la usuaria: entrenamiento marzo-junio 2019, agosto para AUC/BO/early stopping, octubre para ganancia. Adaptación con ensembles de 20 semillas documentada antes de ejecutar.
+2. Regla económica documentada en el experimento B0–B5 de este repositorio: +1.072.500 por BAJA+2 contactado y -27.500 por otro contacto. Fuente original verificada anteriormente: https://github.com/ClariRZ/dmeyf2026/blob/85ca6ad39f6ed1d6f926c174840119552ca73f44/zero2hero/zero2hero_01.ipynb
+3. Receta de B2 y control previo: ../experimento_historicas_B0_B5/, configuración y código de entrenamiento.
+4. Fórmulas C3: vendor/fe_relaciones.py, hash en config_propuesta.json; esquema fuente ../experimentos_c3/config/c3_plan_original.json. Sólo se transfieren los 43 nombres del manifiesto, no todo C3.
+5. Protocolo de este experimento publicado antes de entrenar: commit fe05827. Implementación inicial: 86d1498. Corrección técnica previa al primer trial completado: acbbd9e. Repositorio https://github.com/ClariRZ/Segunda_competencia
+El PDF de Marcelo no se usa como especificación de esta corrida. Sus ejemplos no sustituyen el calendario ni la regla económica de Ale.
+
+Corrección documentada de cardinalidad de semillas antes del test: commit 5452d6c.

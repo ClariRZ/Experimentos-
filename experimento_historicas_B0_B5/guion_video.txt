@@ -1,0 +1,15 @@
+GUION PROPUESTO — VIDEO GRUPAL (aproximadamente 4–5 minutos)
+
+1. HIPÓTESIS (35 segundos)
+Queríamos medir cuánto aporta la historia de cada cliente. Partimos de originales y agregamos una familia por vez. La pregunta no era si más columnas siempre ayudan, sino qué mejora observamos respecto del paso anterior y de la referencia de Ale.
+
+2. DISEÑO (75 segundos)
+Entrenamos con marzo a junio de 2019, sin sampling. Validamos en agosto y reservamos octubre para la comparación final. B0 usa originales; B1 agrega lags; B2 agrega deltas y coincide con la referencia de Ale; B3 medias; B4 pendientes; B5 ratios. Optimizamos cinco hiperparámetros por AUC con el mismo presupuesto. Los contactos se fijaron con agosto y la regla se congeló antes de octubre. La ganancia usa los importes de 2026.
+
+3. RESULTADOS (90 segundos)
+Mostrar la tabla y el gráfico de ganancia. B0 obtuvo 254.017.500 pesos y B2 282.645.000. La mayor ganancia observada fue B3: 285.147.500 pesos con 4.711 contactos. Explicar las diferencias incrementales del gráfico sin confundirlas con efectos independientes del orden. Con 5.042 contactos para todos, B2 y B3 empataron; B4 obtuvo la mayor ganancia, por un acierto adicional. La ventaja de B3 con su política individual combina seis aciertos menos con 331 contactos menos. Por eso no afirmamos que su ranking sea superior al de B2 a cualquier presupuesto. B4 perdió ganancia con su política individual y B5 recuperó parte de esa caída, sin superar a B3.
+
+4. LIMITACIONES Y CONCLUSIONES (60 segundos)
+Evaluamos un mes de test y una semilla: no afirmamos estabilidad general. La pendiente con tres meses completos es delta2 dividido dos, por lo que puede ser redundante. Cada conjunto se optimizó por separado. El material de Marcelo orientó las transformaciones, pero no usamos sus importes, sampling ni cortes heredados. Seguiríamos con pruebas independientes contra B2, más semillas y nuevos meses fuera de muestra.
+
+Bibliografía: compartir junto al video el repositorio y commit indicados en el informe, las pautas de Ale y el PDF consultado. No presentar resultados sintéticos ni máximos retrospectivos como ganancia de una decisión fijada antes del test.

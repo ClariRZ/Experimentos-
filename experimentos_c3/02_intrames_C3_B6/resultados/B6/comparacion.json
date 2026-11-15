@@ -1,0 +1,65 @@
+[
+  {
+    "arm": "B5_CONTROL",
+    "auc_validation": 0.9324679280967303,
+    "cuts": {
+      "10500": {
+        "ganancia": 224950000,
+        "aciertos": 467
+      },
+      "11000": {
+        "ganancia": 214500000,
+        "aciertos": 470
+      },
+      "11500": {
+        "ganancia": 206250000,
+        "aciertos": 475
+      }
+    },
+    "policy_contacts": 3597,
+    "policy_gain": 283882500,
+    "features": 1254
+  },
+  {
+    "arm": "B6_FIJO",
+    "auc_validation": 0.9319297141756074,
+    "cuts": {
+      "10500": {
+        "ganancia": 228250000,
+        "aciertos": 470
+      },
+      "11000": {
+        "ganancia": 220000000,
+        "aciertos": 475
+      },
+      "11500": {
+        "ganancia": 209550000,
+        "aciertos": 478
+      }
+    },
+    "policy_contacts": 4364,
+    "policy_gain": 283690000,
+    "features": 1261
+  },
+  {
+    "arm": "B6_BO",
+    "auc_validation": 0.9312772527663267,
+    "cuts": {
+      "10500": {
+        "ganancia": 223850000,
+        "aciertos": 466
+      },
+      "11000": {
+        "ganancia": 215600000,
+        "aciertos": 471
+      },
+      "11500": {
+        "ganancia": 207350000,
+        "aciertos": 476
+      }
+    },
+    "policy_contacts": 3886,
+    "policy_gain": 286935000,
+    "features": 1261
+  }
+]

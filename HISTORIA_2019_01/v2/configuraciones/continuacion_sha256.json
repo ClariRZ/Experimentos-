@@ -1,0 +1,8 @@
+{
+  "scripts/continuar_familias.py": "903d99ebb5c0b3e12dbd69dd6608c6d32e3b252e0e0a4483f582935985a34244",
+  "scripts/cerrar_v2.py": "3ee79a7e0608aeab3e0718c2449bb141aa8a8fa2c1cb347d8654047784f3d1bb",
+  "scripts/verificar_familias.py": "75fb376d60fc6ec6ac33e598506fbaf9209a295bd357bf0a25d8636fb12d53d4",
+  "scripts/encadenar_v2.py": "89ba2cd49f223f774d2b2afb111aa1d687ca1f2b8da1c920b726111eead43de9",
+  "configuraciones/c3_formulas.json": "20dafe6490ba4f4092f8660abc4762f5773ddfadc0b14aba2a4ac6c24ab24057",
+  "configuraciones/comparaciones_preregistradas.json": "683a9695373bc6a763505e1cc97fd158d82eb959ec571e0e7e9c6ceaf9461747"
+}

@@ -1,0 +1,33 @@
+{
+  "estado": "EN_EJECUCION",
+  "vm": "clari-c1-fundados",
+  "directorio_remoto": "/home/clarirz/HISTORIA_2019_01/v2",
+  "pid_escalera": 1989,
+  "pid_encadenamiento": 2174,
+  "etapa_observada": "OPTUNA_B4",
+  "trials_completos_observados": 4,
+  "trials_presupuestados": 50,
+  "train_rows": 507328,
+  "validation_rows": 131887,
+  "raw": 152,
+  "fuentes_historia_elegibles": 109,
+  "B4_columnas": 588,
+  "octubre_abierto": false,
+  "dataset_rango": [
+    201901,
+    202109
+  ],
+  "dataset_sha256": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "pruebas": [
+    "test_calendar",
+    "test_gain",
+    "test_load",
+    "test_fit_checkpoint",
+    "test_formulas",
+    "test_final_gate",
+    "test_canaries_keep_raw"
+  ],
+  "continuacion": "Esperando fin correcto de escalera; luego shortlist train-only, screening, confirmación, ratios individuales condicionales, combinaciones, canaritos y reoptimización según reglas. Detención ante errores o falta de evidencia.",
+  "limitacion_test_final": "Bloqueado hasta congelamiento y verificación de equivalencia de B4 adaptado con referencia oficial. No habilitar por cambiar flag sin evidencia.",
+  "seguimiento": "Sesión Cloud Shell recuperada en navegador integrado; leer estado.json, cadena_estado.json y logs, sin ejecutar v1. No hay automatización de notificaciones creada."
+}

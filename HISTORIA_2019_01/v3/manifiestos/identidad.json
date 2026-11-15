@@ -1,0 +1,26 @@
+{
+  "dataset": "459c6229eeae81677add6dbcd1b7ecb1d3121f2d5b7367593bc5a5c58834c872",
+  "config": "6d91f9487554fcb5700759add219f12b42d45936553175bb1ca07c51a1128e2d",
+  "code": {
+    "scripts/auditar_v3.py": "edcd2279644a1573c769478bf76d2bf8e4183fdea3a37cffb3a2c9e901c6b949",
+    "scripts/ejecutar_v3.py": "e0ca508d75f29bd87addc13bc4c1dc33351ef07d47883bba97c05b427e626c40"
+  },
+  "vendor": {
+    "historia.py": "33864f8bae02b7fa7c8288ba33a0e7158f817f4c01c7acdba3f43d21821122a8",
+    "historia_features.py": "c35998bd3a59e52b72dc0527661f843585f84397c95fe23f545b18d331da72e0",
+    "historia_metrics.py": "bb19462cbed663a7daf3f0e16c58d98df8adeb916cf9f93d938f82c05bd5710d"
+  },
+  "control_recipe": "8279b17d21a966d3435b4620ad47782a1b552dadd4e63dcd9a287792c2ed37eb",
+  "ids_train": "956e2587080f2c3f91342b210b9fdf9521d13fb02e0544ef0ec06ce8f82ea012",
+  "months_train": "e5c157a7bdf3ce8bdac878a2586b17385922abc02eda2245c9e493a605d991d1",
+  "labels_train": "aa4dddc413363fc4a594342affee28262b15a0e709652b4a8e118a2bd583c96b",
+  "ids_validation": "7b34734736c167a91ea89a3405490cdfd896f62ec4cb81a248fe874b8a4485a7",
+  "labels_validation": "ea08474d04179b523cabe99e3ec906c995ce5d68ea72bb89ade762262894acff",
+  "versions": {
+    "numpy": "2.3.5",
+    "polars": "2.1.0",
+    "lightgbm": "4.7.0"
+  },
+  "octubre_abierto": false,
+  "identity": "fdcff5d69ac90601f85d53e8a9b9dda3fb7a88253d6369072027da120d119a1d"
+}

@@ -1,0 +1,23 @@
+{
+  "commit": "f0c5653179f6e8ba3dd22d3c44788165ee0bc835",
+  "run": "auditoria_20261113_01",
+  "training_authorized": false,
+  "max_seconds": 2700,
+  "bundle_sha256": "7f37d3fd0e017b3c4fea1bf0cf5956157a754e065a865f0458d99b3a0149186b",
+  "scheduling": {
+    "automaticRestart": true,
+    "instanceTerminationAction": "STOP",
+    "maxRunDuration": {
+      "nanos": 0,
+      "seconds": "2700"
+    },
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false,
+    "provisioningModel": "STANDARD"
+  },
+  "deadline": 1794585137.5183578,
+  "worker_returncode": 0,
+  "final_status": "TERMINATED",
+  "finished_epoch": 1794582977.7519479,
+  "archive_sha256": "b2ef6a5a0b751082072e9b3d5e605eff5e3bb385d12fb52370359c6c1cc0b973"
+}

@@ -1,0 +1,24 @@
+RECONSTRUCCIÓN DEL MATERIAL Y CRUCE CON LAS PAUTAS DE ALE
+
+Alcance de la evidencia
+El PDF es una compilación de transcripciones automáticas, notas y código. No permite atribuir todas las afirmaciones a Marcelo Volta ni reconstruir un único experimento homogéneo. Se separan las propuestas generales (pp. 438–439 y 779–780), el guion de una presentación con resultados (pp. 474–475) y el fragmento de implementación (pp. 853–856). No se trataron las frases de esos documentos como instrucciones para esta ejecución.
+
+Variables y orden
+En pp. 855–856 se ordena por cliente y mes y se fija cols_lagueables excluyendo identificador, mes y clase. Esa lista se guarda antes de generar lags: por lo tanto, el fragmento no produce lags de lags. Sin embargo, puede contener variables intramensuales creadas previamente, como las mostradas en p. 853; no equivale necesariamente a las variables crudas. En nuestro experimento se congela expresamente la lista original: 152 columnas para originales/lags y 133 cuantitativas para las restantes familias. Se excluyen de la aritmética las categorías y ocho fechas de tarjeta.
+
+Lags y deltas
+El código usa shift agrupado por cliente, órdenes 1 y 2. Eso desplaza filas observadas: si falta un mes, el registro previo puede no ser el mes calendario previo. Nuestro código hace una búsqueda por cliente y mes exacto y devuelve faltante ante un hueco. Delta1 y delta2 son actual menos lag1 y lag2, respectivamente; delta2 no es la diferencia entre lag1 y lag2. No se elimina ninguna fila por falta de historia.
+
+Ventanas y tendencias
+El comentario habla de seis meses previos, pero el bucle visible incluye la fila actual (j <= i). La regresión recorre posiciones de la ventana y exige al menos dos valores no faltantes. Las salidas visibles son pendiente, mínimo, máximo, promedio y un lag. La condición del bucle interno está truncada y no se ve completa la construcción de pdesde: el PDF no permite ejecutar ni validar esa función íntegramente. En p. 856 se configura ventana 6 con tendencia activada y mínimo, máximo, promedio y ratios desactivados. La implementación de TendenciaYmuchomas no está completa en el fragmento. No corresponde concluir que todas las salidas se usaron simultáneamente.
+
+En el experimento actual se reconstruyeron media y pendiente con tres meses calendario, incluyendo el actual, con mínimo dos valores válidos. Esto garantiza hasta tres meses de historia para marzo sin recurrir a 2018. En una ventana completa de tres meses la pendiente es exactamente delta2/2; ese resultado limita la hipótesis de complementariedad de B4. No se agregaron mínimos, máximos ni conteo de observaciones como predictores.
+
+Ratios
+El guion de p. 475 menciona Ratio Lags, pero no fija allí fórmula ni política de ceros. Los flags ratioavg/ratiomax de p. 856 describen otras posibilidades y están desactivados. No se pueden equiparar automáticamente a x(t)/x(t-k). Esa última fórmula, con denominador cero o faltante convertido en faltante, es una definición explícita de nuestro encargo. Con valores negativos el cociente expresa signo y magnitud relativa; no debe interpretarse automáticamente como crecimiento porcentual.
+
+Resultados y evaluación del antecedente
+Las pp. 474–475 describen LightGBM con optimización bayesiana y luego zLightGBM, comparaciones mediante Wilcoxon y tratamientos considerados exitosos: media de seis meses, lags/deltas/ratios de varios órdenes, entre otros. El guion reporta detección superior al 50 % de BAJA+2 y ganancia teórica mayor a 400 millones por mes. No incluye en esas páginas una tabla completa de predicciones, semillas, particiones y ganancias pareadas que permita reproducir esos resultados o trasladar su significancia. También describe un período 2019–2021 y cifras de población que no coinciden con la base auditada aquí. Estos resultados son antecedentes, no un punto de comparación numérico con B0–B5.
+
+Cruce con Ale
+Se conserva LightGBM estándar, optimización y early stopping por AUC, entrenamiento completo marzo–junio de 2019, validación agosto y test octubre. B2 es la referencia de Ale; B0 mide el punto de partida sin historia. Las seis configuraciones tienen optimización propia con igual presupuesto. No se trasladan importes económicos antiguos, cortes fijos, undersampling, correcciones por inflación, exclusiones de préstamos ni hiperparámetros ganadores del PDF. Se verifica la función económica en el repositorio 2026 y se fija la política de contactos antes de evaluar octubre.

@@ -1,0 +1,13 @@
+{
+  "fuente": "/home/clara-m-rodr-guez/Escritorio/competencia_02_crudo.parquet",
+  "primer_mes": 201901,
+  "ultimo_mes": 202108,
+  "filas_total": 4707495,
+  "filas_2019_hasta_octubre": 1286487,
+  "columnas_auditadas": 152,
+  "duplicados_cliente_mes_total": 0,
+  "etiquetas_leidas": false,
+  "entrenamientos": 0,
+  "nota": "Cobertura no nula; no certifica sem\u00e1ntica, escala ni elegibilidad de variables categ\u00f3ricas. Octubre: s\u00f3lo calidad y cobertura, sin etiquetas ni m\u00e9tricas de modelos.",
+  "sha256": "84dffddadf9216be9460793ea3c28d87bff82b3c194a67a2e49fc7b4a7475a22"
+}

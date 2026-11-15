@@ -1,0 +1,14 @@
+{
+  "run": "completa_20261111_03",
+  "code_commit": "2f47a1b",
+  "vm": "clari-c1-fundados",
+  "maxRunDurationSeconds": 57600,
+  "instanceTerminationAction": "STOP",
+  "remote_tests": "25 passed in 12.09s",
+  "observed_pid": 1465,
+  "october_used": false,
+  "planned_fits": 75,
+  "note": "First connection attempt timed out before training; retry tolerance corrected. Results remain on VM until retrieval. Shutdown scheduling persists for subsequent VM starts.",
+  "observed_status": "OPTUNA B0; FIT_START 1 seed 101 round_cap 1500",
+  "optuna_started_utc": "2026-11-11T23:08:35.980Z"
+}

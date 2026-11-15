@@ -1,0 +1,16 @@
+metric,comparison,delta
+gain_policy,B-A,2200000
+gain_policy,C-A,-5472500
+gain_policy,D-B,-2695000
+gain_policy,D-C,4977500
+gain_policy,D-A,-495000
+gain_common_A,B-A,3300000
+gain_common_A,C-A,1100000
+gain_common_A,D-B,-7700000
+gain_common_A,D-C,-5500000
+gain_common_A,D-A,-4400000
+gain_11000,B-A,-2200000
+gain_11000,C-A,1100000
+gain_11000,D-B,3300000
+gain_11000,D-C,0
+gain_11000,D-A,1100000

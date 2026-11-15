@@ -1,0 +1,20 @@
+[
+  {
+    "arm": "C3_HOJA2500",
+    "mean_delta_11000": -2695000.0,
+    "median_delta_11000": -2200000.0,
+    "sd_delta_11000": 9309727.510286726,
+    "wins": 8,
+    "ties": 1,
+    "losses": 11
+  },
+  {
+    "arm": "C3_INTRAMES",
+    "mean_delta_11000": 825000.0,
+    "median_delta_11000": 550000.0,
+    "sd_delta_11000": 10268647.99177318,
+    "wins": 10,
+    "ties": 1,
+    "losses": 9
+  }
+]

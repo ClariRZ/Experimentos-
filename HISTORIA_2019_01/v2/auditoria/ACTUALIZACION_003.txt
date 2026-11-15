@@ -1,0 +1,9 @@
+ACTUALIZACIÓN FASE 0 — EVIDENCIA APORTADA POR USUARIA
+La salida resumida de cuatro JSON remotos permite verificar documentalmente:
+- core_frozen declara selección de seis sobre diez candidatos predefinidos, sumando gain normalizado de RAW/lag/delta1/2. No equivale a shortlist20 sobre todas las elegibles. Declara train03–06; falta verificar si selección de HP/árboles dependiente de agosto afecta R8.
+- b0_hyperparams y receta003 coinciden en cinco HP y 304 rondas. Esto respalda comparación a HP fijos, no prueba aún igualdad de filas, saneamiento, bagging_freq ni semillas efectivas en boosters.
+- 003 tiene 20 AUC, media recalculada coincidente 0.914121253718901, 16/20 mejoras declaradas vs000.
+- Ganancia suavizada 003: 208.270.274,7252747 con ventana1001; ganancia puntual al corte4482: 210.045.000. Son magnitudes distintas. R5 exige ventana2001 y bootstrap; APORTA no demostrado.
+- ALERTA DE UNIVERSO: export201908 remoto declara131887 filas; auditoría del parquet local registra131775 para agosto. Diferencia112. Octubre remoto declara135754 vs135633 local (121); sólo metadatos, sin abrir predicciones. No usar etiquetas locales para puntuar CSV remoto ni asumir identidad de universos. Contrastar datos fuente, filtros, IDs únicos, duplicados y target antes de cualquier cruce.
+- Se necesitan audit/run_manifest y código efectivo para explicar discrepancia. No se corrigieron datos ni se entrenó.
+Los originales quedan intactos. Fuentes adjuntas y extractos guardados en auditoria.
