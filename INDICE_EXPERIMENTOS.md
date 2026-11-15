@@ -11,7 +11,7 @@ Este repositorio reúne el material publicable antes distribuido entre `Segunda_
 | Historia v5 | [Carpeta integrada](HISTORIA_2019_01/v5/) | README de preparación histórico; contrastar con resultados y [relevamiento posterior](informes/cierre_v1_v7_2026-11-14/INFORME.md). |
 | Historia v6 | [Ejecución y cierre](HISTORIA_2019_01/v6/README.md) | Se mantiene el README actualizado del destino; versión antigua de origen archivada. |
 | Historia v7 | [Carpeta](HISTORIA_2019_01/v7/) | Código, protocolo, resultados de agosto/octubre y auditorías existentes. |
-| Historia v8 | [Cierre consolidado ejecutado](HISTORIA_2019_01/v8/cierre_consolidado/README.md) | [Prompt correspondiente](HISTORIA_2019_01/v8/prompts/cierre_consolidado/PROMPT_MAESTRO_V8.md). Resultados reales y recibo de recuperación pendientes de incorporar; no confundir con borradores v8 anteriores. |
+| Historia v8 | [Cierre consolidado ejecutado](HISTORIA_2019_01/v8/cierre_consolidado/README.md) | [Prompt correspondiente](HISTORIA_2019_01/v8/prompts/cierre_consolidado/PROMPT_MAESTRO_V8.md). [Cierre reportado: 144 ajustes y evaluación completa](HISTORIA_2019_01/v8/evidencia_cierre/v8_20261115_021908_c48e9d/README.md); R3/T4/RR4 prometedores inconclusos. Tablas originales y recibo pendientes de verificar. |
 | Ale C3 2019 | [Carpeta](experimento_Ale_C3_2019/) | Código, auditorías y resultados agregados del origen. |
 | Históricas B0–B5 | [Carpeta](experimento_historicas_B0_B5/README.md) | Modelos y base Optuna conservados localmente; no incluidos en GitHub central. No se renombra como v1. |
 | Experimentos C3 / intrames | [Carpeta](experimentos_c3/) | Configuraciones, preparación, auditorías y resultados del origen. |

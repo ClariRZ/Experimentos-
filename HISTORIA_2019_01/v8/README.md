@@ -1,3 +1,15 @@
+# Historia 2019 v8 — cierre consolidado
+
+**Ejecución reportada completa: 144 ajustes y evaluación económica.** R3, T4 y RR4 quedaron como `PROMETEDOR_INCONCLUSO`. La verificación de los archivos de resultados y del respaldo está pendiente; no se declara reproducido.
+
+- [Estado y procedencia de la corrida](evidencia_cierre/v8_20261115_021908_c48e9d/README.md).
+- [Prompt ejecutado](prompts/cierre_consolidado/PROMPT_MAESTRO_V8.md).
+- [Código, contrato y controles](cierre_consolidado/README.md).
+
+## Borrador anterior conservado como antecedente
+
+El texto siguiente corresponde a una propuesta anterior de 60 ajustes, **no** al contrato de 144 ajustes ejecutado.
+
 # Historia 2019 v8 — propuesta de cierre
 
 Estado: protocolo propuesto; no entrenado.

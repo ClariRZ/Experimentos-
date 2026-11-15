@@ -1,3 +1,5 @@
+> **Actualización de cierre:** la corrida ejecutada completó 144 ajustes y evaluación según la salida de recuperación compartida. Los tres candidatos fueron clasificados como prometedores inconclusos. Véase [evidencia y pendientes](../evidencia_cierre/v8_20261115_021908_c48e9d/README.md). Las secciones siguientes conservan el historial de preparación; sus estados iniciales no describen el cierre actual.
+
 # v8 — Preflight local del cierre consolidado
 
 Estado: **PARCIAL; NO APROBADO PARA ENTRENAR**. No se entrenaron modelos ni se encendió la VM. El prompt vigente está en `../prompts/cierre_consolidado/PROMPT_MAESTRO_V8.md`.

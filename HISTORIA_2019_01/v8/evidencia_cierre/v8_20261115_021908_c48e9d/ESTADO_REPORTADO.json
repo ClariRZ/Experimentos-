@@ -1,0 +1,42 @@
+{
+  "run_id": "v8_20261115_021908_c48e9d",
+  "source_kind": "terminal_output_pasted_by_user",
+  "independently_verified_from_artifacts": false,
+  "execution_commit": "64ac6ed4c21aacf21feaad216c0069d800195518",
+  "config_sha256": "af13b77c44ae6280106e790cba8ab19d6020702ac24684d2a6f2fb6ea7e87f94",
+  "reported": {
+    "checkpoints_completed": 144,
+    "status": "EVALUATED_BACKUP_PENDING",
+    "economic_evaluation_complete": true,
+    "classifications": {
+      "R3": "PROMETEDOR_INCONCLUSO",
+      "T4": "PROMETEDOR_INCONCLUSO",
+      "RR4": "PROMETEDOR_INCONCLUSO"
+    },
+    "exposed_months": true,
+    "backup_verified": false,
+    "vm_shutdown_verified": false,
+    "stages": [
+      {
+        "stage": "ejecutar_v8.py",
+        "returncode": 0,
+        "peak_rss_bytes": 11564077056,
+        "finished_epoch": 1794720145.7927406
+      },
+      {
+        "stage": "evaluar_v8.py",
+        "returncode": 0,
+        "peak_rss_bytes": 4062666752,
+        "finished_epoch": 1794720547.8937275
+      }
+    ],
+    "backup_manifest_exists": true
+  },
+  "not_available": [
+    "public.tar.gz",
+    "private.tar.gz",
+    "recovery/manifest.json",
+    "RESTORED.json"
+  ],
+  "gains": null
+}
