@@ -22,7 +22,11 @@
     "public/private backup separation and member hash verification",
     "interrupted transfer reuses verified chunks",
     "invalid manifest paths rejected before reconstruction",
-    "draft contract rejected before contacting cloud"
+    "draft contract rejected before contacting cloud",
+    "synthetic integration: training freeze, August score reproduction, September/October scoring, archival restoration",
+    "evaluation training call prohibited in integration test",
+    "repeated evaluation produces identical prediction files",
+    "model corruption blocks evaluation"
   ],
   "not_validated": [
     "end-to-end training with actual LightGBM",
@@ -30,9 +34,8 @@
     "off-VM resumable backup for this runner",
     "final resource limits and approved immutable contract"
   ],
-  "scope": "Unit tests do not certify end-to-end production readiness.",
+  "scope": "45 tests, including synthetic full-flow integration with a fake booster. Not an actual LightGBM or GCE end-to-end validation.",
   "remaining_launch_work": [
-    "Validate complete evaluation orchestration with synthetic models",
     "Verify target VM resources and deployed environment",
     "Resolve or explicitly document historical comparability gaps",
     "Freeze resource budget and approved immutable contract after preflight"

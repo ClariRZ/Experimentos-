@@ -1,0 +1,65 @@
+{
+  "scope": "Historical planning evidence, not a v8 training benchmark",
+  "arms": {
+    "B0": {
+      "v7_search_fits": 10,
+      "v7_final_fits": 5,
+      "mean_search_seconds": 51.309701037406924,
+      "mean_final_seconds": 34.28484673500061,
+      "v8_20_search_16_fixed_proxy_seconds": 1574.7515685081482
+    },
+    "R3": {
+      "v7_search_fits": 10,
+      "v7_final_fits": 5,
+      "mean_search_seconds": 85.63563921451569,
+      "mean_final_seconds": 68.60930752754211,
+      "v8_20_search_16_fixed_proxy_seconds": 2810.4617047309875
+    },
+    "T4": {
+      "v7_search_fits": 10,
+      "v7_final_fits": 5,
+      "mean_search_seconds": 64.00884056091309,
+      "mean_final_seconds": 59.32882761955261,
+      "v8_20_search_16_fixed_proxy_seconds": 2229.4380531311035
+    }
+  },
+  "RR4_proxy": "Unmeasured; use slowest known arm only for rough planning, not a guarantee",
+  "proxy_total_training_seconds": 9425.113031101228,
+  "excludes": [
+    "preparation",
+    "evaluation",
+    "bootstrap",
+    "backup",
+    "transfer",
+    "unknown RR4 training overhead"
+  ],
+  "v7_peak_rss_bytes": 15625129984,
+  "v8_matrix_audit": {
+    "seconds": 43.97167235799134,
+    "peak_rss_kib": 6123968,
+    "rr4_train_matrix_bytes": 1459223104,
+    "fits": 0,
+    "note": "Feature audit, not training peak. Coverage_columns reports availability, not full cause attribution."
+  },
+  "v7_private_archive": {
+    "models_count": 50,
+    "max_model_bytes": 6320327,
+    "prediction_arrays_count": 61,
+    "max_prediction_array_bytes": 1310163,
+    "archive_bytes": 115108877
+  },
+  "launch_readiness": false,
+  "live_console_observation": {
+    "date": "2026-11-14",
+    "source": "Authenticated Google Cloud instance details, read-only",
+    "status": "Stopped",
+    "machine_type": "e2-highmem-8",
+    "vcpus": 8,
+    "memory_GB_displayed": 64,
+    "disk_GB": 100,
+    "max_duration_hours": 1,
+    "termination_action": "Stop",
+    "free_disk_bytes": null,
+    "installed_runtime_verified": false
+  }
+}

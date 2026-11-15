@@ -94,3 +94,11 @@ El flujo real de búsqueda, confirmación y congelamiento recorrió los 144 ajus
 Se incorporaron supervisor independiente con límites de tiempo/disco/RAM, controlador de despliegue que exige VM detenida y contrato aprobado, y respaldo por partes con hashes de archivos y contenidos. Una transferencia interrumpida se retomó reutilizando partes verificadas. Se probaron corrupción, rutas inválidas y separación entre archivos privados y públicos. No se encendió ninguna VM.
 
 Las nuevas protecciones todavía requieren validación en GCE. La integración completa de evaluación, el presupuesto operativo y el cierre del contrato siguen pendientes. El contrato permanece DRAFT y no se ejecutaron entrenamientos reales. La publicación del código no implica aprobación del lanzamiento.
+
+## Evaluación integrada y recursos
+
+La prueba sintética ahora cubre congelamiento, reproducción exacta de las 40 predicciones finales de agosto, evaluación de septiembre/octubre, repetición con archivos idénticos y restauración del respaldo. Invocar entrenamiento durante evaluación hace fallar la prueba. Alterar un modelo también la bloquea. Las 45 pruebas pasan; no se entrenó LightGBM real.
+
+Consulta de consola del 14/11: VM detenida, e2-highmem-8, 8 vCPU, 64 GB de memoria, disco de 100 GB y límite vigente de una hora con acción Stop. El controlador configura y verifica seis horas antes de lanzar; ese cambio todavía no se aplicó. El espacio libre y las versiones instaladas no están verificados actualmente.
+
+Los tiempos guardados de B0/R3/T4 en v7 dan una aproximación de 2,62 horas sólo para ajustes, usando el brazo conocido más lento como sustituto provisional de RR4. No incluye evaluación, preparación ni respaldo; RR4 no está medido y esto no garantiza el plazo. Detalle en `preflight/PLANIFICACION_RECURSOS.json`. Sigue pendiente cerrar presupuesto, comparabilidad histórica y contrato antes de ejecutar.

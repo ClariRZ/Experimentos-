@@ -1,7 +1,8 @@
 {
-  "README.md": "88b6311d486f0c2c7ff5469562a2e33e9967d782d9faac7f32d2132ab3d0922e",
+  "README.md": "e65a69458d6be3b4e64a6fe7c294e03ddbf323a3ef88f515b43878813134e976",
   "contrato_v8_consolidado.json": "f3041fd4a830da25e2fbc804ccfc7f92ac60164057b80755b115734e31114d5b",
-  "preflight/VALIDACION_EJECUTOR.json": "4538113b1302b379f0ed1ce0166cc191d69bd87aeb802b8d5fdec1f75531d006",
+  "preflight/PLANIFICACION_RECURSOS.json": "b68d6ad10197b0a396dbb50e69bf9534dc589fe296ed06299dbf921df2ca4d3a",
+  "preflight/VALIDACION_EJECUTOR.json": "07fe5e4ae8c85b0641649e2591bb60ac55e5ee56b71dd539145cc553f4503d1e",
   "preflight/c3_paridad.json": "b8086a62c3385dce2ecae0c32e7d814635e021e3f93f5c3c8df49bef26808676",
   "preflight/causas_reales/PROCEDENCIA.json": "da60a8742ea1680bc54bcede3aa910655c0a07aa60d1f54479f9b8ba103e60ab",
   "preflight/causas_reales/coverage_causes.json": "af3de3139393c2c311c19f32dbdd7e6cdf7f047ab0d5c02addcc21ef1b1cf74b",
@@ -28,7 +29,7 @@
   "scripts/control_v8.py": "4a69feba661f787c8b2f6d0801174c51c68bc502e71cc3dbc3bfe289570da6c7",
   "scripts/diagnostico_octubre.py": "a4347db7dcef5a09a0f1275bd75de36e0dc5aade87bc869ad6ad9ac29e1b2d63",
   "scripts/ejecutar_v8.py": "a072e710ea022c2f4b35d038d717f40088a2ebe4b51e90e2203580d83e7ffc1e",
-  "scripts/evaluar_v8.py": "6ef2ce3addaab6bb0ba8ae0c80854adf95a61d0d3917b7ef1bf589a860f8a9f1",
+  "scripts/evaluar_v8.py": "dc139f32a80c7d4854ff2792c0abeddc8b815e17e47566f61dccd81a6bbd5002",
   "scripts/operacion_v8.py": "459f36a73acb49d8921fb2fe47b80a57d1e036fa5a38a615dff1489af32a5b20",
   "scripts/rr4.py": "82bcc7746266702f97366b943d6a42748a49977ce2fbd046582fac4da24c3b04",
   "scripts/verificar_c3.py": "d96f5a372d9103ad09bdc8d282f9eb14294253bb3ece560d9768c9b2f0334ee8",
@@ -36,7 +37,7 @@
   "tests/test_controller.py": "62a9bc5ad1a3fc6afda45e62c7f906c8d8c865d738041f058e169eb503a814f9",
   "tests/test_evaluation.py": "067a38c5bb2d9722336fd1197f1b8f67a2ec5a804f13223017f786b7eba21caa",
   "tests/test_executor.py": "408a4e7f9109f37848187da0e37c6d73552418a45549827d7ce236803e2ef5aa",
-  "tests/test_flow.py": "bd711782203fa9afa8096d262d814a2d325c22049ad965d22997d135fd0adef2",
+  "tests/test_flow.py": "b85f99c72e46e837e32a6f09561d46810bab93dbb8c1f2a4c2e6052cf3076578",
   "tests/test_operations.py": "d6714e5c8eb4453b39579cfcd2927f8bb19d6e918f5fb440233a4ca307f3d2c6",
   "tests/test_original_v7.py": "bbe9d5f24ee573e03e57dcdd0e782b3da6a246515a3b991a065921c02ec71c6e",
   "tests/test_rr4.py": "832d26c8d8bba122df27cccb2aefafcfe1bdac09460db14752de6bebc7fb114e"
